@@ -38,6 +38,15 @@ a {
 }
 
 /* LoaderContainer CSS */
+
+.main.hide {
+    display: none;
+}
+
+#loader.active {
+    display: none;
+}
+
 .loaderContainer {
     display: flex;
     align-items: center;
