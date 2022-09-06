@@ -25,7 +25,6 @@ window.addEventListener('load',function () {
         menuopen.classList.add('active');
         menuCloseAll.classList.add('active');
 
-
     })
 
     menuCloseX.addEventListener('click', function () {
