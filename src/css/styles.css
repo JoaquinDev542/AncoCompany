@@ -111,7 +111,16 @@ a {
 }
 
 /* menuClose Section */
+
 .menuClose {
+    display: none;
+}
+
+.menuClose.active {
+    display: block;
+}
+
+.menuOpen.active {
     display: none;
 }
 
@@ -170,6 +179,6 @@ a {
 }
 
 /* --- */
-.menuCloseAll {
+.menuCloseAll.active {
     display: none;
 }
