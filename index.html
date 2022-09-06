@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Porfolio</title>
     <script type="module" src="./src/js/main.js"></script>
-    <script src="./node_modules/animejs/lib/anime.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
     <link rel="stylesheet" href="./src/css/normalize.css">
     <link rel="stylesheet" href="./src/css/styles.css">
 
@@ -47,7 +46,7 @@
 
             <header class="header">
 
-                <a href="#" class="logo">Logo</a>
+                <a href="#" class="logo"><img src="./assets/image/icons/logo.png" height="55px" width="55px"></a>
 
                 <div class="languages">
 
@@ -103,7 +102,7 @@
 
                     <img src="" alt="" class="heroContentImgs__img">
 
-                    <canvas class="heroContentImgs__canvas"></canvas>
+                    <model-viewer src="./assets/image/Nave_alien.glb" class="Model__3D" camera-controls disable-zoom></model-viewer>
 
                 </div>
     
@@ -114,21 +113,20 @@
                 <div class="socialMedia">
 
                     <ul class="socialMediaList">
-
                         <li class="socialMediaList__item">
-                            <a href="#" class="socialMediaList__link">Social Media 1</a>
+                            <a href="#" class="socialMediaList__link"><img src="./assets/image/icons/instagram.png"> Instagram </img></a>
                         </li>
 
                         <li class="socialMediaList__item">
-                            <a href="#" class="socialMediaList__link">Social Media 2</a>
+                            <a href="#" class="socialMediaList__link"><img src="./assets/image/icons/github.png"> GitHub</a>
                         </li>
 
                         <li class="socialMediaList__item">
-                            <a href="#" class="socialMediaList__link">Social Media 3</a>
+                            <a href="#" class="socialMediaList__link"><img src="./assets/image/icons/twiter.png"> Twiter</a>
                         </li>
 
                         <li class="socialMediaList__item">
-                            <a href="#" class="socialMediaList__link">Social Media 4</a>
+                            <a href="#" class="socialMediaList__link"><img src="./assets/image/icons/linkedin.png"> Linkedin</a>
                         </li>
 
                     </ul>
