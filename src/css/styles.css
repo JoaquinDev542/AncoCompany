@@ -54,6 +54,18 @@ a {
     text-decoration: var(--value-none , none);
 }
 
+h1 {
+    font-family: var(--ff-titles , 'Roboto');
+}
+
+h2 {
+    font-family: var(--ff-titles , 'Roboto');
+}
+
+h3 {
+    font-family: var(--ff-titles , 'Roboto');
+}
+
 /* LoaderContainer CSS */
 
 .main.hide {
@@ -92,13 +104,17 @@ a {
 }
 
 /* Main Section */
+.main {
+    background-color: var(--black ,#121212);
+    color: var(--white , #f5f5f5);
 
+}
 /* Hero Section */
 .hero {
     position: var(--value-relative , relative);
     height: 100vh;
-    color: var(--white , #f5f5f5);
-    background-color: var(--black ,#121212);
+    /* color: var(--white , #f5f5f5); */
+    /* background-color: var(--black ,#121212); */
 }
 
 .header {
@@ -176,7 +192,6 @@ a {
 
 .hero__title {
     position: var(--value-relative , relative);
-    font-family: var(--ff-titles , 'Roboto');
     font-size: var(--fs-title-mobile , 3.125rem);
     z-index: 100;
 }
@@ -199,9 +214,9 @@ a {
 }
 
 /* SocialMedia Section */
-/* .socialMedia {
+.socialMedia {
     display: var(--value-none , none);
-} */
+}
 
 /* ScrollZone Section */
 .scrollZone {
@@ -240,3 +255,87 @@ a {
     display: var(--value-none , none);
 }
 
+.menuCloseAll {
+    padding: 10px 15px;
+}
+
+/* work Section */
+.work {
+    padding-bottom: 50px;
+}
+
+/* .workFooter {
+    display: flex;
+    align-items: center;
+    padding-top: 50px;
+} */
+
+/* .workFooterContainer {
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+
+} */
+
+/* .workFooter__text {
+    font-size: 30px;
+    white-space: nowrap;
+    display: inline-block;
+    padding-left: 100%;
+    animation: footerAnimation 15s linear infinite;
+} */
+
+/* .workFooterContainer--second {
+    animation-delay: 2.5s;
+} */
+
+/* @keyframes footerAnimation {
+    0% {
+        transform: translate(0 , 0);
+    }
+
+    100% {
+        transform: translate(-100% , 0);
+    }
+}  */
+
+.work__title {
+    text-align: var(--value-center , center);
+    margin: 0;
+    font-size: var(--fs-title-mobile);
+    color: var(--white , #f5f5f5);
+}
+
+.work__title--italic {
+    font-style: italic;
+    margin-bottom: 50px;
+}
+/* workProjects Section */
+
+.workProjectsFirst {
+    display: grid;
+    gap: 50px;
+}
+
+.workProjectsSecond {
+    display: grid;
+    gap: 50px;
+
+}
+
+.workProject {
+    display: flex;
+    flex-direction: column;
+}
+
+.workProject__title {
+    margin-bottom: 10px;
+    text-transform: var(--value-uppercase , uppercase);
+}
+
+.workProject__link {
+    text-transform: var(--value-uppercase , uppercase);
+    margin-top: 10px;
+    color: var(--white , #f5f5f5);
+    align-self: flex-end;
+}
