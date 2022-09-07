@@ -1,6 +1,7 @@
 // Loader
 window.addEventListener('load',function () {  
 
+    // Loading 
     let main = document.querySelector('main')
 
     main.classList.add("hide");
