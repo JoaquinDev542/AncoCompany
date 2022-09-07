@@ -443,3 +443,63 @@ h3 {
 .aboutContent__paragraph {
     line-height: 1.5;
 }
+
+/* information Section */
+.information {
+    display: grid;
+    grid-template-areas: 
+    "informationFooterContainer"
+    "informationContentFirst"
+    "informationContentSecond";
+    /* grid-template-rows: ; */
+}
+
+.informationFooterContainer {
+    grid-area: informationFooterContainer;
+    position: relative;
+    padding: 100px 0 50px 0;
+    overflow: hidden;
+}
+
+.informationFooter {
+    /* position: relative;
+    padding: 100px 0 50px 0;
+    overflow: hidden; */
+    position: absolute;
+    top:100px;
+    left:-100%;
+    display:flex;
+    justify-content:space-around;
+    width:200%;
+    overflow:hidden;
+    animation: marquee 7s linear infinite forwards;
+    transform:translate(0 , -50%);
+    white-space: nowrap;
+    overflow: hidden;
+    padding: 10px;
+    border-top: 1px solid var(--white , #f5f5ff);
+    border-bottom: 1px solid var(--white , #f5f5ff);
+    overflow: hidden;
+}
+
+.informationFooter__text {
+    font-size:3rem;
+
+}
+
+.informationFooter__text--color {
+    color: var(--green , #B4ED07);
+
+}
+
+.informationContentFirst {
+    grid-area: informationContentFirst;
+}
+
+.informationContentFirst__paragraph {
+    line-height: 1.5;
+}
+
+.informationContentSecond {
+    grid-area:informationContentSecond ;
+}
