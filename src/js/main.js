@@ -19,7 +19,6 @@ window.addEventListener('load',function () {
     let menuCloseX = document.querySelector(".menuCloseX");
     let menuCloseAll = document.querySelector(".menuCloseAll");
 
-
     menuopen.addEventListener('click', function () {
 
         menuclose.classList.add('active');
@@ -34,6 +33,35 @@ window.addEventListener('load',function () {
         menuopen.classList.remove("active");
         menuCloseAll.classList.remove('active');
 
+    })
+
+    // Menu Responsive Links
+    let workLink = document.querySelector("#workLink");
+    let aboutLink = document.querySelector("#aboutLink");
+    let contactLink = document.querySelector("#contactLink");
+
+    workLink.addEventListener('click' , function () {
+
+        menuclose.classList.remove('active');
+        menuopen.classList.remove("active");
+        menuCloseAll.classList.remove('active');
+
+    })
+
+    aboutLink.addEventListener('click' , function () {
+
+        menuclose.classList.remove('active');
+        menuopen.classList.remove("active");
+        menuCloseAll.classList.remove('active');
+        
+    })
+
+    contactLink.addEventListener('click' , function () {
+
+        menuclose.classList.remove('active');
+        menuopen.classList.remove("active");
+        menuCloseAll.classList.remove('active');
+        
     })
 
 })
