@@ -10,6 +10,7 @@
 
     --fs-16px:16px;
     --fs-title-mobile:3.125rem;
+    --fs-marquee-mobile:3rem;
     --fs-menuLink-mobile:3rem;
     --fs-scrollText-mobile:0.75rem;
     
@@ -72,7 +73,6 @@ h3 {
 } 
 
 /* Colors and Background-color Section */
-
 .color--white {
     color: var(--white , #f5f5f5);
 }
@@ -83,6 +83,27 @@ h3 {
 
 .color--green {
     color: var(--green , #B4ED07);
+}
+
+/* font-size Section */
+.fs-title {
+    font-size: var(--fs-title-mobile , 3.125rem);
+}
+.list__link {
+    font-size: var(--fs-menuLink-mobile , 3rem);
+}
+
+.scrollZone__text {
+    font-size: var(--fs-scrollText-mobile , 0.75rem);
+}
+
+/* font-family Section */
+.loading__letter {
+    font-family: var(--ff-paragraph , 'Rubik');
+}
+
+.list__link {
+    font-family: var(--ff-titles);
 }
 
 /* paragraph Section */
@@ -104,15 +125,18 @@ h3 {
     display:flex;
     justify-content:space-around;
     width:200%;
-    overflow:hidden;
-    animation: marquee 7s linear infinite forwards;
-    transform:translate(0 , -50%);
-    white-space: nowrap;
-    overflow: hidden;
     padding: 10px;
     border-top: 1px solid var(--white , #f5f5ff);
     border-bottom: 1px solid var(--white , #f5f5ff);
+    white-space: nowrap;
     overflow: hidden;
+    transform:translate(0 , -50%);
+    animation: marquee 7s linear infinite forwards;
+}
+
+.footerText {
+    font-size: var(--fs-marquee-mobile , 3rem);
+    text-transform: var(--value-uppercase , uppercase);
 }
 
 @keyframes marquee {
@@ -127,7 +151,6 @@ h3 {
 }
 
 /* LoaderContainer CSS */
-
 .main.hide {
     display: var(--value-none , none);
 }
@@ -148,8 +171,8 @@ h3 {
 .loading__letter  {
     display: inline-block;
     margin: 0 5px;
-    font-family: var(--ff-paragraph , 'Rubik');
     animation: blur-text .5s 0s infinite linear alternate;
+    letter-spacing: 3px;
 }
 
 @keyframes blur-text {
@@ -205,7 +228,6 @@ h3 {
 }
 
 /* menuClose Section */
-
 .menuOpen.active {
     display: var(--value-none , none);
 }
@@ -241,9 +263,8 @@ h3 {
 }
 
 .list__link {
-    font-family: var(--ff-titles);
+    
     text-transform: var(--value-uppercase , uppercase);
-    font-size: var(--fs-menuLink-mobile , 3rem);
 }
 
 
@@ -255,7 +276,6 @@ h3 {
 
 .hero__title {
     position: var(--value-relative , relative);
-    font-size: var(--fs-title-mobile , 3.125rem);
     z-index: 100;
 }
 
@@ -293,7 +313,6 @@ h3 {
 
 .scrollZone__text {
     margin-right: 10px;
-    font-size: var(--fs-scrollText-mobile , 0.75rem);
 }
 
 .arrowLink__img {
@@ -324,9 +343,7 @@ h3 {
 
 /* work Section */
 
-.workFooter__text {
-    font-size:3rem;
-}
+/* 
 
 .workLink {
     margin-top: 100px;
@@ -335,15 +352,14 @@ h3 {
 .work__title {
     text-align: var(--value-center , center);
     margin: 0;
-    font-size: var(--fs-title-mobile);
 }
 
 .work__title--italic {
     font-style: var(--value-italic , italic);
     margin-bottom: 50px;
-} 
+}  */
 /* workProjects Section */
-.workProjects {
+/* .workProjects {
     display: var(--value-grid , grid);
     gap: 50px;
 }
@@ -390,18 +406,11 @@ h3 {
 
 .workProject__link:hover::after {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-} 
+}  */
 
 /* about Section */ 
 
-.aboutFooter__text {
-    text-transform: var(--value-uppercase , uppercase);
-    font-size:3rem;
-}
-
-.aboutGeneralContent__title {
-    font-size: var(--fs-title-mobile , 3.125rem);
-}
+/*
 
 .aboutGeneralContent__img {
     display: var(--value-none , none);
@@ -409,10 +418,10 @@ h3 {
 
 .aboutContent__paragraph--margin {
     margin-bottom: 0;
-}
+} */
 
 /* information Section */
-.information {
+/* .information {
     display: grid;
     grid-template-areas: 
     "informationFooterContainer"
@@ -422,12 +431,6 @@ h3 {
 
 .informationFooterContainer {
     grid-area: informationFooterContainer;
-}
-
-
-.informationFooter__text {
-    font-size:3rem;
-
 }
 
 .informationContentFirst {
@@ -441,4 +444,4 @@ h3 {
 
 .informationContentSecond {
     grid-area:informationContentSecond ;
-} 
+}  */
