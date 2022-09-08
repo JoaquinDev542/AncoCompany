@@ -159,7 +159,7 @@ strong {
 
 /* Icons Animation Section */
 
-.arrowAnimation {
+.arrowAnimation { 
     margin-bottom: 9px;
     animation: arrowAnimation 1s ease-in-out infinite;
 }
@@ -245,6 +245,8 @@ strong {
 /* menuClose Section */
 .menuClose {
     display: var(--value-none , none);
+    /* clip-path: polygon(0 0, 100% 0, 100% 0, 0 0); */
+    /* animation: clip-path 3s ease-in-out; */
 }
 
 .menuCloseX {
