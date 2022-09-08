@@ -9,10 +9,11 @@
     --purple:#B833FF;
 
     --fs-16px:16px;
-    --fs-title-mobile:3.125rem;
+    --fs-scrollText-mobile:0.75rem;
+    --fs-informationTitle-mobile:1.75rem;
     --fs-marquee-mobile:3rem;
     --fs-menuLink-mobile:3rem;
-    --fs-scrollText-mobile:0.75rem;
+    --fs-title-mobile:3.125rem;
     
     --ff-titles:'Roboto', sans-serif;
     --ff-paragraph:'Rubik', sans-serif;
@@ -404,30 +405,51 @@ h3 {
 }  
 
 /* information Section */
-/* .information {
+.information {
     display: grid;
     grid-template-areas: 
-    "informationFooterContainer"
-    "informationContentFirst"
-    "informationContentSecond";
+    "footerContainer"
+    "informationContent";
 }
 
-.informationFooterContainer {
-    grid-area: informationFooterContainer;
+.footerContainer {
+    grid-area: footerContainer;
 }
 
-.informationContentFirst {
-    grid-area: informationContentFirst;
+.informationContent {
+    grid-area: informationContent;
 }
 
-.informationContentFirst__paragraph {
+.informationContent--padding {
     padding: 40px 0;
     border-bottom: 1px solid var(--white , #f5f5f5);
+
+}
+.informationParagraph { 
+    margin: 0;
 }
 
-.informationContentSecond {
-    grid-area:informationContentSecond ;
-}  */
+.informationContentContainer__paragraph {
+    margin-top: 15px;
+}
+
+.informationContentContainerTitles__number {
+    margin-right: 10px;
+}
+
+.informationContentContainerTitles {
+    display: var(--value-flex , flex);
+    align-items: var(--value-center , center);
+}
+
+.informationContentContainerTitles__title {
+    margin: 0;
+    font-size: var(--fs-informationTitle-mobile , 28px);
+    text-transform: var(--value-uppercase , uppercase);
+}
+
+/* Contact Section */
+
 
 @media screen and (hover: hover) {
     
