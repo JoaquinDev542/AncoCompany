@@ -7,7 +7,7 @@
     --white:#f5f5f5;
     --green:#B4ED07;
     --purple:#B833FF;
-
+ 
     --fs-16px:16px;
     --fs-scrollText-mobile:0.75rem;
     --fs-informationTitle-mobile:1.75rem;
@@ -245,6 +245,9 @@ strong {
 /* menuClose Section */
 .menuClose {
     display: var(--value-none , none);
+    /* transition: clip-path 5s linear; */
+    /* clip-path: polygon(0 0, 100% 0, 100% 0, 0 0); */
+    /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); */
 }
 
 .menuCloseX {
@@ -285,7 +288,18 @@ strong {
 .hero__title {
     z-index: 100;
     position: var(--value-relative , relative);
+    /* Animacion 2.5s de delay */
+    opacity: 0;
+    animation: titleEfect .8s ease-in-out forwards .4s;
 }
+
+@keyframes titleEfect {
+
+    100% {
+        opacity: 1;
+    }
+}
+
 
 .hero__span {
     display: var(--value-none , none);
@@ -303,6 +317,15 @@ strong {
 
 .heroContentImgs__img {
     object-fit: cover;
+    opacity: 0;
+    animation:  heroContentImgs__imgAnimation .8s ease-in-out forwards 1s;
+}
+
+@keyframes heroContentImgs__imgAnimation {
+    
+    100% {
+        opacity: 1;
+    }
 }
 
 .Model__3D {
@@ -322,6 +345,16 @@ strong {
     display:  var(--value-flex , flex);
     align-items: var(--value-center , center);
     justify-content: var(--value-center , center);
+    opacity: 0;
+    animation: scrollZoneAnimation .8s ease-in-out forwards 1.6s;
+}
+
+@keyframes scrollZoneAnimation {
+
+    100% {
+        opacity: 1;
+    }
+
 }
 
 .scrollZone__text {
