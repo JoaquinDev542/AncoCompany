@@ -9,9 +9,11 @@ window.addEventListener('load',function () {
     const myTimeout = setTimeout(myGreeting, 2000);
 
     function myGreeting() {
+
         document.querySelector(".loaderContainer").classList.add("active");
         main.classList.remove("hide");
-    }
+    
+    } 
 
     // Menu Reponsive
     let menuopen = document.querySelector(".menuOpen")
@@ -25,7 +27,6 @@ window.addEventListener('load',function () {
         menuopen.classList.toggle('active');
         menuCloseAll.classList.toggle('active');
         list.classList.toggle('active');
-
     })
 
     // Menu Responsive Links
@@ -38,6 +39,7 @@ window.addEventListener('load',function () {
         menuclose.classList.remove('active');
         menuopen.classList.remove("active");
         menuCloseAll.classList.remove('active');
+        list.classList.remove('active');
 
     })
 
@@ -46,7 +48,8 @@ window.addEventListener('load',function () {
         menuclose.classList.remove('active');
         menuopen.classList.remove("active");
         menuCloseAll.classList.remove('active');
-
+        list.classList.remove('active');
+        
     })
 
     contactLink.addEventListener('click' , function () {
@@ -54,6 +57,7 @@ window.addEventListener('load',function () {
         menuclose.classList.remove('active');
         menuopen.classList.remove("active");
         menuCloseAll.classList.remove('active');
+        list.classList.remove('active');
 
     })
 
