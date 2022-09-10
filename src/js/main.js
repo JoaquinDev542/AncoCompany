@@ -1,5 +1,5 @@
 // Loader
-window.addEventListener('load',function () {  
+window.addEventListener('load',function () {
 
     // Loading 
     let main = document.querySelector('main')
@@ -16,22 +16,15 @@ window.addEventListener('load',function () {
     // Menu Reponsive
     let menuopen = document.querySelector(".menuOpen")
     let menuclose = document.querySelector(".menuClose")
-    let menuCloseX = document.querySelector(".menuCloseX");
     let menuCloseAll = document.querySelector(".menuCloseAll");
+    let list = document.querySelector(".list");
 
     menuopen.addEventListener('click', function () {
 
-        menuclose.classList.add('active');
-        menuopen.classList.add('active');
-        menuCloseAll.classList.add('active');
-
-    })
-
-    menuCloseX.addEventListener('click', function () {
-
-        menuclose.classList.remove('active');
-        menuopen.classList.remove("active");
-        menuCloseAll.classList.remove('active');
+        menuclose.classList.toggle('active');
+        menuopen.classList.toggle('active');
+        menuCloseAll.classList.toggle('active');
+        list.classList.toggle('active');
 
     })
 
@@ -53,7 +46,7 @@ window.addEventListener('load',function () {
         menuclose.classList.remove('active');
         menuopen.classList.remove("active");
         menuCloseAll.classList.remove('active');
-        
+
     })
 
     contactLink.addEventListener('click' , function () {
@@ -61,7 +54,7 @@ window.addEventListener('load',function () {
         menuclose.classList.remove('active');
         menuopen.classList.remove("active");
         menuCloseAll.classList.remove('active');
-        
+
     })
 
 })

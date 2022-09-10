@@ -187,7 +187,6 @@ strong {
     }
 }
 
-
 /* LoaderContainer CSS */
 .loaderContainer {
     display: var(--value-flex , flex);
@@ -257,23 +256,22 @@ strong {
 
 .menuOpen__img {
     width: 25px;
+    z-index: 500;
+    position: relative;
 }
 
 /* menuClose Section */
 .menuClose {
-    display: var(--value-none , none);
-    height: 100vh;
-    /* opacity: .5; */
-    /* transition: opacity 5s linear; */
-    /* clip-path: polygon(0 0, 100% 0, 100% 0, 0 0); */
-    /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); */
+    opacity: 0;
 }
 
-.menuCloseX {
-    position: var(--value-absolute , absolute);
-    top: 20px;
-    right: 15px;
-    text-transform: var(--value-uppercase , uppercase);
+.list {
+    display: none;
+}
+
+.list.active {
+    display: flex;
+    flex-direction: column;
 }
 
 .list__item {
@@ -331,7 +329,6 @@ strong {
     width: 72%;
     max-width: 400px;
     height: 120%;
-    /* REVISAR */
 }
 
 .heroContentImgs__img {
@@ -611,10 +608,6 @@ strong {
     display: var(--value-none , none);
 }
 
-.menuOpen.active {
-    display: var(--value-none , none);
-}
-
 .menuClose.active {
     z-index: 200;
     position: var(--value-absolute , absolute);
@@ -627,6 +620,8 @@ strong {
     height: 100vh;
     font-weight: 100;
     background-color:var(--black , #121212);
+    transition: opacity 1s;
+    opacity: 1;
 }
 
 .menuCloseAll.active {
@@ -660,4 +655,3 @@ strong {
     }
     
 }
-
