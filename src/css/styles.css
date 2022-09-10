@@ -262,11 +262,6 @@ strong {
 /* menuClose Section */
 .menuClose {
     display: var(--value-none , none);
-    height: 100vh;
-    /* opacity: .5; */
-    /* transition: opacity 5s linear; */
-    /* clip-path: polygon(0 0, 100% 0, 100% 0, 0 0); */
-    /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); */
 }
 
 .menuCloseX {
@@ -331,7 +326,6 @@ strong {
     width: 72%;
     max-width: 400px;
     height: 120%;
-    /* REVISAR */
 }
 
 .heroContentImgs__img {
@@ -626,7 +620,7 @@ strong {
     width: 100%;
     height: 100vh;
     font-weight: 100;
-    background-color:var(--black , #121212);
+    background-color: var(--black , #121212);
 }
 
 .menuCloseAll.active {
