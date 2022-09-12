@@ -21,6 +21,9 @@ window.addEventListener('load',function () {
     let menuCloseAll = document.querySelector(".menuCloseAll");
     let list = document.querySelector(".list");
     let menuToggle = document.querySelector(".menu-toggle");
+    let menuLinkFirst = document.querySelector(".list__link--first");
+    let menuLinkSecond = document.querySelector(".list__link--second");
+    let menuLinkThird = document.querySelector(".list__link--third");
 
 
     menuopen.addEventListener('click', function () {
@@ -30,6 +33,10 @@ window.addEventListener('load',function () {
         menuCloseAll.classList.toggle('active');
         list.classList.toggle('active');
         menuToggle.classList.toggle('open');
+        menuLinkFirst.classList.toggle('active');
+        menuLinkSecond.classList.toggle('active');
+        menuLinkThird.classList.toggle('active');
+
     })
 
     // Menu Responsive Links
