@@ -381,7 +381,7 @@ strong {
     left: 15px;
     right: 15px;
     opacity: var(--fs-zero , 0);
-    animation: titleEfect .8s ease-in-out forwards .4s;
+    animation: titleEfect .8s ease-in-out forwards .8s;
 }
 
 @keyframes titleEfect {
@@ -407,7 +407,7 @@ strong {
 .heroContentImgs__img {
     object-fit: var(--value-cover , cover);
     opacity: var(--fs-zero , 0);
-    animation:  heroContentImgs__imgAnimation .8s ease-in-out forwards 1s;
+    animation:  heroContentImgs__imgAnimation .8s ease-in-out forwards 1.4s;
 }
 
 @keyframes heroContentImgs__imgAnimation {
@@ -435,7 +435,7 @@ strong {
     align-items: var(--value-center , center);
     justify-content: var(--value-center , center);
     opacity: var(--fs-zero , 0);
-    animation: scrollZoneAnimation .8s ease-in-out forwards 1.6s;
+    animation: scrollZoneAnimation .8s ease-in-out forwards 2s;
 }
 
 @keyframes scrollZoneAnimation {
@@ -694,7 +694,7 @@ strong {
     font-weight: 100;
     background-color:var(--black , #121212);
     opacity: 1;
-    transition: top 1s cubic-bezier(.62,.54,.85,.72) , opacity .5s cubic-bezier(.62,.54,.85,.72);
+    transition: top 1s cubic-bezier(.62,.54,.76,.94) , opacity .5s cubic-bezier(.62,.54,.85,.72);
 
 }
 
