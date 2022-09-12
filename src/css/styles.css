@@ -355,7 +355,23 @@ strong {
 .list__link {
     position: var(--value-relative , relative);
     text-transform: var(--value-uppercase , uppercase);
+    /* opacity: 0; */
 }
+
+/* .list__link--first.active {
+    transition: .5s opacity;
+    opacity: 1;
+}
+
+.list__link--second.active {
+    transition: .8s opacity;
+    opacity: 1;
+}
+
+.list__link--third.active {
+    transition: 1.3s opacity ;
+    opacity: 1;
+} */
 
 .list__link::after {
     position: var(--value-absolute , absolute);
