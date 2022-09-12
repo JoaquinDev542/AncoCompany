@@ -43,6 +43,7 @@ window.addEventListener('load',function () {
         menuopen.classList.remove("active");
         menuCloseAll.classList.remove('active');
         list.classList.remove('active');
+        menuToggle.classList.remove('open');
 
     })
 
@@ -52,6 +53,7 @@ window.addEventListener('load',function () {
         menuopen.classList.remove("active");
         menuCloseAll.classList.remove('active');
         list.classList.remove('active');
+        menuToggle.classList.remove('open');
 
     })
 
@@ -61,6 +63,7 @@ window.addEventListener('load',function () {
         menuopen.classList.remove("active");
         menuCloseAll.classList.remove('active');
         list.classList.remove('active');
+        menuToggle.classList.remove('open');
 
     })
 
