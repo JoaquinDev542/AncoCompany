@@ -20,6 +20,8 @@ window.addEventListener('load',function () {
     let menuclose = document.querySelector(".menuClose")
     let menuCloseAll = document.querySelector(".menuCloseAll");
     let list = document.querySelector(".list");
+    let menuToggle = document.querySelector(".menu-toggle");
+
 
     menuopen.addEventListener('click', function () {
 
@@ -27,6 +29,7 @@ window.addEventListener('load',function () {
         menuopen.classList.toggle('active');
         menuCloseAll.classList.toggle('active');
         list.classList.toggle('active');
+        menuToggle.classList.toggle('open');
     })
 
     // Menu Responsive Links
@@ -49,7 +52,7 @@ window.addEventListener('load',function () {
         menuopen.classList.remove("active");
         menuCloseAll.classList.remove('active');
         list.classList.remove('active');
-        
+
     })
 
     contactLink.addEventListener('click' , function () {
