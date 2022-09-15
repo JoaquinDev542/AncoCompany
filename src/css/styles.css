@@ -628,9 +628,6 @@ strong {
 .quotesContainerContent {
     position: var(--value-relative , relative);
     text-align: var(--value-center , center);
-    /* background-color: var(--purple , #B833FF); */
-    /* background-color: #9e47de; */
-    /* background-color: #9063be; */
     border-radius: 5px;
     border: 1px solid  ;
     padding: 20px 15px;
