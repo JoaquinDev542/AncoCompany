@@ -339,7 +339,7 @@ strong {
 /* menuClose Section */
 .menuClose {
     position: var(--value-relative , relative);
-    top: -800px;
+    transform: translate(-100%);
     opacity: 0;
 }
 
@@ -706,7 +706,8 @@ strong {
     font-weight: 100;
     background-color:var(--black , #121212);
     opacity: 1;
-    transition: top 1s cubic-bezier(.62,.54,.76,.94) , opacity .5s cubic-bezier(.62,.54,.85,.72);
+    transform: translate(0);
+    transition: transform 1s cubic-bezier(.62,.54,.76,.94) , opacity .5s cubic-bezier(.62,.54,.85,.72);
 }
 
 .menuCloseAll.active {
