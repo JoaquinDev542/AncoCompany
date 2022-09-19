@@ -88,26 +88,6 @@ window.addEventListener('load',function () {
 
     })
 
-    // Show Elements Section scroll
-    // let workProjectFirst = document.querySelector(".workProject--first");
-    // let workProjectSecond = document.querySelector(".workProject--second");
-    // let workProjectThird = document.querySelector(".workProject--third");
-    // let workProjectFourth = document.querySelector(".workProject--fourth");
-    // let workProjectFifth = document.querySelector(".workProject--fifth");
-
-    // function mostrarScroll() {  
-    //     let scrollTop = document.documentElement.scrollTop;
-    //     if (workProjectFirst.offsetTop < scrollTop) {
-    //         workProjectFirst.style.display = 'none';
-    //     }
-    // }
-
-    // window.addEventListener('scoll', mostrarScroll);
-
-    // console.log(document.documentElement.scrollTop);
-    // let alturaproyect = workProjectFirst.offsetTop;
-    // console.log(alturaproyect);
-
     // Quotes Section
 
     let quotesContainerArrowsLeft = document.querySelector(".quotesContainerArrowsLeft");
@@ -156,7 +136,6 @@ window.addEventListener('load',function () {
 
             quotesContainerBoxFirst.style.display = "none";
             quotesContainerBoxSecond.style.display = "block";
-            // console.log(getComputedStyle(quotesContainerBoxFirst).getPropertyValue("display"));
 
         } else if (getComputedStyle(quotesContainerBoxSecond).getPropertyValue("display") == "block"){
 
