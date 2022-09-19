@@ -1,3 +1,17 @@
+// Changing the defaults
+// window.sr = ScrollReveal({ reset: true });
+
+// Customizing a reveal set
+// sr.reveal('div', {duration:2000});
+
+// sr.reveal('.aboutGeneralContent__title', { delay: 100 });
+// sr.reveal('.workProject--first', { delay: 100 });
+// sr.reveal('.workProject--second', {delay: 100}, { viewFactor: 0 });
+// sr.reveal('.workProject--third', {delay: 100}, { viewFactor: 0 });
+// sr.reveal('.workProject--fourth', {delay: 100}, { viewFactor: 0 });
+// sr.reveal('.workProject--fifth', {delay: 100}, { viewFactor: 0 });
+// sr.reveal('.workProject--sixth', {delay: 100}, { viewFactor: 0 });
+
 // Loader
 window.addEventListener('load',function () {
 
@@ -80,12 +94,6 @@ window.addEventListener('load',function () {
     // let workProjectThird = document.querySelector(".workProject--third");
     // let workProjectFourth = document.querySelector(".workProject--fourth");
     // let workProjectFifth = document.querySelector(".workProject--fifth");
-
-    ScrollReveal().reveal('.workProject--first');
-    ScrollReveal().reveal('.workProject--second');
-    ScrollReveal().reveal('.workProject--third');
-    ScrollReveal().reveal('.workProject--fourth');
-    ScrollReveal().reveal('.workProject--fifth');
 
     // function mostrarScroll() {  
     //     let scrollTop = document.documentElement.scrollTop;
