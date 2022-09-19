@@ -1,17 +1,3 @@
-// Changing the defaults
-// window.sr = ScrollReveal({ reset: true });
-
-// Customizing a reveal set
-// sr.reveal('div', {duration:2000});
-
-// sr.reveal('.aboutGeneralContent__title', { delay: 100 });
-// sr.reveal('.workProject--first', { delay: 100 });
-// sr.reveal('.workProject--second', {delay: 100}, { viewFactor: 0 });
-// sr.reveal('.workProject--third', {delay: 100}, { viewFactor: 0 });
-// sr.reveal('.workProject--fourth', {delay: 100}, { viewFactor: 0 });
-// sr.reveal('.workProject--fifth', {delay: 100}, { viewFactor: 0 });
-// sr.reveal('.workProject--sixth', {delay: 100}, { viewFactor: 0 });
-
 // Loader
 window.addEventListener('load',function () {
 
@@ -20,7 +6,7 @@ window.addEventListener('load',function () {
 
     main.classList.add("hide");
 
-    const myTimeout = setTimeout(myGreeting, 1000);
+    setTimeout(myGreeting, 2000);
 
     function myGreeting() {
 
@@ -88,6 +74,26 @@ window.addEventListener('load',function () {
 
     })
 
+    // Show Elements Section scroll
+    // let workProjectFirst = document.querySelector(".workProject--first");
+    // let workProjectSecond = document.querySelector(".workProject--second");
+    // let workProjectThird = document.querySelector(".workProject--third");
+    // let workProjectFourth = document.querySelector(".workProject--fourth");
+    // let workProjectFifth = document.querySelector(".workProject--fifth");
+
+    // function mostrarScroll() {  
+    //     let scrollTop = document.documentElement.scrollTop;
+    //     if (workProjectFirst.offsetTop < scrollTop) {
+    //         workProjectFirst.style.display = 'none';
+    //     }
+    // }
+
+    // window.addEventListener('scoll', mostrarScroll);
+
+    // console.log(document.documentElement.scrollTop);
+    // let alturaproyect = workProjectFirst.offsetTop;
+    // console.log(alturaproyect);
+
     // Quotes Section
 
     let quotesContainerArrowsLeft = document.querySelector(".quotesContainerArrowsLeft");
@@ -98,9 +104,40 @@ window.addEventListener('load',function () {
     let quotesContainerBoxFourth = document.querySelector(".quotesContainerBox--fourth");
     let quotesContainerBoxFifth = document.querySelector(".quotesContainerBox--fifth");
 
-    quotesContainerArrowsLeft.addEventListener('click', function () {  
+    setInterval(QuoteTransitionFirst, 5000);
 
-        quotesContainerBoxFifth.classList.add("active");
+    function QuoteTransitionFirst() {
+
+        if ((getComputedStyle(quotesContainerBoxFirst).getPropertyValue("display")) == "block"){
+
+            quotesContainerBoxFirst.style.display = "none";
+            quotesContainerBoxSecond.style.display = "block";
+ 
+        } else if (getComputedStyle(quotesContainerBoxSecond).getPropertyValue("display") == "block"){
+
+            quotesContainerBoxSecond.style.display = "none";
+            quotesContainerBoxThird.style.display = "block";
+
+        } else if (getComputedStyle(quotesContainerBoxThird).getPropertyValue("display") == "block"){
+    
+            quotesContainerBoxThird.style.display = "none";
+            quotesContainerBoxFourth.style.display = "block";
+
+        } else if (getComputedStyle(quotesContainerBoxFourth).getPropertyValue("display") == "block"){
+    
+            quotesContainerBoxFourth.style.display = "none";
+            quotesContainerBoxFifth.style.display = "block";
+
+        } else if (getComputedStyle(quotesContainerBoxFifth).getPropertyValue("display") == "block"){
+
+            quotesContainerBoxFifth.style.display = "none";
+            quotesContainerBoxFirst.style.display = "block";
+
+        }
+
+    } 
+
+    quotesContainerArrowsLeft.addEventListener('click', function () {  
 
         if ((getComputedStyle(quotesContainerBoxFirst).getPropertyValue("display")) == "block"){
 
@@ -131,7 +168,7 @@ window.addEventListener('load',function () {
     })
 
     quotesContainerArrowsRight.addEventListener('click', function () {  
-
+        
         if ((getComputedStyle(quotesContainerBoxFirst).getPropertyValue("display")) == "block"){
 
             quotesContainerBoxFirst.style.display = "none";
