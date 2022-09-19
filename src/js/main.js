@@ -102,8 +102,8 @@ window.addEventListener('load',function () {
 
     // Quotes Section
 
-    let quotesContainerArrowsLeft = document.getElementById("quotesContainerArrowsLeft");
-    let quotesContainerArrowsRight = document.getElementById("quotesContainerArrowsRight");
+    let quotesContainerArrowsLeft = document.querySelector(".quotesContainerArrowsLeft");
+    let quotesContainerArrowsRight = document.querySelector(".quotesContainerArrowsRight");
     let quotesContainerBoxFirst = document.querySelector(".quotesContainerBox--first");
     let quotesContainerBoxSecond = document.querySelector(".quotesContainerBox--second");
     let quotesContainerBoxThird = document.querySelector(".quotesContainerBox--third");
@@ -111,6 +111,8 @@ window.addEventListener('load',function () {
     let quotesContainerBoxFifth = document.querySelector(".quotesContainerBox--fifth");
 
     quotesContainerArrowsLeft.addEventListener('click', function () {  
+
+        quotesContainerBoxFifth.classList.add("active");
 
         if ((getComputedStyle(quotesContainerBoxFirst).getPropertyValue("display")) == "block"){
 
@@ -141,7 +143,7 @@ window.addEventListener('load',function () {
     })
 
     quotesContainerArrowsRight.addEventListener('click', function () {  
-        
+
         if ((getComputedStyle(quotesContainerBoxFirst).getPropertyValue("display")) == "block"){
 
             quotesContainerBoxFirst.style.display = "none";
