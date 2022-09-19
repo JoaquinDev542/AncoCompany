@@ -620,44 +620,24 @@ strong {
     margin: 100px 0 30px 0;
 }
 
-.quotesContainerBox--first {
+ .quotesContainerBox--first {
     display: var(--value-block , block);
-}
-
-.quotesContainerBox--first.hidden {
-    display: var(--value-none , none);
 }
 
 .quotesContainerBox--second {
     display: var(--value-none , none);
 }
 
-.quotesContainerBox--second.show {
-    display: var(--value-block , block);
-}
-
 .quotesContainerBox--third {
     display: var(--value-none , none);
-}
-
-.quotesContainerBox--third.show {
-    display: var(--value-block , block);
 }
 
 .quotesContainerBox--fourth {
     display: var(--value-none , none);
 }
 
-.quotesContainerBox--fourth.show {
-    display: var(--value-block , block);
-}
-
 .quotesContainerBox--fifth {
     display: var(--value-none , none);
-}
-
-.quotesContainerBox--fifth.show {
-    display: var(--value-block , block);
 }
 
 .quotesContainerContent {
