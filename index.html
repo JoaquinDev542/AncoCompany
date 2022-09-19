@@ -8,6 +8,7 @@
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
     <link rel="stylesheet" href="./src/css/normalize.css">
     <link rel="stylesheet" href="./src/css/styles.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body class="body">
 
@@ -111,7 +112,7 @@
 
                 <div class="heroContentImgs">
 
-                    <img src="./assets/image/le-gusta-a-miguel.jpg" alt="" class="heroContentImgs__img">
+                    <img src="./assets/image/hero.jpg" alt="" class="heroContentImgs__img">
 
                     <model-viewer src="./assets/image/Nave_alien.glb" class="Model__3D" camera-controls disable-zoom></model-viewer>
 
@@ -690,37 +691,9 @@
 
     </main>
 
-    <script src="https://unpkg.com/scrollreveal"></script>
 
     <script>
-        ScrollReveal({
-            distance: '100px',
-            duration: 1500,
-            delay: 100
-        })
-        
-        ScrollReveal().reveal('.heroContentImgs__img');
-        ScrollReveal().reveal('.aboutGeneralContent__title', {origin: 'left'});
-        ScrollReveal().reveal('.aboutContent__paragraph--SR-first' , {delay: '500'});
-        ScrollReveal().reveal('.aboutContent__paragraph--SR-second' , {delay: '1000'});
-        ScrollReveal().reveal('.aboutContent__paragraph--SR-third' , {delay: '1500'});
-        ScrollReveal().reveal('.aboutContent__paragraph--SR-fourth' , {delay: '2000'});
-        ScrollReveal().reveal('.informationContentFirst__paragraph--SR-first');
-        ScrollReveal().reveal('.informationContentContainer--SR-first');
-        ScrollReveal().reveal('.informationContentContainer--SR-second');
-        ScrollReveal().reveal('.informationContentContainer--SR-third');
-        ScrollReveal().reveal('.workLink', {origin: 'left'});
-        ScrollReveal().reveal('.workProject--first' );
-        ScrollReveal().reveal('.workProject--second');
-        ScrollReveal().reveal('.workProject--third');
-        ScrollReveal().reveal('.workProject--fourth');
-        ScrollReveal().reveal('.workProject--fifth');
-        ScrollReveal().reveal('.workProject--sixth');
-        ScrollReveal().reveal('.quotesContainerTitles', {origin: 'left'});
-        ScrollReveal().reveal('.quotesContainerBoxs');
-        ScrollReveal().reveal('.quotesContainerArrows');
-        ScrollReveal().reveal('.contact');
-        
+    
     </script>
 
 </body>

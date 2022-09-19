@@ -429,7 +429,6 @@ strong {
     background-color: #121212;
     object-fit: cover;
     filter: blur(3px);
-    /* backdrop-filter: saturate(90%); */
 }
 
 .Model__3D {
@@ -622,25 +621,7 @@ strong {
 
 .quotesContainerBox--first {
     display: var(--value-block , block);
-    /* position: relative; */
 }
-
-/* .quotesContainerBox--first::after {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-color: red;
-    opacity: 1;
-    transition: 1s opacity;
-} */
-
-/* .quotesContainerArrowsLeft .quotesContainerBox--first::after {
-    opacity: 0;
-    transition: 1s opacity;
-} */
 
 .quotesContainerBox--second {
     display: var(--value-none , none);

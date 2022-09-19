@@ -1,19 +1,49 @@
 // Loader
 window.addEventListener('load',function () {
 
+    
     // Loading 
     let main = document.querySelector('main')
-
+    
     main.classList.add("hide");
-
+    
     setTimeout(myGreeting, 2000);
-
+    
     function myGreeting() {
-
+        
         document.querySelector(".loaderContainer").classList.add("active");
         main.classList.remove("hide");
-    
+        
     } 
+
+    // Scroll Reveal
+    ScrollReveal({
+        distance: '100px',
+        duration: 1500,
+        delay: 100
+    })
+    
+    ScrollReveal().reveal('.heroContentImgs__img');
+    ScrollReveal().reveal('.aboutGeneralContent__title', {origin: 'left'});
+    ScrollReveal().reveal('.aboutContent__paragraph--SR-first' , {delay: '500'});
+    ScrollReveal().reveal('.aboutContent__paragraph--SR-second' , {delay: '1000'});
+    ScrollReveal().reveal('.aboutContent__paragraph--SR-third' , {delay: '1500'});
+    ScrollReveal().reveal('.aboutContent__paragraph--SR-fourth' , {delay: '2000'});
+    ScrollReveal().reveal('.informationContentFirst__paragraph--SR-first');
+    ScrollReveal().reveal('.informationContentContainer--SR-first');
+    ScrollReveal().reveal('.informationContentContainer--SR-second');
+    ScrollReveal().reveal('.informationContentContainer--SR-third');
+    ScrollReveal().reveal('.workLink', {origin: 'left'});
+    ScrollReveal().reveal('.workProject--first' );
+    ScrollReveal().reveal('.workProject--second');
+    ScrollReveal().reveal('.workProject--third');
+    ScrollReveal().reveal('.workProject--fourth');
+    ScrollReveal().reveal('.workProject--fifth');
+    ScrollReveal().reveal('.workProject--sixth');
+    ScrollReveal().reveal('.quotesContainerTitles', {origin: 'left'});
+    ScrollReveal().reveal('.quotesContainerBoxs');
+    ScrollReveal().reveal('.quotesContainerArrows');
+    ScrollReveal().reveal('.contact');
 
     // Menu Reponsive
     let menuopen = document.querySelector(".menuOpen")
