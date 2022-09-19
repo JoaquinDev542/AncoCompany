@@ -4,12 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Porfolio</title>
-    <script src="https://unpkg.com/scrollreveal"></script>
     <script type="module" src="./src/js/main.js"></script>
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
     <link rel="stylesheet" href="./src/css/normalize.css">
     <link rel="stylesheet" href="./src/css/styles.css">
-
 </head>
 <body class="body">
 
@@ -216,7 +214,7 @@
     
                 <div class="aboutContent">
     
-                    <p class="aboutContent__paragraph aboutContent__paragraph--margin paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro reiciendis officiis pariatur similique id amet consequatur ipsum, laudantium qui deleniti harum aliquam inventore. At excepturi </p>
+                    <p class="aboutContent__paragraph aboutContent__paragraph--margin paragraph aboutContent__paragraph--SR-first">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro reiciendis officiis pariatur similique id amet consequatur ipsum, laudantium qui deleniti harum aliquam inventore. At excepturi </p>
     
                     <div class="aboutContent__container">
     
@@ -224,11 +222,11 @@
     
                         <div class="aboutContentParagraph">
     
-                            <p class="aboutContent__paragraph paragraph ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro reiciendis officiis pariatur similique id amet consequatur ipsumebitis voluptatem amet non possimus.</p>
+                            <p class="aboutContent__paragraph paragraph aboutContent__paragraph--SR-second">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro reiciendis officiis pariatur similique id amet consequatur ipsumebitis voluptatem amet non possimus.</p>
     
-                            <p class="aboutContent__paragraph paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro reiciendis officiis pariatur similique id amet consequatur ipsum, laudantium qui deleniti harum aliquam inventore. At excepturi debitis voluptatem amet non possimus.</p>
+                            <p class="aboutContent__paragraph paragraph aboutContent__paragraph--SR-third">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro reiciendis officiis pariatur similique id amet consequatur ipsum, laudantium qui deleniti harum aliquam inventore. At excepturi debitis voluptatem amet non possimus.</p>
         
-                            <p class="aboutContent__paragraph aboutContent__paragraph--margin-bottom paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro reiciendis officiis pariatur similique id amet consequatur ipsum, simus.</p>
+                            <p class="aboutContent__paragraph aboutContent__paragraph--margin-bottom paragraph aboutContent__paragraph--SR-fourth">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro reiciendis officiis pariatur similique id amet consequatur ipsum, simus.</p>
     
                         </div>
     
@@ -244,7 +242,7 @@
     
                     <div class="informationContentFirst">
     
-                        <p class="informationContentFirst__paragraph paragraph informationContent--padding informationParagraph ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ullam quo dicta ea quae? Asperiores facilis, ipsum molestiae suscipit quasi, maiores voluptates, ducimus quae voluptate commodi fugiat est aut repudiandae.</p>
+                        <p class="informationContentFirst__paragraph paragraph informationContent--padding informationParagraph informationContentFirst__paragraph--SR-first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ullam quo dicta ea quae? Asperiores facilis, ipsum molestiae suscipit quasi, maiores voluptates, ducimus quae voluptate commodi fugiat est aut repudiandae.</p>
     
                         <img src="" alt="" class="informationContentFirst__img">
     
@@ -252,7 +250,7 @@
     
                     <div class="informationContentSecond">
     
-                        <div class="informationContentContainer informationContent--padding ">
+                        <div class="informationContentContainer informationContent--padding informationContentContainer--SR-first">
     
                             <div class="informationContentContainerTitles">
     
@@ -266,7 +264,7 @@
     
                         </div>
     
-                        <div class="informationContentContainer informationContent--padding ">
+                        <div class="informationContentContainer informationContent--padding informationContentContainer--SR-second">
     
                             <div class="informationContentContainerTitles">
     
@@ -280,7 +278,7 @@
     
                         </div>
     
-                        <div class="informationContentContainer informationContent--padding ">
+                        <div class="informationContentContainer informationContent--padding informationContentContainer--SR-third">
     
                             <div class="informationContentContainerTitles">
     
@@ -691,6 +689,39 @@
         </div>
 
     </main>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script>
+        ScrollReveal({
+            reset: true,
+            distance: '200px',
+            duration: 1500,
+            delay: 500
+        })
+
+        ScrollReveal().reveal('.heroContentImgs__img');
+        ScrollReveal().reveal('.aboutGeneralContent__title', {origin: 'left'});
+        ScrollReveal().reveal('.aboutContent__paragraph--SR-first');
+        ScrollReveal().reveal('.aboutContent__paragraph--SR-second');
+        ScrollReveal().reveal('.aboutContent__paragraph--SR-third');
+        ScrollReveal().reveal('.aboutContent__paragraph--SR-fourth');
+        ScrollReveal().reveal('.informationContentFirst__paragraph--SR-first');
+        ScrollReveal().reveal('.informationContentContainer--SR-first');
+        ScrollReveal().reveal('.informationContentContainer--SR-second');
+        ScrollReveal().reveal('.informationContentContainer--SR-third');
+        ScrollReveal().reveal('.workLink', {origin: 'left'});
+        ScrollReveal().reveal('.workProject--first');
+        ScrollReveal().reveal('.workProject--second');
+        ScrollReveal().reveal('.workProject--third');
+        ScrollReveal().reveal('.workProject--fourth');
+        ScrollReveal().reveal('.workProject--fifth');
+        ScrollReveal().reveal('.workProject--sixth');
+        ScrollReveal().reveal('.quotesContainerTitles', {origin: 'left'});
+        ScrollReveal().reveal('.quotesContainerBoxs');
+        ScrollReveal().reveal('.quotesContainerArrows');
+        ScrollReveal().reveal('.contact');
+    </script>
 
 </body>
 </html>
