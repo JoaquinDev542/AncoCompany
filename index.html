@@ -3,12 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Porfolio</title>
-    <script type="module" src="./src/js/main.js"></script>
-    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
     <link rel="stylesheet" href="./src/css/normalize.css">
     <link rel="stylesheet" href="./src/css/styles.css">
+    
+    
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    
+    <script type="module" src="./src/js/main.js"></script>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- meta tags aca SEO / ICONS etc etc -->
+
 </head>
 <body class="body">
 
@@ -104,15 +116,13 @@
 
                 <div class="heroContentContainer">
 
-                    <h1 class="herotitle fs-title">FREELANCERS FRONT-END WEB <span class="color--green">DEVELOPERS</span></h1>
+                    <h1 class=" fs-title herotitle">FREELANCERS FRONT-END WEB <span class="color--green">DEVELOPERS</span></h1>
 
                     <a href="#contact" class="heroContentContainer__btn btn">Contact Us!</a>
 
                 </div>
 
                 <div class="heroContentImgs">
-
-                    <img src="./assets/image/hero.jpg" alt="" class="heroContentImgs__img">
 
                     <model-viewer src="./assets/image/Nave_alien.glb" class="Model__3D" camera-controls disable-zoom></model-viewer>
 
@@ -122,23 +132,24 @@
 
             <footer class="heroFooter">
 
-                <div class="socialMedia">
+                <div class="socialMedia--hero">
 
                     <ul class="socialMediaList">
+                      
                         <li class="socialMediaList__item">
-                            <a href="#" class="socialMediaList__link"><img src="./assets/image/icons/instagram.png" alt=""></a>
+                            <a href="#" class="socialMediaList__link"><img src="./assets/image/icons/instagram.svg" class="socialMediaList__img" alt=""></a>
                         </li>
 
                         <li class="socialMediaList__item">
-                            <a href="#" class="socialMediaList__link"><img src="./assets/image/icons/github.png" alt=""></a>
+                            <a href="#" class="socialMediaList__link"><img src="./assets/image/icons/github.svg" class="socialMediaList__img" alt=""></a>
                         </li>
 
                         <li class="socialMediaList__item">
-                            <a href="#" class="socialMediaList__link"><img src="./assets/image/icons/twiter.png" alt=""></a>
+                            <a href="#" class="socialMediaList__link"><img src="./assets/image/icons/twitter.svg" class="socialMediaList__img" alt=""></a>
                         </li>
 
                         <li class="socialMediaList__item">
-                            <a href="#" class="socialMediaList__link"><img src="./assets/image/icons/linkedin.png" alt=""></a>
+                            <a href="#" class="socialMediaList__link"><img src="./assets/image/icons/linkedin.svg" class="socialMediaList__img" alt=""></a>
                         </li>
 
                     </ul>
@@ -395,8 +406,6 @@
     
                 <div class="workProjects">
     
-                    <div class="workProjectsFirst workProjectsNumberContainer">
-    
                         <article class="workProject workProject--first">
                         
                             <h3 class="workProject__title">Bookers Club</h3>
@@ -426,10 +435,6 @@
                             <a href="#" class="workProject__link color--white">See Project</a>
         
                         </article>
-    
-                    </div>
-    
-                    <div class="workProjectsSecond workProjectsNumberContainer">
     
                         <article class="workProject workProject--fourth">
                         
@@ -461,9 +466,6 @@
                             <a href="#" class="workProject__link color--white">See Project</a>
         
                         </article>
-        
-    
-                    </div>
     
                 </div>
     
@@ -607,9 +609,9 @@
 
                     <div class="quotesContainerArrows">
 
-                        <img src="./assets/image/icons/arrowRightQuote.svg" alt="" class="quotesContainerArrows__img quotesContainerArrowsLeft">
+                        <div class="arrow left quotesContainerArrowsLeft"></div>
 
-                        <img src="./assets/image/icons/arrowLeftQuotes.svg" alt="" class="quotesContainerArrows__img quotesContainerArrowsRight" >
+                        <div class="arrow right quotesContainerArrowsRight"></div>
 
                     </div>
 
@@ -654,23 +656,24 @@
     
                     <div class="socialMedia socialMedia--footer">
 
-                        <ul class="socialMediaList">
+                        <ul class="socialMediaList socialMediaList--footer">
+                      
                             <li class="socialMediaList__item">
-                                <a href="#" class="socialMediaList__link"><img src="./assets/image/icons/instagram.png" alt=""></a>
+                                <a href="#" class="socialMediaList__link"><img src="./assets/image/icons/instagram.svg" class="socialMediaList__img" alt=""></a>
                             </li>
-
+    
                             <li class="socialMediaList__item">
-                                <a href="#" class="socialMediaList__link"><img src="./assets/image/icons/github.png" alt=""></a>
+                                <a href="#" class="socialMediaList__link"><img src="./assets/image/icons/github.svg" class="socialMediaList__img" alt=""></a>
                             </li>
-
+    
                             <li class="socialMediaList__item">
-                                <a href="#" class="socialMediaList__link"><img src="./assets/image/icons/twiter.png" alt=""></a>
+                                <a href="#" class="socialMediaList__link"><img src="./assets/image/icons/twitter.svg" class="socialMediaList__img" alt=""></a>
                             </li>
-
+    
                             <li class="socialMediaList__item">
-                                <a href="#" class="socialMediaList__link"><img src="./assets/image/icons/linkedin.png" alt=""></a>
+                                <a href="#" class="socialMediaList__link"><img src="./assets/image/icons/linkedin.svg" class="socialMediaList__img" alt=""></a>
                             </li>
-
+    
                         </ul>
                     
                     </div>
@@ -690,11 +693,6 @@
         </div>
 
     </main>
-
-
-    <script>
-    
-    </script>
 
 </body>
 </html>

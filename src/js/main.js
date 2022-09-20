@@ -23,12 +23,11 @@ window.addEventListener('load',function () {
         delay: 100
     })
     
-    ScrollReveal().reveal('.heroContentImgs__img');
     ScrollReveal().reveal('.aboutGeneralContent__title', {origin: 'left'});
     ScrollReveal().reveal('.aboutContent__paragraph--SR-first' , {delay: '500'});
     ScrollReveal().reveal('.aboutContent__paragraph--SR-second' , {delay: '1000'});
-    ScrollReveal().reveal('.aboutContent__paragraph--SR-third' , {delay: '1500'});
-    ScrollReveal().reveal('.aboutContent__paragraph--SR-fourth' , {delay: '2000'});
+    ScrollReveal().reveal('.aboutContent__paragraph--SR-third' , {delay: '1000'});
+    ScrollReveal().reveal('.aboutContent__paragraph--SR-fourth' , {delay: '1000'});
     ScrollReveal().reveal('.informationContentFirst__paragraph--SR-first');
     ScrollReveal().reveal('.informationContentContainer--SR-first');
     ScrollReveal().reveal('.informationContentContainer--SR-second');
@@ -103,26 +102,6 @@ window.addEventListener('load',function () {
         menuToggle.classList.remove('open');
 
     })
-
-    // Show Elements Section scroll
-    // let workProjectFirst = document.querySelector(".workProject--first");
-    // let workProjectSecond = document.querySelector(".workProject--second");
-    // let workProjectThird = document.querySelector(".workProject--third");
-    // let workProjectFourth = document.querySelector(".workProject--fourth");
-    // let workProjectFifth = document.querySelector(".workProject--fifth");
-
-    // function mostrarScroll() {  
-    //     let scrollTop = document.documentElement.scrollTop;
-    //     if (workProjectFirst.offsetTop < scrollTop) {
-    //         workProjectFirst.style.display = 'none';
-    //     }
-    // }
-
-    // window.addEventListener('scoll', mostrarScroll);
-
-    // console.log(document.documentElement.scrollTop);
-    // let alturaproyect = workProjectFirst.offsetTop;
-    // console.log(alturaproyect);
 
     // Quotes Section
 
