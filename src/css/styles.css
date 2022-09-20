@@ -893,6 +893,16 @@ strong {
         padding: var(--fs-padding-tablet , 10px 50px);
     }
 
+    /* About Section */
+    .about {
+        min-height: 100vh;
+    }
+    
+    /* Information Section */
+    .information {
+        min-height: 100vh;
+    }
+
     /* Work Section */
     .workProjects {
         grid-template-columns: 1fr 1fr;
@@ -904,6 +914,10 @@ strong {
     }
 
     /* Quotes Section */
+    .quotes {
+        min-height: 100vh;
+    }
+
     .quotesContainerContent {
         padding: 75px 50px;
     }
@@ -923,16 +937,6 @@ strong {
         width: 65%;
         margin: 0 auto;
         line-height: 1.25;
-    }
-
-    /* AAA */
-
-    .hero , .about , .information , .work , .quotes{
-        min-height: 100vh;
-    }
-
-    .work {
-        /* margin-top: 100px; */
     }
 
 }
