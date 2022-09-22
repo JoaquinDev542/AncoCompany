@@ -422,15 +422,6 @@ strong {
     top: 150px;
     left: 15px;
     right: 15px;
-    opacity: var(--fs-zero , 0);
-    animation: heroContentContainer .8s ease-in-out forwards .8s;
-}
-
-@keyframes heroContentContainer {
-
-    100% {
-        opacity: 1;
-    }
 }
 
 .heroContentContainer__btn {
@@ -450,7 +441,7 @@ strong {
 }
 
 /* SocialMedia Section */
-.socialMedia {
+.socialMedia--hero {
     display: var(--value-none , none);
 }
 
@@ -462,16 +453,6 @@ strong {
     display:  var(--value-flex , flex);
     align-items: var(--value-center , center);
     justify-content: var(--value-center , center);
-    opacity: var(--fs-zero , 0);
-    animation: scrollZoneAnimation .8s ease-in-out forwards 2.4s;
-}
-
-@keyframes scrollZoneAnimation {
-
-    100% {
-        opacity: 1;
-    }
-
 }
 
 .scrollZone__text {
@@ -880,8 +861,6 @@ strong {
         position: var(--value-absolute , absolute);
         bottom: 10px;
         left: 50px;
-        opacity: var(--fs-zero , 0);
-        animation: scrollZoneAnimation .8s ease-in-out forwards 2.4s;
     }
 
     .scrollZone {
