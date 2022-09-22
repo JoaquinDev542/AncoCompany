@@ -23,11 +23,14 @@ window.addEventListener('load',function () {
         delay: 100
     })
     
+    ScrollReveal().reveal('.fs-title', {origin: 'left'});
+    ScrollReveal().reveal('.heroContentContainer__btn', {delay: '500', origin: 'left'});
+    ScrollReveal().reveal('.scrollZone', {delay: '1000', origin: 'right'});
     ScrollReveal().reveal('.aboutGeneralContent__title', {origin: 'left'});
     ScrollReveal().reveal('.aboutContent__paragraph--SR-first' , {delay: '500'});
-    ScrollReveal().reveal('.aboutContent__paragraph--SR-second' , {delay: '1000'});
+    ScrollReveal().reveal('.aboutContent__paragraph--SR-second');
     ScrollReveal().reveal('.aboutContent__paragraph--SR-third' , {delay: '1000'});
-    ScrollReveal().reveal('.aboutContent__paragraph--SR-fourth' , {delay: '1000'});
+    ScrollReveal().reveal('.aboutContent__paragraph--SR-fourth');
     ScrollReveal().reveal('.informationContentFirst__paragraph--SR-first');
     ScrollReveal().reveal('.informationContentContainer--SR-first');
     ScrollReveal().reveal('.informationContentContainer--SR-second');
