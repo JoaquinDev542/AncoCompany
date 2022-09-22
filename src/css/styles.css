@@ -840,6 +840,43 @@ strong {
 
 /* Tablet Size */
 
+@media screen and (min-width:375px) and (orientation:landscape) {
+
+    /* Hero Section */
+    .heroContentContainer {
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    /* Work Section */
+    .workProjects {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .workProject__img {
+        height: 275px;
+        object-fit: var(--value-cover , cover);
+        filter: grayscale(.5);
+    }
+
+    /* Quotes Section */
+    .quotesContainerContent {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    /* Contact Section */
+    .contactInformation {
+        width: 70%;
+        margin: 0 auto;
+    }
+    
+    .contactInformation__btn {
+        width: auto;
+        padding: 12px 30px;
+    }
+}
+
 @media screen and (min-width:480px) {
 
     /* Hero Section */
@@ -856,7 +893,18 @@ strong {
 
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width:768px) and (orientation:landscape) {
+
+    /* Elementos mas pequeños */
+    /* work img mas pequeñas */
+    /* work grid 1fr 1fr */
+
+    .fs-title {
+        /* font-size: 1rem; */
+    }
+}
+
+@media screen and (min-width:768px) and (orientation:portrait) {
 
     /* Font-size Section */
     .fs-title {
