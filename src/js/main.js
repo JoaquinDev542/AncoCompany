@@ -23,11 +23,8 @@ window.addEventListener('load',function () {
         delay: 100
     })
     
-    // ScrollReveal().reveal('.fs-title', {origin: 'left'});
     ScrollReveal().reveal('.fs-title');
-    // ScrollReveal().reveal('.heroContentContainer__btn', {delay: '500', origin: 'left'});
     ScrollReveal().reveal('.heroContentContainer__btn');
-    // ScrollReveal().reveal('.scrollZone', {delay: '500', origin: 'right'});
     ScrollReveal().reveal('.scrollZone');
     ScrollReveal().reveal('.aboutGeneralContent__title', {origin: 'left'});
     ScrollReveal().reveal('.aboutContent__paragraph--SR-first' , {delay: '500'});
