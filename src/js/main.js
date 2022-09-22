@@ -7,14 +7,14 @@ window.addEventListener('load',function () {
     
     main.classList.add("hide");
     
-    setTimeout(myGreeting, 2000);
+    // setTimeout(myGreeting, 2000);
     
-    function myGreeting() {
+    // function myGreeting() {
         
         document.querySelector(".loaderContainer").classList.add("active");
         main.classList.remove("hide");
         
-    } 
+    // } 
 
     // Scroll Reveal
     ScrollReveal({
