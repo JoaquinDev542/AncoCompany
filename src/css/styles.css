@@ -61,7 +61,6 @@ body {
     font-size: var(--fs-16px , 16px);
     font-family: var(--ff-paragraph , 'Rubik');
     background-color: var(--black , #121212);
-    /* background-color: red; */
 }
 
 img {
@@ -190,11 +189,11 @@ strong {
 @keyframes arrowAnimation {
 
     0% , 100%{
-        transform: translateY( var(--fs-zero , 0));
+        transform: translateX( var(--fs-zero , 0));
     }
 
     50% {
-        transform: translateY( 10px);
+        transform: translateX( 10px);
 
     }
 }
@@ -442,10 +441,6 @@ strong {
     transition-property: color , background-color;
 }
 
-.Model__3D {
-    display: var(--value-none , none);
-}
-
 /* SocialMedia Section */
 .socialMedia--hero {
     display: var(--value-none , none);
@@ -463,6 +458,10 @@ strong {
 
 .scrollZone__text {
     margin-right: 10px;
+}
+
+.arrowLink__img {
+    rotate: 90deg;
 }
 
 /* menuCloseAll Section */
@@ -835,6 +834,10 @@ strong {
     transition: .5s clip-path ;
 }
 
+.madeBy__img {
+    rotate: -90deg;
+    margin-bottom: -9px;
+}
 
 /* Tablet Size */
 
