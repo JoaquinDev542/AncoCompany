@@ -17,35 +17,35 @@ window.addEventListener('load',function () {
     // } 
 
     // Scroll Reveal
-    ScrollReveal({
-        distance: '100px',
-        duration: 1500,
-        delay: 100
-    })
+    // ScrollReveal({
+    //     distance: '100px',
+    //     duration: 1500,
+    //     delay: 100
+    // })
     
-    ScrollReveal().reveal('.fs-title');
-    ScrollReveal().reveal('.heroContentContainer__btn');
-    ScrollReveal().reveal('.scrollZone');
-    ScrollReveal().reveal('.aboutGeneralContent__title', {origin: 'left'});
-    ScrollReveal().reveal('.aboutContent__paragraph--SR-first' , {delay: '500'});
-    ScrollReveal().reveal('.aboutContent__paragraph--SR-second');
-    ScrollReveal().reveal('.aboutContent__paragraph--SR-third' , {delay: '1000'});
-    ScrollReveal().reveal('.aboutContent__paragraph--SR-fourth');
-    ScrollReveal().reveal('.informationContentFirst__paragraph--SR-first');
-    ScrollReveal().reveal('.informationContentContainer--SR-first');
-    ScrollReveal().reveal('.informationContentContainer--SR-second');
-    ScrollReveal().reveal('.informationContentContainer--SR-third');
-    ScrollReveal().reveal('.workLink', {origin: 'left'});
-    ScrollReveal().reveal('.workProject--first' );
-    ScrollReveal().reveal('.workProject--second');
-    ScrollReveal().reveal('.workProject--third');
-    ScrollReveal().reveal('.workProject--fourth');
-    ScrollReveal().reveal('.workProject--fifth');
-    ScrollReveal().reveal('.workProject--sixth');
-    ScrollReveal().reveal('.quotesContainerTitles', {origin: 'left'});
-    ScrollReveal().reveal('.quotesContainerBoxs');
-    ScrollReveal().reveal('.quotesContainerArrows');
-    ScrollReveal().reveal('.contact');
+    // ScrollReveal().reveal('.fs-title');
+    // ScrollReveal().reveal('.heroContentContainer__btn');
+    // ScrollReveal().reveal('.scrollZone');
+    // ScrollReveal().reveal('.aboutGeneralContent__title', {origin: 'left'});
+    // ScrollReveal().reveal('.aboutContent__paragraph--SR-first' , {delay: '500'});
+    // ScrollReveal().reveal('.aboutContent__paragraph--SR-second');
+    // ScrollReveal().reveal('.aboutContent__paragraph--SR-third' , {delay: '1000'});
+    // ScrollReveal().reveal('.aboutContent__paragraph--SR-fourth');
+    // ScrollReveal().reveal('.informationContentFirst__paragraph--SR-first');
+    // ScrollReveal().reveal('.informationContentContainer--SR-first');
+    // ScrollReveal().reveal('.informationContentContainer--SR-second');
+    // ScrollReveal().reveal('.informationContentContainer--SR-third');
+    // ScrollReveal().reveal('.workLink', {origin: 'left'});
+    // ScrollReveal().reveal('.workProject--first' );
+    // ScrollReveal().reveal('.workProject--second');
+    // ScrollReveal().reveal('.workProject--third');
+    // ScrollReveal().reveal('.workProject--fourth');
+    // ScrollReveal().reveal('.workProject--fifth');
+    // ScrollReveal().reveal('.workProject--sixth');
+    // ScrollReveal().reveal('.quotesContainerTitles', {origin: 'left'});
+    // ScrollReveal().reveal('.quotesContainerBoxs');
+    // ScrollReveal().reveal('.quotesContainerArrows');
+    // ScrollReveal().reveal('.contact');
 
     // Menu Reponsive
     let menuopen = document.querySelector(".menuOpen")
