@@ -55,7 +55,7 @@
         --text-color:var(--white);
         --page-background-color:var(--black);
     }
-    
+
 }
 
 @media screen and (prefers-color-scheme: light) {
