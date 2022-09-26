@@ -408,6 +408,7 @@ strong {
 
 .darkMode__img {
     width: 50px;
+    cursor: pointer;
 }
 
 .darkMode.active {
