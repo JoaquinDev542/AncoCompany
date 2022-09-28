@@ -54,7 +54,7 @@ window.addEventListener('load',function () {
     let menuCloseAll = document.querySelector(".menuCloseAll");
     let list = document.querySelector(".list");
     let darkMode = document.querySelector(".darkMode");
-
+    let languages = document.querySelector(".languages");
     let menuToggle = document.querySelector(".menu-toggle");
     let menuLinkFirst = document.querySelector(".list__link--first");
     let menuLinkSecond = document.querySelector(".list__link--second");
@@ -68,6 +68,7 @@ window.addEventListener('load',function () {
         menuCloseAll.classList.toggle('active');
         list.classList.toggle('active');
         darkMode.classList.toggle('active');
+        languages.classList.toggle('active');
         menuToggle.classList.toggle('open');
         menuLinkFirst.classList.toggle('active');
         menuLinkSecond.classList.toggle('active');
@@ -87,6 +88,7 @@ window.addEventListener('load',function () {
         menuCloseAll.classList.remove('active');
         list.classList.remove('active');
         darkMode.classList.remove('active');
+        languages.classList.remove('active');
         menuToggle.classList.remove('open');
 
     })
@@ -98,6 +100,7 @@ window.addEventListener('load',function () {
         menuCloseAll.classList.remove('active');
         list.classList.remove('active');
         darkMode.classList.remove('active');
+        languages.classList.remove('active');
         menuToggle.classList.remove('open');
 
     })
@@ -109,6 +112,7 @@ window.addEventListener('load',function () {
         menuCloseAll.classList.remove('active');
         list.classList.remove('active');
         darkMode.classList.remove('active');
+        languages.classList.remove('active');
         menuToggle.classList.remove('open');
 
     })
