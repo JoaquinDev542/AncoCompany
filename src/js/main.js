@@ -216,4 +216,21 @@ window.addEventListener('load',function () {
         }
 
     })
+    
+    // let body = document.body;
+    // console.log (dark);
+
+    // darkMode.addEventListener('click', function () {
+
+    //     let dark = window.matchMedia("(prefers-color-scheme: dark)");
+
+    //     console.log (dark);
+
+    //     if(dark.matches) {
+    //         body.setAttribute('data-theme', 'red');
+    //     } else {
+    //         alert('cambio a dark');
+    //     }
+    // })
+    
 })
