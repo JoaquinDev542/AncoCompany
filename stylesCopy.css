@@ -349,18 +349,6 @@
         font-size: 6rem;
     }
     
-    .socialMedia--hero {
-        left: 3.125em;
-    }
-
-    .socialMediaList__item {
-        margin-right: 0.825em;
-    }
-
-    .scrollZone {
-        right: 3.125em;
-    }
-
     /* About Section */
     .aboutGeneral {
         height: calc(100vh - 125px);

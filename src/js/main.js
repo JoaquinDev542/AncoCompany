@@ -23,20 +23,18 @@ window.addEventListener('load',function () {
         delay: 100
     })
     
-    ScrollReveal().reveal('.fs-title');
+    ScrollReveal().reveal('.fs-title' , {origin: 'left'});
     ScrollReveal().reveal('.heroContentContainer__btn');
     ScrollReveal().reveal('.scrollZone');
     ScrollReveal().reveal('.socialMedia--hero');
-    ScrollReveal().reveal('.aboutGeneralContent__title', {origin: 'left'});
-    ScrollReveal().reveal('.aboutContent__paragraph--SR-first' , {delay: '500'});
-    ScrollReveal().reveal('.aboutContent__paragraph--SR-second');
-    ScrollReveal().reveal('.aboutContent__paragraph--SR-third' , {delay: '1000'});
-    ScrollReveal().reveal('.aboutContent__paragraph--SR-fourth');
+    ScrollReveal().reveal('.aboutContentContainer__paragraph--SR-first');
+    ScrollReveal().reveal('aboutContentContainer__paragraph--SR-second');
+    ScrollReveal().reveal('aboutContentContainer__paragraph--SR-third');
+    ScrollReveal().reveal('aboutContentContainer__paragraph--SR-fourth');
     ScrollReveal().reveal('.informationContentFirst__paragraph--SR-first');
     ScrollReveal().reveal('.informationContentContainer--SR-first');
     ScrollReveal().reveal('.informationContentContainer--SR-second');
     ScrollReveal().reveal('.informationContentContainer--SR-third');
-    ScrollReveal().reveal('.workLink', {origin: 'left'});
     ScrollReveal().reveal('.workProject--first' );
     ScrollReveal().reveal('.workProject--second');
     ScrollReveal().reveal('.workProject--third');
