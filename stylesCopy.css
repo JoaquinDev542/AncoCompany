@@ -283,18 +283,6 @@
 /* Portatil Size */
 @media screen and (min-width:64em) {
 
-
-    /* Work Section */
-    .work__title--italic {
-        margin-bottom: 1.5em;
-    }
-
-    .workProjects {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-
-
-
     /* Quotes Section */
     /* Contact Section */
     /* .contact {

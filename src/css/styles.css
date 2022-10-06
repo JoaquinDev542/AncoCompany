@@ -828,6 +828,10 @@ strong {
         padding: var(--fs-padding-portatil , 0.625em 4.6875em);
     }
 
+    .herotitle {
+        font-size: var(--fs-heroTitle-portatil , 6rem);
+    }
+
     /* About Section */
     .aboutGeneralContent {
         position: var(--value-relative , relative);
@@ -893,6 +897,10 @@ strong {
     }
 
     /* Work Section */
+    .work {
+        padding: var(--fs-padding-portatil , 0.625em 4.6875em);
+    }
+
     .workProjects {
         grid-template-columns: 1fr 1fr 1fr;
     } 
