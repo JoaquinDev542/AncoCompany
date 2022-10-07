@@ -486,15 +486,13 @@ strong {
 }
   
 .wave--first {
-    background: url(/assets/image/icons/wave.svg) repeat-x; 
     transform: rotate(180deg);
-    position: var(--value-absolute , absolute);
     top: var(--fs-zero , 0);
     left: var(--fs-zero , 0);
 }
   
 .wave {
-    background: url(/assets/image/icons/wave.svg) repeat-x; 
+    background: url(../assets/image/icons/wave.svg) repeat-x; 
     position: var(--value-absolute , absolute);
     bottom: -25px;
     width: 6400px;
