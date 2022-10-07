@@ -492,7 +492,7 @@ strong {
 }
   
 .wave {
-    background: url("././assets/image/wave.svg") repeat-x; 
+    background: url("/assets/image/wave.svg") repeat-x; 
     position: var(--value-absolute , absolute);
     bottom: -25px;
     width: 6400px;
