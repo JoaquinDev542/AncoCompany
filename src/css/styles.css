@@ -696,14 +696,18 @@ strong {
 
 /* Footer / Contact Section */
 .contact {
-    position: var(--value-relative , relative);
     display: var(--value-flex , flex);
-    align-items: var(--value-center , center);
-    justify-content: var(--value-center , center);
-    flex-direction: var(--value-column , column);
     gap: 25px;
+    flex-direction: var(--value-column , column);
     padding: var(--fs-padding-mobile);
     margin-top: 6.25rem;
+}
+
+.contactInformationAndLinksContainer {
+    display: var(--value-flex , flex);
+    gap: 25px;
+    align-items: var(--value-center , center);
+    flex-direction: var(--value-column , column);
 }
 
 .contactInformation {
@@ -727,6 +731,12 @@ strong {
 .linksItems__link {
     color: var(--text-color);
     transition: .5s color;
+}
+
+.socialMediaAndCopyrightContainer {
+    display: var(--value-flex , flex);
+    flex-direction: var(--value-column , column);
+    gap: 25px;
 }
 
 .socialMediaList {
@@ -825,8 +835,61 @@ strong {
     }
 
     /* Footer / Contact Section */
-    /* .contact {
+    .contact {
         padding:var(--fs-padding-tablet , 0.625em 3.125em) ;
+    }
+
+    .contactInformationAndLinksContainer {
+        display: var(--value-flex , flex);
+        gap: 25px;
+        /* align-items: initial; */
+        /* flex-direction: var(--value-row , row); */
+        /* background-color: red; */
+    }
+    
+    /* .contactInformation {
+        text-align: var(--value-center , center);
+        max-width: 375px;
+    }
+     */
+    /* .contactInformation__logo {
+        width: 100px;
+        margin: 0 auto;
+    } */
+    
+    .links {
+        text-align: left;
+    }
+
+    .linksItems {
+        display: var(--value-flex , flex);
+    }
+    
+    .linksItems__item {
+        margin: 0 0 0 15px;
+    }
+    
+    /* .linksItems__link {
+        color: var(--text-color);
+        transition: .5s color;
+    } */
+
+    .socialMediaAndCopyrightContainer {
+        display: var(--value-flex , flex);
+        align-items: var(--value-center , center);
+        justify-content: space-between;
+        gap: var(--fs-zero , 0);
+        flex-direction: var(--value-row , row);
+    }
+    
+    .socialMediaList__item {
+        margin-right: 0.9375rem;
+    }
+    
+    .contactCopyright {
+        padding: 0;
+    }
+    /* .contact {
         margin-top: 6.25em;
         gap: 50px;
     }
@@ -993,7 +1056,6 @@ strong {
     /*  Footer / Contact Section*/
     /* .contact {
         padding: var(--fs-padding-portatil , 0.625em 4.6875em);
-        margin-top: 6.25em;
     } */
     
 }
