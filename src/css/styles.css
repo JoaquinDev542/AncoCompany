@@ -230,6 +230,20 @@ strong {
    }
 }
 
+.arrow {
+    position: var(--value-fixed , fixed);
+    bottom: 3em;
+    /* top: 90%; */
+    right: 0.9375em;
+    display: var(--value-flex ,flex);
+    align-items: var(--value-center , center);
+    justify-content: var(--value-center , center);
+    background-color: #252525;
+    padding: 10px ;
+    border-radius: 2px;
+    z-index: 150;
+}
+
 /* Hero Section */
 .hero {
     position: var(--value-relative , relative);
@@ -791,6 +805,11 @@ strong {
         font-size: var(--fs-marquee-tablet , 2.25rem);
     }
 
+    /* Arrow Section */
+    .arrow {
+        right: 3.125em;
+    }
+
     /* Header Section */
     .header {
         padding: var(--fs-padding-tablet , 0.625em 3.125em);
@@ -840,20 +859,7 @@ strong {
     .contactInformationAndLinksContainer {
         display: var(--value-flex , flex);
         gap: 25px;
-        /* align-items: initial; */
-        /* flex-direction: var(--value-row , row); */
-        /* background-color: red; */
     }
-    
-    /* .contactInformation {
-        text-align: var(--value-center , center);
-        max-width: 375px;
-    }
-     */
-    /* .contactInformation__logo {
-        width: 100px;
-        margin: 0 auto;
-    } */
     
     .links {
         text-align: left;
@@ -866,11 +872,6 @@ strong {
     .linksItems__item {
         margin: 0 0 0 15px;
     }
-    
-    /* .linksItems__link {
-        color: var(--text-color);
-        transition: .5s color;
-    } */
 
     .socialMediaAndCopyrightContainer {
         display: var(--value-flex , flex);
@@ -887,24 +888,16 @@ strong {
     .contactCopyright {
         padding: 0;
     }
-    /* .contact {
-        margin-top: 6.25em;
-        gap: 50px;
-    }
-
-    .linksItems {
-        display: var(--value-flex , flex);
-    }
-    
-    .linksItems__item {
-        margin-bottom: var(--fs-zero , 0);
-        margin-right: 25px;
-    } */
 
 }
 
 /* Portatil Size */
 @media screen and (min-width:64em) {
+
+    /* Arrow Section */
+    .arrow {
+        right: 4.6875em;
+    }
     
     /* Header Section */
     .header {
@@ -1051,11 +1044,6 @@ strong {
         margin-bottom: 1.5em;
     }
 
-    /*  Footer / Contact Section*/
-    /* .contact {
-        padding: var(--fs-padding-portatil , 0.625em 4.6875em);
-    } */
-    
 }
 
 /* Pc Size */
@@ -1090,19 +1078,5 @@ strong {
     .linksItems__link:hover {
         color: var(--green);
     }
-
-    /* .arrow:hover {
-        border-color: var(--green);
-        box-shadow: 0.5vmin -0.5vmin 0 white;
-    }
-
-    .contactInformation__btn:hover {
-        color:#121212;
-        border: 1px solid var(--green , #B4ED07);
-        background-color: var(--green , #B4ED07);
-        border-radius: 1.875em;
-        font-style: var(--value-italic , italic);
-    } */
     
 }
-
