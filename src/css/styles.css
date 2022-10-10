@@ -665,7 +665,6 @@ strong {
 
 .workProject__img:hover {
     filter: grayscale(.5);
-    
 }
 
 .workProject__img:hover .workProjectLinks{
