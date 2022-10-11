@@ -16,6 +16,18 @@ window.addEventListener('load',function () {
         
     // } 
 
+    // Arrow Section
+    window.onscroll = function(){
+        // console.log(document.documentElement.scrollTop);
+        if(document.documentElement.scrollTop > 400){
+            document.querySelector(".arrow")
+            .classList.add('active');
+        } else {
+            document.querySelector(".arrow")
+            .classList.remove('active'); 
+        }
+    }
+
     // Scroll Reveal
     ScrollReveal({
         distance: '100px',

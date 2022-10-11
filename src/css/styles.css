@@ -231,6 +231,12 @@ strong {
 }
 
 .arrow {
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
+
+.arrow.active {
+    opacity: 1;
     position: var(--value-fixed , fixed);
     bottom: 3em;
     /* top: 90%; */
@@ -902,6 +908,7 @@ strong {
     /* Footer / Contact Section */
     .contact {
         padding:var(--fs-padding-tablet , 0.625em 3.125em) ;
+        background-color: red;
     }
 
     .contactInformationAndLinksContainer {
