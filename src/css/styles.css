@@ -687,6 +687,7 @@ strong {
     align-items: var(--value-center , center);
     justify-content: var(--value-center , center);
     margin-top: 0.625em;
+    transition: .5s transform;
 }
 
 .workProjectLinks::after {
