@@ -713,15 +713,19 @@ strong {
 
 .asideContainer {
     border-radius: 10px;
-    background-color: red;
-    padding: 20px 10px;
+    background-color: #25252567;
+    padding: 50px 10px;
     display: flex;
     flex-direction: column;
     gap: 25px;
+    text-align: var(--value-center , center);
 }
 
 .aside__title {
     margin: var(--fs-zero , 0);
+    font-size: 1.75em;
+    text-transform: var(--value-uppercase , uppercase);
+    line-height: var(--value-lineHeight , 1.5);
 }
 
 .aside__paragraph {
@@ -729,7 +733,15 @@ strong {
 }
 
 .aside__btn {
-
+    display: var(--value-inline-block , inline-block);
+    align-self: var(--value-center , center);
+    padding: 0.75em 1.875em;
+    color: var(--green , #B4ED07);
+    border: 1px solid var(--green , #B4ED07);
+    border-radius: 1.875em;
+    font-style: var(--value-italic , italic);
+    transition-duration: .5s;
+    transition-property: color , background-color;
 }
 
 /* Footer / Contact Section */
@@ -739,7 +751,6 @@ strong {
     flex-direction: var(--value-column , column);
     padding: var(--fs-padding-mobile);
     margin-top: 6.25rem;
-    background-color: green;
 }
 
 .contactInformationAndLinksContainer {
@@ -876,6 +887,16 @@ strong {
 
     .workProject__img {
         height: 375px;
+    }
+
+    /* Aside Section */
+    .aside {
+        padding: var(--fs-padding-tablet , 0.625em 3.125em);
+    }
+
+    .aside__paragraph {
+        width: 85%;
+        margin: var(--fs-zero , 0) var(--value-auto , auto);
     }
 
     /* Footer / Contact Section */
@@ -1071,6 +1092,11 @@ strong {
         margin-bottom: 1.5em;
     }
 
+    /* Aside Section */
+    .aside {
+        padding: var(--fs-padding-portatil , 0.625em 4.6875em);
+    }
+
 }
 
 /* Pc Size */
@@ -1100,6 +1126,12 @@ strong {
     
     .workProjectLinks:hover {
         transform: translateX(-0.3125em);
+    }
+
+    .aside__btn:hover {
+        border: 1px solid var(--green , #B4ED07);
+        background-color: var(--green , #B4ED07);
+        color:#121212;
     }
 
     .linksItems__link:hover {
