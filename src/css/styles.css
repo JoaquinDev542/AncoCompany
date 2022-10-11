@@ -238,16 +238,13 @@ strong {
 .arrow.active {
     opacity: 1;
     position: var(--value-fixed , fixed);
-    /* bottom: 3em; */
-    top: 90%;
+    bottom: 3em;
+    padding: 10px;
     right: 0.9375em;
-    display: var(--value-flex ,flex);
-    align-items: var(--value-center , center);
-    justify-content: var(--value-center , center);
     background-color: #252525;
-    padding: 10px ;
-    border-radius: 2px;
+    border-radius: 6px;
     z-index: 150;
+    cursor: pointer;
 }
 
 /* Hero Section */
