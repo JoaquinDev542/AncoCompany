@@ -705,6 +705,33 @@ strong {
     color: var(--text-color);
 }
 
+/* Aside Section */
+.aside {
+    padding: var(--fs-padding-mobile);
+    margin-top: 6.25rem;
+}
+
+.asideContainer {
+    border-radius: 10px;
+    background-color: red;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.aside__title {
+    margin: var(--fs-zero , 0);
+}
+
+.aside__paragraph {
+    margin: var(--fs-zero , 0);
+}
+
+.aside__btn {
+
+}
+
 /* Footer / Contact Section */
 .contact {
     display: var(--value-flex , flex);
@@ -712,6 +739,7 @@ strong {
     flex-direction: var(--value-column , column);
     padding: var(--fs-padding-mobile);
     margin-top: 6.25rem;
+    background-color: green;
 }
 
 .contactInformationAndLinksContainer {
