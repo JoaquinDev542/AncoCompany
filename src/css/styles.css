@@ -236,7 +236,7 @@ strong {
     bottom: 2em;
     right: 0.9375em;
     padding: 15px;
-    background-color: var(--white);
+    background-color:#252525 ;
     border-radius: 3px;
     z-index: 150;
     cursor: pointer;
