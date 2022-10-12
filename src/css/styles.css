@@ -232,19 +232,21 @@ strong {
 
 .arrow {
     opacity: 0;
-    transition: opacity 2s ease-in-out;
+    position: var(--value-fixed , fixed);
+    bottom: 2em;
+    right: 2em;
+    padding: 15px;
+    background-color: var(--white);
+    border-radius: 3px;
+    z-index: 150;
+    cursor: pointer;
+    transform: translateY(100px);
+    transition: 0.5s;
 }
 
 .arrow.active {
-    opacity: 1;
-    position: var(--value-fixed , fixed);
-    bottom: 3em;
-    padding: 10px;
-    right: 0.9375em;
-    background-color: #252525;
-    border-radius: 6px;
-    z-index: 150;
-    cursor: pointer;
+    transform: translateY(0);
+    opacity: 0.9;
 }
 
 /* Hero Section */
@@ -381,12 +383,9 @@ strong {
 
 /* menuClose Section */
 .menuClose {
-    position: var(--value-relative , relative);
-    transform: translate(-100%);
     opacity: var(--fs-zero , 0);
-}
-
-.menuClose.active {
+    position: var(--value-relative , relative);
+    transform: translateX(-100%);
     z-index: 200;
     position: var(--value-absolute , absolute);
     top: var(--fs-zero , 0);
@@ -400,9 +399,12 @@ strong {
     height: 100vh;
     font-weight: 100;
     background-color:#121212;
+    transition: transform 1s cubic-bezier(.62,.54,.76,.94) , opacity .3s cubic-bezier(.62,.54,.85,.72);
+}
+
+.menuClose.active {
     opacity: 1;
-    transform: translate(0);
-    transition: transform 1s cubic-bezier(.62,.54,.76,.94) , opacity .5s cubic-bezier(.62,.54,.85,.72);
+    transform: translateX(0);
 }
 
 .list {
@@ -960,20 +962,15 @@ strong {
     } 
 
     .menuClose {
-        display: var(--value-flex , flex);
-        align-items: var(--value-center , center);
-        gap: 3.75em;
-        opacity: 1;
-        transform: translate(0%);
-    }
-
-    .menuClose.active {
         position: var(--value-relative , relative);
         top: var(--value-initial , initial);
         left: var(--value-initial , initial);
         display: var(--value-flex , flex);
+        gap: 3.75em;
         flex-direction: var(--value-row , row);
         height: var(--value-auto , auto);
+        opacity: 1;
+        transform: translate(0%);
     }
 
     .list.active {
