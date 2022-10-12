@@ -17,15 +17,20 @@ window.addEventListener('load',function () {
     // } 
 
     // Arrow Section
+    arrow = document.getElementById("arr")
+
     window.onscroll = function(){
-        // console.log(document.documentElement.scrollTop);
-        if(document.documentElement.scrollTop > 400){
-            document.querySelector(".arrow")
-            .classList.add('active');
+        add_btn_scrolltop()
+        //add btn on scroll
+    }
+
+    const add_btn_scrolltop = function(){
+        console.log(document.documentElement.scrollTop);
+        if(document.documentElement.scrollTop >= 200){
+            arrow.classList.add('active');
         } else {
-            document.querySelector(".arrow")
-            .classList.remove('active'); 
-        }
+            arrow.classList.remove('active'); 
+        }    
     }
 
     // Scroll Reveal
