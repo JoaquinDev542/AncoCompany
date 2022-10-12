@@ -234,7 +234,7 @@ strong {
     opacity: 0;
     position: var(--value-fixed , fixed);
     bottom: 2em;
-    right: 2em;
+    right: 0.9375em;
     padding: 15px;
     background-color: var(--white);
     border-radius: 3px;
