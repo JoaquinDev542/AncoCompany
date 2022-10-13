@@ -710,6 +710,93 @@ strong {
     color: var(--text-color);
 }
 
+/* FormContainer Section */
+.formContainer {
+    padding: var(--fs-padding-mobile);
+    margin-top: 6.25rem;
+}
+
+.formContainerPadding {
+    background-color: #25252567;
+    padding: 15px 20px;
+    border-radius: 10px;
+}
+
+.formContainer__img {
+    display: var(--value-none , none);
+}
+
+.form {
+    display: var(--value-grid , grid);
+    padding: 1.5625em 0;
+    gap: 1.25em;
+}
+
+.form__title {
+    font-size: 1.75rem;
+}
+
+.form__group {
+    position: var(--value-relative , relative);
+}
+
+.input {
+    width: 100%;
+    padding: 0.75em 0.4375em;
+    border: var(--value-none , none);
+    outline: var(--value-none , none);
+    background-color: var(--value-transparent , transparent);
+    border-bottom: 1px solid var(--text-color);
+    color: var(--text-color);
+}
+
+.textarea {
+    min-height: 150px;
+    resize: vertical;
+    border: var(--value-none , none);
+    outline: var(--value-none , none);
+    background-color: var(--value-transparent , transparent);
+    border: 1px solid var(--text-color);
+    color: var(--text-color);
+}
+
+.input:focus + .form__label , .input:not(:placeholder-shown) + .form__label {
+    transform: translateY(-12px) scale(.7);
+    transform-origin: left top;
+    color: var(--green);
+}
+
+.form__label {
+    position: var(--value-absolute , absolute);
+    cursor: pointer;
+    top: var(--fs-zero , 0);
+    left: 5px;
+    color: var(--text-color);
+    transform: translateY(10px);
+    transition: transform .5s, color .3s;
+}
+
+.form__line {
+    position: var(--value-absolute , absolute);
+    bottom: var(--fs-zero , 0);
+    left: var(--fs-zero , 0);
+    width: 100%;
+    height: 1px;
+    background-color: var(--green);
+    transform-origin: left bottom;
+    transform: scale(0);
+    transition: transform .4s;
+}
+
+.input:focus ~ .form__line , .input:not(:placeholder-shown) ~ .form__line {
+    transform: scale(1);
+}
+
+.form__btn {
+    padding: 0.4375em 0;
+    margin-bottom: 0.9375em;
+}
+
 /* Aside Section */
 .aside {
     padding: var(--fs-padding-mobile);
