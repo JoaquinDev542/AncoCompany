@@ -40,18 +40,20 @@ window.addEventListener('load',function () {
         delay: 100
     })
     
-    ScrollReveal().reveal('.fs-title' , {origin: 'left'});
+    ScrollReveal().reveal('.header', {origin: 'top'});
+    ScrollReveal().reveal('.herotitle' , {origin: 'left'});
+    ScrollReveal().reveal('.wave');
     ScrollReveal().reveal('.heroContentContainer__btn');
     ScrollReveal().reveal('.scrollZone');
     ScrollReveal().reveal('.socialMedia--hero');
-    ScrollReveal().reveal('.aboutContentContainer__paragraph--SR-first');
-    ScrollReveal().reveal('aboutContentContainer__paragraph--SR-second');
-    ScrollReveal().reveal('aboutContentContainer__paragraph--SR-third');
-    ScrollReveal().reveal('aboutContentContainer__paragraph--SR-fourth');
-    ScrollReveal().reveal('.informationContentFirst__paragraph--SR-first');
-    ScrollReveal().reveal('.informationContentContainer--SR-first');
-    ScrollReveal().reveal('.informationContentContainer--SR-second');
-    ScrollReveal().reveal('.informationContentContainer--SR-third');
+    ScrollReveal().reveal('.aboutContentContainer__paragraph--SR-first', {origin: 'left'});
+    ScrollReveal().reveal('.aboutContentContainer__paragraph--SR-second', {origin: 'left'});
+    ScrollReveal().reveal('.aboutContentContainer__paragraph--SR-third', {origin: 'left'});
+    ScrollReveal().reveal('.aboutContentContainer__paragraph--SR-fourth', {origin: 'left'});
+    // ScrollReveal().reveal('.informationContentFirst__paragraph--SR-first'); No existe
+    ScrollReveal().reveal('.informationContentContainer--SR-first' , {delay: 200});
+    ScrollReveal().reveal('.informationContentContainer--SR-second' , {delay: 400});
+    ScrollReveal().reveal('.informationContentContainer--SR-third' , {delay: 600});
     ScrollReveal().reveal('.workProject--first' );
     ScrollReveal().reveal('.workProject--second');
     ScrollReveal().reveal('.workProject--third');
@@ -61,7 +63,7 @@ window.addEventListener('load',function () {
     ScrollReveal().reveal('.quotesContainerTitles', {origin: 'left'});
     ScrollReveal().reveal('.quotesContainerBoxs');
     ScrollReveal().reveal('.quotesContainerArrows');
-    ScrollReveal().reveal('.contact');
+    // ScrollReveal().reveal('.contact');
 
     // Menu Reponsive
     let menuopen = document.querySelector(".menuOpen")
