@@ -51,12 +51,12 @@ window.addEventListener('load',function () {
     ScrollReveal().reveal('.informationContentContainer--SR-first' , {delay: 200});
     ScrollReveal().reveal('.informationContentContainer--SR-second' , {delay: 400});
     ScrollReveal().reveal('.informationContentContainer--SR-third' , {delay: 600});
-    ScrollReveal().reveal('.workProject--first' );
-    ScrollReveal().reveal('.workProject--second');
-    ScrollReveal().reveal('.workProject--third');
-    ScrollReveal().reveal('.workProject--fourth');
-    ScrollReveal().reveal('.workProject--fifth');
-    ScrollReveal().reveal('.workProject--sixth');
+    ScrollReveal().reveal('.workProject--first' , {delay: 200});
+    ScrollReveal().reveal('.workProject--second', {delay: 400});
+    ScrollReveal().reveal('.workProject--third', {delay: 600});
+    ScrollReveal().reveal('.workProject--fourth', {delay: 200});
+    ScrollReveal().reveal('.workProject--fifth', {delay: 400});
+    ScrollReveal().reveal('.workProject--sixth', {delay: 600});
 
     // Menu Reponsive
     let menuopen = document.querySelector(".menuOpen")
