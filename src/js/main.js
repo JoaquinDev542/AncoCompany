@@ -60,9 +60,9 @@ window.addEventListener('load',function () {
     ScrollReveal().reveal('.workProject--fourth');
     ScrollReveal().reveal('.workProject--fifth');
     ScrollReveal().reveal('.workProject--sixth');
-    ScrollReveal().reveal('.quotesContainerTitles', {origin: 'left'});
-    ScrollReveal().reveal('.quotesContainerBoxs');
-    ScrollReveal().reveal('.quotesContainerArrows');
+    // ScrollReveal().reveal('.quotesContainerTitles', {origin: 'left'});
+    // ScrollReveal().reveal('.quotesContainerBoxs');
+    // ScrollReveal().reveal('.quotesContainerArrows');
     // ScrollReveal().reveal('.contact');
 
     // Menu Reponsive
