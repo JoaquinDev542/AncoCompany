@@ -2,6 +2,8 @@
     --black:90deg, rgba(18,18,18,1) 0%, #191919 100%;
     --white:#F5F5F5;
     --green:#B4ED07;
+    --gray:#25252567;
+    --lightwhite:#cacaca;
     --whatsappColor:#25D366;
 
     --fs-zero:0;
@@ -61,6 +63,7 @@
     :root {
         --text-color:var(--white);
         --page-background-color:var(--black);
+        --bgSections: var(--gray);
     }
 
 }
@@ -69,7 +72,8 @@
     
     :root {
         --page-background-color:var(--lightWhite);
-        --text-color:var(--black );
+        --text-color:var(--black);
+        --bgSections: var(--lightwhite);
     }
 
 }
@@ -233,7 +237,7 @@ strong {
 .arrow {
     opacity: 0;
     position: var(--value-fixed , fixed);
-    bottom: 2em;
+    bottom: 3em;
     right: 0.9375em;
     padding: 15px;
     background-color:#252525 ;
@@ -607,7 +611,7 @@ strong {
     gap: 20px;
     padding: 2.5em 10px;
     border: 1px solid #F5F5F505;
-    background-color: #25252567;
+    background-color: var(--bgSections);
     border-radius: 10px;
     max-width: 400px;
 }
@@ -717,9 +721,9 @@ strong {
 }
 
 .formContainerPadding {
-    background-color: #25252567;
     padding: 15px 20px;
     border-radius: 10px;
+    background-color: var(--gray);
 }
 
 .formContainer__img {
@@ -728,11 +732,12 @@ strong {
 
 .form {
     display: var(--value-grid , grid);
-    padding: 1.5625em 0;
     gap: 1.25em;
+    padding: 1.5625em 0;
 }
 
 .form__title {
+    margin-bottom: var(--fs-zero , 0);
     font-size: 1.75rem;
 }
 
@@ -805,7 +810,7 @@ strong {
 
 .asideContainer {
     border-radius: 10px;
-    background-color: #25252567;
+    background-color: var(--bgSections);
     padding: 50px 10px;
     display: flex;
     flex-direction: column;
@@ -979,6 +984,11 @@ strong {
 
     .workProjectImg {
         height: 375px;
+    }
+
+    /* FormContainer Section */
+    .formContainer {
+        padding: var(--fs-padding-tablet , 0.625em 3.125em);
     }
 
     /* Aside Section */
@@ -1177,6 +1187,15 @@ strong {
 
     .workTitles__title--italic {
         margin-bottom: 1.5em;
+    }
+
+    /* FormContainer Section */
+    .formContainer {
+        padding: var(--fs-padding-portatil , 0.625em 4.6875em);
+    }
+
+    .form {
+        display: var(--value-grid , grid);
     }
 
     /* Aside Section */
