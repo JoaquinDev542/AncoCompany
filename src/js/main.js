@@ -35,28 +35,28 @@ window.addEventListener('load',function () {
 
     // Scroll Reveal
     ScrollReveal({
-        distance: '100px',
-        duration: 1500,
-        delay: 100
+        distance: '50px',
+        duration: 1000,
+        delay: 50
     })
-    
+
     ScrollReveal().reveal('.header', {origin: 'top'});
     ScrollReveal().reveal('.herotitle' , {origin: 'left'});
     ScrollReveal().reveal('.heroContentContainer__btn');
     ScrollReveal().reveal('.wave');
-    ScrollReveal().reveal('.aboutContentContainer__paragraph--SR-first', {origin: 'left'});
-    ScrollReveal().reveal('.aboutContentContainer__paragraph--SR-second', {origin: 'left'});
-    ScrollReveal().reveal('.aboutContentContainer__paragraph--SR-third', {origin: 'left'});
+    ScrollReveal().reveal('.aboutContentContainerparagraph--SR-first', {origin: 'left'});
+    ScrollReveal().reveal('.aboutContentContainerparagraph--SR-second', {origin: 'left'});
+    ScrollReveal().reveal('.aboutContentContainerparagraph--SR-third', {origin: 'left'});
     ScrollReveal().reveal('.aboutContentContainer__paragraph--SR-fourth', {origin: 'left'});
     ScrollReveal().reveal('.informationContentContainer--SR-first' , {delay: 200});
     ScrollReveal().reveal('.informationContentContainer--SR-second' , {delay: 400});
     ScrollReveal().reveal('.informationContentContainer--SR-third' , {delay: 600});
-    ScrollReveal().reveal('.workProject--first' , {delay: 200});
-    ScrollReveal().reveal('.workProject--second', {delay: 400});
-    ScrollReveal().reveal('.workProject--third', {delay: 600});
-    ScrollReveal().reveal('.workProject--fourth', {delay: 200});
-    ScrollReveal().reveal('.workProject--fifth', {delay: 400});
-    ScrollReveal().reveal('.workProject--sixth', {delay: 600});
+    ScrollReveal().reveal('.workProject--first' );
+    ScrollReveal().reveal('.workProject--second');
+    ScrollReveal().reveal('.workProject--third');
+    ScrollReveal().reveal('.workProject--fourth');
+    ScrollReveal().reveal('.workProject--fifth');
+    ScrollReveal().reveal('.workProject--sixth');
 
     // Menu Reponsive
     let menuopen = document.querySelector(".menuOpen")
@@ -85,6 +85,18 @@ window.addEventListener('load',function () {
         menuLinkThird.classList.toggle('active');
 
     })
+
+    function myFunction(x) {
+        if (x.matches) { // If media query matches
+            menuCloseAll.classList.remove('active');
+        } else {
+            menuCloseAll.classList.add('active');
+        }
+      }
+
+      var x = window.matchMedia("(max-width: 1024px)")
+      myFunction(x) // Call listener function at run time
+      x.addEventListener(myFunction) // Attach listener function on state changes
 
     // Menu Responsive Links
     let workLink = document.querySelector("#workLink");
