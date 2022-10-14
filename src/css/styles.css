@@ -907,15 +907,10 @@ strong {
 }
 
 .aside__btn {
-    display: var(--value-inline-block , inline-block);
+    outline: none;
+    border: none;
     align-self: var(--value-center , center);
-    padding: 0.75em 1.875em;
-    color: var(--green , #B4ED07);
-    border: 1px solid var(--green , #B4ED07);
-    border-radius: 1.875em;
-    font-style: var(--value-italic , italic);
-    transition-duration: .5s;
-    transition-property: color , background-color;
+    cursor: pointer;
 }
 
 /* Footer / Contact Section */
@@ -1318,12 +1313,6 @@ strong {
     
     .workProjectLinks:hover {
         transform: translateX(-0.3125em);
-    }
-
-    .aside__btn:hover {
-        border: 1px solid var(--green , #B4ED07);
-        background-color: var(--green , #B4ED07);
-        color:#121212;
     }
 
     .linksItems__link:hover {
