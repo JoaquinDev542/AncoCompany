@@ -25,7 +25,7 @@ window.addEventListener('load',function () {
     }
 
     const add_btn_scrolltop = function(){
-        console.log(document.documentElement.scrollTop);
+        // console.log(document.documentElement.scrollTop);
         if(document.documentElement.scrollTop >= 200){
             arrow.classList.add('active');
         } else {
@@ -85,19 +85,24 @@ window.addEventListener('load',function () {
         menuLinkThird.classList.toggle('active');
 
     })
-
-    function myFunction(x) {
-        if (x.matches) { // If media query matches
+    
+    const mediaQuery = '(max-width: 1024px)';
+    const mediaQueryList = window.matchMedia(mediaQuery);
+    
+    mediaQueryList.addEventListener('change', event => {
+        console.log(window.innerWidth);
+      if (event.matches) {
             menuCloseAll.classList.remove('active');
-        } else {
-            menuCloseAll.classList.add('active');
-        }
+      } else {
       }
+    })
 
-      var x = window.matchMedia("(max-width: 1024px)")
-      myFunction(x) // Call listener function at run time
-      x.addEventListener(myFunction) // Attach listener function on state changes
+    // if (window.matchMedia("(max-width: 1024px)") == false) {
+    //     menuCloseAll.classList.add('active');
+    //     menuclose.classList.remove('active');
+    //     menuclose.style.color = "red";
 
+    // }
     // Menu Responsive Links
     let workLink = document.querySelector("#workLink");
     let aboutLink = document.querySelector("#aboutLink");
