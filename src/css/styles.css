@@ -1,5 +1,5 @@
 :root {
-    --blackBg:90deg, rgba(18,18,18,1) 0%, #191919 75%;
+    --blackBg:180deg, rgba(19,19,19,1) 0%, rgba(20,20,20,1) 14%, rgba(21,21,21,1) 29%, rgba(22,22,22,1) 44%, rgba(23,23,23,1) 59%, rgba(24,24,24,1) 74%, rgba(25,25,25,1) 89%;
     --black:#121212;
     --white:#F5F5F5;
     --green:#B4ED07;
@@ -489,10 +489,11 @@ strong {
     line-height: 1.25;
 }
 
-/* .herotitleSpan__letters {
+.herotitleSpan__letters {
     display: inline-block;
-    animation: waviy 1s infinite;
+    animation: waviy 2.5s infinite;
     animation-delay: calc(.1s * var(--i));
+    letter-spacing: -15px;
 }
   
 @keyframes waviy {
@@ -502,9 +503,9 @@ strong {
     }
     
     20% {
-      transform: translateY(-20px)
+      transform: translateY(-10px)
     }
-} */
+}
 
 .heroContentContainer__btn {
     position: var(--value-relative , relative , relative);
@@ -841,6 +842,8 @@ strong {
     width: 100%;
     padding: 0.75em 0.4375em;
     border: var(--value-none , none);
+    /* border: 1px solid white; */
+    /* border-radius: 5px; */
     outline: var(--value-none , none);
     background-color: var(--value-transparent , transparent);
     border-bottom: 1px solid var(--text-color);
@@ -1094,7 +1097,7 @@ strong {
     /* Footer / Contact Section */
     .contact {
         padding:var(--fs-padding-tablet , 0.625em 3.125em) ;
-        padding-top: 12.5rem;
+        padding-top: 12.5em;
     }
 
     .contactInformationAndLinksContainer {
@@ -1296,7 +1299,7 @@ strong {
 
     .contact {
         padding: var(--fs-padding-portatil , 0.625em 4.6875em);
-        padding-top: 12.5rem;
+        padding-top: 12.5em;
     }
 
 }
