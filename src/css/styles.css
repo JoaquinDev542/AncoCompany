@@ -489,6 +489,23 @@ strong {
     line-height: 1.25;
 }
 
+/* .herotitleSpan__letters {
+    display: inline-block;
+    animation: waviy 1s infinite;
+    animation-delay: calc(.1s * var(--i));
+}
+  
+@keyframes waviy {
+    
+    0%,40%,100% {
+      transform: translateY(0)
+    }
+    
+    20% {
+      transform: translateY(-20px)
+    }
+} */
+
 .heroContentContainer__btn {
     position: var(--value-relative , relative , relative);
     display: var(--value-inline-block , inline-block);
