@@ -1,9 +1,9 @@
 :root {
-    --blackBg:90deg, rgba(18,18,18,1) 0%, #191919 100%;
+    --blackBg:90deg, rgba(18,18,18,1) 0%, #191919 75%;
     --black:#121212;
     --white:#F5F5F5;
     --green:#B4ED07;
-    --gray:#25252567;
+    --gray:#1f1e1e;
     --lightwhite:90deg, rgba(228,228,228,1) 0%, rgb(226, 225, 225) 75%;
     --whatsappColor:#25D366;
 
@@ -241,7 +241,7 @@ strong {
     bottom: 3em;
     right: 0.9375em;
     padding: 15px;
-    background-color:#252525 ;
+    background-color:#161616 ;
     border-radius: 3px;
     z-index: 150;
     cursor: pointer;
@@ -664,6 +664,7 @@ strong {
     display: var(--value-flex , flex);
     flex-direction: var(--value-column , column);
     align-items: var(--value-center , center);
+    justify-content: var(--value-center , center);
     gap: 3.125em;
 }
 
@@ -697,11 +698,13 @@ strong {
     margin: var(--fs-zero , 0);
     font-size: var(--fs-informationTitle-mobile , 1.75rem);
     text-transform: var(--value-uppercase , uppercase);
+    color: var(--white);
 }
 
 .informationContentContainer__paragraph {
     margin: var(--fs-zero , 0);
     text-align: var(--value-center , center);
+    color: var(--white);
 }
 
 /* Work Section */
@@ -877,7 +880,7 @@ strong {
 /* Aside Section */
 .aside {
     padding: var(--fs-padding-mobile);
-    margin-top: 6.25rem;
+    transform: translateY(50%);
 }
 
 .asideContainer {
@@ -895,10 +898,12 @@ strong {
     font-size: 1.75em;
     text-transform: var(--value-uppercase , uppercase);
     line-height: var(--value-lineHeight , 1.5);
+    color: var(--white);
 }
 
 .aside__paragraph {
     margin: var(--fs-zero , 0);
+    color: var(--white);
 }
 
 .aside__btn {
@@ -919,7 +924,8 @@ strong {
     gap: 25px;
     flex-direction: var(--value-column , column);
     padding: var(--fs-padding-mobile);
-    margin-top: 6.25rem;
+    padding-top: 18.75em;
+    background-color: #00000081;
 }
 
 .contactInformationAndLinksContainer {
@@ -1076,6 +1082,7 @@ strong {
     /* Footer / Contact Section */
     .contact {
         padding:var(--fs-padding-tablet , 0.625em 3.125em) ;
+        padding-top: 12.5rem;
     }
 
     .contactInformationAndLinksContainer {
@@ -1273,6 +1280,11 @@ strong {
     /* Aside Section */
     .aside {
         padding: var(--fs-padding-portatil , 0.625em 4.6875em);
+    }
+
+    .contact {
+        padding: var(--fs-padding-portatil , 0.625em 4.6875em);
+        padding-top: 12.5rem;
     }
 
 }
