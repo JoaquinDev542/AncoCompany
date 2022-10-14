@@ -94,6 +94,20 @@ body {
     background: linear-gradient(var(--page-background-color));
 }
 
+body::-webkit-scrollbar {
+    width:10px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: var(--black);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--green);
+    border: 1px  var(--green);
+    border-radius: 5px;
+}
+
 img {
     display: var(--value-block , block);
     max-width: var(--value-100Percent , 100%);
@@ -909,10 +923,10 @@ strong {
 .asideContainer {
     border-radius: 10px;
     background-color: var(--bgSections);
-    padding: 50px 10px;
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
+    padding: 3.125em 0.625em;
+    display: var(--value-flex , flex);
+    flex-direction: var(--value-column , column);
+    gap: 1.5625em;
     text-align: var(--value-center , center);
 }
 
@@ -930,8 +944,8 @@ strong {
 }
 
 .aside__btn {
-    outline: none;
-    border: none;
+    outline: var(--value-none , none);
+    border: var(--value-none , none);
     align-self: var(--value-center , center);
     cursor: pointer;
 }
@@ -960,7 +974,7 @@ strong {
 
 .contactInformation__logo {
     width: 100px;
-    margin: 0 auto;
+    margin: var(--fs-zero , 0) var(--value-auto , auto);
 }
 
 .links {
