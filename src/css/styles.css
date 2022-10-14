@@ -1,9 +1,10 @@
 :root {
-    --black:90deg, rgba(18,18,18,1) 0%, #191919 100%;
+    --blackBg:90deg, rgba(18,18,18,1) 0%, #191919 100%;
+    --black:#121212;
     --white:#F5F5F5;
     --green:#B4ED07;
     --gray:#25252567;
-    --lightwhite:#cacaca;
+    --lightwhite:90deg, rgba(228,228,228,1) 0%, rgb(226, 225, 225) 75%;
     --whatsappColor:#25D366;
 
     --fs-zero:0;
@@ -62,7 +63,7 @@
 
     :root {
         --text-color:var(--white);
-        --page-background-color:var(--black);
+        --page-background-color:var(--blackBg);
         --bgSections: var(--gray);
     }
 
@@ -71,9 +72,9 @@
 @media screen and (prefers-color-scheme: light) {
     
     :root {
-        --page-background-color:var(--lightWhite);
+        --page-background-color:var(--lightwhite);
         --text-color:var(--black);
-        --bgSections: var(--lightwhite);
+        --bgSections: var(--gray);
     }
 
 }
@@ -309,7 +310,7 @@ strong {
 .bar {
     display: var(--value-block , block);
     border-radius: 2px;
-    background-color: var(--text-color);
+    background-color: var(--white);
 }
 
 .bar--hamburger {
@@ -428,6 +429,7 @@ strong {
 .list__link {
     position: var(--value-relative , relative);
     text-transform: var(--value-uppercase , uppercase);
+    color: var(--white);
 }
 
 .list__link::after {
@@ -487,30 +489,16 @@ strong {
     line-height: 1.25;
 }
 
-/* .heroContentContainer__btn {
-    display: var(--value-inline-block , inline-block);
-    margin-top: 1.25em;
-    padding: 0.75em 1.875em;
-    color: var(--green , #B4ED07);
-    border: 1px solid var(--green , #B4ED07);
-    border-radius: 1.875em;
-    font-style: var(--value-italic , italic);
-    transition-duration: .5s;
-    transition-property: color , background-color;
-} */
-
 .heroContentContainer__btn {
     position: var(--value-relative , relative , relative);
     display: var(--value-inline-block , inline-block);
     margin-top: 25px;
     padding: 1em 2em;
     border-radius: 50px;
+    box-shadow: 1px 1px 15px #b3ed073a;
     color: #121212;
-    background-color: #B4ED07;
-    /* -webkit-appearance: none; */
-    /* appearance: none; */
+    background-color: var(--green);
     transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
-    box-shadow: 2px 2px 20px #b3ed0744;
 }
 
 .heroContentContainer__btn:before, .heroContentContainer__btn:after {
@@ -1299,12 +1287,6 @@ strong {
     .list__link:hover::after {
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     }
-
-    /* .heroContentContainer__btn:hover {
-        border: 1px solid var(--green , #B4ED07);
-        background-color: var(--green , #B4ED07);
-        color:#121212;
-    } */
 
     .socialMediaList__img:hover {
         color: var(--green , #B4ED07);
