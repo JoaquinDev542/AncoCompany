@@ -42,11 +42,11 @@ window.addEventListener('load',function () {
 
     ScrollReveal().reveal('.header', {origin: 'top'});
     ScrollReveal().reveal('.herotitle' , {origin: 'left'});
-    ScrollReveal().reveal('.heroContentContainer__btn');
+    ScrollReveal().reveal('.heroContentContainer__btn--SR' , {origin: 'top'});
     ScrollReveal().reveal('.wave');
-    ScrollReveal().reveal('.aboutContentContainerparagraph--SR-first', {origin: 'left'});
-    ScrollReveal().reveal('.aboutContentContainerparagraph--SR-second', {origin: 'left'});
-    ScrollReveal().reveal('.aboutContentContainerparagraph--SR-third', {origin: 'left'});
+    ScrollReveal().reveal('.aboutContentContainer__paragraph--SR-first', {origin: 'left'});
+    ScrollReveal().reveal('.aboutContentContainer__paragraph--SR-second', {origin: 'left'});
+    ScrollReveal().reveal('.aboutContentContainer__paragraph--SR-third', {origin: 'left'});
     ScrollReveal().reveal('.aboutContentContainer__paragraph--SR-fourth', {origin: 'left'});
     ScrollReveal().reveal('.informationContentContainer--SR-first' , {delay: 200});
     ScrollReveal().reveal('.informationContentContainer--SR-second' , {delay: 400});
@@ -57,6 +57,14 @@ window.addEventListener('load',function () {
     ScrollReveal().reveal('.workProject--fourth');
     ScrollReveal().reveal('.workProject--fifth');
     ScrollReveal().reveal('.workProject--sixth');
+    ScrollReveal().reveal('.formContainer');
+    ScrollReveal().reveal('.aside');
+
+
+
+    
+    
+
 
     // Menu Reponsive
     let menuopen = document.querySelector(".menuOpen")
