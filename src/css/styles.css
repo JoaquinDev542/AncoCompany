@@ -991,7 +991,7 @@ strong {
 .contactContainer {
     width: 100%;
     max-width: 1290px;
-    margin: 0 auto;
+    margin: var(--fs-zero) var(--value-auto);
 }
 
 .contactInformationAndLinksContainer {
