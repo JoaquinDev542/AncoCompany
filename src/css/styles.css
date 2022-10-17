@@ -4,6 +4,7 @@
     --white:#F5F5F5;
     --green:#B4ED07;
     --gray:#1f1e1e;
+    --headerBg:#121212;
     --lightwhite:90deg, rgba(228,228,228,1) 0%, rgb(226, 225, 225) 75%;
     --whatsappColor:#25D366;
 
@@ -283,13 +284,17 @@ strong {
     top: var(--fs-zero , 0) ;
     left: var(--fs-zero , 0);
     right: var(--fs-zero , 0);
+    padding: 0.625em 0.9375em;
+    background: var(--headerBg , #121212);
+}
+
+.headerContainer {
     display: var(--value-flex , flex);
     justify-content: var(--value-space-between , space-between);
     align-items: var(--value-center , center);
-    width: var(--value-100Percent , 100%);
-    padding: 0.625em 0.9375em;
-    border-bottom: 1px solid var(--text-color);
-    background: #121212;
+    width: 100%;
+    max-width: 1290px;
+    margin: var(--fs-zero) var(--value-auto);
 }
 
 .logo__img {
