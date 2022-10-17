@@ -166,18 +166,19 @@ window.addEventListener('load',function () {
             heroContentContainerBtn[i].addEventListener('mouseover', animateButton, false);
         }
 
-    // Create Child Element in Aside Section
-    let asideContainer = document.querySelector(".asideContainer");
+    // Btn Form Section
+    let formBtn = document.querySelector(".formBtn");
+
+    formBtn.addEventListener("click" , ()=> {
+        formBtn.textContent = "Thanks for your message";
+    });
+
+    // Show Paragraph Aside Section Get Discount
     let asideBtn = document.querySelector(".aside__btn");
-    
+    let aside__paragraphOpacity = this.document.querySelector(".aside__paragraph--opacity");
+
     asideBtn.addEventListener("click" , ()=> {
-       
-        let createP = document.createElement("span");
-        createP.className = "aside__span";
-        createP.textContent = "Lorem ipsum dolor sit amet, consectetur adipisicing elit.";
-        asideContainer.appendChild(createP);
-        // Condicional que solo se pueda crear un elemento
-       
+        aside__paragraphOpacity.classList.add("active");
     });
 
 
