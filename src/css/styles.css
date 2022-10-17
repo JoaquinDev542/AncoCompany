@@ -962,7 +962,7 @@ strong {
 
 .contactInformationAndLinksContainer {
     display: var(--value-flex , flex);
-    gap: 25px;
+    gap: 50px;
     align-items: var(--value-center , center);
     flex-direction: var(--value-column , column);
 }
@@ -975,6 +975,21 @@ strong {
 .contactInformation__logo {
     width: 100px;
     margin: var(--fs-zero , 0) var(--value-auto , auto);
+}
+
+.contactInformationSocialMedia {
+    display: var(--value-flex , flex);
+    gap: 1.5625em;
+    align-items: var(--value-center , center);
+    justify-content: var(--value-center , center);
+    margin-top: 1.5625em;
+}
+
+.contactInformationSocialMedia__img {
+    width: 25px;
+    height: 25px;
+    color: var(--text-color);
+    transition: .5s color;
 }
 
 .links {
@@ -1241,7 +1256,7 @@ strong {
         z-index: 20;
         position: var(--value-absolute , absolute);
         left: 4.6875rem;
-        max-width: 1000px;
+        max-width: 900px;
         margin: var(--fs-zero , 0) var(--value-auto , auto);
         font-size: var(--fs-title-portatil);
     }
@@ -1339,6 +1354,10 @@ strong {
 }
 
 @media screen and (hover: hover) {
+
+    .contactInformationSocialMedia__img:hover {
+        color: var(--green , #B4ED07);
+    }
     
     .list__link:hover::after {
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);

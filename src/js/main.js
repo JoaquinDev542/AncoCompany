@@ -166,7 +166,7 @@ window.addEventListener('load',function () {
             heroContentContainerBtn[i].addEventListener('mouseover', animateButton, false);
         }
 
-    // Create Child Elements in Aside Section
+    // Create Child Element in Aside Section
     let asideContainer = document.querySelector(".asideContainer");
     let asideBtn = document.querySelector(".aside__btn");
     
