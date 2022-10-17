@@ -304,5 +304,4 @@ window.addEventListener('load',function () {
     //         alert('cambio a dark');
     //     }
     // })
-    
 })

@@ -846,6 +846,11 @@ strong {
 .form__title {
     margin-bottom: var(--fs-zero , 0);
     font-size: 1.75rem;
+    color: var(--white);
+}
+
+.form__paragraph {
+    color: var(--white);
 }
 
 .form__group {
@@ -858,8 +863,8 @@ strong {
     border: var(--value-none , none);
     outline: var(--value-none , none);
     background-color: var(--value-transparent , transparent);
-    border-bottom: 1px solid var(--text-color);
-    color: var(--text-color);
+    border-bottom: 1px solid var(--white);
+    color: var(--white);
 }
 
 .textarea {
@@ -888,7 +893,7 @@ strong {
     cursor: pointer;
     top: var(--fs-zero , 0);
     left: 5px;
-    color: var(--text-color);
+    color: var(--white);
     transform: translateY(10px);
     transition: transform .5s, color .3s;
 }
@@ -909,10 +914,6 @@ strong {
     transform: scale(1);
 }
 
-.form__btn {
-    padding: 0.4375em 0;
-    margin-bottom: 0.9375em;
-}
 
 /* Aside Section */
 .aside {
@@ -948,6 +949,10 @@ strong {
     border: var(--value-none , none);
     align-self: var(--value-center , center);
     cursor: pointer;
+}
+
+.aside__span {
+    color: var(--white);
 }
 
 /* Footer / Contact Section */
