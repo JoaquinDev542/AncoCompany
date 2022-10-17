@@ -19,21 +19,21 @@ window.addEventListener('load',function () {
     // Scroll Reveal
     ScrollReveal({
         distance: '50px',
-        duration: 1000,
-        delay: 50
+        duration: 1000
     })
 
     ScrollReveal().reveal('.header', {origin: 'top'});
-    ScrollReveal().reveal('.herotitle' , {origin: 'left'});
-    ScrollReveal().reveal('.heroContentContainer__btn--SR' , {origin: 'top'});
-    ScrollReveal().reveal('.wave');
+    ScrollReveal().reveal('.herotitle', {origin: 'left'});
+    ScrollReveal().reveal('.heroContentContainer__btn--SR', {delay: 500});
+    ScrollReveal().reveal('.heroContentContainer__btn--ST', {origin: 'right'});
+    ScrollReveal().reveal('.wave', {origin: 'bottom'});
     ScrollReveal().reveal('.aboutContentContainer__paragraph--SR-first', {origin: 'left'});
     ScrollReveal().reveal('.aboutContentContainer__paragraph--SR-second', {origin: 'left'});
     ScrollReveal().reveal('.aboutContentContainer__paragraph--SR-third', {origin: 'left'});
     ScrollReveal().reveal('.aboutContentContainer__paragraph--SR-fourth', {origin: 'left'});
-    ScrollReveal().reveal('.informationContentContainer--SR-first' , {delay: 200});
-    ScrollReveal().reveal('.informationContentContainer--SR-second' , {delay: 400});
-    ScrollReveal().reveal('.informationContentContainer--SR-third' , {delay: 600});
+    ScrollReveal().reveal('.informationContentContainer--SR-first',);
+    ScrollReveal().reveal('.informationContentContainer--SR-second', {delay: 200});
+    ScrollReveal().reveal('.informationContentContainer--SR-third' , {delay: 400});
     ScrollReveal().reveal('.workProject--first' );
     ScrollReveal().reveal('.workProject--second');
     ScrollReveal().reveal('.workProject--third');
