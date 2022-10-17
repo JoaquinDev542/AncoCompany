@@ -16,23 +16,6 @@ window.addEventListener('load',function () {
         
     // } 
 
-    // Arrow Section
-    arrow = document.getElementById("arr")
-
-    window.onscroll = function(){
-        add_btn_scrolltop()
-        //add btn on scroll
-    }
-
-    const add_btn_scrolltop = function(){
-        // console.log(document.documentElement.scrollTop);
-        if(document.documentElement.scrollTop >= 200){
-            arrow.classList.add('active');
-        } else {
-            arrow.classList.remove('active'); 
-        }    
-    }
-
     // Scroll Reveal
     ScrollReveal({
         distance: '50px',
@@ -60,10 +43,22 @@ window.addEventListener('load',function () {
     ScrollReveal().reveal('.formContainer');
     ScrollReveal().reveal('.aside');
 
+    // Arrow Section
+    arrow = document.getElementById("arr")
 
-
+    window.onscroll = function(){
+        add_btn_scrolltop()
+        //add btn on scroll
+    }
     
-    
+    const add_btn_scrolltop = function(){
+        // console.log(document.documentElement.scrollTop);
+        if(document.documentElement.scrollTop >= 200){
+            arrow.classList.add('active');
+        } else {
+            arrow.classList.remove('active'); 
+        }    
+    }
 
 
     // Menu Reponsive
@@ -170,6 +165,23 @@ window.addEventListener('load',function () {
         for (let i = 0; i < heroContentContainerBtn.length; i++) {
             heroContentContainerBtn[i].addEventListener('mouseover', animateButton, false);
         }
+
+    // Create Child Elements in Aside Section
+    let asideContainer = document.querySelector(".asideContainer");
+    let asideBtn = document.querySelector(".aside__btn");
+    
+    asideBtn.addEventListener("click" , ()=> {
+       
+        let createP = document.createElement("span");
+        createP.className = "aside__span";
+        createP.textContent = "Lorem ipsum dolor sit amet, consectetur adipisicing elit.";
+        asideContainer.appendChild(createP);
+        // Condicional que solo se pueda crear un elemento
+       
+    });
+
+
+
 
     // Quotes Section
 
