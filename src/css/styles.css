@@ -264,12 +264,17 @@ strong {
     z-index: 150;
     cursor: pointer;
     transform: translateY(100px);
-    transition: 0.5s;
+    transition: opacity .5s;
 }
 
 .arrow.active {
     transform: translateY(0);
     opacity: 0.9;
+}
+
+.arrow__img {
+    color:var(--white);
+    transition: .5s color;
 }
 
 /* Hero Section */
@@ -1432,6 +1437,10 @@ strong {
 }
 
 @media screen and (hover: hover) {
+
+    .arrow:hover .arrow__img {
+        color: var(--greenColor);
+    }
 
     .contactInformationSocialMedia__img:hover {
         color: var(--green);
