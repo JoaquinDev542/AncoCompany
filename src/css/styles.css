@@ -1429,13 +1429,6 @@ strong {
 
 }
 
-/* Pc Size */
-@media screen and (min-width:90em) {
-    
-
-
-}
-
 @media screen and (hover: hover) {
 
     .arrow:hover .arrow__img {
