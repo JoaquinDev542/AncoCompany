@@ -1,9 +1,10 @@
 :root {
     --blackBg:180deg, rgba(19,19,19,1) 0%, rgba(20,20,20,1) 14%, rgba(21,21,21,1) 29%, rgba(22,22,22,1) 44%, rgba(23,23,23,1) 59%, rgba(24,24,24,1) 74%, rgba(25,25,25,1) 89%;
-    --black:#121212;
+    --black:#131313;
     --white:#F5F5F5;
     --green:#B4ED07;
-    --gray:#1f1e1e;
+    --light-green:#83b017;
+    --gray:#2B2B2B;
     --headerBg:#121212;
     --lightwhite:90deg, rgba(228,228,228,1) 0%, rgb(226, 225, 225) 75%;
     --whatsappColor:#25D366;
@@ -66,6 +67,7 @@
         --text-color:var(--white);
         --page-background-color:var(--blackBg);
         --bgSections: var(--gray);
+        --greenColor:var(--green);
     }
 
 }
@@ -76,6 +78,7 @@
         --page-background-color:var(--lightwhite);
         --text-color:var(--black);
         --bgSections: var(--gray);
+        --greenColor:var(--light-green);
     }
 
 }
@@ -104,8 +107,8 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: var(--green);
-    border: 1px  var(--green);
+    background-color: var(--greenColor);
+    border: 1px  var(--greenColor);
     border-radius: 5px;
 }
 
@@ -157,7 +160,7 @@ strong {
 }
 
 .color--green {
-    color: var(--green , #B4ED07);
+    color: var(--greenColor);
 }
 
 /* font-size Section */
@@ -459,7 +462,7 @@ strong {
     left: var(--fs-zero , 0);
     width: var(--value-100Percent , 100%);
     height: 3px;
-    background-color:  var(--green , #B4ED07);
+    background-color:  var(--green);
     clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
     transition: .5s clip-path ;
 }
@@ -539,6 +542,10 @@ strong {
     transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
 }
 
+.heroContentContainer__btn--color {
+    background-color: var(--greenColor);
+}
+
 .heroContentContainer__btn:before, .heroContentContainer__btn:after {
     position: var(--value-absolute , absolute);
     content: var(--value-content , "");
@@ -553,20 +560,20 @@ strong {
 .heroContentContainer__btn:before {
     display: var(--value-none , none);
     top: -75%;
-    background-image: radial-gradient(circle, #B4ED07 20%, transparent 20%), radial-gradient(circle, transparent 20%, #B4ED07 20%, transparent 30%), radial-gradient(circle, #B4ED07 20%, transparent 20%), radial-gradient(circle, #B4ED07 20%, transparent 20%), radial-gradient(circle, transparent 10%, #B4ED07 15%, transparent 20%), radial-gradient(circle, #B4ED07 20%, transparent 20%), radial-gradient(circle, #B4ED07 20%, transparent 20%), radial-gradient(circle, #B4ED07 20%, transparent 20%), radial-gradient(circle, #B4ED07 20%, transparent 20%);
+    background-image: radial-gradient(circle, var(--greenColor) 20%, transparent 20%), radial-gradient(circle, transparent 20%, var(--greenColor) 20%, transparent 30%), radial-gradient(circle, var(--greenColor) 20%, transparent 20%), radial-gradient(circle, var(--greenColor) 20%, transparent 20%), radial-gradient(circle, transparent 10%, var(--greenColor) 15%, transparent 20%), radial-gradient(circle, var(--greenColor) 20%, transparent 20%), radial-gradient(circle, var(--greenColor) 20%, transparent 20%), radial-gradient(circle, var(--greenColor) 20%, transparent 20%), radial-gradient(circle, var(--greenColor) 20%, transparent 20%);
     background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%, 10% 10%, 18% 18%;
 }
 
 .heroContentContainer__btn:after {
     display: var(--value-none , none);
     bottom: -75%;
-    background-image: radial-gradient(circle, #B4ED07 20%, transparent 20%), radial-gradient(circle, #B4ED07 20%, transparent 20%), radial-gradient(circle, transparent 10%, #B4ED07 15%, transparent 20%), radial-gradient(circle, #B4ED07 20%, transparent 20%), radial-gradient(circle, #B4ED07 20%, transparent 20%), radial-gradient(circle, #B4ED07 20%, transparent 20%), radial-gradient(circle, #B4ED07 20%, transparent 20%);
+    background-image: radial-gradient(circle, var(--greenColor) 20%, transparent 20%), radial-gradient(circle,var(--greenColor) 20%, transparent 20%), radial-gradient(circle, transparent 10%, var(--greenColor) 15%, transparent 20%), radial-gradient(circle, var(--greenColor) 20%, transparent 20%), radial-gradient(circle, var(--greenColor) 20%, transparent 20%), radial-gradient(circle, var(--greenColor) 20%, transparent 20%), radial-gradient(circle, var(--greenColor) 20%, transparent 20%);
     background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 10% 10%, 20% 20%;
 }
 
 .heroContentContainer__btn:active {
     transform: scale(0.9);
-    background-color: var(--green , #B4ED07);
+    background-color: var(--green);
     box-shadow: 0 2px 25px #b3ed0727;
 }
 
@@ -820,7 +827,7 @@ strong {
     left: var(--fs-zero , 0);
     width: var(--value-100Percent , 100%);
     height: 3px;
-    background-color:  var(--green , #B4ED07);
+    background-color:  var(--greenColor);
     clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
     transition: .5s clip-path ;
 }
@@ -919,7 +926,7 @@ strong {
     left: var(--fs-zero , 0);
     width: 100%;
     height: 1px;
-    background-color: var(--green);
+    background-color: var(--greenColor);
     transform-origin: left bottom;
     transform: scale(0);
     transition: transform .4s;
@@ -1390,13 +1397,6 @@ strong {
 /* Pc Size */
 @media screen and (min-width:90em) {
     
-    .header {
-
-    }
-
-    .footer {
-
-    }
 
 
 }
@@ -1404,7 +1404,7 @@ strong {
 @media screen and (hover: hover) {
 
     .contactInformationSocialMedia__img:hover {
-        color: var(--green , #B4ED07);
+        color: var(--green);
     }
     
     .list__link:hover::after {
@@ -1412,7 +1412,7 @@ strong {
     }
 
     .socialMediaList__img:hover {
-        color: var(--green , #B4ED07);
+        color: var(--green);
     }
 
     .workProjectImg:hover .workProject__img{
