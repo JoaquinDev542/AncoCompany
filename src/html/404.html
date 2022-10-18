@@ -6,24 +6,112 @@
     <title>Document</title>
 </head>
 <body>
-    
-    <header class="header">
 
-        <div class="headerContainer">
+    <div class="loaderContainer backgroundColor--black" id="loader">
 
-            <a href="#body" class="logo"><img src="./assets/image/icons/logo.png" alt="AncoCompany Logo" class="logo__img"></a>
+        <div class="loading">
 
-            <!-- Menu -->
+                <span class="loading__letter color--white">L</span>
+
+                <span class="loading__letter color--white">O</span>
+
+                <span class="loading__letter color--white">A</span>
+
+                <span class="loading__letter color--white">D</span>
+
+                <span class="loading__letter color--white">I</span>
+
+                <span class="loading__letter color--white">N</span>
+
+                <span class="loading__letter color--white">G</span>
+
+                <span class="loading__letter color--white">.</span>
+
+                <span class="loading__letter color--white">.</span>
+
+                <span class="loading__letter color--white">.</span>
 
         </div>
 
-    </header>
-
+    </div>
+    
     <main class="main">
+
+        <header class="header">
+
+            <div class="headerContainer">
+    
+                <a href="#body" class="logo"><img src="./assets/image/icons/logo.png" alt="AncoCompany Logo" class="logo__img"></a>
+
+                <div class="headerContainerDarkModeAndLanguages">
+
+                    <div class="darkMode">
+        
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  class="darkMode__img darkMode__img--dark" viewBox="0 0 256 256" xml:space="preserve">
+        
+                            <defs>
+                            </defs>
+                            <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)" >
+                                <circle cx="45" cy="45" r="43" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: #121212; fill-rule: nonzero; opacity: 1;" transform="  matrix(1 0 0 1 0 0) "/>
+                                <circle cx="45" cy="45" r="43" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: #121212; fill-rule: nonzero; opacity: 1;" transform="  matrix(1 0 0 1 0 0) "/>
+                                <path d="M 45 90 C 20.187 90 0 69.813 0 45 C 0 20.187 20.187 0 45 0 c 24.813 0 45 20.187 45 45 C 90 69.813 69.813 90 45 90 z M 45 4 C 22.393 4 4 22.393 4 45 s 18.393 41 41 41 s 41 -18.393 41 -41 S 67.607 4 45 4 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: #f5f5f5; fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                <path d="M 45 88 C 21.252 88 2 68.748 2 45 S 21.252 2 45 2 V 88 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: #f5f5f5; fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                            </g>
+                        </svg>
+        
+                    </div>
+
+                    <div class="languages">
+    
+                        <a href="#" class="color--white languages__link spanish"><img src="./assets/image/icons/ukFlag.svg" alt="United Kingdom Flag SVG" class="flag"></a>
+        
+                        <a href="#" class="color--white languages__link english"><img src="./assets/image/icons/spainFlag.svg" alt="Spain Flag SVG" class="flag"></a>
+        
+                    </div>
+
+                </div>
+    
+            </div>
+    
+        </header>
 
         <section class="mainContent">
 
-            <!-- Marquee Zone  -->
+            <div class="footerContainer">
+
+                <div class="footerFather">
+
+                    <span class="footerText">About Us -</span>
+
+                    <span class="color--green footerText">Anco Company -</span>
+
+                    <span class="footerText">About Us -</span>
+
+                    <span class="color--green footerText">Anco Company -</span>
+
+                    <span class="footerText">About Us -</span>
+
+                    <span class="color--green footerText">Anco Company -</span>
+
+                    <span class="footerText">About Us -</span>
+
+                    <span class="color--green footerText">Anco Company -</span>
+
+                    <span class="footerText">About Us -</span>
+
+                    <span class="color--green footerText">Anco Company -</span>
+
+                    <span class="footerText">About Us -</span>
+
+                    <span class="color--green footerText">Anco Company -</span>
+
+                    <span class="footerText">About Us -</span>
+
+                    <span class="color--green footerText">Anco Company -</span>
+
+                </div>
+
+            </div>
 
             <img src="" alt="" class="mainContent__img">
 
@@ -124,3 +212,97 @@
 
 </body>
 </html>
+
+<!-- 
+
+    /* LoaderContainer CSS */
+.loaderContainer {
+    display: var(--value-flex , flex);
+    align-items: var(--value-center , center);
+    justify-content: var(--value-center , center);
+    flex-direction: var(--value-column , column);
+    height: 100vh;
+}
+
+.loaderContainer.active {
+    display: var(--value-none , none);
+}
+
+.loading__letter  {
+    display: var(--value-inline-block , inline-block);
+    margin: 0 0.3125em;
+    letter-spacing: 3px;
+    animation: blur-text .5s 0s infinite linear alternate;
+}
+
+@keyframes blur-text {
+    0% {
+        filter: blur(var(--fs-zero , 0));
+   }
+    100% {
+        filter: blur(1.75px);
+   }
+}
+
+/* Marquee Section */
+.footerContainer{
+    position: var(--value-relative , relative);
+    padding: 6.25em 0 6.25em 0;
+    overflow: var(--value-hidden , hidden);
+}
+
+.footerFather {
+    position: var(--value-absolute , absolute);
+    top:6.25em;
+    left:-100%;
+    display:var(--value-flex , flex);
+    justify-content:var(--value-space-around , space-around);
+    width:200%;
+    padding: 0.625em;
+    border-top: 1px solid var(--text-color);
+    border-bottom: 1px solid var(--text-color);
+    white-space: nowrap;
+    overflow: var(--value-hidden , hidden);
+    transform:translate(0 , -50%);
+    animation: marquee 7s linear infinite forwards;
+}
+ 
+.footerText {
+    font-size: var(--fs-marquee-mobile , 1.875rem);
+    text-transform: var(--value-uppercase , uppercase);
+}
+
+ -->
+
+<style>
+
+:root {
+
+}
+
+.socialMediaList {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    padding-left: 0;
+}
+
+.socialMediaList__item {
+    margin-right: 0.625em;
+}
+
+.socialMediaList__img {
+    width: 25px;
+    height: 25px;
+    object-fit: cover;
+    color: var(--text-color);
+    transition: .5s color;
+}
+
+.contactCopyright {
+    padding:0 0 25px 0;
+    text-align: center;
+}
+
+</style>
