@@ -560,11 +560,25 @@ strong {
 .heroContentContainer__btn:before {
     display: var(--value-none , none);
     top: -75%;
-    background-image: radial-gradient(circle, var(--greenColor) 20%, transparent 20%), radial-gradient(circle, transparent 20%, var(--greenColor) 20%, transparent 30%), radial-gradient(circle, var(--greenColor) 20%, transparent 20%), radial-gradient(circle, var(--greenColor) 20%, transparent 20%), radial-gradient(circle, transparent 10%, var(--greenColor) 15%, transparent 20%), radial-gradient(circle, var(--greenColor) 20%, transparent 20%), radial-gradient(circle, var(--greenColor) 20%, transparent 20%), radial-gradient(circle, var(--greenColor) 20%, transparent 20%), radial-gradient(circle, var(--greenColor) 20%, transparent 20%);
+    background-image: radial-gradient(circle, var(--green) 20%, transparent 20%), radial-gradient(circle, transparent 20%, var(--green) 20%, transparent 30%), radial-gradient(circle, var(--green) 20%, transparent 20%), radial-gradient(circle, var(--green) 20%, transparent 20%), radial-gradient(circle, transparent 10%, var(--green) 15%, transparent 20%), radial-gradient(circle, var(--green) 20%, transparent 20%), radial-gradient(circle, var(--green) 20%, transparent 20%), radial-gradient(circle, var(--green) 20%, transparent 20%), radial-gradient(circle, var(--green) 20%, transparent 20%);
     background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%, 10% 10%, 18% 18%;
 }
 
 .heroContentContainer__btn:after {
+    display: var(--value-none , none);
+    bottom: -75%;
+    background-image: radial-gradient(circle, var(--green) 20%, transparent 20%), radial-gradient(circle,var(--green) 20%, transparent 20%), radial-gradient(circle, transparent 10%, var(--green) 15%, transparent 20%), radial-gradient(circle, var(--green) 20%, transparent 20%), radial-gradient(circle, var(--green) 20%, transparent 20%), radial-gradient(circle, var(--green) 20%, transparent 20%), radial-gradient(circle, var(--green) 20%, transparent 20%);
+    background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 10% 10%, 20% 20%;
+}
+
+.heroContentContainer__btn--color:before {
+    display: var(--value-none , none);
+    top: -75%;
+    background-image: radial-gradient(circle, var(--greenColor) 20%, transparent 20%), radial-gradient(circle, transparent 20%, var(--greenColor) 20%, transparent 30%), radial-gradient(circle, var(--greenColor) 20%, transparent 20%), radial-gradient(circle, var(--greenColor) 20%, transparent 20%), radial-gradient(circle, transparent 10%, var(--greenColor) 15%, transparent 20%), radial-gradient(circle, var(--greenColor) 20%, transparent 20%), radial-gradient(circle, var(--greenColor) 20%, transparent 20%), radial-gradient(circle, var(--greenColor) 20%, transparent 20%), radial-gradient(circle, var(--greenColor) 20%, transparent 20%);
+    background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%, 10% 10%, 18% 18%;
+}
+
+.heroContentContainer__btn--color:after {
     display: var(--value-none , none);
     bottom: -75%;
     background-image: radial-gradient(circle, var(--greenColor) 20%, transparent 20%), radial-gradient(circle,var(--greenColor) 20%, transparent 20%), radial-gradient(circle, transparent 10%, var(--greenColor) 15%, transparent 20%), radial-gradient(circle, var(--greenColor) 20%, transparent 20%), radial-gradient(circle, var(--greenColor) 20%, transparent 20%), radial-gradient(circle, var(--greenColor) 20%, transparent 20%), radial-gradient(circle, var(--greenColor) 20%, transparent 20%);
@@ -577,11 +591,27 @@ strong {
     box-shadow: 0 2px 25px #b3ed0727;
 }
 
+.heroContentContainer__btn--color:active {
+    transform: scale(0.9);
+    background-color: var(--light-green);
+    box-shadow: 0 2px 25px #b3ed0727;
+}
+
 .heroContentContainer__btn.animate:before {
     display: var(--value-block , block);
     animation: topBubbles ease-in-out 0.75s forwards;
 }
+
 .heroContentContainer__btn.animate:after {
+    display: var(--value-block , block);
+    animation: bottomBubbles ease-in-out 0.75s forwards;
+}
+
+.heroContentContainer__btn--color.animate:before {
+    display: var(--value-block , block);
+    animation: topBubbles ease-in-out 0.75s forwards;
+}
+.heroContentContainer__btn--color.animate:after {
     display: var(--value-block , block);
     animation: bottomBubbles ease-in-out 0.75s forwards;
 }

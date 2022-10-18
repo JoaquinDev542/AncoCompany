@@ -161,10 +161,16 @@ window.addEventListener('load',function () {
         };
         
         let heroContentContainerBtn = document.getElementsByClassName("heroContentContainer__btn");
+        let heroContentContainer__btnColor = document.getElementsByClassName("heroContentContainer__btn--color");
         
         for (let i = 0; i < heroContentContainerBtn.length; i++) {
             heroContentContainerBtn[i].addEventListener('mouseover', animateButton, false);
         }
+
+        for (let i = 0; i < heroContentContainer__btnColor.length; i++) {
+            heroContentContainer__btnColor[i].addEventListener('mouseover', animateButton, false);
+        }
+
 
     // Btn Form Section
     let formBtn = document.querySelector(".formBtn");
