@@ -1,7 +1,15 @@
 // Loader
 window.addEventListener('load',function () {
 
-    
+    window.addEventListener("blur", () => {
+        document.title = "COME HERE! We´re Waiting for you!";
+    });
+
+    // Cuando el enfoque del usuario vuelve a tu pestaña (sitio web) nuevamente
+    window.addEventListener("focus", () => {
+        document.title = "AncoCompany | The best Web development company";
+    });
+
     // Loading 
     let main = document.querySelector('main')
     
@@ -311,4 +319,5 @@ window.addEventListener('load',function () {
     //         alert('cambio a dark');
     //     }
     // })
+
 })
