@@ -3,11 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <link rel="stylesheet" href="../css/normalize.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Rubik:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+
+    <title>AncoCompany | 404</title>
 </head>
 <body>
 
-    <div class="loaderContainer backgroundColor--black" id="loader">
+    <!-- <div class="loaderContainer backgroundColor--black" id="loader">
 
         <div class="loading">
 
@@ -33,7 +38,7 @@
 
         </div>
 
-    </div>
+    </div> -->
     
     <main class="main">
 
@@ -41,7 +46,7 @@
 
             <div class="headerContainer">
     
-                <a href="#body" class="logo"><img src="./assets/image/icons/logo.png" alt="AncoCompany Logo" class="logo__img"></a>
+                <a href="#body" class="logo"><img src="../../assets/image/icons/logo.png" alt="AncoCompany Logo" class="logo__img"></a>
 
                 <div class="headerContainerDarkModeAndLanguages">
 
@@ -63,9 +68,9 @@
 
                     <div class="languages">
     
-                        <a href="#" class="color--white languages__link spanish"><img src="./assets/image/icons/ukFlag.svg" alt="United Kingdom Flag SVG" class="flag"></a>
+                        <a href="#" class="color--white languages__link spanish"><img src="../../assets/image/icons/ukFlag.svg" alt="United Kingdom Flag SVG" class="flag"></a>
         
-                        <a href="#" class="color--white languages__link english"><img src="./assets/image/icons/spainFlag.svg" alt="Spain Flag SVG" class="flag"></a>
+                        <a href="#" class="color--white languages__link english"><img src="../../assets/image/icons/spainFlag.svg" alt="Spain Flag SVG" class="flag"></a>
         
                     </div>
 
@@ -81,31 +86,31 @@
 
                 <div class="footerFather">
 
-                    <span class="footerText">About Us -</span>
+                    <span class="footerText">Error 404-</span>
 
                     <span class="color--green footerText">Anco Company -</span>
 
-                    <span class="footerText">About Us -</span>
+                    <span class="footerText">Error 404-</span>
 
                     <span class="color--green footerText">Anco Company -</span>
 
-                    <span class="footerText">About Us -</span>
+                    <span class="footerText">Error 404-</span>
 
                     <span class="color--green footerText">Anco Company -</span>
 
-                    <span class="footerText">About Us -</span>
+                    <span class="footerText">Error 404-</span>
 
                     <span class="color--green footerText">Anco Company -</span>
 
-                    <span class="footerText">About Us -</span>
+                    <span class="footerText">Error 404-</span>
 
                     <span class="color--green footerText">Anco Company -</span>
 
-                    <span class="footerText">About Us -</span>
+                    <span class="footerText">Error 404-</span>
 
                     <span class="color--green footerText">Anco Company -</span>
 
-                    <span class="footerText">About Us -</span>
+                    <span class="footerText">Error 404-</span>
 
                     <span class="color--green footerText">Anco Company -</span>
 
@@ -113,13 +118,17 @@
 
             </div>
 
-            <img src="" alt="" class="mainContent__img">
+            <div class="mainContentContainer">
 
-            <h1 class="mainContent__title"></h1>
+                <img  src="../../assets/image/aboutHero.jpeg" alt="" class="mainContent__img">
 
-            <p class="mainContent__paragraph"></p>
+                <h1 class="mainContent__title">Lorem ipsum dolor sit amet.</h1>
 
-            <a href="" class="mainContent__btn"></a>
+                <p class="mainContent__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo ullam aliquam repellat delectus quod blanditiis labore dolore ex facere. Modi.</p>
+
+                <a href="#" class="mainContent__btn">Go to Home</a>
+
+            </div>
 
         </section>
 
@@ -210,26 +219,191 @@
 
     </footer>
 
-    <style>
-        /* LoaderContainer CSS */
-        .loaderContainer {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            height: 100vh;
-        }
 
-        .loaderContainer.active {
-            /* display: none; */
-        }
+</body>
+</html>
 
-        .loading__letter  {
-            display: var(--value-inline-block , inline-block);
-            margin: 0 0.3125em;
-            letter-spacing: 3px;
-            animation: blur-text .5s 0s infinite linear alternate;
-        }
+<style>
+    :root {
+    --blackBg:180deg, rgba(19,19,19,1) 0%, rgba(20,20,20,1) 14%, rgba(21,21,21,1) 29%, rgba(22,22,22,1) 44%, rgba(23,23,23,1) 59%, rgba(24,24,24,1) 74%, rgba(25,25,25,1) 89%;
+    --black:#131313;
+    --white:#F5F5F5;
+    --green:#B4ED07;
+    --light-green:#83b017;
+    --headerBg:#121212;
+    --lightwhite:90deg, rgba(228,228,228,1) 0%, rgb(226, 225, 225) 75%;
+
+    --fs-zero:0;
+    --fs-16px:16px;
+    
+    --fs-title-mobile:3.125rem;
+    --fs-heroTitle-tablet:5rem;
+    --fs-heroTitle-portatil:6rem;
+    --fs-paragraph-tablet:1.1rem;
+    --fs-marquee-mobile:1.875rem;
+    --fs-marquee-tablet:2.25rem;
+    --fs-marquee-portatil:0000;
+    --fs-padding-mobile: 0 0.9375em;
+    --fs-padding-tablet: 0.625em 3.125em;
+    --fs-padding-portatil: 0.625em 4.6875em;
+
+    --ff-titles:'Roboto', sans-serif;
+    --ff-paragraph:'Rubik', sans-serif;
+
+    --value-relative:relative;
+    --value-absolute:absolute;
+    --value-fixed:fixed;
+
+    --value-flex:flex;
+    --value-grid:grid;
+    --value-block:block;
+    --value-inline-block:inline-block;
+    --value-column:column;
+    --value-row:row;
+    --value-space-between:space-between;
+    --value-space-around:space-around;
+    --value-flexEnd:flex-end;
+    --value-center:center;
+    
+    --value-none:none;
+    --value-hidden:hidden;
+    --value-auto:auto;
+    --value-uppercase:uppercase;
+    --value-italic:italic;
+    --value-cover:cover;
+    --value-transparent:transparent;
+    --value-initial:initial;
+    --value-content:"";
+
+    --value-lineHeight:1.5;
+    --value-100Percent:100%;
+
+}
+
+@media screen and (prefers-color-scheme: dark) {
+
+    :root {
+        --text-color:var(--white);
+        --page-background-color:var(--blackBg);
+        --greenColor:var(--green);
+    }
+
+}
+
+@media screen and (prefers-color-scheme: light) {
+
+    :root {
+        --text-color:var(--black);
+        --page-background-color:var(--lightwhite);
+        --greenColor:var(--light-green);
+    }
+
+}
+
+* , ::before , ::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: var(--fs-16px , 16px);
+    font-family: var(--ff-paragraph , 'Rubik');
+    background: linear-gradient(var(--page-background-color));
+    max-height: 100vh;
+}
+
+body::-webkit-scrollbar {
+    width:10px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: var(--black);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--greenColor);
+    border: 1px  var(--greenColor);
+    border-radius: 5px;
+}
+
+img {
+    display: var(--value-block , block);
+    max-width: var(--value-100Percent , 100%);
+}
+
+ul {
+    margin: var(--fs-zero , 0);
+    padding-left: var(--fs-zero , 0);
+}
+
+li {
+    list-style-type: var(--value-none , none);
+}
+
+a {
+    text-decoration: var(--value-none , none);
+}
+
+h1 {
+    font-family: var(--ff-titles , 'Roboto');
+}
+
+/* .main.hide {
+    display: var(--value-none , none);
+} */
+
+/* Colors and Background-color Section */
+.color--white {
+    color: var(--text-color);
+}
+
+.backgroundColor--black {
+    background-color: var(--page-background-color);
+}
+
+.color--green {
+    color: var(--greenColor);
+}
+
+/* font-size Section */
+.fs-title {
+    font-size: var(--fs-title-mobile , 3.125rem);
+}
+.list__link {
+    font-size: var(--fs-menuLink-mobile , 3rem);
+}
+
+/* font-family Section */
+.loading__letter {
+    font-family: var(--ff-paragraph , 'Rubik');
+}
+
+.list__link {
+    font-family: var(--ff-titles , 'Roboto');
+}
+
+/* LoaderContainer CSS */
+/* .loaderContainer {
+    display: var(--value-flex , flex);
+    align-items: var(--value-center , center);
+    justify-content: var(--value-center , center);
+    flex-direction: var(--value-column , column);
+    height: 100vh;
+}
+
+.loaderContainer.active {
+    display: var(--value-none , none);
+}
+
+.loading__letter  {
+    display: var(--value-inline-block , inline-block);
+    margin: 0 0.3125em;
+    letter-spacing: 3px;
+    animation: blur-text .5s 0s infinite linear alternate;
+}
 
 @keyframes blur-text {
     0% {
@@ -238,79 +412,165 @@
     100% {
         filter: blur(1.75px);
    }
+} */
+
+/* Header Section */
+.header {
+    padding: 0.625em 0.9375em;
+    background: var(--headerBg , #121212);
 }
 
+.headerContainer {
+    display: var(--value-flex , flex);
+    justify-content: var(--value-space-between , space-between);
+    align-items: var(--value-center , center);
+    width: 100%;
+    max-width: 1290px;
+    margin: var(--fs-zero) var(--value-auto);
+}
 
+.logo {
+    width: 40px;
+    height: 40px;
 
-    </style>
+}
 
-<script>
+.headerContainerDarkModeAndLanguages {
+    display: var(--value-flex , flex);
+    align-items: var(--value-center , center);
+    justify-content: var(--value-center , center);
+}
 
-    // Loading 
-    let main = document.querySelector('main')
-    main.classList.add("hide");    
-    document.querySelector(".loaderContainer").classList.add("active");
-    main.classList.remove("hide");
-        
+.darkMode {
+    width: 25px;
+    height: 25px;
+}
 
-</script>
+.darkMode__img {
+    width: 25px;
+    width: 100%;
+    cursor: pointer;
+}
 
-</body>
-</html>
+.languages {
+    display: var(--value-flex , flex);
+    gap: 10px;
+}
 
-<style>
+.flag {
+    width: 25px;
+    height: 25px;
+    object-fit: var(--value-cover , cover);
+}
 
+/* Main Section */
+.mainContent {
+    text-align: var(--value-center, center);
+}
 
+.footerContainer {
 
-
-</style>
-
-
-
-<!-- 
-
-
-
-
-
-/* Marquee Section */
-.footerContainer{
-    position: var(--value-relative , relative);
-    padding: 6.25em 0 6.25em 0;
-    overflow: var(--value-hidden , hidden);
 }
 
 .footerFather {
-    position: var(--value-absolute , absolute);
-    top:6.25em;
-    left:-100%;
-    display:var(--value-flex , flex);
-    justify-content:var(--value-space-around , space-around);
-    width:200%;
-    padding: 0.625em;
-    border-top: 1px solid var(--text-color);
-    border-bottom: 1px solid var(--text-color);
-    white-space: nowrap;
-    overflow: var(--value-hidden , hidden);
-    transform:translate(0 , -50%);
-    animation: marquee 7s linear infinite forwards;
+
 }
- 
+
 .footerText {
-    font-size: var(--fs-marquee-mobile , 1.875rem);
-    text-transform: var(--value-uppercase , uppercase);
+
 }
 
- -->
+.mainContentContainer {
+    padding: 0.625em 0.9375em;
+}
 
-<!-- 
+.mainContent__title {
+    font-size: var(--fs-title-mobile);
+    line-height: 1.25;
+    color: var(--text-color);
+}
 
-/* .socialMediaList {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    list-style: none;
-    padding-left: 0;
+.mainContent__paragraph {
+    line-height: var(--value-lineHeight , 1.5);
+    color: var(--text-color);
+}
+
+.mainContent__btn {
+    position: var(--value-relative , relative , relative);
+    display: var(--value-inline-block , inline-block);
+    margin-top: 25px;
+    padding: 1em 2em;
+    border-radius: 50px;
+    box-shadow: 1px 1px 15px #b3ed073a;
+    color: #121212;
+    background-color: var(--greenColor);
+    transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
+}
+
+.mainContent__btn:before {
+    display: var(--value-none , none);
+    top: -75%;
+    background-image: radial-gradient(circle, var(--greenColor) 20%, transparent 20%), radial-gradient(circle, transparent 20%, var(--greenColor) 20%, transparent 30%), radial-gradient(circle, var(--greenColor) 20%, transparent 20%), radial-gradient(circle, var(--greenColor) 20%, transparent 20%), radial-gradient(circle, transparent 10%, var(--greenColor) 15%, transparent 20%), radial-gradient(circle, var(--greenColor) 20%, transparent 20%), radial-gradient(circle, var(--greenColor) 20%, transparent 20%), radial-gradient(circle, var(--greenColor) 20%, transparent 20%), radial-gradient(circle, var(--greenColor) 20%, transparent 20%);
+    background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%, 10% 10%, 18% 18%;
+}
+
+.mainContent__btn:after {
+    display: var(--value-none , none);
+    bottom: -75%;
+    background-image: radial-gradient(circle, var(--greenColor) 20%, transparent 20%), radial-gradient(circle,var(--greenColor) 20%, transparent 20%), radial-gradient(circle, transparent 10%, var(--greenColor) 15%, transparent 20%), radial-gradient(circle, var(--greenColor) 20%, transparent 20%), radial-gradient(circle, var(--greenColor) 20%, transparent 20%), radial-gradient(circle, var(--greenColor) 20%, transparent 20%), radial-gradient(circle, var(--greenColor) 20%, transparent 20%);
+    background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 10% 10%, 20% 20%;
+}
+
+.mainContent__btn.animate:before {
+    display: var(--value-block , block);
+    animation: topBubbles ease-in-out 0.75s forwards;
+}
+
+.mainContent__btn.animate:after {
+    display: var(--value-block , block);
+    animation: bottomBubbles ease-in-out 0.75s forwards;
+}
+
+@keyframes topBubbles {
+
+0% {
+    background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%, 40% 90%, 55% 90%, 70% 90%;
+}
+50% {
+    background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%, 50% 50%, 65% 20%, 90% 30%;
+}
+100% {
+    background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%, 50% 40%, 65% 10%, 90% 20%;
+    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+}
+
+}
+@keyframes bottomBubbles {
+
+0% {
+    background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%, 70% -10%, 70% 0%;
+}
+50% {
+    background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%, 105% 0%;
+}
+100% {
+    background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%, 110% 10%;
+    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+}
+
+}
+
+/* Footer Section */
+.socialMedia{
+    display: var(--value-flex , flex);
+    flex-direction: var(--value-column , column);
+    gap: 25px;
+}
+
+.socialMediaList {
+    display: var(--value-flex , flex);
+    align-items: var(--value-center , center);
+    justify-content: var(--value-center , center);
 }
 
 .socialMediaList__item {
@@ -320,13 +580,32 @@
 .socialMediaList__img {
     width: 25px;
     height: 25px;
-    object-fit: cover;
+    object-fit: var(--value-cover , cover);
     color: var(--text-color);
     transition: .5s color;
 }
 
 .contactCopyright {
     padding:0 0 25px 0;
-    text-align: center;
-} */
- -->
+    text-align: var(--value-center , center);
+    color: var(--text-color);
+}
+
+
+</style>
+
+
+<!-- <script>
+    // Loading 
+    let main = document.querySelector('main')
+    main.classList.add("hide");
+    
+    // setTimeout(myGreeting, 2000);
+    
+    // function myGreeting() {
+        
+        document.querySelector(".loaderContainer").classList.add("active");
+        main.classList.remove("hide");
+        
+    // } 
+</script> -->
