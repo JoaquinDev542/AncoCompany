@@ -83,6 +83,13 @@
 
 }
 
+.white-mode {
+    --page-background-color:var(--lightwhite);
+    --text-color:var(--black);
+    --bgSections: var(--gray);
+    --greenColor:var(--light-green);
+  }
+
 * , ::before , ::after {
     box-sizing: border-box;
     /* outline: 1px solid red; */
