@@ -210,30 +210,26 @@
 
     </footer>
 
-</body>
-</html>
+    <style>
+        /* LoaderContainer CSS */
+        .loaderContainer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 100vh;
+        }
 
-<!-- 
+        .loaderContainer.active {
+            /* display: none; */
+        }
 
-    /* LoaderContainer CSS */
-.loaderContainer {
-    display: var(--value-flex , flex);
-    align-items: var(--value-center , center);
-    justify-content: var(--value-center , center);
-    flex-direction: var(--value-column , column);
-    height: 100vh;
-}
-
-.loaderContainer.active {
-    display: var(--value-none , none);
-}
-
-.loading__letter  {
-    display: var(--value-inline-block , inline-block);
-    margin: 0 0.3125em;
-    letter-spacing: 3px;
-    animation: blur-text .5s 0s infinite linear alternate;
-}
+        .loading__letter  {
+            display: var(--value-inline-block , inline-block);
+            margin: 0 0.3125em;
+            letter-spacing: 3px;
+            animation: blur-text .5s 0s infinite linear alternate;
+        }
 
 @keyframes blur-text {
     0% {
@@ -243,6 +239,39 @@
         filter: blur(1.75px);
    }
 }
+
+
+
+    </style>
+
+<script>
+
+    // Loading 
+    let main = document.querySelector('main')
+    main.classList.add("hide");    
+    document.querySelector(".loaderContainer").classList.add("active");
+    main.classList.remove("hide");
+        
+
+</script>
+
+</body>
+</html>
+
+<style>
+
+
+
+
+</style>
+
+
+
+<!-- 
+
+
+
+
 
 /* Marquee Section */
 .footerContainer{
@@ -274,13 +303,9 @@
 
  -->
 
-<style>
+<!-- 
 
-:root {
-
-}
-
-.socialMediaList {
+/* .socialMediaList {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -303,6 +328,5 @@
 .contactCopyright {
     padding:0 0 25px 0;
     text-align: center;
-}
-
-</style>
+} */
+ -->
