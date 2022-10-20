@@ -206,8 +206,8 @@ strong {
     justify-content:var(--value-space-around , space-around);
     width:200%;
     padding: 0.625em;
-    border-top: 1px solid var(--text-color);
-    border-bottom: 1px solid var(--text-color);
+    border-top: 2px solid var(--text-color);
+    border-bottom: 2px solid var(--text-color);
     white-space: nowrap;
     overflow: var(--value-hidden , hidden);
     transform:translate(0 , -50%);
@@ -300,6 +300,7 @@ strong {
     right: var(--fs-zero , 0);
     padding: 0.625em 0.9375em;
     background: var(--headerBg , #121212);
+    border-bottom: 2px solid var(--white);
 }
 
 .headerContainer {
@@ -505,12 +506,12 @@ strong {
     width: var(--width);
     height: var(--height);
     border-radius: var(--border-radius);
-    background-color: #dddddd;
+    background-color: var(--gray);
     transition: background-color .2s;
 }
 
 .darkMode__input:checked ~ .darkMode__fill{
-    background-color: #B4ED07;
+    background-color: var(--light-green);
 }
 
 .darkMode__fill::after {
@@ -964,7 +965,7 @@ strong {
     border: var(--value-none , none);
     outline: var(--value-none , none);
     background-color: var(--value-transparent , transparent);
-    border-bottom: 1px solid var(--white);
+    border-bottom: 2px solid var(--white);
     color: var(--white);
 }
 
@@ -974,13 +975,13 @@ strong {
     resize: vertical;
     border: var(--value-none , none);
     color: var(--white);
-    outline: 1px solid var(--white);
+    outline: 2px solid var(--white);
     background-color: var(--value-transparent , transparent);
     transition: outline .3s;
 }
 
 .textarea:focus {
-    outline: 1px solid var(--green);
+    outline: 2px solid var(--green);
 }
 
 .input:focus + .form__label , .input:not(:placeholder-shown) + .form__label {
@@ -1004,7 +1005,7 @@ strong {
     bottom: var(--fs-zero , 0);
     left: var(--fs-zero , 0);
     width: 100%;
-    height: 1px;
+    height: 2px;
     background-color: var(--greenColor);
     transform-origin: left bottom;
     transform: scale(0);
@@ -1058,6 +1059,11 @@ strong {
     border: var(--value-none , none);
     align-self: var(--value-center , center);
     cursor: pointer;
+    transition: 1s transform ;
+}
+
+.aside__btn.hidden {
+    display: var(--value-none);
 }
 
 .aside__paragraph--opacity {
@@ -1068,6 +1074,7 @@ strong {
 .aside__paragraph--opacity.active {
     opacity: 1;
 }
+
 
 /* Footer / Contact Section */
 .contact {
