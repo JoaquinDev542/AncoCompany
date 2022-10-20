@@ -479,7 +479,12 @@ strong {
 }
 
 .darkMode {
-    display: var(--value-none , none);
+    --width:100px;
+    --height:calc( var(--width) / 2);
+    --border-radius:calc(var(--height) / 2);
+
+    display: var(--value-inline-block , inline-block);
+    cursor: pointer
 }
 
 .darkMode.active {
@@ -1338,6 +1343,7 @@ strong {
 
     .darkMode {
         display: var(--value-block , block);
+        --width:50px;
     }
 
     .darkMode.active {
