@@ -15,15 +15,8 @@ window.addEventListener('load',function () {
     let main = document.querySelector('main')
     
     main.classList.add("hide");
-    
-    // setTimeout(myGreeting, 2000);
-    
-    // function myGreeting() {
-        
-        document.querySelector(".loaderContainer").classList.add("active");
-        main.classList.remove("hide");
-        
-    // } 
+    document.querySelector(".loaderContainer").classList.add("active");
+    main.classList.remove("hide");
 
     // Scroll Reveal
     ScrollReveal({
@@ -69,6 +62,13 @@ window.addEventListener('load',function () {
         }    
     }
 
+    //White & Dark Mode
+    let darkMode__input = document.querySelector(".darkMode__input");
+     darkMode__input.addEventListener('click', function () {
+ 
+        document.documentElement.classList.toggle("white-mode");
+         
+    }) 
 
     // Menu Reponsive
     let menuopen = document.querySelector(".menuOpen")
@@ -97,14 +97,6 @@ window.addEventListener('load',function () {
         menuLinkThird.classList.toggle('active');
 
     })
-
-    //White & Dark Mode
-    let darkMode__input = document.querySelector(".darkMode__input");
-    darkMode__input.addEventListener('click', function () {
-
-        document.documentElement.classList.toggle("white-mode");
-        
-    }) 
 
     // Menu Responsive Links
     let workLink = document.querySelector("#workLink");

@@ -4,6 +4,7 @@
     --white:#F5F5F5;
     --green:#B4ED07;
     --light-green:#83b017;
+    --light-green:#6617b0;
     --lightwhite: #f5f5f5;
     --gray:#2B2B2B;
     --headerBg:#121212;
@@ -281,6 +282,11 @@ strong {
 .arrow__img {
     color:var(--white);
     transition: .5s color;
+}
+
+/* Animations DarkMode */
+.transitionColor {
+    transition: color .6s linear;
 }
 
 /* Hero Section */
@@ -589,7 +595,7 @@ strong {
     box-shadow: 1px 1px 15px #b3ed073a;
     color: #121212;
     background-color: var(--green);
-    transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
+    transition: transform ease-in 0.1s, box-shadow ease-in 0.25s ;
 }
 
 .heroContentContainer__btn--color {
