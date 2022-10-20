@@ -2,9 +2,6 @@
 window.addEventListener('load',function () {
     
     // Loader
-    window.addEventListener('load',function () {
-
-
     window.addEventListener("blur", () => {
         document.title = "COME HERE! We´re Waiting for you!";
     });
@@ -14,7 +11,6 @@ window.addEventListener('load',function () {
         document.title = "AncoCompany | The best Web development company";
     });
 
-    
     // Loading 
     let main = document.querySelector('main')
     
@@ -317,3 +313,4 @@ window.addEventListener('load',function () {
     // })
 
 })
+
