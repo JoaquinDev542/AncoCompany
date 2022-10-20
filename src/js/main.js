@@ -90,8 +90,8 @@ window.addEventListener('load',function () {
     })
 
     //White & Dark Mode
-
-    darkMode.addEventListener('click', function () {
+    let darkMode__input = document.querySelector(".darkMode__input");
+    darkMode__input.addEventListener('click', function () {
 
         document.documentElement.classList.toggle("white-mode");
         
