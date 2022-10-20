@@ -1,5 +1,18 @@
 // Loader
 window.addEventListener('load',function () {
+    
+    // Loader
+    window.addEventListener('load',function () {
+
+
+    window.addEventListener("blur", () => {
+        document.title = "COME HERE! We´re Waiting for you!";
+    });
+
+    // Cuando el enfoque del usuario vuelve a tu pestaña (sitio web) nuevamente
+    window.addEventListener("focus", () => {
+        document.title = "AncoCompany | The best Web development company";
+    });
 
     
     // Loading 
