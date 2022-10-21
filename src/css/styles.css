@@ -1131,7 +1131,7 @@ strong {
 }
 
 .links {
-    text-align: var(--value-center , center);
+    display: var(--value-none , none);
 }
 
 .linksItems__item {
@@ -1146,7 +1146,8 @@ strong {
 .socialMediaAndCopyrightContainer {
     display: var(--value-flex , flex);
     flex-direction: var(--value-column , column);
-    gap: 25px;
+    gap: 1.5625em;
+    margin-top: 1.5625em;
 }
 
 .socialMediaList {
@@ -1276,6 +1277,7 @@ strong {
     }
     
     .links {
+        display: block;
         text-align: left;
     }
 
@@ -1293,6 +1295,7 @@ strong {
         justify-content: space-between;
         gap: var(--fs-zero , 0);
         flex-direction: var(--value-row , row);
+        /* margin-top: ; */
     }
     
     .socialMediaList__item {
