@@ -1324,7 +1324,6 @@ strong {
         justify-content: space-between;
         gap: var(--fs-zero , 0);
         flex-direction: var(--value-row , row);
-        /* margin-top: ; */
     }
     
     .socialMediaList__item {
@@ -1478,9 +1477,10 @@ strong {
         padding: var(--fs-padding-portatil , 0.625em 4.6875em);
     }
 
-    .workProjects {
-        grid-template-columns: 1fr 1fr 1fr;
-    } 
+    .workProjectImg {
+        height: 450px;
+        overflow: var(--value-hidden , hidden);
+    }
 
     .workTitles__title--italic {
         margin-bottom: 1.5em;
