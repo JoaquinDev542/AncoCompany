@@ -6,6 +6,8 @@
     --dm-clr-secondary:#F5F5F5;
     --dm-bg-header:#13181e;
     --dm-clr-heroButton:#13181e;
+    --dm-boxShadow-heroButton:#b3ed077c;
+    --dm-boxShadow-buttons:#b3ed077c;
     --dm-bg-footer:#00000081;
     --lm-bg-body:#f5f5f5;
     --lm-bg-sections:#131a35;
@@ -14,7 +16,10 @@
     --lm-clr-secondary:#121933;
     --lm-bg-header:#13181e;
     --lm-clr-heroButton:#f5f5f5;
+    --lm-boxShadow-heroButton:#5d44ff;
+    --lm-boxShadow-buttons:#f5f5f580;
     --lm-bg-footer:#00000081;
+    --white:#F5F5F5;
 
     --fs-zero:0;
     --fs-16px:16px;
@@ -79,6 +84,8 @@
         --clr-heroButton:var(--dm-clr-heroButton);
         --clr-primary:var(--dm-clr-primary);
         --clr-secondary:var(--dm-clr-secondary);
+        --boxShadow-heroButton:var(--dm-boxShadow-heroButton);
+        --boxShadow-buttons:var(--dm-boxShadow-buttons);
     }
 
 }
@@ -94,6 +101,8 @@
         --clr-heroButton:var(--lm-clr-heroButton);
         --clr-primary:var(--lm-clr-primary);
         --clr-secondary:var(--lm-clr-secondary);
+        --boxShadow-heroButton:var(--lm-boxShadow-heroButton);
+        --boxShadow-buttons:var(--lm-boxShadow-buttons);
     }
 
 }
@@ -107,6 +116,8 @@
     --clr-heroButton:var(--lm-clr-heroButton);
     --clr-primary:var(--lm-clr-primary);
     --clr-secondary:var(--lm-clr-secondary);
+    --boxShadow-heroButton:var(--lm-boxShadow-heroButton);
+    --boxShadow-buttons:var(--lm-boxShadow-buttons);
 }
 
 * , ::before , ::after {
@@ -298,7 +309,7 @@ strong {
 }
 
 .arrow__img {
-    color:var(--white);
+    color: var(--white);
     transition: .5s color;
 }
 
@@ -462,7 +473,7 @@ strong {
     width: var(--value-100Percent , 100%);
     height: 100vh;
     font-weight: 100;
-    /* background-color:var(--bg-header); */
+    background-color:var(--dm-bg-header);
     transition: transform 1s cubic-bezier(.62,.54,.76,.94) , opacity .3s cubic-bezier(.62,.54,.85,.72);
 }
 
@@ -516,7 +527,6 @@ strong {
     --width:100px;
     --height:calc( var(--width) / 2);
     --border-radius:calc(var(--height) / 2);
-
     display: var(--value-inline-block , inline-block);
     cursor: pointer;
 }
@@ -610,13 +620,14 @@ strong {
     margin-top: 25px;
     padding: 1em 2em;
     border-radius: 50px;
-    box-shadow: 1px 1px 15px #b3ed073a;
+    box-shadow: 1px 1px 15px var(--boxShadow-buttons);
     color: var(--dm-clr-heroButton);
     background-color: var(--bg-buttons);
     transition: transform ease-in 0.1s, box-shadow ease-in 0.25s ;
 }
 
 .heroContentContainer__btn--color {
+    box-shadow: 1px 1px 15px var(--boxShadow-heroButton);
     background-color: var(--clr-primary);
     color: var(--clr-heroButton);
 }
@@ -635,40 +646,37 @@ strong {
 .heroContentContainer__btn:before {
     display: var(--value-none , none);
     top: -75%;
-    background-image: radial-gradient(circle, var(--green) 20%, transparent 20%), radial-gradient(circle, transparent 20%, var(--green) 20%, transparent 30%), radial-gradient(circle, var(--green) 20%, transparent 20%), radial-gradient(circle, var(--green) 20%, transparent 20%), radial-gradient(circle, transparent 10%, var(--green) 15%, transparent 20%), radial-gradient(circle, var(--green) 20%, transparent 20%), radial-gradient(circle, var(--green) 20%, transparent 20%), radial-gradient(circle, var(--green) 20%, transparent 20%), radial-gradient(circle, var(--green) 20%, transparent 20%);
+    background-image: radial-gradient(circle, var(--bg-buttons) 20%, transparent 20%), radial-gradient(circle, transparent 20%, var(--bg-buttons) 20%, transparent 30%), radial-gradient(circle, var(--bg-buttons) 20%, transparent 20%), radial-gradient(circle, var(--bg-buttons) 20%, transparent 20%), radial-gradient(circle, transparent 10%, var(--bg-buttons) 15%, transparent 20%), radial-gradient(circle, var(--bg-buttons) 20%, transparent 20%), radial-gradient(circle, var(--bg-buttons) 20%, transparent 20%), radial-gradient(circle, var(--bg-buttons) 20%, transparent 20%), radial-gradient(circle, var(--bg-buttons) 20%, transparent 20%);
     background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%, 10% 10%, 18% 18%;
 }
 
 .heroContentContainer__btn:after {
     display: var(--value-none , none);
     bottom: -75%;
-    background-image: radial-gradient(circle, var(--green) 20%, transparent 20%), radial-gradient(circle,var(--green) 20%, transparent 20%), radial-gradient(circle, transparent 10%, var(--green) 15%, transparent 20%), radial-gradient(circle, var(--green) 20%, transparent 20%), radial-gradient(circle, var(--green) 20%, transparent 20%), radial-gradient(circle, var(--green) 20%, transparent 20%), radial-gradient(circle, var(--green) 20%, transparent 20%);
+    background-image: radial-gradient(circle, var(--bg-buttons) 20%, transparent 20%), radial-gradient(circle,var(--bg-buttons) 20%, transparent 20%), radial-gradient(circle, transparent 10%, var(--bg-buttons) 15%, transparent 20%), radial-gradient(circle, var(--bg-buttons) 20%, transparent 20%), radial-gradient(circle, var(--bg-buttons) 20%, transparent 20%), radial-gradient(circle, var(--bg-buttons) 20%, transparent 20%), radial-gradient(circle, var(--bg-buttons) 20%, transparent 20%);
     background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 10% 10%, 20% 20%;
 }
 
 .heroContentContainer__btn--color:before {
     display: var(--value-none , none);
     top: -75%;
-    background-image: radial-gradient(circle, var(--greenColor) 20%, transparent 20%), radial-gradient(circle, transparent 20%, var(--greenColor) 20%, transparent 30%), radial-gradient(circle, var(--greenColor) 20%, transparent 20%), radial-gradient(circle, var(--greenColor) 20%, transparent 20%), radial-gradient(circle, transparent 10%, var(--greenColor) 15%, transparent 20%), radial-gradient(circle, var(--greenColor) 20%, transparent 20%), radial-gradient(circle, var(--greenColor) 20%, transparent 20%), radial-gradient(circle, var(--greenColor) 20%, transparent 20%), radial-gradient(circle, var(--greenColor) 20%, transparent 20%);
+    background-image: radial-gradient(circle, var(--clr-primary) 20%, transparent 20%), radial-gradient(circle, transparent 20%, var(--clr-primary) 20%, transparent 30%), radial-gradient(circle, var(--clr-primary) 20%, transparent 20%), radial-gradient(circle, var(--clr-primary) 20%, transparent 20%), radial-gradient(circle, transparent 10%, var(--clr-primary) 15%, transparent 20%), radial-gradient(circle, var(--clr-primary) 20%, transparent 20%), radial-gradient(circle, var(--clr-primary) 20%, transparent 20%), radial-gradient(circle, var(--clr-primary) 20%, transparent 20%), radial-gradient(circle, var(--clr-primary) 20%, transparent 20%);
     background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%, 10% 10%, 18% 18%;
 }
 
 .heroContentContainer__btn--color:after {
     display: var(--value-none , none);
     bottom: -75%;
-    background-image: radial-gradient(circle, var(--greenColor) 20%, transparent 20%), radial-gradient(circle,var(--greenColor) 20%, transparent 20%), radial-gradient(circle, transparent 10%, var(--greenColor) 15%, transparent 20%), radial-gradient(circle, var(--greenColor) 20%, transparent 20%), radial-gradient(circle, var(--greenColor) 20%, transparent 20%), radial-gradient(circle, var(--greenColor) 20%, transparent 20%), radial-gradient(circle, var(--greenColor) 20%, transparent 20%);
+    background-image: radial-gradient(circle, var(--clr-primary) 20%, transparent 20%), radial-gradient(circle,var(--clr-primary) 20%, transparent 20%), radial-gradient(circle, transparent 10%, var(--clr-primary) 15%, transparent 20%), radial-gradient(circle, var(--clr-primary) 20%, transparent 20%), radial-gradient(circle, var(--clr-primary) 20%, transparent 20%), radial-gradient(circle, var(--clr-primary) 20%, transparent 20%), radial-gradient(circle, var(--clr-primary) 20%, transparent 20%);
     background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 10% 10%, 20% 20%;
 }
 
 .heroContentContainer__btn:active {
     transform: scale(0.9);
-    background-color: var(--green);
-    box-shadow: 0 2px 25px #b3ed0727;
 }
 
 .heroContentContainer__btn--color:active {
     transform: scale(0.9);
-    box-shadow: 0 2px 25px #b3ed0727;
 }
 
 .heroContentContainer__btn.animate:before {
@@ -1512,7 +1520,7 @@ strong {
 @media screen and (hover: hover) {
 
     .arrow:hover .arrow__img {
-        color: var(--light-green);
+        color: var(--clr-primary);
     }
 
     .contactInformationSocialMedia__img:hover {
