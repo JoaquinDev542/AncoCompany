@@ -907,17 +907,25 @@ strong {
 }
 
 .workProjectImg {
-    height: 400px;
-    overflow: var(--value-hidden , hidden);
+    display: var(--value-grid);
+    place-items: var(--value-center);
+    width: 100%;
+    height: 350px;
+    background-image: url(../../assets/image/aboutHero.jpeg);
+    background-repeat: no-repeat;
+    background-position:  var(--value-center);
+    background-size: var(--value-cover);
 }
 
-.workProject__img {
-    width: 100%;
-    height: 100%;
-    object-fit: var(--value-cover , cover);
-    transition: filter .5s;
-    border-radius: 5px;
-    transition: 0.5s all ease-in-out;
+.workProjectImg__img {
+    opacity: 0;
+    transition: .5s opacity;
+    width: 150px;
+    height: 150px;
+}
+
+.workProjectImg:hover .workProjectImg__img {
+    opacity: 1;
 }
 
 .workProjectLinks {
@@ -1478,8 +1486,7 @@ strong {
     }
 
     .workProjectImg {
-        height: 450px;
-        overflow: var(--value-hidden , hidden);
+        height: 400px;
     }
 
     .workTitles__title--italic {
@@ -1539,10 +1546,6 @@ strong {
 
     .workProject__img:hover {
         filter: grayscale(.5);
-    }
-
-    .workProjectImg:hover .workProject__img{
-        transform: scale(1.25);
     }
 
     .workProjectImg:hover ~ .workProjectLinks::after {
