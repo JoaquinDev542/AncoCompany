@@ -3,12 +3,12 @@ window.addEventListener('load',function () {
     
     // Loader
     window.addEventListener("blur", () => {
-        document.title = "Bienvenido a Anco Company!";
+        document.title = "AncoCompany® | La mejor compañia de desarrollo Web";
     });
 
     // Cuando el enfoque del usuario vuelve a tu pestaña (sitio web) nuevamente
     window.addEventListener("focus", () => {
-        document.title = "AncoCompany | La mejor compañia de desarrollo Web";
+        document.title = "AncoCompany®";
     });
 
     // Loading 
