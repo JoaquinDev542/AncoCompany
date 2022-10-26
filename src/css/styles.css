@@ -876,7 +876,7 @@ strong {
     max-width: 1440px;
     margin: var(--fs-zero , 0) var(--value-auto , auto);
     padding:var(--fs-padding-mobile ,  0 0.9375em);
-    margin-bottom: 12.5em;
+    margin-bottom: 200px;
 }
 .workTitles {
     margin-top: 6.25em;
