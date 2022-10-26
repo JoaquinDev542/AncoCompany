@@ -920,8 +920,8 @@ strong {
 .workProjectImg__img {
     opacity: 0;
     transition: .5s opacity;
-    width: 150px;
-    height: 150px;
+    /* width: 150px; */
+    /* height: 150px; */
 }
 
 .workProjectImg:hover .workProjectImg__img {
