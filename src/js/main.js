@@ -3,7 +3,7 @@ window.addEventListener('load',function () {
     
     // Loader
     window.addEventListener("blur", () => {
-        document.title = "AncoCompany® | La mejor compañia de desarrollo Web";
+        document.title = "AncoCompany® | Diseño y desarrollo Web";
     });
 
     // Cuando el enfoque del usuario vuelve a tu pestaña (sitio web) nuevamente
