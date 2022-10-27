@@ -79,6 +79,22 @@ window.addEventListener('load',function () {
    window.addEventListener('scroll' , scrollProgressBar);
 
 
+    // BackgroundColor Header Section Change
+    let header = document.querySelector(".header");
+
+    const functionChangeBgHeader = function () {
+
+        if(document.documentElement.scrollTop >= 10){
+            header.classList.add("addColor");
+        } else {
+            header.classList.remove("addColor");
+        }  
+        
+    }
+    window.addEventListener("scroll" , functionChangeBgHeader); 
+
+
+
     //White & Dark Mode
     let darkMode__input = document.querySelector(".darkMode__input");
      darkMode__input.addEventListener('click', function () {
