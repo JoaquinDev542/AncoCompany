@@ -729,59 +729,6 @@ strong {
 
 }
 
-.ocean { 
-    position: var(--value-absolute , absolute);
-    bottom: var(--fs-zero , 0);
-    left: var(--fs-zero , 0);
-    width:100%;
-    height: 200px;
-    overflow: var(--value-hidden , hidden);
-}
-  
-.wave--first {
-    transform: rotate(180deg);
-    top: var(--fs-zero , 0);
-    left: var(--fs-zero , 0);
-}
-  
-.wave {
-    background: url("../../assets/image/wave.svg") repeat-x; 
-    position: var(--value-absolute , absolute);
-    bottom: -25px;
-    width: 6400px;
-    height: 100%;
-    animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
-    transform: translate3d(0, 0, 0);
-}
-  
-.wave--second {
-    bottom: -25px;
-    animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
-    opacity: 1;
-}
-  
-@keyframes wave {
-
-    0% {
-      margin-left: 0;
-    }
-    100% {
-      margin-left: -1600px;
-    }
-
-}
-  
-@keyframes swell {
-
-    0%, 100% {
-      transform: translateY(-25px);
-    }
-    50% {
-      transform: translateY(5px);
-    }
-
-}
-
 /* menuCloseAll Section */
 .menuCloseAll.active {
     display: var(--value-none , none);
