@@ -63,7 +63,7 @@ window.addEventListener('load',function () {
     }
 
     // ProgressBar Section
-    let progressBar = document.querySelector(".progressBar");
+    let progressBar = document.querySelector(".progressBar__element");
 
     function scrollProgressBar() {
 
