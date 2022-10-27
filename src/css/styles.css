@@ -320,6 +320,23 @@ strong {
     transition: color .6s linear;
 }
 
+/* ProgressBar Section */
+.progressBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 10px;
+    width: 100%;
+    background-color: transparent;
+    z-index: 500;
+}
+
+.progressBar__element {
+    background-color: var(--clr-primary);
+    width: 100%;
+    height: 100%;
+}
+
 /* Hero Section */
 .hero {
     position: var(--value-relative , relative);
@@ -332,7 +349,7 @@ strong {
 .header {
     z-index: 300;
     position:  var(--value-fixed , fixed);
-    top: var(--fs-zero , 0) ;
+    top: 10px;
     left: var(--fs-zero , 0);
     right: var(--fs-zero , 0);
     padding: 0.625em 0.9375em;

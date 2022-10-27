@@ -62,6 +62,23 @@ window.addEventListener('load',function () {
         }    
     }
 
+    // ProgressBar Section
+    let progressBar = document.querySelector(".progressBar");
+
+    function scrollProgressBar() {
+
+        let scrollTop = document.documentElement.scrollTop; // valor de lo que scroleamos
+        let scrollHeight = document.documentElement.scrollHeight; // height total de la pagina
+        let clientHeight = document.documentElement.clientHeight; // valor que vemos en el momento
+
+        let windowHeight = scrollHeight - clientHeight;
+        let percentage = scrollTop / windowHeight * 100;
+
+        progressBar.style.width = percentage + "%";
+   }
+   window.addEventListener('scroll' , scrollProgressBar);
+
+
     //White & Dark Mode
     let darkMode__input = document.querySelector(".darkMode__input");
      darkMode__input.addEventListener('click', function () {
