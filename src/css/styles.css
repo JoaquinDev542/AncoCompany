@@ -327,8 +327,13 @@ strong {
     left: 0;
     height: 5px;
     width: 100%;
-    background-color: var(--bg-header);
+    background-color: var(--value-transparent);
     z-index: 600;
+    transition: .5s background-color;
+}
+
+.progressBar.addColor {
+    background-color: var(--bg-header);
 }
 
 .progressBar__element {

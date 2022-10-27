@@ -63,7 +63,7 @@ window.addEventListener('load',function () {
     }
 
     // ProgressBar Section
-    let progressBar = document.querySelector(".progressBar__element");
+    let progressBar__element = document.querySelector(".progressBar__element");
 
     function scrollProgressBar() {
 
@@ -74,19 +74,22 @@ window.addEventListener('load',function () {
         let windowHeight = scrollHeight - clientHeight;
         let percentage = scrollTop / windowHeight * 100;
 
-        progressBar.style.width = percentage + "%";
+        progressBar__element.style.width = percentage + "%";
    }
    window.addEventListener('scroll' , scrollProgressBar);
 
 
     // BackgroundColor Header Section Change
     let header = document.querySelector(".header");
+    let progressBar = document.querySelector(".progressBar");
 
     const functionChangeBgHeader = function () {
 
         if(document.documentElement.scrollTop >= 10){
+            progressBar.classList.add("addColor");
             header.classList.add("addColor");
         } else {
+            progressBar.classList.remove("addColor");
             header.classList.remove("addColor");
         }  
         
