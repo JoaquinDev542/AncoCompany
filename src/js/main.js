@@ -82,15 +82,18 @@ window.addEventListener('load',function () {
     // BackgroundColor Header Section Change
     let header = document.querySelector(".header");
     let progressBar = document.querySelector(".progressBar");
+    let menuCloseBg = document.querySelector(".menuClose");
 
     const functionChangeBgHeader = function () {
 
         if(document.documentElement.scrollTop >= 10){
             progressBar.classList.add("addColor");
             header.classList.add("addColor");
+            menuCloseBg.classList.add("addColor");
         } else {
             progressBar.classList.remove("addColor");
             header.classList.remove("addColor");
+            menuCloseBg.classList.remove("addColor");
         }  
         
     }
