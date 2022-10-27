@@ -327,8 +327,8 @@ strong {
     left: 0;
     height: 10px;
     width: 100%;
-    background-color: transparent;
-    z-index: 500;
+    background-color: var(--bg-header);
+    z-index: 600;
 }
 
 .progressBar__element {
