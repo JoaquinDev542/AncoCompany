@@ -29,6 +29,47 @@
 </head>
 <body class="body" >
 
+    <div class="link">
+        <a href="" class="link__son">GITHUB</a>
+        <a href="" class="link__sonHidden">GITHUB</a>
+    </div>
+
+    <style>
+
+        body {
+            padding: 200px;
+        }
+
+        .link {
+            position: relative;
+            overflow: hidden;
+            padding: 10px;
+        }
+
+        .link__son , .link__sonHidden{
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: .2s top;
+        }
+
+        .link__sonHidden {
+            top: 100%;
+            color: blue;
+        }
+
+        .link:hover .link__son{
+            top: -100%;
+
+        }
+
+        .link:hover .link__sonHidden{
+            top: 0%;
+
+        }
+
+    </style>
+
 </body>
 </html>
 
