@@ -84,21 +84,34 @@ window.addEventListener('load',function () {
     let progressBar = document.querySelector(".progressBar");
     let menuCloseBg = document.querySelector(".menuClose");
 
+    // let list__linkFirst = document.querySelector(".list__link--first");
+    // let list__linkSecond = document.querySelector(".list__link--second");
+    // let list__linkThird = document.querySelector(".list__link--third");
+    // let bar = document.querySelector(".bar");
+
     const functionChangeBgHeader = function () {
 
         if(document.documentElement.scrollTop >= 10){
             progressBar.classList.add("addColor");
             header.classList.add("addColor");
             menuCloseBg.classList.add("addColor");
+            // list__linkFirst.classList.add("addColor");
+            // list__linkSecond.classList.add("addColor");
+            // list__linkThird.classList.add("addColor");
+            // bar.classList.add("addColor");
+
         } else {
             progressBar.classList.remove("addColor");
             header.classList.remove("addColor");
             menuCloseBg.classList.remove("addColor");
+            // list__linkFirst.classList.remove("addColor");
+            // list__linkSecond.classList.remove("addColor");
+            // list__linkThird.classList.remove("addColor");
+            // bar.classList.remove("addColor");
         }  
         
     }
     window.addEventListener("scroll" , functionChangeBgHeader); 
-
 
 
     //White & Dark Mode
