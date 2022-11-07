@@ -261,7 +261,7 @@ strong {
 .arrow {
     opacity: var(--fs-zero);
     position: var(--value-fixed , fixed);
-    bottom: 3em;
+    bottom: 3.75em;
     right: 0.9375em;
     width: 50px;
     height: 50px;
@@ -823,6 +823,34 @@ strong {
     display: var(--value-none , none);
 }
 
+.aboutInformation {
+    display: var(--value-grid);
+    place-items: var(--value-center);
+    max-width: 1440px;
+    height: 100vh;
+    margin: var(--fs-zero , 0) var(--value-auto , auto);
+    padding:var(--fs-padding-mobile ,  0 0.9375em);
+}
+
+.aboutInformationPadding {
+    display: var(--value-flex);
+    flex-direction: var(--value-column);
+    gap: 25px;
+}
+
+.aboutInformationPadding__img {
+    box-shadow: 5px 5px;
+    border-radius: 10px;
+}
+
+.aboutInformationPadding__img--second {
+    box-shadow: -5px 5px;
+}
+
+.aboutInformationContainer__title {
+    font-size: 2.75rem;
+}
+
 /* information Section */
 .informationContent {
     padding:var(--fs-padding-mobile ,  0 0.9375em);
@@ -856,12 +884,12 @@ strong {
     border-radius: 10px;
     box-shadow: 5px 5px;
     /* box-shadow: 5px 5px , -5px 5px; */
-
 }
 
 .informationContentContainer__img {
     width: 3.125rem;
     margin: var(--fs-zero , 0) var(--value-auto , auto);
+    
 }
 
 .informationContentContainer__title {
@@ -1126,7 +1154,6 @@ strong {
     opacity: 1;
 }
 
-
 /* Footer / Contact Section */
 .contact {
     display: var(--value-flex , flex);
@@ -1270,6 +1297,16 @@ strong {
 
     .aboutContent {
         padding: var(--fs-padding-tablet , 0.625em 3.125em);
+    }
+
+    .aboutInformation {
+        padding:var(--fs-padding-tablet);
+    }
+
+    .aboutInformationPadding {
+        display: var(--value-flex);
+        flex-direction: var(--value-column);
+        gap: 25px;
     }
 
     /* Information Section */
@@ -1478,6 +1515,32 @@ strong {
     .aboutContentImg {
         display: var(--value-block , block);
     }
+
+    .aboutInformation {
+        padding:var(--fs-padding-portatil);
+    }
+
+    .aboutInformationPadding {
+        display: var(--value-grid);
+        place-items: var(--value-center);
+        grid-template-columns: 1fr .8fr;
+    }
+
+    .aboutInformationPadding--second {
+        grid-template-columns: .8fr 1fr;
+
+        grid-template-areas: "aboutInformationContainer--second aboutInformationPadding__img--second";
+    }
+
+    .aboutInformationContainer--second {
+        grid-area: aboutInformationContainer--second;
+    }
+
+    .aboutInformationPadding__img--second {
+        grid-area: aboutInformationPadding__img--second;
+    }
+
+    
 
     /* Information Section */
     .informationContent {
