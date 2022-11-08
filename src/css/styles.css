@@ -37,8 +37,10 @@
     --fs-marquee-mobile:2.25rem;
     --fs-marquee-tablet:3rem;
     --fs-marquee-portatil:3.5rem;
-    --fs-aboutTitle-mobile:1.75rem;
-    --fs-aboutTitle-portatil:2.25rem;
+    /* --fs-aboutTitle-mobile:1.75rem;
+    --fs-aboutTitle-portatil:2.25rem; */
+    --fs-aboutTitle-mobile:3.75rem;
+    --fs-aboutTitle-portatil:5rem;
     --fs-informationTitle-mobile:1.75rem;
     --fs-informationTitle-portatil:2rem;
     --fs-workTitle-tablet: 1.5rem;
@@ -1585,11 +1587,10 @@ strong {
     .aboutInformationPadding {
         display: var(--value-grid);
         place-items: var(--value-center);
-        grid-template-columns: 1fr .8fr;
+        grid-template-columns: 1fr 1fr;
     }
 
     .aboutInformationPadding--second {
-        grid-template-columns: .8fr 1fr;
         grid-template-areas: "aboutInformationContainer--second aboutInformationPadding__img--second";
     }
 
