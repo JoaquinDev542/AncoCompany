@@ -860,7 +860,6 @@ strong {
     z-index: -1;
 }
 
-
 .aboutContent {
     max-width: 1440px;
     margin: var(--fs-zero , 0) var(--value-auto , auto);
@@ -1315,6 +1314,10 @@ strong {
 }
 
 .contactLanguages {
+    text-align: var(--value-center);
+}
+
+.copyright {
     text-align: var(--value-center);
 }
 
