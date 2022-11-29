@@ -1132,43 +1132,34 @@ strong {
 
 /* socialMedia Section */
 .socialMedia {
+    max-width: 1440px;
+    margin: 0 auto;
     padding:var(--fs-padding-mobile);
 }
 
 .socialMedia__title {
+    margin-top: 150px;
     text-align: var(--value-center);
     text-transform: var(--value-uppercase);
 }
 
 .socialMediaContainers {
     display: var(--value-grid);
-    grid-template-columns: 50px 50px;
-    grid-template-rows: 1fr 1fr 1fr;
-    /* display: flex; */
+    place-content: var(--value-center);
+    grid-template-columns: max-content max-content;
     gap: 20px;
-    /* margin: var(--fs-zero) var(--value-auto); */
-    /* width: 100%; */
-    /* justify-content: center; */
-    /* align-items: center; */
 }
 
 .socialMediaContainer {
-    /* padding: 10px; */
-    /* text-align: var(--value-center); */
-    /* display: var(--value-flex); */
-    /* flex-direction: var(--value-column); */
-}
-
-.socialMediaContainer__link {
-    /* display: var(--value-block); */
-    /* align-self: center; */
-
+    padding: 10px 30px;
+    transition: outline .5s;
 }
 
 .socialMediaContainer__img {
     fill: var(--clr-primary);
+    width: 60px;
+    height: 60px;
 }
-
 
 /* Aside Section */
 .aside {
@@ -1425,6 +1416,15 @@ strong {
         padding:var(--fs-padding-tablet);
     }
 
+    .socialMediaContainers {
+        grid-template-columns: max-content max-content max-content;
+    }
+
+    .socialMediaContainer__img {
+        width: 65px;
+        height: 65px;
+    }
+    
     /* Aside Section */
     .aside {
         padding: var(--fs-padding-tablet , 0.625em 3.125em);
@@ -1708,6 +1708,15 @@ strong {
     .socialMedia {
         padding:var(--fs-padding-portatil);
     }
+
+    .socialMediaContainers {
+        display: var(--value-flex);
+        justify-content: var(--value-space-between);
+    }
+
+    .socialMediaContainer {
+        padding: 10px 40px;
+    }
     
     /* Aside Section */
     .aside {
@@ -1762,6 +1771,11 @@ strong {
 
     .linksItems__link:hover {
         color: var(--clr-primary);
+    }
+
+    .socialMediaContainer:hover {
+        outline: 1px solid var(--clr-primary);
+        border-radius: 5px;
     }
     
 }
