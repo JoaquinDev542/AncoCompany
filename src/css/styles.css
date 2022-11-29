@@ -834,6 +834,7 @@ strong {
 }
 
 .titleDecoration {
+    position: var(--value-relative);
     display: var(--value-block);
     width: max-content;
     margin: var(--fs-zero) var(--value-auto);
@@ -844,6 +845,19 @@ strong {
     padding: 0 15px 0 5px ;
     color: var(--clr-titleDecoration);
     margin-top: 10px;
+    z-index: 10;
+}
+
+.titleDecoration::after {
+    position: var(--value-absolute);
+    content: var(--value-content);
+    height: 3px;
+    width: calc(100vw - 16px);
+    background-color: var(--clr-primary);
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
 }
 
 
@@ -1715,7 +1729,7 @@ strong {
     }
 
     .socialMediaContainer {
-        padding: 10px 40px;
+        padding: 10px 30px;
     }
     
     /* Aside Section */
