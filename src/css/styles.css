@@ -916,12 +916,28 @@ strong {
     margin: var(--fs-zero , 0) var(--value-auto , auto);
 }
 
-.stepContainer {
+.steps__title {
+    text-align: var(--value-center);
+    text-transform: var(--value-uppercase);
+}
 
+.stepContainer {
+    display: var(--value-grid);
+    gap: 100px;
 }
 
 .stepBox {
+    display: var(--value-grid);
+    gap: 20px;
+}
 
+.stepBox__img {
+    height: 150px;
+    width: 100%;
+    object-fit: var(--value-cover);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-radius: 10px;
 }
 
 .stepBoxTitle {
@@ -941,7 +957,7 @@ strong {
 }
 
 .stepBox__paragraph {
-
+    margin: 0;
 }
 
 /* information Section */
