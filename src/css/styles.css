@@ -918,6 +918,7 @@ strong {
 .steps__title {
     text-align: var(--value-center);
     text-transform: var(--value-uppercase);
+    margin-top: 150px;
 }
 
 .stepContainer {
@@ -929,16 +930,16 @@ strong {
 .stepContainer::before {
     position: var(--value-absolute);
     content: var(--value-content);
-    top: 0;
+    top: -30px;
     left: 0;
     width: 5px;
-    height: 100%;
+    height: 110%;
     background-color: var(--clr-primary);
 }
 
 .stepBox {
     display: var(--value-grid);
-    gap: 10px;
+    gap: 20px;
 }
 
 .stepBoxTitle {
