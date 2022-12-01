@@ -345,7 +345,6 @@ strong {
     }
 }
 
-
 /* ProgressBar Section */
 .progressBar {
     position: fixed;
@@ -1865,8 +1864,8 @@ strong {
     }
 
     .socialMediaContainer:hover {
-        outline: 2px solid var(--clr-primary);
         border-radius: 5px;
+        outline: 2px solid var(--clr-primary);
         box-shadow: 5px 5px var(--clr-primary);
     }
     
