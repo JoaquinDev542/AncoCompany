@@ -913,6 +913,7 @@ strong {
     padding:var(--fs-padding-mobile ,  0 0.9375em);
     max-width: 1440px;
     margin: var(--fs-zero , 0) var(--value-auto , auto);
+    margin-bottom: 200px;
 }
 
 .steps__title {
