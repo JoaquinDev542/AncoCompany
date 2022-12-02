@@ -1505,6 +1505,11 @@ strong {
         transform: translateX(-50%);
     }
 
+    .stepBox {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
     .stepBoxTitle::before {
         position: var(--value-absolute);
         content: var(--value-content);
