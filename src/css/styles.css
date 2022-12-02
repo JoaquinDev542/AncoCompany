@@ -1505,10 +1505,10 @@ strong {
         transform: translateX(-50%);
     }
 
-    .stepBox {
+    /* .stepBox {
         max-width: 400px;
         margin: 0 auto;
-    }
+    } */
 
     .stepBoxTitle::before {
         position: var(--value-absolute);
@@ -1790,6 +1790,10 @@ strong {
     /* Steps Section */
     .steps {
         padding:var(--fs-padding-portatil);
+    }
+
+    .stepBoxTitle {
+        font-size: var(--fs-stepsTitle-portatil);
     }
 
     /* Information Section */
