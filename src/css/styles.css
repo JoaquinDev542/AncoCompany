@@ -931,9 +931,10 @@ strong {
     position: var(--value-absolute);
     content: var(--value-content);
     top: -30px;
-    left: 0;
+    left: 1px;
     width: 5px;
     height: 110%;
+    border-radius: 10px;
     background-color: var(--clr-primary);
 }
 
@@ -958,6 +959,8 @@ strong {
     width: 5px;
     height: 40%;
     transform: rotate(90deg);
+    border-radius: 10px;
+
     background-color: var(--clr-primary);
 }
 
@@ -1473,6 +1476,10 @@ strong {
         padding:var(--fs-padding-tablet);
     }
 
+    .stepBox__number {
+        margin-left: 35px;
+    }
+
     .stepContainer {
         grid-template-columns: 1fr 1fr;
         grid-template-areas: 
@@ -1593,7 +1600,7 @@ strong {
     }
     
     .links {
-        display: block;
+        display: var(--value-block);
         text-align: left;
     }
 
