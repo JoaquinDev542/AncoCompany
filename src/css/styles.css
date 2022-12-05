@@ -53,7 +53,7 @@
     --fs-padding-mobile: 0 0.9375em;
     --fs-padding-tablet: 0.625em 3.125em;
     --fs-padding-portatil: 0.625em 4.6875em;
-    --fs-margin-mobile: 125px auto;
+    --fs-margin-mobile: 175px auto;
     --fs-margin-tablet:;
     --fs-margin-portatil:;
 
@@ -225,7 +225,6 @@ strong {
 /* font-size Section */
 .fs-title {
     font-size: var(--fs-title-mobile);
-    margin: 3.125rem 0;
     margin: 0 0 50px 0;
 }
 /* .list__link {
@@ -828,6 +827,7 @@ strong {
 
 .aboutGeneralContent__subtitle {
     text-transform: var(--value-uppercase);
+    margin-top: 50px;
 }
 
 .aboutGeneralContent__subsubtitle {
@@ -992,6 +992,7 @@ strong {
 }
 
 .informationContent__title {
+    margin-top: 50px;
     text-transform: var(--value-uppercase , uppercase);
 }
 
