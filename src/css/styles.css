@@ -54,11 +54,7 @@
     --fs-padding-tablet: 0.625em 3.125em;
     --fs-padding-portatil: 0.625em 4.6875em;
     --fs-margin-mobile: 175px auto;
-    --fs-margin-tablet:;
-    --fs-margin-portatil:;
-
     /* --fs-menuLink-mobile:3rem; */
-
 
     --ff-titles:'Signika Negative', sans-serif;
     --ff-paragraph:'Inter', sans-serif;
@@ -1407,6 +1403,7 @@ strong {
     /* Font-size Section */
     .fs-title {
         font-size: var(--fs-title-tablet );
+        margin: 0 0 75px 0;
     }
 
     .herotitle {
@@ -1507,11 +1504,6 @@ strong {
         right: 50%;
         transform: translateX(-50%);
     }
-
-    /* .stepBox {
-        max-width: 400px;
-        margin: 0 auto;
-    } */
 
     .stepBoxTitle::before {
         position: var(--value-absolute);
@@ -1636,7 +1628,9 @@ strong {
     /* Font-size Section */
     .fs-title {
         font-size: var(--fs-title-portatil );
+        margin: 0 0 100px 0;
     }
+
 
     /* Paragraph Section */
     .paragraph {
