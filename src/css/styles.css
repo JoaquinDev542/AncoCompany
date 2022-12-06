@@ -983,7 +983,7 @@ strong {
     flex-direction: var(--value-column , column);
     align-items: var(--value-center , center);
     justify-content: var(--value-center , center);
-    gap: 3.125em;
+    /* gap: 3.125em; */
     margin: var(--fs-zero , 0) var(--value-auto , auto);
 }
 
@@ -1060,6 +1060,7 @@ strong {
 .workProject__title {
     font-size: var(--fs-workTitle-mobile);
     margin-bottom: 0.625em;
+    margin-top: 0;
     text-transform: var(--value-uppercase , uppercase);
 }
 
@@ -1220,7 +1221,7 @@ strong {
     place-content: var(--value-center);
     grid-template-columns: max-content max-content;
     gap: 20px;
-    margin-top: 150px;
+    /* margin-top: 150px; */
 }
 
 .socialMediaContainer {
@@ -1630,7 +1631,6 @@ strong {
         font-size: var(--fs-title-portatil );
         margin: 0 0 100px 0;
     }
-
 
     /* Paragraph Section */
     .paragraph {
