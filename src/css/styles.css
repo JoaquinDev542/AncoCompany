@@ -880,10 +880,7 @@ strong {
 }
 
 .aboutInformation {
-    display: var(--value-grid);
-    place-items: var(--value-center);
     max-width: 1440px;
-    height: 100vh;
     margin: var(--fs-zero , 0) var(--value-auto , auto);
     padding:var(--fs-padding-mobile);
 }
@@ -983,8 +980,8 @@ strong {
     flex-direction: var(--value-column , column);
     align-items: var(--value-center , center);
     justify-content: var(--value-center , center);
-    /* gap: 3.125em; */
     margin: var(--fs-zero , 0) var(--value-auto , auto);
+    margin-top: 175px;
 }
 
 .informationContent__title {
@@ -1795,7 +1792,6 @@ strong {
 
     /* Information Section */
     .informationContent {
-        height: calc(100vh - 60px);
         padding: var(--fs-padding-portatil);
     }
 
