@@ -38,7 +38,7 @@
     --fs-paragraph-portatil:1.2rem;
     --fs-marquee-mobile:1.5rem;
     --fs-marquee-tablet:1.5rem;
-    --fs-marquee-portatil:1.75rem;
+    --fs-marquee-portatil:2.25rem;
     --fs-aboutTitle-mobile:1.75rem;
     --fs-aboutTitle-portatil:3.75rem;
     --fs-stepsTitle-mobile:1.75rem;
@@ -137,6 +137,20 @@
     --boxShadow-heroButton:var(--lm-boxShadow-heroButton);
     --boxShadow-buttons:var(--lm-boxShadow-buttons);
     --clr-titleDecoration:var(--dm-clr-titleDecoration);
+}
+
+.dark-mode {
+    --bg-body:var(--dm-bg-body); 
+    --bg-sections:var(--dm-bg-sections);
+    --bg-buttons:var(--dm-bg-buttons);
+    --bg-header:var(--dm-bg-header);
+    --bg-footer:var(--dm-bg-footer);
+    --clr-heroButton:var(--dm-clr-heroButton);
+    --clr-primary:var(--dm-clr-primary);
+    --clr-secondary:var(--dm-clr-secondary);
+    --boxShadow-heroButton:var(--dm-boxShadow-heroButton);
+    --boxShadow-buttons:var(--dm-boxShadow-buttons);
+    --clr-titleDecoration:var(--lm-clr-titleDecoration);
 }
 
 * , ::before , ::after {
