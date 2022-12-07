@@ -37,7 +37,7 @@
     --fs-paragraph-tablet:1.1rem;
     --fs-paragraph-portatil:1.2rem;
     --fs-marquee-mobile:1.5rem;
-    --fs-marquee-tablet:1.5rem;
+    --fs-marquee-tablet:1.75rem;
     --fs-marquee-portatil:2.25rem;
     --fs-aboutTitle-mobile:1.75rem;
     --fs-aboutTitle-portatil:3.75rem;
@@ -943,7 +943,7 @@ strong {
     top: -30px;
     left: 1px;
     width: 5px;
-    height: 110%;
+    height: 100%;
     border-radius: 10px;
     background-color: var(--clr-primary);
 }
