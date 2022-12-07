@@ -113,14 +113,36 @@ window.addEventListener('load',function () {
     }
     window.addEventListener("scroll" , functionChangeBgHeader); 
 
+    let colorSchemeQueryList = window.matchMedia('(prefers-color-scheme: dark)');
 
-    //White & Dark Mode
-    let darkMode__input = document.querySelector(".darkMode__input");
-     darkMode__input.addEventListener('click', function () {
- 
-        document.documentElement.classList.toggle("white-mode");
-         
-    }) 
+    const setColorScheme = e => {
+
+        if (e.matches) {
+
+            //Switch Light Mode
+            let darkMode__input = document.querySelector(".darkMode__input");
+            darkMode__input.addEventListener('click', function () {
+    
+            document.documentElement.classList.toggle("white-mode");
+            
+            }) 
+
+        } else {
+
+            //Switch Dark Mode
+            let darkMode__input = document.querySelector(".darkMode__input");
+            darkMode__input.addEventListener('click', function () {
+    
+            document.documentElement.classList.toggle("dark-mode");
+            
+            })
+        
+        }
+      }
+
+      setColorScheme(colorSchemeQueryList);
+      colorSchemeQueryList.addEventListener('change', setColorScheme);
+
 
     // Menu Reponsive
     let menuopen = document.querySelector(".menuOpen")
