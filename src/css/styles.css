@@ -383,17 +383,20 @@ strong {
 
 /* Hero Section */
 .hero {
-    position: var(--value-relative , relative);
-    display: var(--value-flex , flex);
+    position: var(--value-relative );
     height: 100vh;
     width: 100%;
     padding: var(--fs-padding-mobile);
 }
 
+.submenu {
+    display: var(--value-none);
+}
+
 .header {
     z-index: 300;
     position:  var(--value-fixed , fixed);
-    top: 0;
+    top: 0px;
     left: var(--fs-zero , 0);
     right: var(--fs-zero , 0);
     padding: 0.625em 0.9375em;
@@ -606,7 +609,7 @@ strong {
 }
 
 .darkMode {
-    --width:100px;
+    --width:50px;
     --height:calc( var(--width) / 2);
     --border-radius:calc(var(--height) / 2);
 
@@ -673,9 +676,7 @@ strong {
 
 /* heroContent Section */
 .heroContent {
-    align-self: var(--value-center , center);
-    justify-self: var(--value-center , center);
-    width: 100%;
+    display: none;
 }
 
 .heroContentContainer {
@@ -1437,9 +1438,96 @@ strong {
         right: 3.125em;
     }
 
+    /* progressBar */
+    .progressBar {
+        top: 110px;
+    }
+
+    /* Submenu Section */
+    .submenu {
+        z-index: 600;
+        position: var(--value-fixed);
+        left: var(--fs-zero , 0);
+        right: var(--fs-zero , 0);
+        display: var(--value-block);
+        width: 100%;
+        padding: var(--fs-padding-tablet);
+    }
+    
+    .submenuContainer {
+        display: var(--value-flex);
+        justify-content: var(--value-space-between);
+        width: 100%;
+        max-width: 1290px;
+        margin: var(--fs-zero) var(--value-auto);
+    }
+
+    .submenuContainerRight {
+        display: var(--value-flex);
+        gap: 50px;
+        cursor: pointer;
+    }
+
+    .idiomsContainerInitial {
+        display: var(--value-flex);
+        align-items: var(--value-center);
+        gap: 10px;
+    }
+    
+    .idiomsContainerImgAndTitle {
+        display: var(--value-flex);
+        justify-content: var(--value-center);
+        align-items: var(--value-center);
+        gap: 5px;
+    }
+
+    .idioms__img {
+        width: 25px;
+    }
+
+    .idioms__title {
+        color: var(--dm-clr-secondary);
+        transition: .4s color;
+    }
+
+    .idioms__title--principal {
+        color: var(--clr-secondary);
+    }
+
+    .idiomsContainerInitial__arrow {
+        width: 25px;
+        fill: var(--clr-secondary);
+    }
+
+    .contactInformationSocialMedia--submenu {
+        margin-top: var(--fs-zero);
+        gap: 20px;
+        max-height: 28.39px;
+    }
+
+    .contactInformationSocialMedia__img--submenu  {
+        width: 20px;
+    }
+
+    .idiomsContainerDisplay {
+        display: var(--value-none);
+    }
+
+    .idiomsContainerDisplay.active {
+        display: var(--value-flex);
+        flex-direction: var(--value-column);
+        align-items: flex-start;
+        gap: 15px;
+        background-color: var(--bg-sections);
+        padding: 20px 10px;
+        border-radius: 10px;
+        margin-top: 20px;
+    }
+
     /* Header Section */
     .header {
         padding: var(--fs-padding-tablet , 0.625em 3.125em);
+        top: 50px;
     }
 
     .heroContent {
@@ -1658,6 +1746,11 @@ strong {
         font-size: var(--fs-marquee-portatil );
     }
     
+    /* Submenu Section */
+    .submenu {
+        padding: var(--fs-padding-portatil);
+    }
+
     /* Header Section */
     .header {
         padding: var(--fs-padding-portatil , 0.625em 4.6875em);
@@ -1926,6 +2019,14 @@ strong {
     
     .list__link:hover::after {
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    .idioms__title:hover {
+        color: #cecccccc;
+    }
+
+    .idioms__title--principal:hover {
+        color: var(--clr-secondary);
     }
 
     .workProjectImg:hover .workProjectImg__img {

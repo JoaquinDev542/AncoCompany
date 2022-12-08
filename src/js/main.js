@@ -78,6 +78,14 @@ window.addEventListener('load',function () {
    }
    window.addEventListener('scroll' , scrollProgressBar);
 
+    
+   // Idioms Active
+   let idiomsContainerDisplay = document.querySelector(".idiomsContainerDisplay");
+   let idioms = document.querySelector(".idioms");
+
+   idioms.addEventListener("click" , function ( ) {
+        idiomsContainerDisplay.classList.toggle("active");
+   })
 
     // BackgroundColor Header Section Change
     let header = document.querySelector(".header");
