@@ -87,39 +87,54 @@ window.addEventListener('load',function () {
         idiomsContainerDisplay.classList.toggle("active");
    })
 
+    // BackgroundColor Submenu Section Change
+    let submenu = document.querySelector(".submenu");
+
+    const functionChangeBgSubmenu = function () {
+        
+        if(document.documentElement.scrollTop >= 20) {
+            submenu.classList.add("addColor");
+
+        } else {
+            submenu.classList.remove("addColor");
+        }
+    }
+    window.addEventListener("scroll" , functionChangeBgSubmenu); 
+
+
     // BackgroundColor Header Section Change
-    let header = document.querySelector(".header");
-    let progressBar = document.querySelector(".progressBar");
-    let menuCloseBg = document.querySelector(".menuClose");
+    // let header = document.querySelector(".header");
+    // let progressBar = document.querySelector(".progressBar");
+    // let menuCloseBg = document.querySelector(".menuClose");
 
     // let list__linkFirst = document.querySelector(".list__link--first");
     // let list__linkSecond = document.querySelector(".list__link--second");
     // let list__linkThird = document.querySelector(".list__link--third");
     // let bar = document.querySelector(".bar");
 
-    const functionChangeBgHeader = function () {
+    // const functionChangeBgHeader = function () {
 
-        if(document.documentElement.scrollTop >= 10){
-            progressBar.classList.add("addColor");
-            header.classList.add("addColor");
-            menuCloseBg.classList.add("addColor");
+        // if(document.documentElement.scrollTop >= 10){
+            // progressBar.classList.add("addColor");
+            // header.classList.add("addColor");
+            // menuCloseBg.classList.add("addColor");
             // list__linkFirst.classList.add("addColor");
             // list__linkSecond.classList.add("addColor");
             // list__linkThird.classList.add("addColor");
             // bar.classList.add("addColor");
 
-        } else {
-            progressBar.classList.remove("addColor");
-            header.classList.remove("addColor");
-            menuCloseBg.classList.remove("addColor");
+        // } else {
+            // progressBar.classList.remove("addColor");
+            // header.classList.remove("addColor");
+            // menuCloseBg.classList.remove("addColor");
             // list__linkFirst.classList.remove("addColor");
             // list__linkSecond.classList.remove("addColor");
             // list__linkThird.classList.remove("addColor");
             // bar.classList.remove("addColor");
-        }  
+        // }  
         
-    }
-    window.addEventListener("scroll" , functionChangeBgHeader); 
+    // }
+    // window.addEventListener("scroll" , functionChangeBgHeader); 
 
     let colorSchemeQueryList = window.matchMedia('(prefers-color-scheme: dark)');
 

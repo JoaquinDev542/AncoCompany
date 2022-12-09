@@ -1452,7 +1452,12 @@ strong {
         display: var(--value-block);
         width: 100%;
         padding: var(--fs-padding-tablet);
-        /* background-color: var(--dm-bg-header); */
+        background-color: var(--value-transparent);
+        transition: .5s background-color;
+    }
+
+    .submenu.addColor {
+        background-color: var(--bg-header);
     }
     
     .submenuContainer {
@@ -2023,11 +2028,11 @@ strong {
     }
 
     .idioms__title:hover {
-        color: #cecccccc;
+        color: var(--clr-primary);
     }
 
     .idioms__title--principal:hover {
-        color: var(--clr-secondary);
+        color: var(--clr-primary);
     }
 
     .workProjectImg:hover .workProjectImg__img {
