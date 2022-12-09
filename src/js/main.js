@@ -82,21 +82,34 @@ window.addEventListener('load',function () {
    // Idioms Active
    let idiomsContainerDisplay = document.querySelector(".idiomsContainerDisplay");
    let idioms = document.querySelector(".idioms");
+//    let body = document.querySelector(".body");
 
    idioms.addEventListener("click" , function ( ) {
         idiomsContainerDisplay.classList.toggle("active");
    })
-
+  
     // BackgroundColor Submenu Section Change
     let submenu = document.querySelector(".submenu");
+    let idioms__titlePrincipal = document.querySelector(".idioms__title--principal");
+    let idiomsContainerInitial__arrow = document.querySelector(".idiomsContainerInitial__arrow");
+    let contactInformationSocialMedia__imgSubmenu = document.querySelector(".contactInformationSocialMedia__img--submenu");
+    let contactInformationSocialMedia__imgSubmenuMobile = document.querySelector(".contactInformationSocialMedia__img--submenu-mobile");
 
     const functionChangeBgSubmenu = function () {
         
         if(document.documentElement.scrollTop >= 20) {
             submenu.classList.add("addColor");
+            idioms__titlePrincipal.classList.add("addColor");
+            idiomsContainerInitial__arrow.classList.add("addColor");
+            contactInformationSocialMedia__imgSubmenu.classList.add("addColor");
+            contactInformationSocialMedia__imgSubmenuMobile.classList.add("addColor");
 
         } else {
             submenu.classList.remove("addColor");
+            idioms__titlePrincipal.classList.remove("addColor");
+            idiomsContainerInitial__arrow.classList.remove("addColor");
+            contactInformationSocialMedia__imgSubmenu.classList.remove("addColor");
+            contactInformationSocialMedia__imgSubmenuMobile.classList.remove("addColor");
         }
     }
     window.addEventListener("scroll" , functionChangeBgSubmenu); 

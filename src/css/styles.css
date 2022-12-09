@@ -1362,8 +1362,7 @@ strong {
 .contactInformationSocialMedia__img {
     width: 25px;
     height: 25px;
-    color: var(--clr-secondary);
-    transition: .5s color;
+    transition: .5s fill;
 }
 
 .links {
@@ -1454,6 +1453,7 @@ strong {
         padding: var(--fs-padding-tablet);
         background-color: var(--value-transparent);
         transition: .5s background-color;
+        max-height: 48.58px;
     }
 
     .submenu.addColor {
@@ -1500,10 +1500,19 @@ strong {
         color: var(--clr-secondary);
     }
 
+    .idioms__title--principal.addColor {
+        color: var(--dm-clr-secondary);
+    }
+
     .idiomsContainerInitial__arrow {
         width: 25px;
         fill: var(--clr-secondary);
     }
+
+    .idiomsContainerInitial__arrow.addColor {
+        fill: var(--dm-clr-secondary);
+    }
+
 
     .contactInformationSocialMedia--submenu {
         margin-top: var(--fs-zero);
@@ -1513,7 +1522,17 @@ strong {
 
     .contactInformationSocialMedia__img--submenu  {
         width: 20px;
+        fill: var(--clr-secondary);
     }
+
+    .contactInformationSocialMedia__img--submenu.addColor  {
+        fill: var(--dm-clr-secondary);
+    }
+
+    .contactInformationSocialMedia__img--submenu-mobile.addColor  {
+        fill: var(--dm-clr-secondary);
+    }
+
 
     .idiomsContainerDisplay {
         display: var(--value-none);
@@ -2019,8 +2038,8 @@ strong {
         color: var(--clr-primary);
     }
 
-    .contactInformationSocialMedia__img:hover {
-        color: var(--clr-primary);
+    .contactInformationSocialMedia__img--submenu:hover {
+        fill: var(--clr-primary);
     }
     
     .list__link:hover::after {
