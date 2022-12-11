@@ -116,7 +116,7 @@ window.addEventListener('load',function () {
 
 
     // BackgroundColor Header Section Change
-    // let header = document.querySelector(".header");
+    let header = document.querySelector(".header");
     // let progressBar = document.querySelector(".progressBar");
     // let menuCloseBg = document.querySelector(".menuClose");
 
@@ -125,29 +125,29 @@ window.addEventListener('load',function () {
     // let list__linkThird = document.querySelector(".list__link--third");
     // let bar = document.querySelector(".bar");
 
-    // const functionChangeBgHeader = function () {
+    const functionChangeBgHeader = function () {
 
-        // if(document.documentElement.scrollTop >= 10){
+        if(document.documentElement.scrollTop >= 10){
             // progressBar.classList.add("addColor");
-            // header.classList.add("addColor");
+            header.classList.add("addColor");
             // menuCloseBg.classList.add("addColor");
             // list__linkFirst.classList.add("addColor");
             // list__linkSecond.classList.add("addColor");
             // list__linkThird.classList.add("addColor");
             // bar.classList.add("addColor");
 
-        // } else {
+        } else {
             // progressBar.classList.remove("addColor");
-            // header.classList.remove("addColor");
+            header.classList.remove("addColor");
             // menuCloseBg.classList.remove("addColor");
             // list__linkFirst.classList.remove("addColor");
             // list__linkSecond.classList.remove("addColor");
             // list__linkThird.classList.remove("addColor");
             // bar.classList.remove("addColor");
-        // }  
+        }  
         
-    // }
-    // window.addEventListener("scroll" , functionChangeBgHeader); 
+    }
+    window.addEventListener("scroll" , functionChangeBgHeader); 
 
     let colorSchemeQueryList = window.matchMedia('(prefers-color-scheme: dark)');
 
@@ -181,31 +181,37 @@ window.addEventListener('load',function () {
 
 
     // Menu Reponsive
-    let menuopen = document.querySelector(".menuOpen")
+    let menuopen = document.querySelector(".hamburger")
     let menuclose = document.querySelector(".menuClose")
-    let menuCloseAll = document.querySelector(".menuCloseAll");
-    let list = document.querySelector(".list");
-    let darkMode = document.querySelector(".darkMode");
-    let languages = document.querySelector(".languages");
-    let menuToggle = document.querySelector(".menu-toggle");
-    let menuLinkFirst = document.querySelector(".list__link--first");
-    let menuLinkSecond = document.querySelector(".list__link--second");
-    let menuLinkThird = document.querySelector(".list__link--third");
+    let close = document.querySelector(".close");
+
+    // let menuCloseAll = document.querySelector(".menuCloseAll");
+    // let list = document.querySelector(".list");
+    // let darkMode = document.querySelector(".darkMode");
+    // let languages = document.querySelector(".languages");
+    // let menuToggle = document.querySelector(".menu-toggle");
+    // let menuLinkFirst = document.querySelector(".list__link--first");
+    // let menuLinkSecond = document.querySelector(".list__link--second");
+    // let menuLinkThird = document.querySelector(".list__link--third");
 
 
     menuopen.addEventListener('click', function () {
 
         menuclose.classList.toggle('active');
-        menuopen.classList.toggle('active');
-        menuCloseAll.classList.toggle('active');
-        list.classList.toggle('active');
-        darkMode.classList.toggle('active');
-        languages.classList.toggle('active');
-        menuToggle.classList.toggle('open');
-        menuLinkFirst.classList.toggle('active');
-        menuLinkSecond.classList.toggle('active');
-        menuLinkThird.classList.toggle('active');
 
+        // menuCloseAll.classList.toggle('active');
+        // list.classList.toggle('active');
+        // darkMode.classList.toggle('active');
+        // languages.classList.toggle('active');
+        // menuToggle.classList.toggle('open');
+        // menuLinkFirst.classList.toggle('active');
+        // menuLinkSecond.classList.toggle('active');
+        // menuLinkThird.classList.toggle('active');
+
+    })
+
+    close.addEventListener("click" , function () {
+        menuclose.classList.remove("active");
     })
 
     // Menu Responsive Links

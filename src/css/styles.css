@@ -418,114 +418,64 @@ strong {
     margin: var(--fs-zero) var(--value-auto);
 }
 
-.logo__img {
+.header__logo {
     width: 40px;
     height: 40px;
 }
 
-.menuOpen {
-    z-index: 500;
-    position: var(--value-relative , relative);
+.nav {
+    display: var(--value-none);
 }
 
-.menu-toggle {
-    position: var(--value-relative , relative);
-    width: 25px;
-    height: 25px;
-    background-color: var(--value-transparent , transparent);
-    transition: 0.25s ease-in-out;
+.menu {
+    height: 45px;
+    width: 45px;
 }
 
 .hamburger {
-    position: var(--value-absolute , absolute);
-    top: var(--fs-zero , 0);
-    left: var(--fs-zero , 0);
-    display: var(--value-flex , flex);
-    justify-content: var(--value-center , center);
-    align-items: var(--value-center , center);
-    flex-direction: var(--value-column , column);
-    width: var(--value-100Percent , 100%);
-    height: var(--value-100Percent , 100%);
+    transform: scale(.8);
+    fill: var(--clr-secondary);
 }
 
-.bar {
-    display: var(--value-block , block);
-    border-radius: 2px;
-    background-color: var(--white);
+.menuClose {
+
 }
 
-.bar--hamburger {
-    width: 25px;
-    height: 2px;
-    margin: 7px 0 0 0;
-    transition: 0.25s ease-in-out;
+.menuCloseContainerLeft {
+    display: var(--value-none);
 }
 
-.menu-toggle.open .bar--hamburger {
-    width: var(--fs-zero , 0);
+.menuCloseContainerRight {
+
 }
 
-.hamburger .bar--hamburgerFirst {
-    margin-top: 0 ;
-    transition-delay: 0.5s;
+.menuCloseContainerRightMarquee {
+    display: none;
 }
 
-.menu-toggle.open .bar--hamburgerFirst {
-    transition-delay: var(--fs-zero , 0);
+.menuCloseContainerRightHeader {
+    position: var(--value-absolute);
+    top: 40px;
+    right: 0.9375rem;
+    display: var(--value-flex);
+    align-items: var(--value-center);
+    gap: 10px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid;
 }
 
-.bar--hamburgerSecond {
-    transition-delay: 0.625s;
+.menuCloseContainerRightHeader__link {
+    color: var(--clr-secondary);
+    font-size: 1.75rem;
+    font-family: var(--ff-titles);
+    text-transform: var(--value-uppercase);
 }
 
-.menu-toggle.open .bar--hamburgerSecond{
-    transition-delay: 0.125s;
+.close {
+    fill: var(--clr-secondary);
 }
 
-.bar--hamburgerThird {
-    transition-delay: 0.75s;
-}
 
-.menu-toggle.open .bar--hamburgerThird{
-    transition-delay: 0.25s;
-}
-
-.cross {
-    position: var(--value-absolute , absolute);
-    width: var(--value-100Percent , 100%);
-    height: var(--value-100Percent , 100%);
-    transform: rotate(45deg);
-}
-
-.bar--crossFirst {
-    position: var(--value-absolute , absolute);
-    left: 11.45px;
-    top: var(--fs-zero , 0);
-    width: 2px;
-    height: var(--fs-zero , 0);
-    transition-delay: 0s;
-    transition: 0.25s ease-in-out;
-}
-
-.menu-toggle.open .bar--crossFirst{
-    height: var(--value-100Percent , 100%);
-    transition-delay: .825s;
-}
-
-.bar--crossSecond {
-    position: var(--value-absolute , absolute);
-    top: 11.45px;
-    right: var(--fs-zero , 0);
-    width: var(--fs-zero , 0);
-    height: 2px;
-    transition-delay: 0.25s;
-    transition: 0.25s ease-in-out;
-}
-
-.menu-toggle.open .bar--crossSecond {
-    width: var(--value-100Percent , 100%);
-    transition-delay: 1s;
-}
 
 /* menuClose Section */
 .menuClose {
@@ -542,6 +492,7 @@ strong {
     justify-content: var(--value-center , center);
     gap: 3.125em;
     width: var(--value-100Percent , 100%);
+    max-height: 100vh;
     height: 100vh;
     font-weight: 100;
     background-color:var(--value-transparent);
@@ -1444,7 +1395,7 @@ strong {
 
     /* Submenu Section */
     .submenu {
-        z-index: 600;
+        z-index: 700;
         position: var(--value-fixed);
         left: var(--fs-zero , 0);
         right: var(--fs-zero , 0);
@@ -1466,6 +1417,7 @@ strong {
         width: 100%;
         max-width: 1290px;
         margin: var(--fs-zero) var(--value-auto);
+        max-height: 48.38px;
     }
 
     .submenuContainerRight {
@@ -1539,6 +1491,7 @@ strong {
     }
 
     .idiomsContainerDisplay.active {
+        position: var(--value-relative);
         display: var(--value-flex);
         flex-direction: var(--value-column);
         align-items: flex-start;
@@ -1547,6 +1500,7 @@ strong {
         padding: 20px 10px;
         border-radius: 10px;
         margin-top: 20px;
+        z-index: 750;
     }
 
     /* Header Section */
