@@ -198,7 +198,7 @@ window.addEventListener('load',function () {
     menuopen.addEventListener('click', function () {
 
         menuclose.classList.toggle('active');
-
+        progressBar__element.style.setProperty("display" , "none");
         // menuCloseAll.classList.toggle('active');
         // list.classList.toggle('active');
         // darkMode.classList.toggle('active');
@@ -212,6 +212,7 @@ window.addEventListener('load',function () {
 
     close.addEventListener("click" , function () {
         menuclose.classList.remove("active");
+        progressBar__element.style.setProperty("display" , "block");
     })
 
     // Menu Responsive Links
