@@ -1806,6 +1806,24 @@ strong {
         padding: var(--fs-padding-portatil , 0.625em 4.6875em);
     }
 
+    .nav {
+        display: var(--value-block);
+
+    }
+
+    .navList {
+        display: var(--value-flex);
+    }
+
+    .navList__item {
+        margin-right: 25px;
+    }
+
+    .navList__link {
+        color: red;
+        text-transform: uppercase;
+    }
+
     /* .menuOpen {
         display: var(--value-none , none);
     } 
