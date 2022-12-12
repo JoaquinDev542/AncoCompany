@@ -679,6 +679,7 @@ strong {
     background-color: var(--dm-clr-secondary);
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.15);
     border-radius: var(--border-radius);
+    outline: 1px solid #1219335b;
     transition: transform .2s;
 }
 

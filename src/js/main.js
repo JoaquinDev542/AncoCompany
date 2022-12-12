@@ -270,6 +270,8 @@ window.addEventListener('load',function () {
         menuclose.classList.remove('active');
         menuopen.classList.remove("active");
         menuCloseAll.classList.remove('active');
+        submenu.classList.remove('active');
+        header.classList.remove('active');
 
     })
 
@@ -278,6 +280,8 @@ window.addEventListener('load',function () {
         menuclose.classList.remove('active');
         menuopen.classList.remove("active");
         menuCloseAll.classList.remove('active');
+        submenu.classList.remove('active');
+        header.classList.remove('active');
     })
 
     menuCloseContainerRightList__link_services.addEventListener('click' , function () {
@@ -285,6 +289,8 @@ window.addEventListener('load',function () {
         menuclose.classList.remove('active');
         menuopen.classList.remove("active");
         menuCloseAll.classList.remove('active');
+        submenu.classList.remove('active');
+        header.classList.remove('active');
     })
 
     menuCloseContainerRightList__link_work.addEventListener('click' , function () {
@@ -292,6 +298,8 @@ window.addEventListener('load',function () {
         menuclose.classList.remove('active');
         menuopen.classList.remove("active");
         menuCloseAll.classList.remove('active');
+        submenu.classList.remove('active');
+        header.classList.remove('active');
     })
 
     menuCloseContainerRightList__link_contact.addEventListener('click' , function () {
@@ -299,6 +307,8 @@ window.addEventListener('load',function () {
         menuclose.classList.remove('active');
         menuopen.classList.remove("active");
         menuCloseAll.classList.remove('active');
+        submenu.classList.remove('active');
+        header.classList.remove('active');
     })
 
     // Btn Section Animation Javascript
