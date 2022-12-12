@@ -589,52 +589,6 @@ strong {
     margin-right: 15px;
 }
 
-/* .list {
-    display: var(--value-none , none);
-}
-
-.list.active {
-    display: var(--value-flex , flex);
-    flex-direction: var(--value-column , column);
-}
-
-.list__item {
-    text-align:  var(--value-center , center);
-    margin-top: 3.125em;
-}
-
-.list__link {
-    position: var(--value-relative , relative);
-    text-transform: var(--value-uppercase , uppercase);
-    color: var(--dm-clr-secondary);
-    /* color: var(--clr-secondary); */
-    /* transition: .5s color; */
-/* }  */
-
-/* .list__link--first.addColor {
-    color: var(--dm-clr-secondary);
-} */
-
-/* .list__link--second.addColor {
-    color: var(--dm-clr-secondary);
-} */
-
-/* .list__link--third.addColor {
-    color: var(--dm-clr-secondary);
-} */
-
-/* .list__link::after {
-    position: var(--value-absolute , absolute);
-    content: var(--value-content , "");
-    bottom: -5px;
-    left: var(--fs-zero , 0);
-    width: var(--value-100Percent , 100%);
-    height: 3px;
-    background-color:  var(--clr-primary);
-    clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
-    transition: .5s clip-path ;
-} */
-
 .darkMode {
     --width:50px;
     --height:calc( var(--width) / 2);
@@ -1935,42 +1889,6 @@ strong {
     .menuCloseContainerRightFooter__darkMode {
         margin-right: 75px;
     }
-
-    /* .menuOpen {
-        display: var(--value-none , none);
-    } 
-
-    .menuClose {
-        position: var(--value-relative , relative);
-        top: var(--value-initial , initial);
-        left: var(--value-initial , initial);
-        display: var(--value-flex , flex);
-        gap: 3.75em;
-        flex-direction: var(--value-row , row);
-        height: var(--value-auto , auto);
-        opacity: 1;
-        transform: translate(0%);
-    } */
-
-    /* .list.active {
-        display: var(--value-flex , flex);
-        align-items: var(--value-center , center);
-        flex-direction: var(--value-row , row);
-    }
-
-    .list__link {
-        font-size: 1rem;
-    }
-
-    .list {
-        display: var(--value-flex , flex);
-        flex-direction: var(--value-row , row);
-    }
-    
-    .list__item {
-        margin-top: var(--fs-zero , 0);
-        margin-left: 1.75em;
-    } */
 
     .darkMode {
         display: var(--value-block , block);

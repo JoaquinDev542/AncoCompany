@@ -224,30 +224,12 @@ window.addEventListener('load',function () {
     let close = document.querySelector(".close");
     let menuCloseAll = document.querySelector(".menuCloseAll");
 
-    // let list = document.querySelector(".list");
-    // let darkMode = document.querySelector(".darkMode");
-    // let languages = document.querySelector(".languages");
-    // let menuToggle = document.querySelector(".menu-toggle");
-    // let menuLinkFirst = document.querySelector(".list__link--first");
-    // let menuLinkSecond = document.querySelector(".list__link--second");
-    // let menuLinkThird = document.querySelector(".list__link--third");
-
-
     menuopen.addEventListener('click', function () {
-
         menuclose.classList.toggle('active');
         progressBar__element.style.setProperty("display" , "none");
         menuCloseAll.classList.toggle('active');
         submenu.classList.add('active');
         header.classList.add('active');
-        // list.classList.toggle('active');
-        // darkMode.classList.toggle('active');
-        // languages.classList.toggle('active');
-        // menuToggle.classList.toggle('open');
-        // menuLinkFirst.classList.toggle('active');
-        // menuLinkSecond.classList.toggle('active');
-        // menuLinkThird.classList.toggle('active');
-
     })
 
     close.addEventListener("click" , function () {
