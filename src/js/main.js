@@ -157,20 +157,36 @@ window.addEventListener('load',function () {
 
             //Switch Light Mode
             let darkMode__input = document.querySelector(".darkMode__input");
+            let darkMode__inputMenu = document.querySelector(".darkMode__input--menu");
+            
             darkMode__input.addEventListener('click', function () {
     
             document.documentElement.classList.toggle("white-mode");
             
             }) 
 
+            darkMode__inputMenu.addEventListener('click', function () {
+    
+                document.documentElement.classList.toggle("white-mode");
+                
+            }) 
+
         } else {
 
             //Switch Dark Mode
             let darkMode__input = document.querySelector(".darkMode__input");
+            let darkMode__inputMenu = document.querySelector(".darkMode__input--menu");
+
             darkMode__input.addEventListener('click', function () {
     
             document.documentElement.classList.toggle("dark-mode");
             
+            })
+
+            darkMode__inputMenu.addEventListener('click', function () {
+    
+                document.documentElement.classList.toggle("dark-mode");
+                
             })
         
         }
@@ -184,8 +200,8 @@ window.addEventListener('load',function () {
     let menuopen = document.querySelector(".hamburger")
     let menuclose = document.querySelector(".menuClose")
     let close = document.querySelector(".close");
+    let menuCloseAll = document.querySelector(".menuCloseAll");
 
-    // let menuCloseAll = document.querySelector(".menuCloseAll");
     // let list = document.querySelector(".list");
     // let darkMode = document.querySelector(".darkMode");
     // let languages = document.querySelector(".languages");
@@ -199,7 +215,7 @@ window.addEventListener('load',function () {
 
         menuclose.classList.toggle('active');
         progressBar__element.style.setProperty("display" , "none");
-        // menuCloseAll.classList.toggle('active');
+        menuCloseAll.classList.toggle('active');
         // list.classList.toggle('active');
         // darkMode.classList.toggle('active');
         // languages.classList.toggle('active');
@@ -212,48 +228,51 @@ window.addEventListener('load',function () {
 
     close.addEventListener("click" , function () {
         menuclose.classList.remove("active");
+        menuCloseAll.classList.remove('active');
         progressBar__element.style.setProperty("display" , "block");
     })
 
     // Menu Responsive Links
-    let workLink = document.querySelector("#workLink");
-    let aboutLink = document.querySelector("#aboutLink");
-    let contactLink = document.querySelector("#contactLink");
+    let menuCloseContainerRightList__link_aboutUs = document.querySelector(".menuCloseContainerRightList__link--aboutUs");
+    let menuCloseContainerRightList__link_steps = document.querySelector(".menuCloseContainerRightList__link--steps");
+    let menuCloseContainerRightList__link_services = document.querySelector(".menuCloseContainerRightList__link--services");
+    let menuCloseContainerRightList__link_work = document.querySelector(".menuCloseContainerRightList__link--work");
+    let menuCloseContainerRightList__link_contact = document.querySelector(".menuCloseContainerRightList__link--contact");
 
-    workLink.addEventListener('click' , function () {
+    menuCloseContainerRightList__link_aboutUs.addEventListener('click' , function () {
 
         menuclose.classList.remove('active');
         menuopen.classList.remove("active");
         menuCloseAll.classList.remove('active');
-        list.classList.remove('active');
-        darkMode.classList.remove('active');
-        languages.classList.remove('active');
-        menuToggle.classList.remove('open');
 
     })
 
-    aboutLink.addEventListener('click' , function () {
+    menuCloseContainerRightList__link_steps.addEventListener('click' , function () {
 
         menuclose.classList.remove('active');
         menuopen.classList.remove("active");
         menuCloseAll.classList.remove('active');
-        list.classList.remove('active');
-        darkMode.classList.remove('active');
-        languages.classList.remove('active');
-        menuToggle.classList.remove('open');
-
     })
 
-    contactLink.addEventListener('click' , function () {
+    menuCloseContainerRightList__link_services.addEventListener('click' , function () {
 
         menuclose.classList.remove('active');
         menuopen.classList.remove("active");
         menuCloseAll.classList.remove('active');
-        list.classList.remove('active');
-        darkMode.classList.remove('active');
-        languages.classList.remove('active');
-        menuToggle.classList.remove('open');
+    })
 
+    menuCloseContainerRightList__link_work.addEventListener('click' , function () {
+
+        menuclose.classList.remove('active');
+        menuopen.classList.remove("active");
+        menuCloseAll.classList.remove('active');
+    })
+
+    menuCloseContainerRightList__link_contact.addEventListener('click' , function () {
+
+        menuclose.classList.remove('active');
+        menuopen.classList.remove("active");
+        menuCloseAll.classList.remove('active');
     })
 
     // Btn Section Animation Javascript

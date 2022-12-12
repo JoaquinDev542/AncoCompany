@@ -365,7 +365,7 @@ strong {
 /* ProgressBar Section */
 .progressBar {
     position: fixed;
-    top: 58px;
+    top: 64px;
     left: 0;
     height: 3px;
     width: 100%;
@@ -635,7 +635,7 @@ strong {
     --height:calc( var(--width) / 2);
     --border-radius:calc(var(--height) / 2);
 
-    display: var(--value-inline-block , inline-block);
+    display: var(--value-inline-block);
     cursor: pointer
 }
 
@@ -643,7 +643,7 @@ strong {
     --width:100px;
     --height:calc( var(--width) / 2);
     --border-radius:calc(var(--height) / 2);
-    display: var(--value-inline-block , inline-block);
+    display: var(--value-inline-block);
     cursor: pointer;
 }
 
@@ -1018,7 +1018,7 @@ strong {
     align-items: var(--value-center , center);
     justify-content: var(--value-center , center);
     margin: var(--fs-zero , 0) var(--value-auto , auto);
-    margin-top: 175px;
+    /* margin-top: 175px; */
 }
 
 .informationContent__title {
@@ -1461,7 +1461,7 @@ strong {
 
     /* progressBar */
     .progressBar {
-        top: 108px;
+        top: 112px;
     }
 
     /* Submenu Section */
