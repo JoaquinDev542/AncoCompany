@@ -90,6 +90,7 @@ window.addEventListener('load',function () {
   
     // BackgroundColor Submenu Section Change
     let submenu = document.querySelector(".submenu");
+    let darkModeContainer__span = document.querySelector(".darkModeContainer__span");
     let idioms__titlePrincipal = document.querySelector(".idioms__title--principal");
     let idiomsContainerInitial__arrow = document.querySelector(".idiomsContainerInitial__arrow");
     let contactInformationSocialMedia__imgSubmenu = document.querySelector(".contactInformationSocialMedia__img--submenu");
@@ -97,8 +98,9 @@ window.addEventListener('load',function () {
 
     const functionChangeBgSubmenu = function () {
         
-        if(document.documentElement.scrollTop >= 0) {
+        if(document.documentElement.scrollTop >= 10) {
             submenu.classList.add("addColor");
+            darkModeContainer__span.classList.add("addColor");
             idioms__titlePrincipal.classList.add("addColor");
             idiomsContainerInitial__arrow.classList.add("addColor");
             contactInformationSocialMedia__imgSubmenu.classList.add("addColor");
@@ -106,6 +108,7 @@ window.addEventListener('load',function () {
 
         } else {
             submenu.classList.remove("addColor");
+            darkModeContainer__span.classList.remove("addColor");
             idioms__titlePrincipal.classList.remove("addColor");
             idiomsContainerInitial__arrow.classList.remove("addColor");
             contactInformationSocialMedia__imgSubmenu.classList.remove("addColor");
@@ -117,21 +120,32 @@ window.addEventListener('load',function () {
 
     // BackgroundColor Header Section Change
     let header = document.querySelector(".header");
-    // let progressBar = document.querySelector(".progressBar");
-    // let menuCloseBg = document.querySelector(".menuClose");
-
-    // let list__linkFirst = document.querySelector(".list__link--first");
-    // let list__linkSecond = document.querySelector(".list__link--second");
-    // let list__linkThird = document.querySelector(".list__link--third");
-    // let bar = document.querySelector(".bar");
+    let navList__link_about = document.querySelector(".navList__link--about");
+    let navList__link_steps = document.querySelector(".navList__link--steps");
+    let navList__link_services = document.querySelector(".navList__link--services");
+    let navList__link_work = document.querySelector(".navList__link--work");
+    let navList__link_contact = document.querySelector(".navList__link--contact");
+    let hamburger = document.querySelector(".hamburger");
 
     const functionChangeBgHeader = function () {
 
-        if(document.documentElement.scrollTop >= 30){
+        if(document.documentElement.scrollTop >= 10){
             header.classList.add("addColor");
+            hamburger.classList.add("addColor");
+            navList__link_about.classList.add("addColor");
+            navList__link_steps.classList.add("addColor");
+            navList__link_services.classList.add("addColor");
+            navList__link_work.classList.add("addColor");
+            navList__link_contact.classList.add("addColor");
 
         } else {
             header.classList.remove("addColor");
+            hamburger.classList.remove("addColor");
+            navList__link_about.classList.remove("addColor");
+            navList__link_steps.classList.remove("addColor");
+            navList__link_services.classList.remove("addColor");
+            navList__link_work.classList.remove("addColor");
+            navList__link_contact.classList.remove("addColor");
         }  
         
     }
@@ -146,6 +160,8 @@ window.addEventListener('load',function () {
             //Switch Light Mode
             let darkMode__input = document.querySelector(".darkMode__input");
             let darkMode__inputMenu = document.querySelector(".darkMode__input--menu");
+            let darkModeContainer__span = document.querySelector(".darkModeContainer__span");
+            darkModeContainer__span.innerHTML = "Modo Oscuro";
             
             darkMode__input.addEventListener('click', function () {
     
@@ -164,6 +180,8 @@ window.addEventListener('load',function () {
             //Switch Dark Mode
             let darkMode__input = document.querySelector(".darkMode__input");
             let darkMode__inputMenu = document.querySelector(".darkMode__input--menu");
+            let darkModeContainer__span = document.querySelector(".darkModeContainer__span");
+            darkModeContainer__span.innerHTML = "Modo Claro";
 
             darkMode__input.addEventListener('click', function () {
     
@@ -182,6 +200,22 @@ window.addEventListener('load',function () {
 
       setColorScheme(colorSchemeQueryList);
       colorSchemeQueryList.addEventListener('change', setColorScheme);
+
+      let darkMode__input = document.querySelector(".darkMode__input");
+
+      darkMode__input.addEventListener('click', function () {
+  
+          let darkModeContainer__span = document.querySelector(".darkModeContainer__span");
+  
+          console.log(darkModeContainer__span.innerHTML);
+  
+          if (darkModeContainer__span.innerHTML == "Modo Oscuro") {
+            darkModeContainer__span.innerHTML = "Modo Claro"
+          } else {
+            darkModeContainer__span.innerHTML = "Modo Oscuro";
+          }
+  
+      })
 
 
     // Menu Reponsive

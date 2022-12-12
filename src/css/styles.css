@@ -438,6 +438,11 @@ strong {
 .hamburger {
     transform: scale(.8);
     fill: var(--clr-secondary);
+    cursor: pointer;
+}
+
+.hamburger.addColor {
+    fill: var(--dm-clr-secondary);
 }
 
 /* menuClose Section */
@@ -554,6 +559,7 @@ strong {
 .close {
     fill: var(--dm-clr-secondary);
     margin-right: 10px;
+    cursor: pointer;
 }
 
 .menuCloseContainerRightList {
@@ -679,6 +685,14 @@ strong {
 
 .darkMode__input:checked ~ .darkMode__fill::after {
     transform: translateX(var(--height));
+}
+
+.darkModeContainer__span {
+    color: var(--clr-secondary);
+}
+
+.darkModeContainer__span.addColor {
+    color: var(--dm-clr-secondary);
 }
 
 .languages {
@@ -1825,8 +1839,28 @@ strong {
     }
 
     .navList__link {
-        color: red;
-        text-transform: uppercase;
+        color: var(--clr-secondary);
+        text-transform: var(--value-uppercase);
+    }
+
+    .navList__link--about.addColor {
+        color: var(--dm-clr-secondary);
+    }
+
+    .navList__link--steps.addColor {
+        color: var(--dm-clr-secondary);
+    }
+
+    .navList__link--services.addColor {
+        color: var(--dm-clr-secondary);
+    }
+
+    .navList__link--work.addColor {
+        color: var(--dm-clr-secondary);
+    }
+
+    .navList__link--contact.addColor {
+        color: var(--dm-clr-secondary);
     }
 
     /* .menuOpen {
