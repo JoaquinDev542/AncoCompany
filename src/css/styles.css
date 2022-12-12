@@ -1475,7 +1475,6 @@ strong {
         padding: var(--fs-padding-tablet);
         background-color: var(--value-transparent);
         transition: .5s background-color;
-        max-height: 48.58px;
     }
 
     .submenu.addColor {
@@ -1488,7 +1487,13 @@ strong {
         width: 100%;
         max-width: 1290px;
         margin: var(--fs-zero) var(--value-auto);
-        max-height: 48.38px;
+        max-height: 28.38px;
+    }
+
+    .darkModeContainer {
+        display: var(--value-flex);
+        align-items: var(--value-center);
+        gap: 10px;
     }
 
     .submenuContainerRight {
@@ -1501,6 +1506,7 @@ strong {
         display: var(--value-flex);
         align-items: var(--value-center);
         gap: 10px;
+        margin-top: 3px;
     }
     
     .idiomsContainerImgAndTitle {
@@ -1535,7 +1541,6 @@ strong {
     .idiomsContainerInitial__arrow.addColor {
         fill: var(--dm-clr-secondary);
     }
-
 
     .contactInformationSocialMedia--submenu {
         margin-top: var(--fs-zero);

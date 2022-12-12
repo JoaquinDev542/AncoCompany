@@ -97,7 +97,7 @@ window.addEventListener('load',function () {
 
     const functionChangeBgSubmenu = function () {
         
-        if(document.documentElement.scrollTop >= 20) {
+        if(document.documentElement.scrollTop >= 0) {
             submenu.classList.add("addColor");
             idioms__titlePrincipal.classList.add("addColor");
             idiomsContainerInitial__arrow.classList.add("addColor");
@@ -127,7 +127,7 @@ window.addEventListener('load',function () {
 
     const functionChangeBgHeader = function () {
 
-        if(document.documentElement.scrollTop >= 10){
+        if(document.documentElement.scrollTop >= 30){
             // progressBar.classList.add("addColor");
             header.classList.add("addColor");
             // menuCloseBg.classList.add("addColor");
