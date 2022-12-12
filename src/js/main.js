@@ -238,6 +238,8 @@ window.addEventListener('load',function () {
         menuclose.classList.toggle('active');
         progressBar__element.style.setProperty("display" , "none");
         menuCloseAll.classList.toggle('active');
+        submenu.classList.add('active');
+        header.classList.add('active');
         // list.classList.toggle('active');
         // darkMode.classList.toggle('active');
         // languages.classList.toggle('active');
@@ -250,8 +252,10 @@ window.addEventListener('load',function () {
 
     close.addEventListener("click" , function () {
         menuclose.classList.remove("active");
-        menuCloseAll.classList.remove('active');
         progressBar__element.style.setProperty("display" , "block");
+        menuCloseAll.classList.remove('active');
+        submenu.classList.remove('active');
+        header.classList.remove('active');
     })
 
     // Menu Responsive Links
