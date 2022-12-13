@@ -223,6 +223,10 @@ window.addEventListener('load',function () {
     let menuclose = document.querySelector(".menuClose")
     let close = document.querySelector(".close");
     let menuCloseAll = document.querySelector(".menuCloseAll");
+    let header__logo = document.querySelector(".header__logo");
+    let nav = document.querySelector(".nav");
+    let heroContent = document.querySelector(".heroContent");
+
 
     menuopen.addEventListener('click', function () {
         menuclose.classList.toggle('active');
@@ -230,6 +234,10 @@ window.addEventListener('load',function () {
         menuCloseAll.classList.toggle('active');
         submenu.classList.add('active');
         header.classList.add('active');
+        header__logo.classList.add("active");
+        nav.classList.add("active");
+        hamburger.classList.add("active");
+        heroContent.classList.add("active");
     })
 
     close.addEventListener("click" , function () {
@@ -238,6 +246,10 @@ window.addEventListener('load',function () {
         menuCloseAll.classList.remove('active');
         submenu.classList.remove('active');
         header.classList.remove('active');
+        header__logo.classList.remove("active");
+        nav.classList.remove("active");
+        hamburger.classList.remove("active");
+        heroContent.classList.remove("active");
     })
 
     // Menu Responsive Links

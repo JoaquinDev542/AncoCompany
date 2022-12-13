@@ -379,7 +379,7 @@ strong {
 
 /* Hero Section */
 .hero {
-    position: var(--value-relative );
+    position: var(--value-relative);
     height: 100vh;
     width: 100%;
     padding: var(--fs-padding-mobile);
@@ -419,6 +419,10 @@ strong {
     height: 40px;
 }
 
+.header__logo.active {
+    filter: blur(5px);
+}
+
 .nav {
     display: var(--value-none);
 }
@@ -432,6 +436,10 @@ strong {
     transform: scale(.8);
     fill: var(--clr-secondary);
     cursor: pointer;
+}
+
+.hamburger.active {
+    display: var(--value-none);
 }
 
 .hamburger.addColor {
@@ -450,14 +458,13 @@ strong {
     background-color:var(--value-transparent);
     transform: translateX(-100%);
     opacity: var(--fs-zero , 0);
-    transition: transform 1s cubic-bezier(.62,.54,.76,.94) , opacity .3s cubic-bezier(.62,.54,.85,.72) , background-color .5s;
+    transition: transform 1s cubic-bezier(.62,.54,.76,.94) , opacity .3s cubic-bezier(.62,.54,.85,.72);
     font-weight: 100;
 }
 
 .menuClose.active {
     opacity: 1;
     transform: translateX(0);
-    background-color: var(--bg-header);
 }
 
 .menuCloseContainerLeft {
@@ -468,6 +475,7 @@ strong {
     display: var(--value-grid);
     grid-template-columns: .15fr .85fr;
     height: 100vh;
+    background-color: var(--bg-header);
 }
 
 .menuCloseContainerRightMarquee {
@@ -658,8 +666,8 @@ strong {
 }
 
 /* heroContent Section */
-.heroContent {
-    display: none;
+.heroContent.active {
+    filter: blur(10px);
 }
 
 .heroContentContainer {
@@ -1556,11 +1564,6 @@ strong {
 
     .menuCloseContainerLeft {
         display: var(--value-block);
-        background-image: url(../../assets/image/aboutHero.jpeg);
-        background-repeat: no-repeat;
-        background-position: var(--value-center);
-        background-size: var(--value-cover);
-        filter: blur(50px);
     }
 
     .menuCloseContainerRightMarqueeContainer__span {
@@ -1794,6 +1797,10 @@ strong {
 
     .nav {
         display: var(--value-block);
+    }
+
+    .nav.active {
+        filter: blur(10px);
     }
 
     .navList {
