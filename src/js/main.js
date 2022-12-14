@@ -227,7 +227,7 @@ window.addEventListener('load',function () {
     let nav = document.querySelector(".nav");
     let heroContent = document.querySelector(".heroContent");
     let menuCloseContainerRightList = document.querySelector(".menuCloseContainerRightList");
-    let menuCloseContainerRightHeader = document.querySelector(".menuCloseContainerRightHeader");
+    let menuCloseContainerRightHeader__link = document.querySelector(".menuCloseContainerRightHeader__link");
     let menuCloseContainerRightFooter = document.querySelector(".menuCloseContainerRightFooter");
 
     menuopen.addEventListener('click', function () {
@@ -241,7 +241,7 @@ window.addEventListener('load',function () {
         hamburger.classList.add("active");
         heroContent.classList.add("active");
         menuCloseContainerRightList.classList.add("active");
-        menuCloseContainerRightHeader.classList.add("active");
+        menuCloseContainerRightHeader__link.classList.add("active");
         menuCloseContainerRightFooter.classList.add("active");
 
     })
@@ -257,7 +257,7 @@ window.addEventListener('load',function () {
         hamburger.classList.remove("active");
         heroContent.classList.remove("active");
         menuCloseContainerRightList.classList.remove("active");
-        menuCloseContainerRightHeader.classList.remove("active");
+        menuCloseContainerRightHeader__link.classList.remove("active");
         menuCloseContainerRightFooter.classList.remove("active");
 
     })
