@@ -226,7 +226,9 @@ window.addEventListener('load',function () {
     let header__logo = document.querySelector(".header__logo");
     let nav = document.querySelector(".nav");
     let heroContent = document.querySelector(".heroContent");
-
+    let menuCloseContainerRightList = document.querySelector(".menuCloseContainerRightList");
+    let menuCloseContainerRightHeader = document.querySelector(".menuCloseContainerRightHeader");
+    let menuCloseContainerRightFooter = document.querySelector(".menuCloseContainerRightFooter");
 
     menuopen.addEventListener('click', function () {
         menuclose.classList.toggle('active');
@@ -238,6 +240,10 @@ window.addEventListener('load',function () {
         nav.classList.add("active");
         hamburger.classList.add("active");
         heroContent.classList.add("active");
+        menuCloseContainerRightList.classList.add("active");
+        menuCloseContainerRightHeader.classList.add("active");
+        menuCloseContainerRightFooter.classList.add("active");
+
     })
 
     close.addEventListener("click" , function () {
@@ -250,6 +256,10 @@ window.addEventListener('load',function () {
         nav.classList.remove("active");
         hamburger.classList.remove("active");
         heroContent.classList.remove("active");
+        menuCloseContainerRightList.classList.remove("active");
+        menuCloseContainerRightHeader.classList.remove("active");
+        menuCloseContainerRightFooter.classList.remove("active");
+
     })
 
     // Menu Responsive Links
