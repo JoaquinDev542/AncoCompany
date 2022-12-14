@@ -225,15 +225,14 @@ window.addEventListener('load',function () {
     let header__logo = document.querySelector(".header__logo");
     let nav = document.querySelector(".nav");
     let heroContent = document.querySelector(".heroContent");
-    let menuCloseContainerRightList = document.querySelector(".menuCloseContainerRightList");
     let menuCloseContainerRightHeader__link = document.querySelector(".menuCloseContainerRightHeader__link");
     let close = document.querySelector(".close");
-    let menuCloseContainerRightFooter = document.querySelector(".menuCloseContainerRightFooter");
-    let menuCloseContainerRightList__link__aboutUs = document.querySelector(".menuCloseContainerRightList__link--aboutUs");
-    let menuCloseContainerRightList__link__steps = document.querySelector(".menuCloseContainerRightList__link--steps");
-    let menuCloseContainerRightList__link__services = document.querySelector(".menuCloseContainerRightList__link--services");
-    let menuCloseContainerRightList__link__work = document.querySelector(".menuCloseContainerRightList__link--work");
-    let menuCloseContainerRightList__link__contact = document.querySelector(".menuCloseContainerRightList__link--contact");
+    let menuCloseContainerRightList__item__aboutUs = document.querySelector(".menuCloseContainerRightList__item--aboutUs");
+    let menuCloseContainerRightList__item__steps = document.querySelector(".menuCloseContainerRightList__item--steps");
+    let menuCloseContainerRightList__item__services = document.querySelector(".menuCloseContainerRightList__item--services");
+    let menuCloseContainerRightList__item__work = document.querySelector(".menuCloseContainerRightList__item--work");
+    let menuCloseContainerRightList__item__contact = document.querySelector(".menuCloseContainerRightList__item--contact");
+    let menuCloseContainerRightFooter__darkMode = document.querySelector(".menuCloseContainerRightFooter__darkMode");
 
     menuopen.addEventListener('click', function () {
         menuclose.classList.toggle('active');
@@ -245,16 +244,14 @@ window.addEventListener('load',function () {
         nav.classList.add("active");
         hamburger.classList.add("active");
         heroContent.classList.add("active");
-        menuCloseContainerRightList.classList.add("active");
         menuCloseContainerRightHeader__link.classList.add("active");
         close.classList.add("active");
-        menuCloseContainerRightList__link__aboutUs.classList.add("active");
-        menuCloseContainerRightList__link__steps.classList.add("active");
-        menuCloseContainerRightList__link__services.classList.add("active");
-        menuCloseContainerRightList__link__work.classList.add("active");
-        menuCloseContainerRightList__link__contact.classList.add("active");
-        menuCloseContainerRightFooter.classList.add("active");
-
+        menuCloseContainerRightList__item__aboutUs.classList.add("active");
+        menuCloseContainerRightList__item__steps.classList.add("active");
+        menuCloseContainerRightList__item__services.classList.add("active");
+        menuCloseContainerRightList__item__work.classList.add("active");
+        menuCloseContainerRightList__item__contact.classList.add("active");
+        menuCloseContainerRightFooter__darkMode.classList.add("active");
     })
 
     close.addEventListener("click" , function () {
@@ -267,14 +264,14 @@ window.addEventListener('load',function () {
         nav.classList.remove("active");
         hamburger.classList.remove("active");
         heroContent.classList.remove("active");
-        menuCloseContainerRightList.classList.remove("active");
         menuCloseContainerRightHeader__link.classList.remove("active");
-        menuCloseContainerRightList__link__steps.classList.remove("active");
-        menuCloseContainerRightList__link__services.classList.remove("active");
-        menuCloseContainerRightList__link__work.classList.remove("active");
-        menuCloseContainerRightList__link__contact.classList.remove("active");
         close.classList.remove("active");
-        menuCloseContainerRightFooter.classList.remove("active");
+        menuCloseContainerRightList__item__aboutUs.classList.remove("active");
+        menuCloseContainerRightList__item__steps.classList.remove("active");
+        menuCloseContainerRightList__item__services.classList.remove("active");
+        menuCloseContainerRightList__item__work.classList.remove("active");
+        menuCloseContainerRightList__item__contact.classList.remove("active");
+        menuCloseContainerRightFooter__darkMode.classList.remove("active");
 
     })
 
