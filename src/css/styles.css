@@ -677,10 +677,11 @@ strong {
     height: 1px;
     width: 100%;
     background-color: var(--clr-primary);
-    transform: translateX(-50%);
+    transform: translateX(-100%);
+    transition: .6s 1.3s transform;
 }
 
-.menuCloseContainerRightFooter::after.active {
+.menuCloseContainerRightFooter.active::after {
     transform: translateX(0);
 }
 
