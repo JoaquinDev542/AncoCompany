@@ -234,6 +234,7 @@ window.addEventListener('load',function () {
     let menuCloseContainerRightList__item__contact = document.querySelector(".menuCloseContainerRightList__item--contact");
     let menuCloseContainerRightFooter__darkMode = document.querySelector(".menuCloseContainerRightFooter__darkMode");
     let menuCloseContainerRightFooter = document.querySelector(".menuCloseContainerRightFooter" , "::after");
+    let menuCloseContainerRightHeader = document.querySelector(".menuCloseContainerRightHeader" , "::after");
 
     menuopen.addEventListener('click', function () {
         menuclose.classList.toggle('active');
@@ -254,6 +255,8 @@ window.addEventListener('load',function () {
         menuCloseContainerRightList__item__contact.classList.add("active");
         menuCloseContainerRightFooter__darkMode.classList.add("active");
         menuCloseContainerRightFooter.classList.add("active");
+        menuCloseContainerRightHeader.classList.add("active");
+
     })
 
     close.addEventListener("click" , function () {
@@ -275,6 +278,7 @@ window.addEventListener('load',function () {
         menuCloseContainerRightList__item__contact.classList.remove("active");
         menuCloseContainerRightFooter__darkMode.classList.remove("active");
         menuCloseContainerRightFooter.classList.remove("active");
+        menuCloseContainerRightHeader.classList.remove("active");
 
     })
 

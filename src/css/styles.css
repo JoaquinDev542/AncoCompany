@@ -556,6 +556,12 @@ strong {
     height: 1px;
     width: 100%;
     background-color: var(--clr-primary);
+    transform: translateX(-100%);
+    transition: .85s 1.35s transform;
+}
+
+.menuCloseContainerRightHeader.active::after {
+    transform: translateX(0);
 }
 
 .menuCloseContainerRightHeader__link {
@@ -678,7 +684,7 @@ strong {
     width: 100%;
     background-color: var(--clr-primary);
     transform: translateX(-100%);
-    transition: .6s 1.3s transform;
+    transition: .85s 1.15s transform;
 }
 
 .menuCloseContainerRightFooter.active::after {
