@@ -557,7 +557,7 @@ strong {
     width: 100%;
     background-color: var(--clr-primary);
     transform: translateX(-100%);
-    transition: .85s 1.35s transform;
+    transition: .5s 1s transform;
 }
 
 .menuCloseContainerRightHeader.active::after {
@@ -684,7 +684,7 @@ strong {
     width: 100%;
     background-color: var(--clr-primary);
     transform: translateX(-100%);
-    transition: .85s 1.15s transform;
+    transition: .5s 1s transform;
 }
 
 .menuCloseContainerRightFooter.active::after {
