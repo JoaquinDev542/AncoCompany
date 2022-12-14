@@ -572,6 +572,14 @@ strong {
     margin-right: 5px;
     cursor: pointer;
     scale: .8;
+    opacity: 0;
+    transform: translateY(-50%);
+    transition: opacity .5s 1.5s , transform .5s 1.5s ;
+}
+
+.close.active {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .menuCloseContainerRightList {
@@ -582,6 +590,17 @@ strong {
     /* opacity: 0; */
     /* transform: translateY(10%); */
     /* transition: opacity .5s 1s , transform 1s 1s; */
+}
+
+.menuCloseContainerRightList__link--aboutUs {
+    opacity: 0;
+    transform: translateY(-50%);
+    transition: opacity .5s 1.5s , transform .5s 1.5s ;
+}
+
+.menuCloseContainerRightList__link--aboutUs.active {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .menuCloseContainerRightList.active {
