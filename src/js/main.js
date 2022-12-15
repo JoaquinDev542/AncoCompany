@@ -126,6 +126,7 @@ window.addEventListener('load',function () {
     let navList__link_work = document.querySelector(".navList__link--work");
     let navList__link_contact = document.querySelector(".navList__link--contact");
     let hamburger = document.querySelector(".hamburger");
+    let header__logoTitle = document.querySelector(".header__logoTitle");
 
     const functionChangeBgHeader = function () {
 
@@ -137,6 +138,7 @@ window.addEventListener('load',function () {
             navList__link_services.classList.add("addColor");
             navList__link_work.classList.add("addColor");
             navList__link_contact.classList.add("addColor");
+            header__logoTitle.classList.add("addColor");
 
         } else {
             header.classList.remove("addColor");
@@ -146,6 +148,8 @@ window.addEventListener('load',function () {
             navList__link_services.classList.remove("addColor");
             navList__link_work.classList.remove("addColor");
             navList__link_contact.classList.remove("addColor");
+            header__logoTitle.classList.remove("addColor");
+
         }  
         
     }
@@ -334,6 +338,15 @@ window.addEventListener('load',function () {
         submenu.classList.remove('active');
         header.classList.remove('active');
     })
+
+
+    // Menu Img hover 
+    // let menuCloseContainerLeft__img = document.querySelector(".menuCloseContainerLeft__img");
+
+    // menuCloseContainerRightList__link_aboutUs.addEventListener("mouseover" , function() {
+    //     menuCloseContainerLeft__img.classList.add("active");    
+    // })
+    
 
     // Btn Section Animation Javascript
     let animateButton = function(e) {
