@@ -1,5 +1,9 @@
 // Loader
 window.addEventListener('load',function () {
+
+    setTimeout(() => {
+        console.log("Ejecutar cada 1 seg")
+      }, 1000);
     
     // Loader
     window.addEventListener("blur", () => {
@@ -265,15 +269,18 @@ window.addEventListener('load',function () {
     })
 
     close.addEventListener("click" , function () {
-        menuclose.classList.remove("active");
-        progressBar__element.style.setProperty("display" , "block");
-        menuCloseAll.classList.remove('active');
-        submenu.classList.remove('active');
-        header.classList.remove('active');
-        header__logo.classList.remove("active");
-        nav.classList.remove("active");
-        hamburger.classList.remove("active");
-        heroContent.classList.remove("active");
+        setTimeout(() => {
+            menuclose.classList.remove("active");
+            heroContent.classList.remove("active");
+            hamburger.classList.remove("active");
+            nav.classList.remove("active");
+            header__logo.classList.remove("active");
+            header__logoTitle.classList.remove("active");
+            menuCloseAll.classList.remove('active');
+            progressBar__element.style.setProperty("display" , "block");
+            submenu.classList.remove('active');
+            header.classList.remove('active');
+        }, 2500);
         menuCloseContainerRightHeader__link.classList.remove("active");
         close.classList.remove("active");
         menuCloseContainerRightList__item__aboutUs.classList.remove("active");
@@ -284,7 +291,6 @@ window.addEventListener('load',function () {
         menuCloseContainerRightFooter__darkMode.classList.remove("active");
         menuCloseContainerRightFooter.classList.remove("active");
         menuCloseContainerRightHeader.classList.remove("active");
-        header__logoTitle.classList.remove("active");
 
     })
 
