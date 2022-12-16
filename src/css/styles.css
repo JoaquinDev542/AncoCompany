@@ -1,6 +1,4 @@
-
 :root {
-    --dm-clr-lineForm: radial-gradient(circle at 50% 50%, #faff46 0, #dafd30 25%, #b4ed06 50%, #8cdd00 75%, #63d000 100%);
     --dm-bg-body:#040506;
     --dm-bg-sections:#13181e;
     --dm-bg-buttons:#B4ED07;
@@ -11,7 +9,7 @@
     --dm-boxShadow-heroButton:#b3ed0749;
     --dm-boxShadow-buttons:#b3ed0749;
     --dm-bg-footer:#00000081;
-    --lm-clr-lineForm: radial-gradient(circle at 50% 50%, #ff9a49 0, #f8863f 25%, #ec6d32 50%, #e05228 75%, #d73825 100%);
+    --dm-clr-lineForm: radial-gradient(circle at 50% 50%, #faff46 0, #dafd30 25%, #b4ed06 50%, #8cdd00 75%, #63d000 100%);
     --lm-bg-body:#f5f5f5;
     --lm-bg-sections:#131a35;
     --lm-bg-buttons:#ec6d33;
@@ -25,6 +23,7 @@
     --white:#F5F5F5;
     --borderWhite:#F5F5F505;
     --dm-clr-titleDecoration: #f5f5f5;
+    --lm-clr-lineForm: radial-gradient(circle at 50% 50%, #ff9a49 0, #f8863f 25%, #ec6d32 50%, #e05228 75%, #d73825 100%);
     --lm-clr-titleDecoration:#040506;
 
     --fs-zero:0;
@@ -108,6 +107,7 @@
         --boxShadow-heroButton:var(--dm-boxShadow-heroButton);
         --boxShadow-buttons:var(--dm-boxShadow-buttons);
         --clr-titleDecoration:var(--lm-clr-titleDecoration);
+        --clr-lineForm:var(--dm-clr-lineForm);
     }
 
 }
@@ -126,6 +126,7 @@
         --boxShadow-heroButton:var(--lm-boxShadow-heroButton);
         --boxShadow-buttons:var(--lm-boxShadow-buttons);
         --clr-titleDecoration:var(--dm-clr-titleDecoration);
+        --clr-lineForm:var(--lm-clr-lineForm);
     }
 
 }
@@ -1107,7 +1108,7 @@ strong {
 .stepContainer {
     position: var(--value-relative);
     display: var(--value-grid);
-    gap: 75px;
+    gap: 50px;
 }
 
 .stepContainer::before {
@@ -1116,7 +1117,7 @@ strong {
     top: -30px;
     left: 1px;
     width: 5px;
-    height: 100%;
+    height: 110%;
     border-radius: 10px;
     background-color: var(--clr-primary);
 }
@@ -1168,6 +1169,7 @@ strong {
     align-items: var(--value-center , center);
     justify-content: var(--value-center , center);
     margin: var(--fs-zero , 0) var(--value-auto , auto);
+    
 }
 
 .informationContent__title {
@@ -1329,7 +1331,6 @@ strong {
     border: var(--value-none , none);
     outline: var(--value-none , none);
     background-color: var(--value-transparent , transparent);
-    /* border-bottom: 2px solid var(--dm-clr-secondary); */
     border-bottom: 2px solid var(--dm-clr-secondary);
     border-bottom: 2px solid #ffffff65;
     color: var(--dm-clr-secondary);
@@ -1343,7 +1344,7 @@ strong {
     color: var(--dm-clr-secondary);
     outline: 2px solid #ffffff65;
     background-color: var(--value-transparent , transparent);
-    transition: outline 1s ease-out;
+    transition: outline .4s ease-out;
     border-radius: 10px;
 }
 
@@ -1364,7 +1365,7 @@ strong {
     left: 5px;
     color: var(--dm-clr-secondary);
     transform: translateY(10px);
-    transition: transform 1s, color 1.5s;
+    transition: transform .4s, color 1.5s;
 }
 
 .form__line {
@@ -1374,9 +1375,9 @@ strong {
     width: 100%;
     height: 2px;
     background-image: var(--clr-lineForm);
-    transform-origin: center;
+    transform-origin: var(--value-center);
     transform: scale(0);
-    transition: transform 2s;
+    transition: transform .4s;
 }
 
 .input:focus ~ .form__line , .input:not(:placeholder-shown) ~ .form__line {
@@ -1830,7 +1831,7 @@ strong {
         ".              stepBox--second"
         "stepBox--third     ."
         ".              stepBox--fourth";
-        gap: 50px;
+        gap: 75px;
     }
 
     .stepBox--first {
@@ -1838,15 +1839,51 @@ strong {
     }
 
     .stepBox--second {
+        position: var(--value-relative);
         grid-area:stepBox--second ;
     }
 
+    .stepBox--second::before {
+        position: var(--value-absolute);
+        content: var(--value-content);
+        width: 100%;
+        height: 5px;
+        left: -35px;
+        top: -50px;
+        background-color: var(--clr-primary);
+        border-radius: 10px;
+    }
+
     .stepBox--third {
+        position: var(--value-relative);
         grid-area:stepBox--third ;
     }
 
+    .stepBox--third::before {
+        position: var(--value-absolute);
+        content: var(--value-content);
+        width: 100%;
+        height: 5px;
+        left: 35px;
+        top: -50px;
+        background-color: var(--clr-primary);
+        border-radius: 10px;
+    }
+
     .stepBox--fourth {
+        position: var(--value-relative);
         grid-area:stepBox--fourth ;
+    }
+
+    .stepBox--fourth::before {
+        position: var(--value-absolute);
+        content: var(--value-content);
+        width: 100%;
+        height: 5px;
+        left: -35px;
+        top: -50px;
+        background-color: var(--clr-primary);
+        border-radius: 10px;
     }
 
     .stepContainer::before {
@@ -1863,6 +1900,10 @@ strong {
         height: 40%;
         transform: rotate(90deg);
         background-color: var(--clr-primary);
+    }
+
+    .stepBox__paragraph {
+        margin: 0;
     }
     
     /* Information Section */
@@ -2187,6 +2228,23 @@ strong {
     .steps {
         padding:var(--fs-padding-portatil);
     }
+
+    .stepContainer {
+        gap: 100px;
+    }
+
+    .stepBox--second::before {
+        left: -50px;
+    }
+
+    .stepBox--third::before {
+        left: 50px;
+    }
+
+    .stepBox--fourth::before {
+        left: -50px;
+    }
+
 
     .stepBoxTitle {
         font-size: var(--fs-stepsTitle-portatil);
