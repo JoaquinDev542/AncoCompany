@@ -584,7 +584,7 @@ strong {
     width: 100%;
     background-color: var(--clr-primary);
     transform: translateX(-100%);
-    transition: .5s 1s transform;
+    transition: .5s .8s transform;
 }
 
 .menuCloseContainerRightHeader.active::after {
@@ -599,7 +599,7 @@ strong {
     text-transform: var(--value-uppercase);
     opacity: 0;
     transform: translateY(-50%);
-    transition: opacity .7s 1.5s , transform .7s 1.5s ;
+    transition: opacity .7s 1s , transform .7s 1s ;
 }
 
 .menuCloseContainerRightHeader__link.active {
@@ -614,7 +614,7 @@ strong {
     scale: .8;
     opacity: 0;
     transform: translateY(-50%);
-    transition: opacity .7s 1.5s , transform .7s 1.5s ;
+    transition: opacity .7s 1s , transform .7s 1s ;
 }
 
 .close.active {
@@ -633,7 +633,7 @@ strong {
 .menuCloseContainerRightList__item--aboutUs {
     opacity: 0;
     transform: translateY(-50%);
-    transition: opacity .7s 1.5s , transform .7s 1.5s ;
+    transition: opacity .7s 1s , transform .7s 1s ;
 }
 
 .menuCloseContainerRightList__item--aboutUs.active {
@@ -644,7 +644,7 @@ strong {
 .menuCloseContainerRightList__item--steps {
     opacity: 0;
     transform: translateY(-50%);
-    transition: opacity .7s 1.6s , transform .7s 1.6s ;
+    transition: opacity .7s 1.1s , transform .7s 1.1s ;
 }
 
 .menuCloseContainerRightList__item--steps.active {
@@ -655,7 +655,7 @@ strong {
 .menuCloseContainerRightList__item--services {
     opacity: 0;
     transform: translateY(-50%);
-    transition: opacity .7s 1.7s , transform .7s 1.7s ;
+    transition: opacity .7s 1.2s , transform .7s 1.2s ;
 }
 
 .menuCloseContainerRightList__item--services.active {
@@ -666,7 +666,7 @@ strong {
 .menuCloseContainerRightList__item--work {
     opacity: 0;
     transform: translateY(-50%);
-    transition: opacity .7s 1.8s , transform .7s 1.8s ;
+    transition: opacity .7s 1.3s , transform .7s 1.3s ;
 }
 
 .menuCloseContainerRightList__item--work.active {
@@ -677,7 +677,7 @@ strong {
 .menuCloseContainerRightList__item--contact {
     opacity: 0;
     transform: translateY(-50%);
-    transition: opacity .7s 1.9s , transform .7s 1.9s ;
+    transition: opacity .7s 1.4s , transform .7s 1.4s ;
 }
 
 .menuCloseContainerRightList__item--contact.active {
@@ -732,7 +732,7 @@ strong {
     width: 100%;
     background-color: var(--clr-primary);
     transform: translateX(-100%);
-    transition: .5s 1s transform;
+    transition: .5s .8s transform;
 }
 
 .menuCloseContainerRightFooter.active::after {

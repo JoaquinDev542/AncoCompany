@@ -280,7 +280,7 @@ window.addEventListener('load',function () {
             progressBar__element.style.setProperty("display" , "block");
             submenu.classList.remove('active');
             header.classList.remove('active');
-        }, 2500);
+        }, 2250);
         menuCloseContainerRightHeader__link.classList.remove("active");
         close.classList.remove("active");
         menuCloseContainerRightList__item__aboutUs.classList.remove("active");
