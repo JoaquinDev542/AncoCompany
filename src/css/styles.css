@@ -700,7 +700,7 @@ strong {
 .menuCloseContainerRightList__span {
     position: var(--value-relative);
     display:inline-block;
-    transition: .4s transform , .4s color;
+    transition: .4s .1s transform , .4s color;
 }
 
 .menuCloseContainerRightList__span::before {
@@ -2019,7 +2019,7 @@ strong {
     .navList__span {
         position: var(--value-relative);
         display: inline-block;
-        transition: .4s transform , .4s color;
+        transition: .4s .1s transform , .4s color;
     }
 
     .navList__span::before {
