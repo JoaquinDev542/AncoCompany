@@ -23,7 +23,7 @@ window.addEventListener('load',function () {
         distance: '50px',
         duration: 1000
     })
-
+ 
     ScrollReveal().reveal('.header', {origin: 'top'});
     ScrollReveal().reveal('.herotitle', {origin: 'left'});
     ScrollReveal().reveal('.heroContentContainer__btn--SR', {delay: 500});
@@ -260,6 +260,7 @@ window.addEventListener('load',function () {
         menuCloseContainerRightFooter__darkMode.classList.add("active");
         menuCloseContainerRightFooter.classList.add("active");
         menuCloseContainerRightHeader.classList.add("active");
+        header__logoTitle.classList.add("active");
 
     })
 
@@ -283,6 +284,7 @@ window.addEventListener('load',function () {
         menuCloseContainerRightFooter__darkMode.classList.remove("active");
         menuCloseContainerRightFooter.classList.remove("active");
         menuCloseContainerRightHeader.classList.remove("active");
+        header__logoTitle.classList.remove("active");
 
     })
 
@@ -300,7 +302,10 @@ window.addEventListener('load',function () {
         menuCloseAll.classList.remove('active');
         submenu.classList.remove('active');
         header.classList.remove('active');
-
+        header__logo.classList.remove("active");
+        nav.classList.remove("active");
+        heroContent.classList.remove("active");
+        header__logoTitle.classList.remove("active");
     })
 
     menuCloseContainerRightList__link_steps.addEventListener('click' , function () {
@@ -310,6 +315,10 @@ window.addEventListener('load',function () {
         menuCloseAll.classList.remove('active');
         submenu.classList.remove('active');
         header.classList.remove('active');
+        header__logo.classList.remove("active");
+        nav.classList.remove("active");
+        heroContent.classList.remove("active");
+        header__logoTitle.classList.remove("active");
     })
 
     menuCloseContainerRightList__link_services.addEventListener('click' , function () {
@@ -319,6 +328,10 @@ window.addEventListener('load',function () {
         menuCloseAll.classList.remove('active');
         submenu.classList.remove('active');
         header.classList.remove('active');
+        header__logo.classList.remove("active");
+        nav.classList.remove("active");
+        heroContent.classList.remove("active");
+        header__logoTitle.classList.remove("active");
     })
 
     menuCloseContainerRightList__link_work.addEventListener('click' , function () {
@@ -328,6 +341,10 @@ window.addEventListener('load',function () {
         menuCloseAll.classList.remove('active');
         submenu.classList.remove('active');
         header.classList.remove('active');
+        header__logo.classList.remove("active");
+        nav.classList.remove("active");
+        heroContent.classList.remove("active");
+        header__logoTitle.classList.remove("active");
     })
 
     menuCloseContainerRightList__link_contact.addEventListener('click' , function () {
@@ -337,6 +354,10 @@ window.addEventListener('load',function () {
         menuCloseAll.classList.remove('active');
         submenu.classList.remove('active');
         header.classList.remove('active');
+        header__logo.classList.remove("active");
+        nav.classList.remove("active");
+        heroContent.classList.remove("active");
+        header__logoTitle.classList.remove("active");
     })
 
 
