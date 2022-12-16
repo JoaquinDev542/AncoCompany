@@ -1,5 +1,6 @@
 
 :root {
+    --dm-clr-lineForm: radial-gradient(circle at 50% 50%, #faff46 0, #dafd30 25%, #b4ed06 50%, #8cdd00 75%, #63d000 100%);
     --dm-bg-body:#040506;
     --dm-bg-sections:#13181e;
     --dm-bg-buttons:#B4ED07;
@@ -10,6 +11,7 @@
     --dm-boxShadow-heroButton:#b3ed0749;
     --dm-boxShadow-buttons:#b3ed0749;
     --dm-bg-footer:#00000081;
+    --lm-clr-lineForm: radial-gradient(circle at 50% 50%, #ff9a49 0, #f8863f 25%, #ec6d32 50%, #e05228 75%, #d73825 100%);
     --lm-bg-body:#f5f5f5;
     --lm-bg-sections:#131a35;
     --lm-bg-buttons:#ec6d33;
@@ -137,6 +139,7 @@
     --clr-heroButton:var(--lm-clr-heroButton);
     --clr-primary:var(--lm-clr-primary);
     --clr-secondary:var(--lm-clr-secondary);
+    --clr-lineForm:var(--lm-clr-lineForm);
     --boxShadow-heroButton:var(--lm-boxShadow-heroButton);
     --boxShadow-buttons:var(--lm-boxShadow-buttons);
     --clr-titleDecoration:var(--dm-clr-titleDecoration);
@@ -151,6 +154,7 @@
     --clr-heroButton:var(--dm-clr-heroButton);
     --clr-primary:var(--dm-clr-primary);
     --clr-secondary:var(--dm-clr-secondary);
+    --clr-lineForm:var(--dm-clr-lineForm);
     --boxShadow-heroButton:var(--dm-boxShadow-heroButton);
     --boxShadow-buttons:var(--dm-boxShadow-buttons);
     --clr-titleDecoration:var(--lm-clr-titleDecoration);
@@ -936,16 +940,16 @@ strong {
 
 }
 
-.heroContentTitle__title{
+/* .heroContentTitle__title{
     font-size: 60px;
-}
+} */
 
 .heroContentTitleTyping {
     /* height: 90px;
     line-height: 90px; */
-    overflow: var(--value-hidden);
+    /* overflow: var(--value-hidden); */
 }
-
+/* 
 .heroContentTitleTyping .heroContentTitleTyping__item {
     position: relative;
     top: 0;
@@ -961,7 +965,7 @@ strong {
     font-size: 60px;
     position: relative;
     margin: 5px 0;
-}
+} */
 
 /* menuCloseAll Section */
 .menuCloseAll.active {
@@ -1300,7 +1304,9 @@ strong {
     border: var(--value-none , none);
     outline: var(--value-none , none);
     background-color: var(--value-transparent , transparent);
+    /* border-bottom: 2px solid var(--dm-clr-secondary); */
     border-bottom: 2px solid var(--dm-clr-secondary);
+    border-bottom: 2px solid #ffffff65;
     color: var(--dm-clr-secondary);
 }
 
@@ -1310,13 +1316,13 @@ strong {
     resize: vertical;
     border: var(--value-none , none);
     color: var(--dm-clr-secondary);
-    outline: 2px solid var(--dm-clr-secondary);
+    border: 2px solid #ffffff65;
     background-color: var(--value-transparent , transparent);
-    transition: outline .3s;
+    transition: border 2s ease-out;
 }
 
 .textarea:focus {
-    outline: 2px solid var(--clr-primary);
+    border: 2px solid var(--clr-primary);
 }
 
 .input:focus + .form__label , .input:not(:placeholder-shown) + .form__label {
@@ -1332,7 +1338,7 @@ strong {
     left: 5px;
     color: var(--dm-clr-secondary);
     transform: translateY(10px);
-    transition: transform .5s, color .3s;
+    transition: transform 1s, color 1.5s;
 }
 
 .form__line {
@@ -1341,10 +1347,10 @@ strong {
     left: var(--fs-zero , 0);
     width: 100%;
     height: 2px;
-    background-color: var(--clr-primary);
-    transform-origin: left bottom;
+    background-image: var(--clr-lineForm);
+    transform-origin: center;
     transform: scale(0);
-    transition: transform .4s;
+    transition: transform 2s;
 }
 
 .input:focus ~ .form__line , .input:not(:placeholder-shown) ~ .form__line {
@@ -1574,6 +1580,7 @@ strong {
 
     /* Submenu Section */
     .submenu {
+        top: 0;
         z-index: 700;
         position: var(--value-fixed);
         left: var(--fs-zero , 0);

@@ -528,9 +528,9 @@
 
                 </div>
 
-                <div class="heroContentTitle">
+                <div class="heroContentTitle"> -->
 
-                    <span class="heroContentTitle__title transitionColor">ANCO</span>
+                    <!-- <span class="heroContentTitle__title transitionColor">ANCO</span>
                     <ul class="heroContentTitleTyping">
                         <li class="heroContentTitleTyping__item"><span class="color--green transitionColor heroContentTitleTyping__span">Diseña.</span></li>
                         <li class="heroContentTitleTyping__item"><span class="color--green transitionColor heroContentTitleTyping__span">Desarrolla.</span></li>
@@ -1103,7 +1103,7 @@
 
                     <img src="./assets/image/aboutHero.jpeg" alt="" class="formContainer__img">
 
-                    <form method="POST" class="form">
+                    <form method="POST" class="form" action="https://www.actionforms.io/e/r/formulario-anco" target="_blank">
 
                         <h2 class="color--white form__title">Contacta Con <span class="color--green transitionColor form__span">Nosotros</span></h2>
 
@@ -1111,19 +1111,9 @@
 
                         <div class="form__group">
 
-                            <input type="text" id="input--name" placeholder=" " class="input input--name">
-
-                            <label for="input--name" class="form__label">Nombre:</label>
-
-                            <span class="form__line"></span>
-
-                        </div>
-
-                        <div class="form__group">
-
-                            <input type="text" id="input--lastName" placeholder=" " class="input input--lastName">
-
-                            <label for="input--lastName" class="form__label">Apellidos:</label>
+                            <input name="first--name" type="text" id="input--name" placeholder=" " class="input input--name">
+                                
+                            <label for="input--name" class="form__label">Nombre*</label>
 
                             <span class="form__line"></span>
 
@@ -1131,17 +1121,57 @@
 
                         <div class="form__group">
 
-                            <input type="email" id="input--email" placeholder=" " class="input input--email">
+                            <input name="last--name" type="text" id="input--lastName" placeholder=" " class="input input--lastName">
 
-                            <label for="input--email" class="form__label">Correo electrónico:</label>
+                            <label for="input--lastName" class="form__label">Apellidos*</label>
 
                             <span class="form__line"></span>
 
                         </div>
 
-                        <textarea placeholder="Escribe tu mensaje..." class="textarea"></textarea>
+                        <div class="form__group">
 
-                        <button class="formBtn heroContentContainer__btn heroContentContainer__btn--ST ">Enviar</button>
+                            <input name="email" type="email" id="input--email" placeholder=" " class="input input--email">
+
+                            <label for="input--email" class="form__label">Correo electrónico*</label>
+
+                            <span class="form__line"></span>
+
+                        </div>
+
+                        <div class="form__group">
+
+                            <input name="email" type="email" id="input--email" placeholder=" " class="input input--email">
+
+                            <label for="input--company" class="form__label">Compañia*</label>
+
+                            <span class="form__line"></span>
+
+                        </div>
+
+
+                        <div class="form__group">
+
+                            <input name="tel" type="tel" id="input--email" placeholder=" " class="input input--email">
+
+                            <label for="input--telf" class="form__label">Teléfono</label>
+
+                            <span class="form__line"></span>
+
+                        </div>
+
+                        <span>Estoy interesado en:</span>
+
+                        <label><input type="checkbox" id="cbox1" value="first_checkbox"> Web de empresa</label>
+                        <label><input type="checkbox" id="cbox1" value="first_checkbox"> Restaurante</label>
+                        <label><input type="checkbox" id="cbox1" value="first_checkbox"> Bienes raices</label>
+                        <label><input type="checkbox" id="cbox1" value="first_checkbox"> Portfolio</label>
+                        <label><input type="checkbox" id="cbox1" value="first_checkbox"> Viajes</label>
+                        <label><input type="checkbox" id="cbox1" value="first_checkbox"> Venta de productos</label>
+
+                        <textarea name="message" placeholder="Escribe tu mensaje..." class="textarea"></textarea>
+
+                        <button type="submit" class="formBtn heroContentContainer__btn heroContentContainer__btn--ST ">Enviar</button>
 
                     </form>
 
