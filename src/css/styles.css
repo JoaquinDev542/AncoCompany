@@ -33,7 +33,7 @@
     --fs-title-tablet:3.75rem;
     --fs-title-portatil:4rem;
     --fs-heroTitle-mobile:3.125rem;
-    --fs-heroTitle-tablet:5rem;
+    --fs-heroTitle-tablet:4rem;
     --fs-heroTitle-portatil:5rem;
     --fs-paragraph-tablet:1.1rem;
     --fs-paragraph-portatil:1.2rem;
@@ -829,6 +829,7 @@ strong {
 .heroContentContainer {
     display: var(--value-flex);
     flex-direction: var(--value-column);
+    justify-content: var(--value-center);
     gap: 50px;
     z-index: 10;
 }
@@ -952,6 +953,14 @@ strong {
 
 }
 
+.heroContentContainerButton {
+    display: inline-block;
+    color: var(--clr-primary);
+    text-decoration: none;
+    font-size: var(--fs-paragraph-tablet);
+    margin-top: 30px;
+}
+
 .consoleContainerHidden {
     opacity: var(--fs-zero);
 }
@@ -960,6 +969,10 @@ strong {
     position: var(--value-relative);
     font-size:65px;
     font-family: var(--ff-titles);
+}
+
+.consoleContainer__span {
+    display: block;
 }
 
 .consoleUnderscore {
@@ -1737,8 +1750,16 @@ strong {
         padding: var(--fs-padding-tablet , 0.625em 3.125em);
     }
 
-    .heroContentContainer__btn {
-        font-size: var(--fs-paragraph-tablet);
+    .heroContentContainerText {
+        max-width: 70%;
+    }
+
+    .heroContentContainerButton {
+        display: inline-block;
+        color: var(--clr-primary);
+        text-decoration: underline;
+        font-size: 24px;
+        margin-top: 30px;
     }
 
     .menuClose.active {
@@ -1786,6 +1807,14 @@ strong {
 
     .menuCloseContainerRightFooter__darkMode {
         margin-right: 50px;
+    }
+
+    .consoleContainer {
+        font-size: 85px;
+    }
+
+    .consoleContainer__span {
+        display: inline-block;
     }
 
     /* About Section */
@@ -2147,8 +2176,12 @@ strong {
         font-size: var(--fs-heroTitle-portatil);
     }
 
-    .heroContentContainer__btn {
-        font-size: var(--fs-paragraph-portatil);
+    .heroContentContainerButton {
+        font-size: 24px;
+    }
+
+    .consoleContainer {
+        font-size: 110px;
     }
 
     /* About Section */
@@ -2341,6 +2374,12 @@ strong {
         font-size: var(--fs-paragraph-portatil);
     }
 
+}
+
+@media screen and (min-width:1400px) {
+    .consoleContainer {
+        font-size: 165px;
+    }
 }
 
 @media screen and (hover: hover) {

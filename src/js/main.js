@@ -421,7 +421,7 @@ window.addEventListener('load',function () {
          x = 1;
          letterCount += x;
          waiting = false;
-       }, 1000)
+       }, 500)
      } else if (letterCount === words[0].length + 1 && waiting === false) {
        waiting = true;
        window.setTimeout(function() {
@@ -433,7 +433,7 @@ window.addEventListener('load',function () {
        target.innerHTML = words[0].substring(0, letterCount)
        letterCount += x;
      }
-   }, 120)
+   }, 140)
    window.setInterval(function() {
      if (visible === true) {
        con.className = 'consoleUnderscore hidden'
