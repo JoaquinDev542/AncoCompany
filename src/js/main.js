@@ -86,11 +86,11 @@ window.addEventListener('load',function () {
    // Idioms Active
    let idiomsContainerDisplay = document.querySelector(".idiomsContainerDisplay");
    let idioms = document.querySelector(".idioms");
-//    let body = document.querySelector(".body");
 
-   idioms.addEventListener("click" , function ( ) {
+
+    idioms.addEventListener("click" , function ( ) {
         idiomsContainerDisplay.classList.toggle("active");
-   })
+    })
   
     // BackgroundColor Submenu Section Change
     let submenu = document.querySelector(".submenu");
