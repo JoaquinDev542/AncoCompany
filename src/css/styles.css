@@ -829,9 +829,9 @@ strong {
 .heroContentContainer {
     display: var(--value-flex);
     flex-direction: var(--value-column);
-    justify-content: var(--value-center);
     gap: 50px;
     z-index: 10;
+    margin-top: 65px;
 }
 
 .herotitle {
@@ -1750,6 +1750,10 @@ strong {
         padding: var(--fs-padding-tablet , 0.625em 3.125em);
     }
 
+    .heroContentContainer {
+        margin-top: 113.38px;
+    }
+    
     .heroContentContainerText {
         max-width: 70%;
     }
