@@ -957,17 +957,14 @@ strong {
 
 .consoleContainer {
     position: var(--value-relative);
-    font-size:70px;
+    font-size:65px;
 }
 
 .consoleUnderscore {
-    position:var(--value-relative);
     display:var(--value-inline-block);
-    top:-0.06em;
-    left:0px;
-    height: 100%;
-    rotate: 90deg;
- }
+    top:0;
+    left:-50px;
+}
 
 /* menuCloseAll Section */
 .menuCloseAll.active {

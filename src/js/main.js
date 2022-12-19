@@ -400,12 +400,12 @@ window.addEventListener('load',function () {
         }
 
     // function([string1, string2],target id,[color1,color2])    
- consoleText(['Diseña. ', ' Desarrolla.', ' Mantiene.'], 'text');
+ consoleText(['Diseña', 'Desarrolla', 'Mantiene'], 'text');
 
  function consoleText(words, id, colors) {
    if (colors === undefined) colors = [''];
-//    var visible = true;
-//    var con = document.getElementById('console');
+   var visible = true;
+   var con = document.getElementById('console');
    let letterCount = 1;
    let x = 1;
    let waiting = false;
@@ -434,17 +434,17 @@ window.addEventListener('load',function () {
        letterCount += x;
      }
    }, 120)
-//    window.setInterval(function() {
-//      if (visible === true) {
-//     //    con.className = 'consoleUnderscore hidden'
-//        visible = false;
+   window.setInterval(function() {
+     if (visible === true) {
+       con.className = 'consoleUnderscore hidden'
+       visible = false;
  
-//      } else {
-//     //    con.className = 'consoleUnderscore'
+     } else {
+       con.className = 'consoleUnderscore'
  
-//        visible = true;
-//      }
-//    }, 400)
+       visible = true;
+     }
+   }, 400)
  }
 
     // Btn Form Section
