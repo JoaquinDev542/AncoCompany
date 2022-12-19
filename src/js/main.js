@@ -399,6 +399,53 @@ window.addEventListener('load',function () {
             heroContentContainer__btnColor[i].addEventListener('mouseover', animateButton, false);
         }
 
+    // function([string1, string2],target id,[color1,color2])    
+ consoleText(['Diseña. ', ' Desarrolla.', ' Mantiene.'], 'text');
+
+ function consoleText(words, id, colors) {
+   if (colors === undefined) colors = [''];
+//    var visible = true;
+//    var con = document.getElementById('console');
+   let letterCount = 1;
+   let x = 1;
+   let waiting = false;
+   let target = document.getElementById(id)
+   window.setInterval(function() {
+ 
+     if (letterCount === 0 && waiting === false) {
+       waiting = true;
+       target.innerHTML = words[0].substring(0, letterCount)
+       window.setTimeout(function() {
+        let usedWord = words.shift();
+         words.push(usedWord);
+         x = 1;
+         letterCount += x;
+         waiting = false;
+       }, 1000)
+     } else if (letterCount === words[0].length + 1 && waiting === false) {
+       waiting = true;
+       window.setTimeout(function() {
+         x = -1;
+         letterCount += x;
+         waiting = false;
+       }, 1000)
+     } else if (waiting === false) {
+       target.innerHTML = words[0].substring(0, letterCount)
+       letterCount += x;
+     }
+   }, 120)
+//    window.setInterval(function() {
+//      if (visible === true) {
+//     //    con.className = 'consoleUnderscore hidden'
+//        visible = false;
+ 
+//      } else {
+//     //    con.className = 'consoleUnderscore'
+ 
+//        visible = true;
+//      }
+//    }, 400)
+ }
 
     // Btn Form Section
     let formBtn = document.querySelector(".formBtn");
