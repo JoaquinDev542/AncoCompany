@@ -836,6 +836,7 @@ strong {
 .herotitle {
     font-size: var(--fs-heroTitle-mobile);
     line-height: 1.25;
+    text-transform: capitalize;
 }
 
 .heroContentContainer__btn {
@@ -958,6 +959,7 @@ strong {
 .consoleContainer {
     position: var(--value-relative);
     font-size:65px;
+    font-family: var(--ff-titles);
 }
 
 .consoleUnderscore {
@@ -1570,15 +1572,6 @@ strong {
 }
 
 /* Tablet Size */
-@media screen and (min-width:30em) {
-
-    .heroContentContainer {
-        text-align: var(--value-center , center);
-        margin: var(--fs-zero , 0) var(--value-auto , auto);
-    }
-
-}
-
 @media screen and (min-width:48em) {
 
     /* Font-size Section */
