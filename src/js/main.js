@@ -404,8 +404,8 @@ window.addEventListener('load',function () {
 
  function consoleText(words, id, colors) {
    if (colors === undefined) colors = [''];
-   var visible = true;
-   var con = document.getElementById('console');
+   let visible = true;
+   let con = document.getElementById('console');
    let letterCount = 1;
    let x = 1;
    let waiting = false;
