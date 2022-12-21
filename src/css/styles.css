@@ -576,8 +576,7 @@ strong {
     animation: marqueeMenu 3s linear infinite backwards;
     font-weight: bold;
     font-family: var(--ff-titles);
-    margin-top: 20px;
-		transform: translateY(-100%);
+    margin-top: 50px;
 }
 
 @keyframes marqueeMenu {
