@@ -412,7 +412,7 @@ strong {
     height: 3px;
     width: 100%;
     background-color: var(--value-transparent);
-    z-index: 600;
+    z-index: 200;
     transition: .5s background-color;
 }
 
@@ -435,6 +435,7 @@ strong {
     display: var(--value-flex);
     align-items: var(--value-center);
     justify-content: var(--value-center);
+    overflow: var(--value-hidden);
 }
 
 .submenu {
@@ -442,7 +443,7 @@ strong {
 }
 
 .header {
-    z-index: 300;
+    z-index: 200;
     position:  var(--value-fixed , fixed);
     top: var(--fs-zero);
     left: var(--fs-zero);
@@ -531,7 +532,7 @@ strong {
     background-color:var(--value-transparent);
     transform: translateX(100%);
     opacity: var(--fs-zero , 0);
-    transition: transform .8s cubic-bezier(.62,.54,.76,.94) , opacity .5s cubic-bezier(.62,.54,.85,.72);
+    transition: transform .8s cubic-bezier(.62,.54,.76,.94) , opacity .8s cubic-bezier(.62,.54,.85,.72);
     font-weight: 100;
 }
 
@@ -1235,10 +1236,12 @@ strong {
     grid-area: informationContentContainer__img;
     width: 5rem;
     fill: var(--clr-firstGradient);
+    filter: drop-shadow(0px 0px 2px var(--bg-buttons));
     animation: changeColorSvg  forwards 2s infinite;
 }
 
 @keyframes changeColorSvg {
+    
     0% {
         fill: var(--clr-firstGradient);
     }
@@ -1258,6 +1261,7 @@ strong {
     100% {
         fill: var(--clr-fifthGradient);
     }
+
 }
 
 .informationContentContainer__title {
@@ -1688,7 +1692,7 @@ strong {
     /* Submenu Section */
     .submenu {
         top: 0;
-        z-index: 700;
+        z-index: 210;
         position: var(--value-fixed);
         left: var(--fs-zero , 0);
         right: var(--fs-zero , 0);
@@ -1705,6 +1709,7 @@ strong {
 
     .submenu.active {
         display: var(--value-none);
+        /* filter: blur(5px); */
     }
 
     .submenuContainer {
@@ -1844,7 +1849,6 @@ strong {
         display: var(--value-flex);
         justify-content: var(--value-center);
         align-items: var(--value-center);
-        padding: 50px;
     }
 
     .menuCloseContainerLeft__img {

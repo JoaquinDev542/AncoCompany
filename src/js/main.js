@@ -225,7 +225,6 @@ window.addEventListener('load',function () {
   
       })
 
-
     // Menu Reponsive
     let menuopen = document.querySelector(".hamburger")
     let menuclose = document.querySelector(".menuClose")
@@ -265,7 +264,6 @@ window.addEventListener('load',function () {
         menuCloseContainerRightFooter.classList.add("active");
         menuCloseContainerRightHeader.classList.add("active");
         header__logoTitle.classList.add("active");
-
     })
 
     close.addEventListener("click" , function () {
@@ -278,9 +276,10 @@ window.addEventListener('load',function () {
             header__logoTitle.classList.remove("active");
             menuCloseAll.classList.remove('active');
             progressBar__element.style.setProperty("display" , "block");
-            submenu.classList.remove('active');
             header.classList.remove('active');
+            submenu.classList.remove('active');
         }, 2250);
+        
         menuCloseContainerRightHeader__link.classList.remove("active");
         close.classList.remove("active");
         menuCloseContainerRightList__item__aboutUs.classList.remove("active");
