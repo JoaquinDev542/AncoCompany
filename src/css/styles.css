@@ -1132,7 +1132,7 @@ strong {
     height: 110%;
     border-radius: 10px;
     background-image: var(--clr-gradient);
-    filter:drop-shadow(0px 0px 3px var(--bg-buttons));
+    filter:drop-shadow(0px 0px 2px var(--bg-buttons));
     animation: changeColorSvg forwards 2s infinite;
 }
 
@@ -1159,12 +1159,12 @@ strong {
     transform: rotate(90deg);
     border-radius: 10px;
     background-color: var(--clr-primary);
-    filter:drop-shadow(1px 1px 1px var(--bg-buttons));
+    filter:drop-shadow(0px 0px 2px var(--bg-buttons));
     animation: changeColorSvg forwards 2s infinite;
 }
 
 .stepBox__number {
-    filter:drop-shadow(1px 1px 2px var(--bg-buttons));
+    filter:drop-shadow(0px 0px 2px var(--bg-buttons));
     animation: changeColorSvg forwards 2s infinite;
     margin-left: 25px;
 }
@@ -1942,6 +1942,8 @@ strong {
         top: -50px;
         background-color: var(--clr-primary);
         border-radius: 10px;
+        filter:drop-shadow(0px 0px 2px var(--bg-buttons));
+        animation: changeColorSvg forwards 2s infinite;
     }
 
     .stepBox--third {
@@ -1958,6 +1960,8 @@ strong {
         top: -50px;
         background-color: var(--clr-primary);
         border-radius: 10px;
+        filter:drop-shadow(0px 0px 2px var(--bg-buttons));
+        animation: changeColorSvg forwards 2s infinite;
     }
 
     .stepBox--fourth {
@@ -1974,6 +1978,8 @@ strong {
         top: -50px;
         background-color: var(--clr-primary);
         border-radius: 10px;
+        filter:drop-shadow(0px 0px 2px var(--bg-buttons));
+        animation: changeColorSvg forwards 2s infinite;
     }
 
     .stepContainer::before {
