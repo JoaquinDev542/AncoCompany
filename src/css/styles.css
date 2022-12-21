@@ -573,7 +573,11 @@ strong {
     font-size: var(--fs-marquee-mobile );
     color: var(--lm-clr-secondary);
     text-transform: var(--value-uppercase , uppercase);
-    animation: marqueeMenu 3s linear infinite;
+    animation: marqueeMenu 3s linear infinite backwards;
+    font-weight: bold;
+    font-family: var(--ff-titles);
+    margin-top: 20px;
+		transform: translateY(-100%);
 }
 
 @keyframes marqueeMenu {
