@@ -274,7 +274,7 @@ strong {
 }
 
 .color--green {
-    color: var(--clr-primary);
+    color: var(--clr-primary);  
 }
 
 .color--gradient {
@@ -2172,7 +2172,7 @@ strong {
 
     .navList__span:hover {
         transform: translateY(-100%);
-        color: var(--clr-primary);
+        color: var(--clr-primary);  
     }
 
     .navList__link--about.addColor {
