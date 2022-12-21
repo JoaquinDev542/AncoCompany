@@ -553,61 +553,37 @@ strong {
 }
 
 .menuCloseContainerRightMarquee {
-    background-color: var(--clr-primary);
     background-image: var(--clr-gradient);
-    position: var(--value-relative , relative);
     overflow: var(--value-hidden , hidden);
+    height: 100%;
+	writing-mode: vertical-rl;
+    text-orientation: sideways-right;
+    display: var(--value-grid);
+    place-content: var(--value-center);
 }
 
 .menuCloseContainerRightMarqueeContainer {
-    /* position: var(--value-absolute , absolute); */
-    /* top:-100%; */
-    /* display:var(--value-flex , flex); */
-    /* justify-content:var(--value-space-around , space-around); */
-    /* height: 200%; */
-    /* padding: 0.625em;    */
-    /* border-top: 2px solid var(--clr-secondary); */
-    /* border-bottom: 2px solid var(--clr-secondary); */
-    white-space: nowrap;
-    /* overflow: var(--value-hidden , hidden); */
-    /* transform:translate(-50 ,0); */
-    transform: rotate(90deg);
-    /* animation: marqueeMenu 7s linear infinite forwards; */
-}
-
-/*
-.footerFather {
-    position: var(--value-absolute , absolute);
-    left:-100%;
-    display:var(--value-flex , flex);
-    justify-content:var(--value-space-around , space-around);
-    width:200%;
-    padding: 0.625em;
-    border-top: 2px solid var(--clr-secondary);
-    border-bottom: 2px solid var(--clr-secondary);
-    white-space: nowrap;
-    overflow: var(--value-hidden , hidden);
-    transform:translate(0 , -50%);
-    animation: marquee 7s linear infinite forwards;
-}
-*/
-
-@keyframes marqueeMenu {
-
-    0% {
-        left:var(--fs-zero , 0);
-      }
-
-    100% {
-        left:-100%;
-      }
-
+    overflow: var(--value-hidden);
+	white-space: nowrap;
+    height: 100%;
 }
 
 .menuCloseContainerRightMarqueeContainer__span {
+    display: inline-flex;
     font-size: var(--fs-marquee-mobile );
     color: var(--lm-clr-secondary);
     text-transform: var(--value-uppercase , uppercase);
+    animation: marqueeMenu 3s linear infinite;
+}
+
+@keyframes marqueeMenu {
+	from {
+		transform: translateY(-100%);
+	}
+
+	to {
+		transform: translateY(0);
+	}
 }
 
 .menuCloseContainerRightContainer {
