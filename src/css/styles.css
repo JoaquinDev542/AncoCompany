@@ -420,7 +420,7 @@ strong {
 }
 
 .progressBar__element {
-    background-color: var(--clr-primary);
+    background-image: var(--clr-gradient);
     height: 100%;
     width: 100%;
 }
@@ -608,9 +608,9 @@ strong {
     content: var(--value-content);
     bottom: 0;
     left: 0;
-    height: 1px;
+    height: 3px;
     width: 100%;
-    background-color: var(--clr-primary);
+    background-image: var(--clr-gradient);
     transform: translateX(-100%);
     transition: .5s .8s transform;
 }
@@ -756,9 +756,9 @@ strong {
     content: var(--value-content);
     top: 0;
     left: 0;
-    height: 1px;
+    height: 3px;
     width: 100%;
-    background-color: var(--clr-primary);
+    background-image: var(--clr-gradient);
     transform: translateX(-100%);
     transition: .5s .8s transform;
 }
@@ -986,7 +986,15 @@ strong {
     text-decoration: none;
     font-size: var(--fs-paragraph-tablet);
     margin-top: 30px;
+    transition: transform .5s , filter .5s;
+
 }
+
+.heroContentContainerButton:hover {
+    transform: scale(.95);
+    filter: drop-shadow(3px 3px 5px var(--dm-boxShadow-buttons));
+}
+
 
 .consoleContainerHidden {
     opacity: var(--fs-zero);
@@ -1189,7 +1197,7 @@ strong {
     align-items: var(--value-center , center);
     justify-content: var(--value-center , center);
     margin: var(--fs-zero , 0) var(--value-auto , auto);
-    margin-top: 50px;
+    margin-top: 175px;
 }
 
 .informationContent__title {
@@ -1740,7 +1748,7 @@ strong {
 
     .idioms__title {
         color: var(--dm-clr-secondary);
-        transition: .4s color;
+        transition: .4s color , transform .5s ;
     }
 
     .idioms__title--principal {
@@ -2486,6 +2494,7 @@ strong {
 
     .idioms__title:hover {
         color: var(--clr-primary);
+        transform: scale(.97);
     }
 
     .idioms__title--principal:hover {
