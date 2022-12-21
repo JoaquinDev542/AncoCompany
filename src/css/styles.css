@@ -1,7 +1,7 @@
 :root {
     --dm-bg-body:#181818;
     --dm-bg-sections:#212121;
-    --dm-bg-buttons:#20b46a;
+    --dm-bg-buttons:#20b46abd;
     --dm-clr-primary:#20b46a;
     --dm-clr-secondary:#f5f5f5;
     --dm-clr-secondary--paragraph:#c1c1c1;
@@ -25,7 +25,7 @@
     --lm-clr-fifthGradient:#dc4726;
 
     --lm-bg-sections:#131a35;
-    --lm-bg-buttons:#ec6d33;
+    --lm-bg-buttons:#ec6e33bd;
     --lm-clr-primary:#ec6d33;
     --lm-clr-secondary:#121933;
     --lm-clr-secondary--paragraph:#121933ec;
@@ -873,7 +873,8 @@ strong {
     padding: 1em 2em;
     border-radius: 10px;
     box-shadow: 1px 1px 15px var(--boxShadow-buttons);
-    color: var(--dm-clr-heroButton);
+    color: var(--lm-clr-secondary);
+    font-weight: bold;
     background-color: var(--bg-buttons);
     transition: transform ease-in 0.1s, box-shadow ease-in 0.25s ;
 }
@@ -1166,7 +1167,7 @@ strong {
 .stepBox__number {
     filter:drop-shadow(0px 0px 2px var(--bg-buttons));
     animation: changeColorSvg forwards 2s infinite;
-    margin-left: 25px;
+    margin-left: 35px;
 }
 
 .stepBox__title {
@@ -1175,7 +1176,7 @@ strong {
 
 .stepBox__paragraph {
     margin: 0;
-    margin-left: 25px;
+    margin-left: 35px;
     max-width: 85%;
 }
 
@@ -1996,6 +1997,15 @@ strong {
         height: 40%;
         transform: rotate(90deg);
         background-color: var(--clr-primary);
+    }
+
+    .stepBoxTitle::before {
+        content: initial;
+        margin: 0px;
+    }
+
+    .stepBox__number {
+        margin-left: 0px;
     }
 
     .stepBox__paragraph {
