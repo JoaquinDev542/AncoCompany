@@ -58,7 +58,6 @@ window.addEventListener('load',function () {
     }
     
     const add_btn_scrolltop = function(){
-        // console.log(document.documentElement.scrollTop);
         if(document.documentElement.scrollTop >= 200){
             arrow.classList.add('active');
         } else {
@@ -90,6 +89,7 @@ window.addEventListener('load',function () {
 
     idioms.addEventListener("click" , function ( ) {
         idiomsContainerDisplay.classList.toggle("active");
+        idiomsContainerInitial__arrow.classList.toggle("active");
     })
   
     // BackgroundColor Submenu Section Change
@@ -214,8 +214,6 @@ window.addEventListener('load',function () {
       darkMode__input.addEventListener('click', function () {
   
           let darkModeContainer__span = document.querySelector(".darkModeContainer__span");
-  
-          console.log(darkModeContainer__span.innerHTML);
   
           if (darkModeContainer__span.innerHTML == "Modo Oscuro") {
             darkModeContainer__span.innerHTML = "Modo Claro"

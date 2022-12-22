@@ -1758,10 +1758,16 @@ strong {
     .idiomsContainerInitial__arrow {
         width: 25px;
         fill: var(--clr-secondary);
+        rotate: 0deg;
+        transition: rotate .3s;
     }
 
     .idiomsContainerInitial__arrow.addColor {
         fill: var(--dm-clr-secondary);
+    }
+
+    .idiomsContainerInitial__arrow.active {
+        rotate: 180deg;
     }
 
     .contactInformationSocialMedia--submenu {
@@ -1784,10 +1790,6 @@ strong {
     }
 
     .idiomsContainerDisplay {
-        display: var(--value-none);
-    }
-
-    .idiomsContainerDisplay.active {
         position: var(--value-relative);
         display: var(--value-flex);
         flex-direction: var(--value-column);
@@ -1798,6 +1800,12 @@ strong {
         border-radius: 10px;
         margin-top: 20px;
         z-index: 750;
+        transform: translateY(-150%);
+        transition: transform 1s;
+    }
+
+    .idiomsContainerDisplay.active {
+        transform: translateY(0%);
     }
 
     /* Header Section */
