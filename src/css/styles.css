@@ -379,8 +379,8 @@ strong {
     justify-content:var(--value-space-around);
     width:200%;
     padding: 0.625em;
-    border-top: 2px solid var(--clr-secondary);
-    border-bottom: 2px solid var(--clr-secondary);
+    border-top: 5px solid var(--clr-secondary--paragraph);
+    border-bottom: 5px solid var(--clr-secondary--paragraph);
     white-space: nowrap;
     overflow: var(--value-hidden , hidden);
     transform:translate(0 , -50%);
@@ -390,6 +390,8 @@ strong {
 .footerText {
     font-size: var(--fs-marquee-mobile );
     text-transform: var(--value-uppercase , uppercase);
+    font-family: var(--ff-titles);
+    margin-left: 15px;
 }
 
 @keyframes marquee {
@@ -1801,7 +1803,7 @@ strong {
         margin-top: 20px;
         z-index: 750;
         transform: translateY(-150%);
-        transition: transform 1s;
+        transition: transform .7s;
     }
 
     .idiomsContainerDisplay.active {
