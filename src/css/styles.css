@@ -1,7 +1,7 @@
 :root {
     --dm-bg-body:#181818;
     --dm-bg-sections:#212121;
-    --dm-bg-buttons:#20b46abd;
+    --dm-bg-buttons:#20b46a;
     --dm-clr-primary:#20b46a;
     --dm-clr-secondary:#f5f5f5;
     --dm-clr-secondary--paragraph:#c1c1c1;
@@ -25,7 +25,7 @@
     --lm-clr-fifthGradient:#dc4726;
 
     --lm-bg-sections:#131a35;
-    --lm-bg-buttons:#ec6e33bd;
+    --lm-bg-buttons:#ec6e33;
     --lm-clr-primary:#ec6d33;
     --lm-clr-secondary:#121933;
     --lm-clr-secondary--paragraph:#121933ec;
@@ -991,12 +991,6 @@ strong {
 
 }
 
-.heroContentContainerButton:hover {
-    transform: scale(.95);
-    filter: drop-shadow(3px 3px 5px var(--dm-boxShadow-buttons));
-}
-
-
 .consoleContainerHidden {
     opacity: var(--fs-zero);
 }
@@ -1187,6 +1181,10 @@ strong {
     margin: 0;
     margin-left: 35px;
     max-width: 85%;
+}
+
+.stepBox__link {
+    transition: transform .5s , filter .5s;
 }
 
 /* information Section */
@@ -2489,6 +2487,15 @@ strong {
 
     .close:hover {
         scale: .75;
+    }
+
+    .heroContentContainerButton:hover {
+        transform: scale(.95);
+        filter: drop-shadow(3px 3px 5px var(--dm-boxShadow-buttons));
+    }
+    
+    .stepBox__link:hover {
+        filter: drop-shadow(1px 1px 2px var(--clr-secondary--paragraph));
     }
 
     .contactInformationSocialMedia__img:hover {
