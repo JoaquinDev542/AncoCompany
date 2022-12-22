@@ -1198,7 +1198,7 @@ strong {
     align-items: var(--value-center , center);
     justify-content: var(--value-center , center);
     margin: var(--fs-zero , 0) var(--value-auto , auto);
-    margin-top: 175px;
+    margin-top: 75px;
 }
 
 .informationContent__title {
@@ -2029,6 +2029,7 @@ strong {
     /* Information Section */
     .informationContent {
         padding: var(--fs-padding-tablet);
+        margin-top: 175px;
     }
 
     .informationContentContainers {
@@ -2361,7 +2362,6 @@ strong {
     .stepBox--fourth::before {
         left: -50px;
     }
-
 
     .stepBoxTitle {
         font-size: var(--fs-stepsTitle-portatil);
