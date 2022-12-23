@@ -1081,7 +1081,7 @@ strong {
     margin: var(--fs-zero) var(--value-auto);
     text-transform: capitalize;
     font-style: var(--value-italic , italic);
-    background-color: var(--clr-primary);
+    background-image: var(--clr-gradient);
     border-radius: 10px;
     padding: 5px 20px 5px 10px ;
     color: var(--clr-titleDecoration);
@@ -1100,6 +1100,7 @@ strong {
     transform: translate(-50%,-50%);
     z-index: -1;
     background-color: var(--clr-primary);
+    /* border: 3px solid var(--clr-secondary--paragraph); */
 }
 
 .aboutContent {
