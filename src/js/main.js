@@ -105,6 +105,7 @@ window.addEventListener('load',function () {
         if(document.documentElement.scrollTop >= 10) {
             submenu.classList.add("addColor");
             darkModeContainer__span.classList.add("addColor");
+            idioms.classList.add("addColor");
             idioms__titlePrincipal.classList.add("addColor");
             idiomsContainerInitial__arrow.classList.add("addColor");
             contactInformationSocialMedia__imgSubmenu.classList.add("addColor");
@@ -113,6 +114,7 @@ window.addEventListener('load',function () {
         } else {
             submenu.classList.remove("addColor");
             darkModeContainer__span.classList.remove("addColor");
+            idioms.classList.remove("addColor");
             idioms__titlePrincipal.classList.remove("addColor");
             idiomsContainerInitial__arrow.classList.remove("addColor");
             contactInformationSocialMedia__imgSubmenu.classList.remove("addColor");
