@@ -59,9 +59,11 @@
     --fs-aboutTitle-mobile:2rem;
     --fs-aboutTitle-tablet:2.25rem;
     --fs-aboutTitle-portatil:2.5rem;
+    --fs-aboutTitle-portatilL:2.75rem;
 
     --fs-stepsTitle-mobile:2rem;
     --fs-stepsTitle-portatil:2.5rem;
+    --fs-stepsTitle-portatilL:2.75rem;
 
     --fs-informationTitle-mobile:1.75rem;
     --fs-informationTitle-portatil:2rem;
@@ -69,10 +71,12 @@
     --fs-workTitle-mobile:1.5rem;
     --fs-workTitle-tablet: 1.625rem;
     --fs-workTitle-portatil:1.75rem;
+    --fs-workTitle-portatilL:1.875rem;
 
     --fs-asideAndFormTitle-mobile:2rem;
     --fs-asideAndFormTitle-tablet:2.25rem;
     --fs-asideAndFormTitle-portatil:2.5rem;
+    --fs-asideAndFormTitle-portatilL:2.75rem;
 
     --fs-padding-mobile: 0 0.9375em;
     --fs-padding-tablet: 0.625em 3.125em;
@@ -1116,21 +1120,24 @@ strong {
     display: var(--value-none , none);
 }
 
+.aboutInformationDad {
+    display: var(--value-flex);
+    flex-direction: var(--value-column);
+    gap: 85px;    
+} 
+
 .aboutInformation {
     max-width: 1440px;
     margin: var(--fs-zero , 0) var(--value-auto , auto);
     padding:var(--fs-padding-mobile);
 }
 
-.aboutInformationPadding {
-    display: var(--value-flex);
-    flex-direction: var(--value-column);
-    gap: 25px;
-}
-
 .aboutInformationPadding__img {
+    width: 100%;
+    height: 175px;
+    margin-top: 32px;
     border-radius: 10px;
-
+    object-fit: var(--value-cover);
 }
 
 .aboutInformationContainer__title {
@@ -1943,14 +1950,32 @@ strong {
     }
 
     .aboutInformationPadding {
-        display: var(--value-flex);
-        flex-direction: var(--value-column);
-        gap: 25px;
+        display: grid;
+        gap: 30px;
+        grid-template-columns: .5fr .5fr;
+    }
+
+    .aboutInformationPadding--second {
+        grid-template-areas: "aboutInformationPadding__img--second aboutInformationContainer--second";
+    }
+
+    .aboutInformationPadding__img--second {
+        grid-area: aboutInformationPadding__img--second;
+    }
+
+    .aboutInformationContainer--second {
+        grid-area: aboutInformationContainer--second;
+    }
+
+    .aboutInformationPadding__img {
+        height: calc(100% - 32px);
     }
 
     .aboutInformationContainer__title {
         font-size: var(--fs-aboutTitle-tablet);
     }
+
+
 
     /* Steps Section */
     .steps {
@@ -2318,6 +2343,10 @@ strong {
         font-size: 110px;
     }
 
+    .progressBar {
+        top: 117px;
+    }
+
     /* About Section */
     .aboutGeneralContent {
         padding: var(--fs-padding-portatil , 0.625em 4.6875em);
@@ -2356,26 +2385,21 @@ strong {
         display: var(--value-block , block);
     }
 
+    .aboutInformationDad {
+        gap: 200px;
+    }
+
     .aboutInformation {
         padding:var(--fs-padding-portatil);
     }
 
     .aboutInformationPadding {
-        display: var(--value-grid);
-        place-items: var(--value-center);
-        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+        grid-template-columns: .6fr .5fr;
     }
 
     .aboutInformationPadding--second {
-        grid-template-areas: "aboutInformationContainer--second aboutInformationPadding__img--second";
-    }
-
-    .aboutInformationContainer--second {
-        grid-area: aboutInformationContainer--second;
-    }
-
-    .aboutInformationPadding__img--second {
-        grid-area: aboutInformationPadding__img--second;
+        grid-template-columns: .4fr .6fr;
     }
 
     .aboutInformationContainer__title {
@@ -2515,12 +2539,45 @@ strong {
 }
 
 @media screen and (min-width:1400px) {
+
+    .progressBar {
+        top: 123px;
+    } 
+
     .consoleContainer {
         font-size: 165px;
     }
 
     .menuCloseContainerRightMarqueeContainer__span {
         font-size: var(--fs-marquee-portatilL);
+    }
+
+    .fs-title {
+        font-size: 5.625rem ;
+    }
+
+    .navList__span {
+        font-size: 20px;
+    }
+
+    .aboutInformationContainer__title {
+        font-size: var(--fs-aboutTitle-portatilL);
+    }
+
+    .stepBox__title {
+        font-size: var(--fs-stepsTitle-portatilL);
+    }
+
+    .workProject__title {
+        font-size: var(--fs-workTitle-portatilL);
+    }
+
+    .form__title {
+        font-size: var(--fs-asideAndFormTitle-portatilL);
+    }
+
+    .aside__title {
+        font-size: var(--fs-asideAndFormTitle-portatilL);
     }
 
 }
