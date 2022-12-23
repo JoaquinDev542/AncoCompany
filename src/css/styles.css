@@ -1098,13 +1098,13 @@ strong {
 .titleDecoration::before {
     position: var(--value-absolute);
     content: var(--value-content);
-    height: 20px;
+    height: 22.5px;
     width: calc(100vw - 16px);
     top:50%;
     left: 50%;
     transform: translate(-50%,-50%);
     z-index: -1;
-    background-color: var(--clr-primary);
+    background-image: var(--clr-lineForm);
     border: 3px solid var(--clr-secondary--paragraph);
 }
 
