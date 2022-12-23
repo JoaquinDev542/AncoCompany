@@ -1265,7 +1265,7 @@ strong {
     gap: 20px;
     padding: 2.5em 0.625em 2.5em 1.875em;
     border: 1px solid var(--borderWhite);
-    background-color: var(--bg-sections);
+    background-image: linear-gradient(90deg, #252727 0, #212121 50%, #1d1b1b 100%);
     border-radius: 10px;
     box-shadow: 5px 5px var(--clr-primary);
 }
