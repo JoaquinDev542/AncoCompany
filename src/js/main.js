@@ -25,7 +25,8 @@ window.addEventListener('load',function () {
     // Scroll Reveal
     ScrollReveal({
         distance: '50px',
-        duration: 1500
+        duration: 1000 ,
+        delay: 100
     })
  
     ScrollReveal().reveal('.header', {origin: 'top'});
@@ -34,7 +35,6 @@ window.addEventListener('load',function () {
     ScrollReveal().reveal('.heroContentContainerButton', {origin: 'right'});
     ScrollReveal().reveal('.heroContentContainer__btn--ST', {origin: 'right'});
     ScrollReveal().reveal('.consoleContainer', {origin: 'right'});
-    ScrollReveal().reveal('.footerFather', {origin: 'right' });
     ScrollReveal().reveal('.fs-title');
     ScrollReveal().reveal('.aboutGeneralContent__subsubtitle');
     ScrollReveal().reveal('.aboutInformationPadding');
@@ -52,7 +52,7 @@ window.addEventListener('load',function () {
     ScrollReveal().reveal('.informationContentContainer--SR-second', {delay: 200});
     ScrollReveal().reveal('.informationContentContainer--SR-third' , {delay: 400});
     ScrollReveal().reveal('.formContainerPadding' );
-    ScrollReveal().reveal('.socialMediaContainers' );
+    ScrollReveal().reveal('.socialMediaContainers' , {delay: 200});
     ScrollReveal().reveal('.asideContainer' );
     ScrollReveal().reveal('.workProject--first');
     ScrollReveal().reveal('.workProject--second', {delay: 200});
