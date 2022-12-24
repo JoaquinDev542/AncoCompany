@@ -25,14 +25,25 @@ window.addEventListener('load',function () {
     // Scroll Reveal
     ScrollReveal({
         distance: '50px',
-        duration: 1000
+        duration: 1500
     })
  
     ScrollReveal().reveal('.header', {origin: 'top'});
-    ScrollReveal().reveal('.herotitle', {origin: 'left'});
-    ScrollReveal().reveal('.heroContentContainer__btn--SR', {delay: 500});
+    ScrollReveal().reveal('.submenu', {origin: 'top'});
+    ScrollReveal().reveal('.herotitle', {origin: 'right'});
+    ScrollReveal().reveal('.heroContentContainerButton', {origin: 'right'});
     ScrollReveal().reveal('.heroContentContainer__btn--ST', {origin: 'right'});
-    ScrollReveal().reveal('.wave', {origin: 'bottom'});
+    ScrollReveal().reveal('.consoleContainer', {origin: 'right'});
+    ScrollReveal().reveal('.footerFather', {origin: 'right' });
+    ScrollReveal().reveal('.fs-title');
+    ScrollReveal().reveal('.aboutGeneralContent__subsubtitle');
+    ScrollReveal().reveal('.aboutInformationPadding');
+    ScrollReveal().reveal('.aboutInformation--second');
+    ScrollReveal().reveal('.stepBox');
+    ScrollReveal().reveal('.stepBox--first');
+    ScrollReveal().reveal('.stepBox--second');
+    ScrollReveal().reveal('.stepBox--third');
+    ScrollReveal().reveal('.stepBox--fourth');
     ScrollReveal().reveal('.aboutContentContainer__paragraph--SR-first', {origin: 'left'});
     ScrollReveal().reveal('.aboutContentContainer__paragraph--SR-second', {origin: 'left'});
     ScrollReveal().reveal('.aboutContentContainer__paragraph--SR-third', {origin: 'left'});
@@ -40,12 +51,13 @@ window.addEventListener('load',function () {
     ScrollReveal().reveal('.informationContentContainer--SR-first',);
     ScrollReveal().reveal('.informationContentContainer--SR-second', {delay: 200});
     ScrollReveal().reveal('.informationContentContainer--SR-third' , {delay: 400});
-    ScrollReveal().reveal('.workProject--first' );
-    ScrollReveal().reveal('.workProject--second');
-    ScrollReveal().reveal('.workProject--third');
-    ScrollReveal().reveal('.workProject--fourth');
-    ScrollReveal().reveal('.workProject--fifth');
-    ScrollReveal().reveal('.workProject--sixth');
+    ScrollReveal().reveal('.formContainerPadding' );
+    ScrollReveal().reveal('.socialMediaContainers' );
+    ScrollReveal().reveal('.asideContainer' );
+    ScrollReveal().reveal('.workProject--first');
+    ScrollReveal().reveal('.workProject--second', {delay: 200});
+    ScrollReveal().reveal('.workProject--third', {delay: 400});
+    ScrollReveal().reveal('.workProject--fourth', {delay: 600});
     ScrollReveal().reveal('.formContainer');
     ScrollReveal().reveal('.aside');
 
