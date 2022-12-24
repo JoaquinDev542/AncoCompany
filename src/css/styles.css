@@ -758,11 +758,6 @@ strong {
     transform: translate3d(0,0,0);
 }
 
-.menuCloseContainerRightList__span:hover {
-    transform: translateY(-100%);
-    color: var(--clr-primary)
-}
-
 .menuCloseContainerRightFooter {
     position: var(--value-relative);
     display: var(--value-flex);
@@ -2259,11 +2254,6 @@ strong {
         transform: translate3d(0,0,0);
     }
 
-    .navList__span:hover {
-        transform: translateY(-100%);
-        color: var(--clr-primary);
-    }
-
     .navList__link--about.addColor {
         color: var(--dm-clr-secondary);
     }
@@ -2605,6 +2595,16 @@ strong {
 
     .close:hover {
         scale: .75;
+    }
+
+    .navList__span:hover {
+        transform: translateY(-100%);
+        color: var(--clr-primary);
+    }
+
+    .menuCloseContainerRightList__span:hover {
+        transform: translateY(-100%);
+        color: var(--clr-primary)
     }
 
     .heroContentContainerButton:hover {
