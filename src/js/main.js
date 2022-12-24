@@ -56,8 +56,8 @@ window.addEventListener('load',function () {
     ScrollReveal().reveal('.asideContainer' );
     ScrollReveal().reveal('.workProject--first');
     ScrollReveal().reveal('.workProject--second', {delay: 200});
-    ScrollReveal().reveal('.workProject--third', {delay: 400});
-    ScrollReveal().reveal('.workProject--fourth', {delay: 600});
+    ScrollReveal().reveal('.workProject--third');
+    ScrollReveal().reveal('.workProject--fourth', {delay: 200});
     ScrollReveal().reveal('.formContainer');
     ScrollReveal().reveal('.aside');
 
