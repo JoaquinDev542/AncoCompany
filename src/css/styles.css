@@ -1182,12 +1182,12 @@ strong {
 .stepContainer::before {
     position: var(--value-absolute);
     content: var(--value-content);
-    top: -30px;
+    top: -20px;
     left: 1px;
     width: 5px;
-    height: 110%;
+    height: 105%;
     border-radius: 10px;
-    background-image: var(--clr-gradient);
+    background-image: var(--clr-lineForm);
     filter:drop-shadow(0px 0px 2px var(--bg-buttons));
     animation: changeColorSvg forwards 2s infinite;
 }
@@ -1214,7 +1214,7 @@ strong {
     height: 40%;
     transform: rotate(90deg);
     border-radius: 10px;
-    background-color: var(--clr-primary);
+    background-image: var(--clr-gradient);
     filter:drop-shadow(0px 0px 2px var(--bg-buttons));
     animation: changeColorSvg forwards 2s infinite;
 }
@@ -1284,8 +1284,8 @@ strong {
     grid-area: informationContentContainer__img;
     width: 5rem;
     fill: var(--clr-firstGradient);
-    filter: drop-shadow(0px 0px 2px var(--bg-buttons));
-    animation: changeColorSvg  forwards 2s infinite;
+    filter: drop-shadow(0px 0px 1px var(--bg-buttons));
+    animation: changeColorSvg  forwards 1.5s infinite;
 }
 
 @keyframes changeColorSvg {
