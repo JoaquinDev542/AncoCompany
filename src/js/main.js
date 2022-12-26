@@ -384,6 +384,12 @@ window.addEventListener('load',function () {
         nav.classList.remove("active");
         heroContent.classList.remove("active");
         header__logoTitle.classList.remove("active");
+
+        navList__link_about.classList.add("colorActive");
+        navList__link_steps.classList.remove("colorActive");
+        navList__link_services.classList.remove("colorActive");
+        navList__link_work.classList.remove("colorActive");
+        navList__link_contact.classList.remove("colorActive");
     })
 
     menuCloseContainerRightList__link_steps.addEventListener('click' , function () {
@@ -397,6 +403,12 @@ window.addEventListener('load',function () {
         nav.classList.remove("active");
         heroContent.classList.remove("active");
         header__logoTitle.classList.remove("active");
+
+        navList__link_steps.classList.add("colorActive");
+        navList__link_about.classList.remove("colorActive");
+        navList__link_services.classList.remove("colorActive");
+        navList__link_work.classList.remove("colorActive");
+        navList__link_contact.classList.remove("colorActive");
     })
 
     menuCloseContainerRightList__link_services.addEventListener('click' , function () {
@@ -410,6 +422,12 @@ window.addEventListener('load',function () {
         nav.classList.remove("active");
         heroContent.classList.remove("active");
         header__logoTitle.classList.remove("active");
+
+        navList__link_services.classList.add("colorActive");
+        navList__link_about.classList.remove("colorActive");
+        navList__link_steps.classList.remove("colorActive");
+        navList__link_work.classList.remove("colorActive");
+        navList__link_contact.classList.remove("colorActive");
     })
 
     menuCloseContainerRightList__link_work.addEventListener('click' , function () {
@@ -423,6 +441,12 @@ window.addEventListener('load',function () {
         nav.classList.remove("active");
         heroContent.classList.remove("active");
         header__logoTitle.classList.remove("active");
+
+        navList__link_work.classList.add("colorActive");
+        navList__link_about.classList.remove("colorActive");
+        navList__link_steps.classList.remove("colorActive");
+        navList__link_services.classList.remove("colorActive");
+        navList__link_contact.classList.remove("colorActive");
     })
 
     menuCloseContainerRightList__link_contact.addEventListener('click' , function () {
@@ -436,6 +460,12 @@ window.addEventListener('load',function () {
         nav.classList.remove("active");
         heroContent.classList.remove("active");
         header__logoTitle.classList.remove("active");
+
+        navList__link_contact.classList.add("colorActive");
+        navList__link_about.classList.remove("colorActive");
+        navList__link_steps.classList.remove("colorActive");
+        navList__link_services.classList.remove("colorActive");
+        navList__link_work.classList.remove("colorActive");
     })
 
 
