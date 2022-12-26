@@ -2251,20 +2251,40 @@ strong {
         color: var(--dm-clr-secondary);
     }
 
+    .navList__link--about.colorActive {
+        color: var(--clr-primary);
+    }
+
     .navList__link--steps.addColor {
         color: var(--dm-clr-secondary);
+    }
+
+    .navList__link--steps.colorActive {
+        color: var(--clr-primary);
     }
 
     .navList__link--services.addColor {
         color: var(--dm-clr-secondary);
     }
 
+    .navList__link--services.colorActive {
+        color: var(--clr-primary);
+    }
+
     .navList__link--work.addColor {
         color: var(--dm-clr-secondary);
     }
 
+    .navList__link--work.colorActive {
+        color: var(--clr-primary);
+    }
+
     .navList__link--contact.addColor {
         color: var(--dm-clr-secondary);
+    }
+
+    .navList__link--contact.colorActive {
+        color: var(--clr-primary);
     }
 
     .menuClose.active {

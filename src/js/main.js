@@ -173,8 +173,69 @@ window.addEventListener('load',function () {
     }
     window.addEventListener("scroll" , functionChangeBgHeader); 
 
-    let colorSchemeQueryList = window.matchMedia('(prefers-color-scheme: dark)');
+    // Active Click on Links Nav Section
 
+    let header__link = document.querySelector(".header__link");
+
+    header__link.addEventListener("click" , function() {
+        navList__link_about.classList.remove("colorActive");
+        navList__link_steps.classList.remove("colorActive");
+        navList__link_services.classList.remove("colorActive");
+        navList__link_work.classList.remove("colorActive");
+        navList__link_contact.classList.remove("colorActive");
+    })
+
+    header__logoTitle.addEventListener("click" , function() {
+        navList__link_about.classList.remove("colorActive");
+        navList__link_steps.classList.remove("colorActive");
+        navList__link_services.classList.remove("colorActive");
+        navList__link_work.classList.remove("colorActive");
+        navList__link_contact.classList.remove("colorActive");
+    })
+
+    navList__link_about.addEventListener("click" , function() {
+        navList__link_about.classList.add("colorActive");
+        navList__link_steps.classList.remove("colorActive");
+        navList__link_services.classList.remove("colorActive");
+        navList__link_work.classList.remove("colorActive");
+        navList__link_contact.classList.remove("colorActive");
+    })
+
+    navList__link_steps.addEventListener("click" , function() {
+        navList__link_steps.classList.add("colorActive");
+        navList__link_about.classList.remove("colorActive");
+        navList__link_services.classList.remove("colorActive");
+        navList__link_work.classList.remove("colorActive");
+        navList__link_contact.classList.remove("colorActive");
+    })
+
+    navList__link_services.addEventListener("click" , function() {
+        navList__link_services.classList.add("colorActive");
+        navList__link_about.classList.remove("colorActive");
+        navList__link_steps.classList.remove("colorActive");
+        navList__link_work.classList.remove("colorActive");
+        navList__link_contact.classList.remove("colorActive");
+    })
+
+    navList__link_work.addEventListener("click" , function() {
+        navList__link_work.classList.add("colorActive");
+        navList__link_about.classList.remove("colorActive");
+        navList__link_steps.classList.remove("colorActive");
+        navList__link_services.classList.remove("colorActive");
+        navList__link_contact.classList.remove("colorActive");
+    })
+
+    navList__link_contact.addEventListener("click" , function() {
+        navList__link_contact.classList.add("colorActive");
+        navList__link_about.classList.remove("colorActive");
+        navList__link_steps.classList.remove("colorActive");
+        navList__link_services.classList.remove("colorActive");
+        navList__link_work.classList.remove("colorActive");
+    })
+
+
+    // Switch Light Mode
+    let colorSchemeQueryList = window.matchMedia('(prefers-color-scheme: dark)');
     const setColorScheme = e => {
 
         if (e.matches) {
