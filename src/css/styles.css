@@ -2019,9 +2019,9 @@ strong {
     .stepBox--third::before {
         position: var(--value-absolute);
         content: var(--value-content);
-        width: 100%;
+        width: calc(100% + 35px);
         height: 5px;
-        left: 35px;
+        left: 0;
         top: -50px;
         background-color: var(--clr-primary);
         border-radius: 10px;
@@ -2052,10 +2052,6 @@ strong {
         right: 50%;
         transform: translateX(-50%);
     }
-
-    /* .stepBoxTitle--third {
-        justify-content: end;
-    } */
 
     .stepBoxTitle::before {
         position: var(--value-absolute);
@@ -2440,7 +2436,7 @@ strong {
     }
 
     .stepBox--third::before {
-        left: 50px;
+        width: calc(100% + 50px);
     }
 
     .stepBox--fourth::before {
