@@ -1232,6 +1232,7 @@ strong {
 
 .stepBox__paragraph {
     margin: 0;
+    margin-left: 35px;
     max-width: 85%;
 }
 
@@ -2074,6 +2075,12 @@ strong {
 
     .stepBox__number {
         margin-left: 0px;
+    }
+
+    .stepBox__paragraph {
+        margin: 0;
+        margin-left: 0;
+        max-width: 85%;
     }
 
     /* Information Section */
