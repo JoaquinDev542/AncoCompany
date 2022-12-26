@@ -351,7 +351,7 @@ window.addEventListener('load',function () {
             progressBar__element.style.setProperty("display" , "block");
             header.classList.remove('active');
             submenu.classList.remove('active');
-        }, 2250);
+        }, 1750);
         
         menuCloseContainerRightHeader__link.classList.remove("active");
         close.classList.remove("active");
