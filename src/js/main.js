@@ -384,7 +384,6 @@ window.addEventListener('load',function () {
         nav.classList.remove("active");
         heroContent.classList.remove("active");
         header__logoTitle.classList.remove("active");
-
         navList__link_about.classList.add("colorActive");
         navList__link_steps.classList.remove("colorActive");
         navList__link_services.classList.remove("colorActive");
@@ -403,7 +402,6 @@ window.addEventListener('load',function () {
         nav.classList.remove("active");
         heroContent.classList.remove("active");
         header__logoTitle.classList.remove("active");
-
         navList__link_steps.classList.add("colorActive");
         navList__link_about.classList.remove("colorActive");
         navList__link_services.classList.remove("colorActive");
@@ -422,7 +420,6 @@ window.addEventListener('load',function () {
         nav.classList.remove("active");
         heroContent.classList.remove("active");
         header__logoTitle.classList.remove("active");
-
         navList__link_services.classList.add("colorActive");
         navList__link_about.classList.remove("colorActive");
         navList__link_steps.classList.remove("colorActive");
@@ -441,7 +438,6 @@ window.addEventListener('load',function () {
         nav.classList.remove("active");
         heroContent.classList.remove("active");
         header__logoTitle.classList.remove("active");
-
         navList__link_work.classList.add("colorActive");
         navList__link_about.classList.remove("colorActive");
         navList__link_steps.classList.remove("colorActive");
@@ -460,7 +456,6 @@ window.addEventListener('load',function () {
         nav.classList.remove("active");
         heroContent.classList.remove("active");
         header__logoTitle.classList.remove("active");
-
         navList__link_contact.classList.add("colorActive");
         navList__link_about.classList.remove("colorActive");
         navList__link_steps.classList.remove("colorActive");
@@ -566,6 +561,25 @@ window.addEventListener('load',function () {
         asideBtn.classList.add("hidden");
         aside__title.classList.add("active");
     });
+
+     // Background-Color Transition Body
+    //  const functionChangeBgBody = function () {
+
+    //     let menuCloseAll = document.querySelector(".menuCloseAll");
+        
+    //     if(document.documentElement.scrollTop >= 1000 && document.documentElement.scrollTop <= 2000) {
+    //         menuCloseAll.classList.add("addColor");
+    //         menuCloseAll.classList.remove("addColor2");
+
+    //     } else if(document.documentElement.scrollTop >= 2000){
+    //         menuCloseAll.classList.remove("addColor");
+    //         menuCloseAll.classList.add("addColor2");
+    //     } else {
+    //         menuCloseAll.classList.remove("addColor");
+    //         menuCloseAll.classList.remove("addColor2");
+    //     }
+    // }
+    // window.addEventListener("scroll" , functionChangeBgBody); 
 
 })
 

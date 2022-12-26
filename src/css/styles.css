@@ -551,7 +551,7 @@ strong {
     background-color:var(--value-transparent);
     transform: translateX(100%);
     opacity: var(--fs-zero , 0);
-    transition: transform .8s cubic-bezier(.62,.54,.76,.94) , opacity .8s cubic-bezier(.62,.54,.85,.72);
+    transition: transform .5s cubic-bezier(.62,.54,.76,.94) , opacity .5s cubic-bezier(.62,.54,.85,.72);
     font-weight: 100;
 }
 
@@ -632,7 +632,7 @@ strong {
     width: 100%;
     background-image: var(--clr-gradient);
     transform: translateX(-100%);
-    transition: .5s .8s transform;
+    transition: .3s .5s transform;
 }
 
 .menuCloseContainerRightHeader.active::after {
@@ -647,7 +647,7 @@ strong {
     text-transform: var(--value-uppercase);
     opacity: 0;
     transform: translateY(-50%);
-    transition: opacity .7s 1s , transform .7s 1s ;
+    transition: opacity .4s .8s , transform .4s .8s , scale .3s;
 }
 
 .menuCloseContainerRightHeader__link.active {
@@ -662,7 +662,7 @@ strong {
     scale: .8;
     opacity: 0;
     transform: translateY(-50%);
-    transition: opacity .7s 1s , transform .7s 1s , scale .3s;
+    transition: opacity .4s .8s , transform .4s .8s , scale .3s;
 }
 
 .close.active {
@@ -681,7 +681,7 @@ strong {
 .menuCloseContainerRightList__item--aboutUs {
     opacity: 0;
     transform: translateY(-50%);
-    transition: opacity .7s 1s , transform .7s 1s ;
+    transition: opacity .4s 1.2s , transform .4s 1.2s ;
 }
 
 .menuCloseContainerRightList__item--aboutUs.active {
@@ -692,7 +692,7 @@ strong {
 .menuCloseContainerRightList__item--steps {
     opacity: 0;
     transform: translateY(-50%);
-    transition: opacity .7s 1.1s , transform .7s 1.1s ;
+    transition: opacity .4s 1.3s , transform .4s 1.3s ;
 }
 
 .menuCloseContainerRightList__item--steps.active {
@@ -703,7 +703,8 @@ strong {
 .menuCloseContainerRightList__item--services {
     opacity: 0;
     transform: translateY(-50%);
-    transition: opacity .7s 1.2s , transform .7s 1.2s ;
+    transition: opacity .4s 1.4s , transform .4s 1.4s ;
+
 }
 
 .menuCloseContainerRightList__item--services.active {
@@ -714,7 +715,7 @@ strong {
 .menuCloseContainerRightList__item--work {
     opacity: 0;
     transform: translateY(-50%);
-    transition: opacity .7s 1.3s , transform .7s 1.3s ;
+    transition: opacity .4s 1.5s , transform .4s 1.5s ;
 }
 
 .menuCloseContainerRightList__item--work.active {
@@ -725,7 +726,7 @@ strong {
 .menuCloseContainerRightList__item--contact {
     opacity: 0;
     transform: translateY(-50%);
-    transition: opacity .7s 1.4s , transform .7s 1.4s ;
+    transition: opacity .4s 1.6s , transform .4s 1.6s ;
 }
 
 .menuCloseContainerRightList__item--contact.active {
@@ -775,7 +776,7 @@ strong {
     width: 100%;
     background-image: var(--clr-gradient);
     transform: translateX(-100%);
-    transition: .5s .8s transform;
+    transition: .3s .5s transform;
 }
 
 .menuCloseContainerRightFooter.active::after {
@@ -786,7 +787,7 @@ strong {
     margin-right: 15px;
     opacity: 0;
     transform: translateY(-50%);
-    transition: opacity .7s 1.5s , transform .7s 1.5s ;
+    transition: opacity .4s .8s , transform .4s .8s , scale .3s;
 }
 
 .menuCloseContainerRightFooter__darkMode.active {
@@ -1045,6 +1046,19 @@ strong {
     display: var(--value-none , none);
 }
 
+.menuCloseAll {
+    transition: .4s background-color;
+}
+
+/* .menuCloseAll.addColor {
+    background-color: red;
+    transition: .4s .5s background-color;
+}
+
+.menuCloseAll.addColor2 {
+    background-color: green;
+} */
+
 /* About Section */
 .aboutGeneralContent {
     padding:var(--fs-padding-mobile ,  0 0.9375em);
@@ -1218,7 +1232,6 @@ strong {
 
 .stepBox__paragraph {
     margin: 0;
-    margin-left: 35px;
     max-width: 85%;
 }
 
@@ -1956,8 +1969,6 @@ strong {
         font-size: var(--fs-aboutTitle-tablet);
     }
 
-
-
     /* Steps Section */
     .steps {
         padding:var(--fs-padding-tablet);
@@ -2041,6 +2052,10 @@ strong {
         transform: translateX(-50%);
     }
 
+    /* .stepBoxTitle--third {
+        justify-content: end;
+    } */
+
     .stepBoxTitle::before {
         position: var(--value-absolute);
         content: var(--value-content);
@@ -2054,6 +2069,7 @@ strong {
     .stepBoxTitle::before {
         content: initial;
         margin: 0px;
+        background-color: red;
     }
 
     .stepBox__number {
