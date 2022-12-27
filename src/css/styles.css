@@ -1338,7 +1338,7 @@ strong {
 }
 
 .workContainerBg {
-    max-width: 1440px;
+    max-width: 1290px;
     margin: var(--fs-zero) var(--value-auto);
 }
 
@@ -1518,9 +1518,8 @@ strong {
 }
 
 .socialMediaContainerBg {
-    max-width: 1440px;
+    max-width: 1290px;
     margin: 0 auto;
-
 }
 
 .socialMedia__title {
