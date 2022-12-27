@@ -33,7 +33,6 @@
     --lm-boxShadow-heroButton:#ec6d33;
     --lm-boxShadow-buttons:#ec6d3350;
     --lm-bg-footer:#00000081;
-    --borderWhite:#F5F5F505;
     --lm-clr-lineForm: radial-gradient(circle at 50% 50%, #ff9a49 0, #f8863f 25%, #ec6d32 50%, #e05228 75%, #d73825 100%);
     --lm-clr-gradient: linear-gradient(90deg, #fb8f43 0, #f57f3b 25%, #ec6d32 50%, #e35a2a 75%, #dc4726 100%);
     --lm-clr-titleDecoration:#040506;
@@ -1250,6 +1249,7 @@ strong {
     justify-content: var(--value-center , center);
     margin: var(--fs-zero , 0) var(--value-auto , auto);
     margin-top: 75px;
+    z-index: 10;
 }
 
 .informationContent__title {
@@ -1270,15 +1270,16 @@ strong {
 }
 
 .informationContentContainer {
+    position: relative;
     display: var(--value-flex);
     flex-direction: var(--value-column , column);
     gap: 20px;
     padding: 2.5em 0.625em 2.5em 1.875em;
-    border: 1px solid var(--borderWhite);
     background-image: var(--bg-sections);
     border-radius: 10px;
-    box-shadow: 5px 5px var(--clr-primary);
+    box-shadow: 2px 2px 3px 3px var(--clr-primary);
 }
+
 
 .informationContentContainer__img {
     grid-area: informationContentContainer__img;
@@ -1400,7 +1401,8 @@ strong {
     padding: 15px 20px;
     border-radius: 10px;
     background-image: var(--bg-sections);
-    box-shadow: -5px 5px var(--clr-primary);
+    box-shadow: 2px 2px 3px 3px var(--clr-primary);
+
 }
 
 .formContainer__img {
@@ -1553,6 +1555,7 @@ strong {
     gap: 1.5625em;
     text-align: var(--value-center , center);
     box-shadow: 5px 5px var(--clr-primary);
+    box-shadow: 2px 2px 4px 2px var(--clr-primary);
     background-image: var(--bg-sections);
 }
 
