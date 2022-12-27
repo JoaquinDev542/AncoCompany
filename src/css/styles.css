@@ -1365,17 +1365,18 @@ strong {
     background-repeat: no-repeat;
     background-position:  var(--value-center);
     background-size: var(--value-cover);
-    animation: infiniteMove infinite 3s linear ;
-    transform: translateX(0);
+    animation: infiniteMove infinite 2s linear ;
+    transform: translateY(0);
 }
 
 @keyframes infiniteMove {
     0% , 100% {
         transform: translateX(0px);
+
     }
 
     50% {
-        transform: translateX(10px);
+        transform: translatex(5px);
     }
 }
 
@@ -1948,6 +1949,8 @@ strong {
         display: grid;
         gap: 30px;
         grid-template-columns: .5fr .5fr;
+        height: 480px;
+        align-items: center;
     }
 
     .aboutInformationPadding--second {
@@ -2409,7 +2412,7 @@ strong {
 
     .aboutInformationPadding {
         gap: 50px;
-        grid-template-columns: .6fr .5fr;
+        grid-template-columns: .6fr .4fr;
     }
 
     .aboutInformationPadding--second {
