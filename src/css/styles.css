@@ -1045,11 +1045,11 @@ strong {
     display: var(--value-none , none);
 }
 
-.menuCloseAll {
+/* .menuCloseAll {
     transition: .4s background-color;
 }
 
-/* .menuCloseAll.addColor {
+.menuCloseAll.addColor {
     background-color: red;
     transition: .4s .5s background-color;
 }
@@ -1277,7 +1277,7 @@ strong {
     padding: 2.5em 0.625em 2.5em 1.875em;
     background-image: var(--bg-sections);
     border-radius: 10px;
-    box-shadow: 2px 2px 3px 3px var(--clr-primary);
+    box-shadow: 4px 2px var(--clr-primary);
 }
 
 
@@ -1401,7 +1401,7 @@ strong {
     padding: 15px 20px;
     border-radius: 10px;
     background-image: var(--bg-sections);
-    box-shadow: 2px 2px 3px 3px var(--clr-primary);
+    box-shadow: 4px 2px var(--clr-primary);
 
 }
 
@@ -1554,8 +1554,7 @@ strong {
     flex-direction: var(--value-column , column);
     gap: 1.5625em;
     text-align: var(--value-center , center);
-    box-shadow: 5px 5px var(--clr-primary);
-    box-shadow: 2px 2px 4px 2px var(--clr-primary);
+    box-shadow: 4px 2px var(--clr-primary);
     background-image: var(--bg-sections);
 }
 

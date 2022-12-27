@@ -174,7 +174,6 @@ window.addEventListener('load',function () {
     window.addEventListener("scroll" , functionChangeBgHeader); 
 
     // Active Click on Links Nav Section
-
     let header__link = document.querySelector(".header__link");
 
     header__link.addEventListener("click" , function() {
@@ -389,6 +388,16 @@ window.addEventListener('load',function () {
         navList__link_services.classList.remove("colorActive");
         navList__link_work.classList.remove("colorActive");
         navList__link_contact.classList.remove("colorActive");
+        menuCloseContainerRightHeader__link.classList.remove("active");
+        close.classList.remove("active");
+        menuCloseContainerRightList__item__aboutUs.classList.remove("active");
+        menuCloseContainerRightList__item__steps.classList.remove("active");
+        menuCloseContainerRightList__item__services.classList.remove("active");
+        menuCloseContainerRightList__item__work.classList.remove("active");
+        menuCloseContainerRightList__item__contact.classList.remove("active");
+        menuCloseContainerRightFooter__darkMode.classList.remove("active");
+        menuCloseContainerRightFooter.classList.remove("active");
+        menuCloseContainerRightHeader.classList.remove("active");
     })
 
     menuCloseContainerRightList__link_steps.addEventListener('click' , function () {
@@ -407,6 +416,16 @@ window.addEventListener('load',function () {
         navList__link_services.classList.remove("colorActive");
         navList__link_work.classList.remove("colorActive");
         navList__link_contact.classList.remove("colorActive");
+        menuCloseContainerRightHeader__link.classList.remove("active");
+        close.classList.remove("active");
+        menuCloseContainerRightList__item__aboutUs.classList.remove("active");
+        menuCloseContainerRightList__item__steps.classList.remove("active");
+        menuCloseContainerRightList__item__services.classList.remove("active");
+        menuCloseContainerRightList__item__work.classList.remove("active");
+        menuCloseContainerRightList__item__contact.classList.remove("active");
+        menuCloseContainerRightFooter__darkMode.classList.remove("active");
+        menuCloseContainerRightFooter.classList.remove("active");
+        menuCloseContainerRightHeader.classList.remove("active");
     })
 
     menuCloseContainerRightList__link_services.addEventListener('click' , function () {
@@ -425,6 +444,16 @@ window.addEventListener('load',function () {
         navList__link_steps.classList.remove("colorActive");
         navList__link_work.classList.remove("colorActive");
         navList__link_contact.classList.remove("colorActive");
+        menuCloseContainerRightHeader__link.classList.remove("active");
+        close.classList.remove("active");
+        menuCloseContainerRightList__item__aboutUs.classList.remove("active");
+        menuCloseContainerRightList__item__steps.classList.remove("active");
+        menuCloseContainerRightList__item__services.classList.remove("active");
+        menuCloseContainerRightList__item__work.classList.remove("active");
+        menuCloseContainerRightList__item__contact.classList.remove("active");
+        menuCloseContainerRightFooter__darkMode.classList.remove("active");
+        menuCloseContainerRightFooter.classList.remove("active");
+        menuCloseContainerRightHeader.classList.remove("active");
     })
 
     menuCloseContainerRightList__link_work.addEventListener('click' , function () {
@@ -443,6 +472,16 @@ window.addEventListener('load',function () {
         navList__link_steps.classList.remove("colorActive");
         navList__link_services.classList.remove("colorActive");
         navList__link_contact.classList.remove("colorActive");
+        menuCloseContainerRightHeader__link.classList.remove("active");
+        close.classList.remove("active");
+        menuCloseContainerRightList__item__aboutUs.classList.remove("active");
+        menuCloseContainerRightList__item__steps.classList.remove("active");
+        menuCloseContainerRightList__item__services.classList.remove("active");
+        menuCloseContainerRightList__item__work.classList.remove("active");
+        menuCloseContainerRightList__item__contact.classList.remove("active");
+        menuCloseContainerRightFooter__darkMode.classList.remove("active");
+        menuCloseContainerRightFooter.classList.remove("active");
+        menuCloseContainerRightHeader.classList.remove("active");
     })
 
     menuCloseContainerRightList__link_contact.addEventListener('click' , function () {
@@ -461,6 +500,16 @@ window.addEventListener('load',function () {
         navList__link_steps.classList.remove("colorActive");
         navList__link_services.classList.remove("colorActive");
         navList__link_work.classList.remove("colorActive");
+        menuCloseContainerRightHeader__link.classList.remove("active");
+        close.classList.remove("active");
+        menuCloseContainerRightList__item__aboutUs.classList.remove("active");
+        menuCloseContainerRightList__item__steps.classList.remove("active");
+        menuCloseContainerRightList__item__services.classList.remove("active");
+        menuCloseContainerRightList__item__work.classList.remove("active");
+        menuCloseContainerRightList__item__contact.classList.remove("active");
+        menuCloseContainerRightFooter__darkMode.classList.remove("active");
+        menuCloseContainerRightFooter.classList.remove("active");
+        menuCloseContainerRightHeader.classList.remove("active");
     })
 
 
