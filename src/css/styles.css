@@ -441,6 +441,7 @@ strong {
     background-image: var(--clr-gradient);
     height: 100%;
     width: 100%;
+    border-radius: 10px;
 }
 
 /* Hero Section */
@@ -2361,7 +2362,7 @@ strong {
     }
 
     .progressBar {
-        top: 117px;
+        top: 118px;
     }
 
     /* About Section */
