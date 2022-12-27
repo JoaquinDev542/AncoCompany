@@ -1514,7 +1514,9 @@ strong {
 }
 
 .socialMediaContainerBg {
-    max-width: 1290px;
+    max-width: 1440px;
+    margin: 0 auto;
+
 }
 
 .socialMedia__title {
