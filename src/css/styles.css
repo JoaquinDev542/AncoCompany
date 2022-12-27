@@ -2579,6 +2579,10 @@ strong {
         font-size: 18px;
     }
 
+    .aboutInformationPadding {
+        gap: 100px;
+    }
+
     .aboutInformationContainer__title {
         font-size: var(--fs-aboutTitle-portatilL);
     }
