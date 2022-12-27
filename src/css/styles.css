@@ -2559,7 +2559,7 @@ strong {
 @media screen and (min-width:1400px) {
 
     .progressBar {
-        top: 123px;
+        top: 121px;
     } 
 
     .consoleContainer {
@@ -2575,7 +2575,7 @@ strong {
     }
 
     .navList__span {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .aboutInformationContainer__title {
