@@ -1168,7 +1168,7 @@ strong {
 .steps {
     padding:var(--fs-padding-mobile ,  0 0.9375em);
     max-width: 1440px;
-    margin: var(--fs-margin-mobile);
+    padding: 87.5px 0;
 }
 
 .steps__title {
@@ -1397,7 +1397,8 @@ strong {
 .formContainer {
     max-width: 1440px;
     padding: var(--fs-padding-mobile);
-    margin: var(--fs-margin-mobile);
+    padding-top: 87.5px;
+    padding-bottom: 87.5px;
 }
 
 .formContainerPadding {
@@ -1514,7 +1515,7 @@ strong {
 }
 
 .socialMediaContainerBg {
-    max-width: 1440px;
+    max-width: 1290px;
     margin: 0 auto;
 
 }
