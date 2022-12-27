@@ -37,6 +37,8 @@
     --lm-clr-gradient: linear-gradient(90deg, #fb8f43 0, #f57f3b 25%, #ec6d32 50%, #e35a2a 75%, #dc4726 100%);
     --lm-clr-titleDecoration:#040506;
 
+    /* --bg-html:linear-gradient(0deg, #0e0505 0, #1d0d0d 50% , #310f0f 100%); */
+
     --fs-zero:0;
     --fs-16px:16px;
 
@@ -1139,6 +1141,9 @@ strong {
     display: var(--value-flex);
     flex-direction: var(--value-column);
     gap: 85px;    
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-image: var(--bg-sections);
 } 
 
 .aboutInformation {
@@ -1158,6 +1163,7 @@ strong {
 .aboutInformationContainer__title {
     font-size: var(--fs-aboutTitle-mobile);
     text-transform: var(--value-uppercase);
+    margin-top: var(--fs-zero);
 }
 
 /* Steps Section */
@@ -1968,6 +1974,7 @@ strong {
 
     .aboutInformationPadding__img {
         height: calc(100% - 32px);
+        margin-top: var(--fs-zero);
     }
 
     .aboutInformationContainer__title {
@@ -2068,7 +2075,6 @@ strong {
     .stepBoxTitle::before {
         content: initial;
         margin: 0px;
-        background-color: red;
     }
 
     .stepBox__number {
