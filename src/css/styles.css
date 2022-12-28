@@ -1849,7 +1849,7 @@ strong {
         padding-top: 10px;
         padding-bottom: 10px;
         top: 48px;
-        transition: top .5s;
+        transition: top .35s;
     }
 
     .header.upTop {
