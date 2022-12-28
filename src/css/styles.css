@@ -83,7 +83,7 @@
     --fs-padding-tablet-header: 0 3.125em;
     --fs-padding-tablet: 87.5px 3.125em;
     --fs-padding-portatil-header: 0 4.6875em;
-    --fs-padding-portatil: 87.5px 4.6875em;
+    --fs-padding-portatil: 100px 4.6875em;
 
     --fs-margin-mobile: 175px auto;
 
@@ -1391,6 +1391,7 @@ strong {
 .formContainer {
     max-width: 1440px;
     padding: var(--fs-padding-mobile);
+    margin: 0 auto;
 }
 
 .formContainerPadding {
@@ -2488,8 +2489,7 @@ strong {
 
     /* FormContainer Section */
     .formContainer {
-        padding: var(--fs-padding-portatil , 0.625em 4.6875em);
-        padding-top: 118.77px;
+        padding: var(--fs-padding-portatil);
     }
 
     .formContainerPadding {
