@@ -83,7 +83,7 @@
     --fs-padding-tablet-header: 0 3.125em;
     --fs-padding-tablet: 87.5px 3.125em;
     --fs-padding-portatil-header: 0 4.6875em;
-    --fs-padding-portatil: 100px 4.6875em;
+    --fs-padding-portatil: 87.5px 4.6875em;
 
     --fs-margin-mobile: 175px auto;
 
@@ -427,7 +427,7 @@ strong {
 /* ProgressBar Section */
 .progressBar {
     position: var(--value-fixed);
-    top: 64px;
+    top: 65px;
     left: 0;
     height: 3px;
     width: 100%;
@@ -1391,7 +1391,6 @@ strong {
 .formContainer {
     max-width: 1440px;
     padding: var(--fs-padding-mobile);
-    margin: 0 auto;
 }
 
 .formContainerPadding {
@@ -1712,7 +1711,7 @@ strong {
 
     /* progressBar */
     .progressBar {
-        top: 112px;
+        top: 65px;
     }
 
     /* Submenu Section */
@@ -2362,7 +2361,7 @@ strong {
     }
 
     .progressBar {
-        top: 118px;
+        top: 70px;
     }
 
     /* About Section */
@@ -2489,7 +2488,8 @@ strong {
 
     /* FormContainer Section */
     .formContainer {
-        padding: var(--fs-padding-portatil);
+        padding: var(--fs-padding-portatil , 0.625em 4.6875em);
+        padding-top: 118.77px;
     }
 
     .formContainerPadding {
@@ -2556,7 +2556,7 @@ strong {
 @media screen and (min-width:1400px) {
 
     .progressBar {
-        top: 121px;
+        top: 73px;
     } 
 
     .consoleContainer {
