@@ -494,10 +494,7 @@ strong {
     transition: rotate .7s , scale .7s;
 }
 
-.headerLogo:hover .header__logo{
-    rotate: 360deg;
-    scale: 1.05;
-}
+
 
 .header__logo {
     width: 50px;
@@ -506,21 +503,12 @@ strong {
     transition: rotate .7s , scale .7s;
 }
 
-.header__logo:hover {
-    rotate: 360deg;
-    scale:1.05;
-}
-
 .header__logoTitle {
     font-family: var(--ff-titles);
     color: var(--clr-secondary);
     text-transform: var(--value-uppercase);
     font-weight: bold;
     transition: scale .7s;
-}
-
-.header__logoTitle:hover {
-    scale: 1.05;
 }
 
 .header__logoTitle.addColor {
@@ -2644,6 +2632,20 @@ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/s
 
     .arrow:hover .arrow__img {
         fill: var(--clr-primary);
+    }
+
+    .headerLogo:hover .header__logo{
+        rotate: 360deg;
+        scale: 1.05;
+    }
+
+    .header__logo:hover {
+        rotate: 360deg;
+        scale:1.05;
+    }
+    
+    .header__logoTitle:hover {
+        scale: 1.05;
     }
 
     .hamburger:hover {
