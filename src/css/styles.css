@@ -1607,7 +1607,7 @@ strong {
     display: var(--value-flex , flex);
     gap: 25px;
     flex-direction: var(--value-column , column);
-    padding: var(--fs-padding-mobile);
+    padding: var(--fs-padding-mobile-header);
     padding-top: 18.75em;
     background-color:var(--bg-footer);
 }
