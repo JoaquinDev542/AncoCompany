@@ -490,11 +490,26 @@ strong {
     display: var(--value-flex);
     align-items: var(--value-center , center);
     gap: 10px;
+    transition: rotate .7s , scale .7s;
+}
+
+.headerLogo:hover .header__logo{
+    rotate: 360deg;
+    scale: 1.05;
 }
 
 .header__logo {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
+    color: var(--clr-primary);
+    transition: rotate .7s , scale .7s;
+}
+
+
+
+.header__logo:hover {
+    rotate: 360deg;
+    scale:1.05;
 }
 
 .header__logoTitle {
@@ -502,6 +517,11 @@ strong {
     color: var(--clr-secondary);
     text-transform: var(--value-uppercase);
     font-weight: bold;
+    transition: scale .7s;
+}
+
+.header__logoTitle:hover {
+    scale: 1.05;
 }
 
 .header__logoTitle.addColor {
@@ -514,6 +534,11 @@ strong {
 
 .header__logo.active {
     filter: blur(5px);
+}
+
+.header__logo--footer {
+    width: 150px;
+    height: 150px;
 }
 
 .nav {
