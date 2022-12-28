@@ -1159,6 +1159,11 @@ strong {
     margin-top: 0;
     font-size: var(--fs-aboutTitle-mobile);
     text-transform: var(--value-uppercase);
+    color: var(--dm-clr-secondary);
+}
+
+.aboutInformationContainer__paragraph {
+    color: var(--dm-clr-secondary--paragraph);
 }
 
 /* Steps Section */
@@ -1514,6 +1519,7 @@ strong {
     text-align: var(--value-center);
     text-transform: var(--value-uppercase);
     margin-top: 0;
+    color: var(--dm-clr-secondary);
 }
 
 .socialMediaContainers {
@@ -1539,6 +1545,7 @@ strong {
 .socialMediaContainer__span {
     margin-top: 7px;
     text-align: var(--value-center);
+    color: var(--dm-clr-secondary--paragraph);
 }
 
 /* Aside Section */
