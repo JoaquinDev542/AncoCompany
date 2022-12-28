@@ -83,9 +83,7 @@
     --fs-padding-tablet-header: 0 3.125em;
     --fs-padding-tablet: 87.5px 3.125em;
     --fs-padding-portatil-header: 0 4.6875em;
-    --fs-padding-portatil: 87.5px 4.6875em;
-
-    --fs-margin-mobile: 175px auto;
+    --fs-padding-portatil: 100px 4.6875em;
 
     --fs-menuLink-mobile:1.75rem;
     --fs-menuLink-tablet:3rem;
@@ -1504,12 +1502,12 @@ strong {
 /* socialMedia Section */
 .socialMedia {
     background-image: var(--bg-sections);
+    padding:var(--fs-padding-mobile);
 }
 
 .socialMediaBg {
     max-width: 1290px;
     margin: 0 auto;
-    padding:var(--fs-padding-mobile);
 }
 
 .socialMedia__title {
@@ -2493,8 +2491,7 @@ strong {
 
     /* FormContainer Section */
     .formContainer {
-        padding: var(--fs-padding-portatil , 0.625em 4.6875em);
-        padding-top: 118.77px;
+        padding: var(--fs-padding-portatil);
     }
 
     .formContainerPadding {
@@ -2594,10 +2591,6 @@ strong {
 
     .workProject__title {
         font-size: var(--fs-workTitle-portatilL);
-    }
-
-    .formContainer {
-        padding-top: 123.77px;
     }
 
     .form__title {
