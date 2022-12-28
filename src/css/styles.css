@@ -82,7 +82,7 @@
     --fs-padding-tablet: 0.625em 3.125em;
     --fs-padding-portatil: 0.625em 4.6875em;
 
-    --fs-margin-mobile: 87.5px auto;
+    --fs-margin-mobile: 175px auto;
 
     --fs-menuLink-mobile:1.75rem;
     --fs-menuLink-tablet:3rem;
@@ -1063,7 +1063,7 @@ strong {
 .aboutGeneralContent {
     padding:var(--fs-padding-mobile ,  0 0.9375em);
     text-align: var(--value-center);
-    margin-bottom: 87.5px;
+    margin-bottom: 175px;
 }
 
 .aboutGeneralContentContainer {
@@ -1139,9 +1139,6 @@ strong {
     display: var(--value-flex);
     flex-direction: var(--value-column);
     gap: 85px;    
-    padding-top: 87.5px;
-    padding-bottom: 87.5px;
-    background-image: var(--bg-sections);
 } 
 
 .aboutInformation {
@@ -1161,19 +1158,19 @@ strong {
 .aboutInformationContainer__title {
     font-size: var(--fs-aboutTitle-mobile);
     text-transform: var(--value-uppercase);
-    margin-top: var(--fs-zero);
 }
 
 /* Steps Section */
 .steps {
     padding:var(--fs-padding-mobile ,  0 0.9375em);
     max-width: 1440px;
-    padding: 87.5px 0;
+    margin: var(--fs-margin-mobile);
 }
 
 .steps__title {
     text-align: var(--value-center);
     text-transform: var(--value-uppercase);
+    padding-top: 65px;
 }
 
 .stepContainer {
@@ -1249,11 +1246,13 @@ strong {
     flex-direction: var(--value-column , column);
     align-items: var(--value-center , center);
     justify-content: var(--value-center , center);
-    margin: 87.5px auto;
+    margin: var(--fs-zero , 0) var(--value-auto , auto);
+    margin-top: 75px;
     z-index: 10;
 }
 
 .informationContent__title {
+    margin-top: 50px;
     text-transform: var(--value-uppercase , uppercase);
 }
 
@@ -1329,19 +1328,15 @@ strong {
 
 /* Work Section */
 .work {
+    max-width: 1440px;
+    margin: var(--fs-margin-mobile);
     padding:var(--fs-padding-mobile);
-    background-image: var(--bg-sections);
-}
-
-.workContainerBg {
-    max-width: 1290px;
-    margin: var(--fs-zero) var(--value-auto);
-    padding: 87.5px 0;
 }
 
 .workTitles__title {
     text-align: var(--value-center , center);
     text-transform: var(--value-uppercase);
+    padding-top: 65px;
 }
 
 .workProjects {
@@ -1397,8 +1392,8 @@ strong {
 .formContainer {
     max-width: 1440px;
     padding: var(--fs-padding-mobile);
-    padding-top: 87.5px;
-    padding-bottom: 87.5px;
+    margin: var(--fs-margin-mobile);
+    padding-top: 65px;
 }
 
 .formContainerPadding {
@@ -1509,15 +1504,9 @@ strong {
 
 /* socialMedia Section */
 .socialMedia {
-    padding:var(--fs-padding-mobile);
-    background-image: var(--bg-sections);
-    padding: 87.5px 0;
-}
-
-.socialMediaContainerBg {
-    max-width: 1290px;
+    max-width: 1440px;
     margin: 0 auto;
-
+    padding:var(--fs-padding-mobile);
 }
 
 .socialMedia__title {
@@ -1979,7 +1968,6 @@ strong {
 
     .aboutInformationPadding__img {
         height: calc(100% - 32px);
-        margin-top: var(--fs-zero);
     }
 
     .aboutInformationContainer__title {
@@ -2080,6 +2068,7 @@ strong {
     .stepBoxTitle::before {
         content: initial;
         margin: 0px;
+        background-color: red;
     }
 
     .stepBox__number {
