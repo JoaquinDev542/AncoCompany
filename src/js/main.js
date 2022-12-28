@@ -115,7 +115,8 @@ window.addEventListener('load',function () {
     const functionChangeBgSubmenu = function () {
         
         if(document.documentElement.scrollTop >= 10) {
-            submenu.classList.add("addColor");
+            submenu.classList.add("remove");
+            header.classList.add("upTop");
             darkModeContainer__span.classList.add("addColor");
             idioms.classList.add("addColor");
             idioms__titlePrincipal.classList.add("addColor");
@@ -124,7 +125,8 @@ window.addEventListener('load',function () {
             contactInformationSocialMedia__imgSubmenuMobile.classList.add("addColor");
 
         } else {
-            submenu.classList.remove("addColor");
+            submenu.classList.remove("remove");
+            header.classList.remove("upTop");
             darkModeContainer__span.classList.remove("addColor");
             idioms.classList.remove("addColor");
             idioms__titlePrincipal.classList.remove("addColor");

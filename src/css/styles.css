@@ -1730,8 +1730,8 @@ strong {
         transition: .5s background-color;
     }
 
-    .submenu.addColor {
-        background-color: var(--bg-header);
+    .submenu.remove {
+        display: var(--value-none);
     }
 
     .submenu.active {
@@ -1849,6 +1849,11 @@ strong {
         padding-top: 10px;
         padding-bottom: 10px;
         top: 48px;
+        transition: top .5s;
+    }
+
+    .header.upTop {
+        top: var(--fs-zero);
     }
 
     .header.active {
@@ -1934,7 +1939,7 @@ strong {
         padding: var(--fs-padding-tablet);
         display: var(--value-flex , flex);
         align-items: var(--value-center , center);
-        height: calc(100vh - 113.38px);
+        height: calc(100vh - 65px);
     }
 
     .aboutGeneralContent__subsubtitle {
