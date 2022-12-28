@@ -1573,11 +1573,6 @@ strong {
     text-transform: var(--value-uppercase , uppercase);
     line-height: var(--value-lineHeight , 1.5);
     color: var(--dm-clr-secondary);
-    margin-top: 1.5625em;
-}
-
-.aside__title.active {
-    margin-top: var(--fs-zero , 0);
 }
 
 .aside__span {
@@ -1604,12 +1599,11 @@ strong {
 }
 
 .aside__paragraph--opacity {
-    opacity: var(--fs-zero , 0);
-    transition: .5s opacity;
+    display: var(--value-none);
 }
 
 .aside__paragraph--opacity.active {
-    opacity: 1;
+    display: var(--value-block);
 }
 
 /* Footer / Contact Section */

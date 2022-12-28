@@ -611,14 +611,12 @@ window.addEventListener('load',function () {
     });
 
     // Show Paragraph Aside Section Get Discount
-    let aside__title = document.querySelector(".aside__title");
     let asideBtn = document.querySelector(".aside__btn");
     let aside__paragraphOpacity = this.document.querySelector(".aside__paragraph--opacity");
 
     asideBtn.addEventListener("click" , ()=> {
         aside__paragraphOpacity.classList.add("active");
         asideBtn.classList.add("hidden");
-        aside__title.classList.add("active");
     });
 
      // Background-Color Transition Body
