@@ -1075,7 +1075,6 @@ strong {
 
 .aboutGeneralContent__subtitle {
     text-transform: var(--value-uppercase);
-    margin-top: 50px;
 }
 
 .aboutGeneralContent__subsubtitle {
@@ -1159,6 +1158,7 @@ strong {
 }
 
 .aboutInformationContainer__title {
+    margin-top: 0;
     font-size: var(--fs-aboutTitle-mobile);
     text-transform: var(--value-uppercase);
 }
@@ -1173,7 +1173,6 @@ strong {
 .steps__title {
     text-align: var(--value-center);
     text-transform: var(--value-uppercase);
-    margin-top: 50px;
 }
 
 .stepContainer {
@@ -1254,7 +1253,6 @@ strong {
 }
 
 .informationContent__title {
-    margin-top: 50px;
     text-transform: var(--value-uppercase , uppercase);
 }
 
@@ -1338,7 +1336,6 @@ strong {
 .workTitles__title {
     text-align: var(--value-center , center);
     text-transform: var(--value-uppercase);
-    margin-top: 50px;
 }
 
 .workProjects {
@@ -1416,6 +1413,7 @@ strong {
 }
 
 .form__title {
+    margin-top: 0;
     margin-bottom: var(--fs-zero , 0);
     font-size: var(--fs-asideAndFormTitle-mobile);
     color: var(--dm-clr-secondary);
@@ -1512,7 +1510,7 @@ strong {
 .socialMedia__title {
     text-align: var(--value-center);
     text-transform: var(--value-uppercase);
-    margin: 50px 0;
+    margin-top: 0;
 }
 
 .socialMediaContainers {
