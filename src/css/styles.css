@@ -2408,7 +2408,7 @@ strong {
     }
 
     .aboutInformationDad {
-        gap: 87.5px;
+        gap: 100px;
         padding: var(--fs-padding-portatil);
     }
 
@@ -2581,7 +2581,7 @@ strong {
     }
 
     .aboutInformationPadding {
-        gap: 87.5px;
+        gap: 100px;
     }
 
     .aboutInformationContainer__title {
