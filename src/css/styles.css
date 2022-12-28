@@ -1390,6 +1390,7 @@ strong {
 /* FormContainer Section */
 .formContainer {
     max-width: 1440px;
+    margin: var(--fs-zero) auto;
     padding: var(--fs-padding-mobile);
 }
 
@@ -1502,7 +1503,11 @@ strong {
 
 /* socialMedia Section */
 .socialMedia {
-    max-width: 1440px;
+    background-image: var(--bg-sections);
+}
+
+.socialMediaBg {
+    max-width: 1290px;
     margin: 0 auto;
     padding:var(--fs-padding-mobile);
 }
@@ -1939,7 +1944,7 @@ strong {
         padding: var(--fs-padding-tablet);
         display: var(--value-flex , flex);
         align-items: var(--value-center , center);
-        height: calc(100vh - 65px);
+        height: 100vh;
     }
 
     .aboutGeneralContent__subsubtitle {
