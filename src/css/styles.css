@@ -505,8 +505,6 @@ strong {
     transition: rotate .7s , scale .7s;
 }
 
-
-
 .header__logo:hover {
     rotate: 360deg;
     scale:1.05;
