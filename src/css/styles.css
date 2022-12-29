@@ -1611,7 +1611,7 @@ strong {
 }
 
 .asideContainer {
-    max-width: 1440px;
+    max-width: 1290px;
     margin: var(--fs-zero , 0) var(--value-auto , auto);
     padding: var(--fs-padding-mobile-header);
     border-radius: 10px;
