@@ -1418,6 +1418,10 @@ strong {
 
 .formContainer__img {
     display: var(--value-none , none);
+ 
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
 }
 
 .form {
