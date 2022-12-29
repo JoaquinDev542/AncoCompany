@@ -1380,7 +1380,7 @@ strong {
 }
 
 .workBg {
-    max-width: 1440px;
+    max-width: 1290px;
     padding:var(--fs-padding-mobile);
     margin: 0 auto;
 }
