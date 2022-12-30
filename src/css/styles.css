@@ -1076,19 +1076,6 @@ strong {
     display: var(--value-none , none);
 }
 
-/* .menuCloseAll {
-    transition: .4s background-color;
-}
-
-.menuCloseAll.addColor {
-    background-color: red;
-    transition: .4s .5s background-color;
-}
-
-.menuCloseAll.addColor2 {
-    background-color: green;
-} */
-
 /* About Section */
 .aboutGeneralContent {
     padding:var(--fs-padding-mobile);
@@ -1160,7 +1147,7 @@ strong {
 .aboutInformationDad {
     display: var(--value-flex);
     flex-direction: var(--value-column);
-    gap: 85px;    
+    gap: 87.5px;    
     padding:var(--fs-padding-mobile);
 } 
 
@@ -1351,7 +1338,7 @@ strong {
 
 /* Work Section */
 .work {
-    padding: var(--fs-padding-mobile-header);
+    padding: var(--fs-padding-mobile);
 }
 .workBg {
     max-width: 1290px;
@@ -1475,7 +1462,6 @@ strong {
     border-bottom: 2px solid #ffffff65;
     color: var(--dm-clr-secondary);
 }
-
 
 .textarea {
     min-height: 150px;
