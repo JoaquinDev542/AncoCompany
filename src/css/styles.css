@@ -160,7 +160,7 @@
     :root {
         --bg-body:var(--lm-bg-body);
         --bg-sections:var(--lm-bg-sections);
-        --bg-bodyImg:var(--lm-bg-aboutinforbodyImgmation);
+        --bg-bodyImg:var(--lm-bg-bodyImg);
         --bg-buttons:var(--lm-bg-buttons);
         --bg-header:var(--lm-bg-header);
         --bg-footer:var(--lm-bg-footer);
