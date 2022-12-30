@@ -125,7 +125,7 @@
 
     --value-lineHeight:1.5;
     --value-100Percent:100%;
-
+    --lm-bg-body:#eeeeee;
 }
 
 @media screen and (prefers-color-scheme: dark) {
@@ -1162,6 +1162,37 @@ strong {
     margin-top: 32px;
     border-radius: 10px;
     object-fit: var(--value-cover);
+    animation: imgTransition infinite 3s linear ;
+    transform: translateY(0);
+}
+
+@keyframes imgTransition {
+    
+    0% , 100% {
+        transform: translateY(0px);
+
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
+
+}
+
+.aboutInformationPadding__img--second {
+    animation: imgTransition2 infinite 3s linear ;
+}
+
+@keyframes imgTransition2 {
+    
+    0% , 100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
 }
 
 .aboutInformationPadding__img--lightFirst.active {
