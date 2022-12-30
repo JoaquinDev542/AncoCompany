@@ -1411,6 +1411,10 @@ strong {
 }
 
 /* FormContainer Section */
+.formContainer {
+    padding: var(--fs-padding-mobile);
+}
+
 .formContainerPadding {
     max-width: 1290px;
     margin: var(--fs-zero) auto;
@@ -1430,8 +1434,6 @@ strong {
     background-size:cover;
     opacity: .5;
 }
-
-
 
 .form {
     display: var(--value-grid , grid);
@@ -1532,6 +1534,7 @@ strong {
 .socialMediaBg {
     max-width: 1290px;
     margin: 0 auto;
+    padding: var(--fs-padding-mobile);
 }
 
 .socialMedia__title {
@@ -1568,6 +1571,7 @@ strong {
 /* Aside Section */
 .aside {
     transform: translateY(50%);
+    padding: var(--fs-padding-mobile-header);
 }
 
 .asideContainer {
@@ -1999,6 +2003,10 @@ strong {
     .aboutInformationContainer__title {
         font-size: var(--fs-aboutTitle-tablet);
     }
+
+    .aboutInformationDad {
+        padding:var(--fs-padding-tablet);
+    } 
 
     /* Steps Section */
     .steps {
