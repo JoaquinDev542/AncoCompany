@@ -259,20 +259,27 @@ window.addEventListener('load',function () {
             let darkModeContainer__span = document.querySelector(".darkModeContainer__span");
             darkModeContainer__span.innerHTML = "Modo Oscuro";
             aboutInformationPadding__imgLightFirst.classList.add("active");
-            aboutInformationPadding__imgLightSecond.classList.add("active");
+            aboutInformationPadding__imgDarkSecond.classList.add("active");
+            console.log(aboutInformationPadding__imgLightFirst);
             
             darkMode__input.addEventListener('click', function () {
     
                 document.documentElement.classList.toggle("white-mode");
-                aboutInformationPadding__imgLightFirst.classList.add("active");
+                aboutInformationPadding__imgLightFirst.classList.remove("active");
+                aboutInformationPadding__imgDarkSecond.classList.remove("active");
+                aboutInformationPadding__imgDarkFirst.classList.add("active");
                 aboutInformationPadding__imgLightSecond.classList.add("active");
+                
             }) 
 
             darkMode__inputMenu.addEventListener('click', function () {
     
                 document.documentElement.classList.toggle("white-mode");
-                aboutInformationPadding__imgLightFirst.classList.add("active");
-                aboutInformationPadding__imgLightSecond.classList.add("active");    
+                aboutInformationPadding__imgLightFirst.classList.remove("active");
+                aboutInformationPadding__imgDarkSecond.classList.remove("active");
+                aboutInformationPadding__imgDarkFirst.classList.add("active");
+                aboutInformationPadding__imgLightSecond.classList.add("active");
+
             }) 
 
         } else {
@@ -283,21 +290,25 @@ window.addEventListener('load',function () {
             let darkModeContainer__span = document.querySelector(".darkModeContainer__span");
             darkModeContainer__span.innerHTML = "Modo Claro";
             aboutInformationPadding__imgDarkFirst.classList.add("active");
-            aboutInformationPadding__imgDarkSecond.classList.add("active");
+            aboutInformationPadding__imgLightSecond.classList.add("active");
 
             darkMode__input.addEventListener('click', function () {
     
                 document.documentElement.classList.toggle("dark-mode");
-                aboutInformationPadding__imgDarkFirst.classList.add("active");
+                aboutInformationPadding__imgLightFirst.classList.add("active");
                 aboutInformationPadding__imgDarkSecond.classList.add("active");
+                aboutInformationPadding__imgDarkFirst.classList.remove("active");
+                aboutInformationPadding__imgLightSecond.classList.remove("active");
             
             })
 
             darkMode__inputMenu.addEventListener('click', function () {
     
                 document.documentElement.classList.toggle("dark-mode");
-                aboutInformationPadding__imgDarkFirst.classList.add("active");
+                aboutInformationPadding__imgLightFirst.classList.add("active");
                 aboutInformationPadding__imgDarkSecond.classList.add("active");
+                aboutInformationPadding__imgDarkFirst.classList.remove("active");
+                aboutInformationPadding__imgLightSecond.classList.remove("active");
                 
             })
         
