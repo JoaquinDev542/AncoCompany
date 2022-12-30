@@ -1164,6 +1164,39 @@ strong {
     object-fit: var(--value-cover);
 }
 
+.aboutInformationPadding__img--lightFirst {
+
+}
+
+.aboutInformationPadding__img--darkFirst {
+
+}
+
+.aboutInformationPadding__img--lightSecond {
+
+}
+
+.aboutInformationPadding__img--darkSecond {
+
+}
+
+.aboutInformationPadding__img--lightFirst.active {
+    display: var(--value-none);
+}
+
+.aboutInformationPadding__img--darkFirst.active {
+    display: var(--value-none);
+
+}
+
+.aboutInformationPadding__img--lightSecond.active {
+    display: var(--value-none);
+}
+
+.aboutInformationPadding__img--darkSecond.active {
+    display: var(--value-none);
+}
+
 .aboutInformationContainer__title {
     margin-top: 0;
     font-size: var(--fs-aboutTitle-mobile);
