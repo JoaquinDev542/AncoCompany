@@ -260,25 +260,27 @@ window.addEventListener('load',function () {
             darkModeContainer__span.innerHTML = "Modo Oscuro";
             aboutInformationPadding__imgLightFirst.classList.add("active");
             aboutInformationPadding__imgDarkSecond.classList.add("active");
+            aboutInformationPadding__imgDarkFirst.classList.remove("active");
+            aboutInformationPadding__imgLightSecond.classList.remove("active");
             console.log(aboutInformationPadding__imgLightFirst);
             
             darkMode__input.addEventListener('click', function () {
     
                 document.documentElement.classList.toggle("white-mode");
-                aboutInformationPadding__imgLightFirst.classList.remove("active");
-                aboutInformationPadding__imgDarkSecond.classList.remove("active");
-                aboutInformationPadding__imgDarkFirst.classList.add("active");
-                aboutInformationPadding__imgLightSecond.classList.add("active");
+                aboutInformationPadding__imgLightFirst.classList.toggle("active");
+                aboutInformationPadding__imgDarkSecond.classList.toggle("active");
+                aboutInformationPadding__imgDarkFirst.classList.toggle("active");
+                aboutInformationPadding__imgLightSecond.classList.toggle("active");
                 
             }) 
 
             darkMode__inputMenu.addEventListener('click', function () {
     
                 document.documentElement.classList.toggle("white-mode");
-                aboutInformationPadding__imgLightFirst.classList.remove("active");
-                aboutInformationPadding__imgDarkSecond.classList.remove("active");
-                aboutInformationPadding__imgDarkFirst.classList.add("active");
-                aboutInformationPadding__imgLightSecond.classList.add("active");
+                aboutInformationPadding__imgLightFirst.classList.toggle("active");
+                aboutInformationPadding__imgDarkSecond.classList.toggle("active");
+                aboutInformationPadding__imgDarkFirst.classList.toggle("active");
+                aboutInformationPadding__imgLightSecond.classList.toggle("active");
 
             }) 
 
@@ -291,24 +293,26 @@ window.addEventListener('load',function () {
             darkModeContainer__span.innerHTML = "Modo Claro";
             aboutInformationPadding__imgDarkFirst.classList.add("active");
             aboutInformationPadding__imgLightSecond.classList.add("active");
+            aboutInformationPadding__imgLightFirst.classList.remove("active");
+            aboutInformationPadding__imgDarkSecond.classList.remove("active");
 
             darkMode__input.addEventListener('click', function () {
     
                 document.documentElement.classList.toggle("dark-mode");
-                aboutInformationPadding__imgLightFirst.classList.add("active");
-                aboutInformationPadding__imgDarkSecond.classList.add("active");
-                aboutInformationPadding__imgDarkFirst.classList.remove("active");
-                aboutInformationPadding__imgLightSecond.classList.remove("active");
+                aboutInformationPadding__imgLightFirst.classList.toggle("active");
+                aboutInformationPadding__imgDarkSecond.classList.toggle("active");
+                aboutInformationPadding__imgDarkFirst.classList.toggle("active");
+                aboutInformationPadding__imgLightSecond.classList.toggle("active");
             
             })
 
             darkMode__inputMenu.addEventListener('click', function () {
     
                 document.documentElement.classList.toggle("dark-mode");
-                aboutInformationPadding__imgLightFirst.classList.add("active");
-                aboutInformationPadding__imgDarkSecond.classList.add("active");
-                aboutInformationPadding__imgDarkFirst.classList.remove("active");
-                aboutInformationPadding__imgLightSecond.classList.remove("active");
+                aboutInformationPadding__imgLightFirst.classList.toggle("active");
+                aboutInformationPadding__imgDarkSecond.classList.toggle("active");
+                aboutInformationPadding__imgDarkFirst.classList.toggle("active");
+                aboutInformationPadding__imgLightSecond.classList.toggle("active");
                 
             })
         

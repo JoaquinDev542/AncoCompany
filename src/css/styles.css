@@ -217,7 +217,7 @@
     --clr-secondary--paragraph:var(--dm-clr-secondary--paragraph);
     --clr-lineForm:var(--dm-clr-lineForm);
     --clr-icon-darkMode: var(--dm-icon-darkMode);
-    --clr-gradient:var(--lm-clr-gradient);
+    --clr-gradient:var(--dm-clr-gradient);
     --boxShadow-buttons:var(--dm-boxShadow-buttons);
     --clr-titleDecoration:var(--lm-clr-titleDecoration);
     --clr-firstGradient: var(--dm-clr-firstGradient);
@@ -1164,29 +1164,12 @@ strong {
     object-fit: var(--value-cover);
 }
 
-.aboutInformationPadding__img--lightFirst {
-
-}
-
-.aboutInformationPadding__img--darkFirst {
-
-}
-
-.aboutInformationPadding__img--lightSecond {
-
-}
-
-.aboutInformationPadding__img--darkSecond {
-
-}
-
 .aboutInformationPadding__img--lightFirst.active {
     display: var(--value-none);
 }
 
 .aboutInformationPadding__img--darkFirst.active {
     display: var(--value-none);
-
 }
 
 .aboutInformationPadding__img--lightSecond.active {
