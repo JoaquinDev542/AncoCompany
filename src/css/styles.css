@@ -1350,9 +1350,11 @@ strong {
 }
 
 /* Work Section */
+.work {
+    padding: var(--fs-padding-mobile-header);
+}
 .workBg {
     max-width: 1290px;
-    padding:var(--fs-padding-mobile);
     margin: 0 auto;
 }
 
@@ -2504,7 +2506,7 @@ strong {
 
     /* Work Section */
     .work {
-        padding: var(--fs-padding-portatil , 0.625em 4.6875em);
+        padding: var(--fs-padding-portatil);
     }
 
     .workProject__title {
