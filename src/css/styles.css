@@ -2442,11 +2442,6 @@ strong {
 
     .aboutInformationPadding {
         gap: 50px;
-        grid-template-columns: .6fr .4fr;
-    }
-
-    .aboutInformationPadding--second {
-        grid-template-columns: .4fr .6fr;
     }
 
     .aboutInformationContainer__title {
