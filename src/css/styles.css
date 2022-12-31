@@ -892,19 +892,10 @@ strong {
 .darkModeContainer__span {
     color: var(--clr-secondary);
     font-weight: 600;
-
-}
-
-.darkModeContainer__span.addColor {
-    color: var(--dm-clr-secondary);
 }
 
 .idioms {
     border-bottom: 1px dashed var(--clr-secondary);
-}
-
-.idioms.addColor {
-    border-bottom: 1px dashed var(--dm-clr-secondary);
 }
 
 .languages {
@@ -939,7 +930,14 @@ strong {
 .herotitle {
     font-size: var(--fs-heroTitle-mobile);
     line-height: 1.25;
-    text-transform: capitalize;
+}
+
+.herotitle__span {
+    transition: background-color 1s;
+}
+
+.hertitle__span.active {
+
 }
 
 .heroContentContainer__btn {
@@ -1859,19 +1857,11 @@ strong {
         color: var(--clr-secondary);
     }
 
-    .idioms__title--principal.addColor {
-        color: var(--dm-clr-secondary);
-    }
-
     .idiomsContainerInitial__arrow {
         width: 25px;
         fill: var(--clr-secondary);
         rotate: 0deg;
         transition: rotate .3s;
-    }
-
-    .idiomsContainerInitial__arrow.addColor {
-        fill: var(--dm-clr-secondary);
     }
 
     .idiomsContainerInitial__arrow.active {
@@ -1887,14 +1877,6 @@ strong {
     .contactInformationSocialMedia__img--submenu  {
         width: 20px;
         fill: var(--clr-secondary);
-    }
-
-    .contactInformationSocialMedia__img--submenu.addColor  {
-        fill: var(--dm-clr-secondary);
-    }
-
-    .contactInformationSocialMedia__img--submenu-mobile.addColor  {
-        fill: var(--dm-clr-secondary);
     }
 
     .idiomsContainerDisplay {

@@ -106,33 +106,17 @@ window.addEventListener('load',function () {
   
     // BackgroundColor Submenu Section Change
     let submenu = document.querySelector(".submenu");
-    let darkModeContainer__span = document.querySelector(".darkModeContainer__span");
-    let idioms__titlePrincipal = document.querySelector(".idioms__title--principal");
     let idiomsContainerInitial__arrow = document.querySelector(".idiomsContainerInitial__arrow");
-    let contactInformationSocialMedia__imgSubmenu = document.querySelector(".contactInformationSocialMedia__img--submenu");
-    let contactInformationSocialMedia__imgSubmenuMobile = document.querySelector(".contactInformationSocialMedia__img--submenu-mobile");
 
     const functionChangeBgSubmenu = function () {
         
         if(document.documentElement.scrollTop >= 10) {
             submenu.classList.add("remove");
             header.classList.add("upTop");
-            darkModeContainer__span.classList.add("addColor");
-            idioms.classList.add("addColor");
-            idioms__titlePrincipal.classList.add("addColor");
-            idiomsContainerInitial__arrow.classList.add("addColor");
-            contactInformationSocialMedia__imgSubmenu.classList.add("addColor");
-            contactInformationSocialMedia__imgSubmenuMobile.classList.add("addColor");
 
         } else {
             submenu.classList.remove("remove");
             header.classList.remove("upTop");
-            darkModeContainer__span.classList.remove("addColor");
-            idioms.classList.remove("addColor");
-            idioms__titlePrincipal.classList.remove("addColor");
-            idiomsContainerInitial__arrow.classList.remove("addColor");
-            contactInformationSocialMedia__imgSubmenu.classList.remove("addColor");
-            contactInformationSocialMedia__imgSubmenuMobile.classList.remove("addColor");
         }
     }
     window.addEventListener("scroll" , functionChangeBgSubmenu); 
@@ -551,15 +535,6 @@ window.addEventListener('load',function () {
         menuCloseContainerRightHeader.classList.remove("active");
     })
 
-
-    // Menu Img hover 
-    // let menuCloseContainerLeft__img = document.querySelector(".menuCloseContainerLeft__img");
-
-    // menuCloseContainerRightList__link_aboutUs.addEventListener("mouseover" , function() {
-    //     menuCloseContainerLeft__img.classList.add("active");    
-    // })
-    
-
     // Btn Section Animation Javascript
     let animateButton = function(e) {
 
@@ -647,25 +622,6 @@ window.addEventListener('load',function () {
         aside__paragraphOpacity.classList.add("active");
         asideBtn.classList.add("hidden");
     });
-
-     // Background-Color Transition Body
-    //  const functionChangeBgBody = function () {
-
-    //     let menuCloseAll = document.querySelector(".menuCloseAll");
-        
-    //     if(document.documentElement.scrollTop >= 1000 && document.documentElement.scrollTop <= 2000) {
-    //         menuCloseAll.classList.add("addColor");
-    //         menuCloseAll.classList.remove("addColor2");
-
-    //     } else if(document.documentElement.scrollTop >= 2000){
-    //         menuCloseAll.classList.remove("addColor");
-    //         menuCloseAll.classList.add("addColor2");
-    //     } else {
-    //         menuCloseAll.classList.remove("addColor");
-    //         menuCloseAll.classList.remove("addColor2");
-    //     }
-    // }
-    // window.addEventListener("scroll" , functionChangeBgBody); 
 
 })
 
