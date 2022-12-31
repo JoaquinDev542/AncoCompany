@@ -477,6 +477,7 @@ strong {
     border-radius: 10px;
 }
 
+
 /* Hero Section */
 .hero {
     position: var(--value-relative);
@@ -864,8 +865,7 @@ strong {
 }
 
 .darkMode__input:checked ~ .darkMode__fill{
-    background-color:var(--clr-primary);
-    background-color: var(--lm-clr-secondary--paragraph);
+    background-color: var(--value-transparent);
 }
 
 .darkMode__fill::after {
@@ -892,10 +892,23 @@ strong {
 .darkModeContainer__span {
     color: var(--clr-secondary);
     font-weight: 600;
+
+}
+
+.darkModeContainer__span.addColor {
+    color: var(--dm-clr-secondary);
+}
+
+.darkMode__fill--submenu.active {
+    outline: 2px solid #6d6d6d81;
 }
 
 .idioms {
     border-bottom: 1px dashed var(--clr-secondary);
+}
+
+.idioms.addColor {
+    border-bottom: 1px dashed var(--dm-clr-secondary);
 }
 
 .languages {
@@ -930,6 +943,8 @@ strong {
 .herotitle {
     font-size: var(--fs-heroTitle-mobile);
     line-height: 1.25;
+<<<<<<< HEAD
+    max-width: 90%;
 }
 
 .herotitle__span {
@@ -938,6 +953,9 @@ strong {
 
 .hertitle__span.active {
 
+=======
+    text-transform: capitalize;
+>>>>>>> 0489d97adb666717e5db99daff7739b989037388
 }
 
 .heroContentContainer__btn {
@@ -1857,11 +1875,19 @@ strong {
         color: var(--clr-secondary);
     }
 
+    .idioms__title--principal.addColor {
+        color: var(--dm-clr-secondary);
+    }
+
     .idiomsContainerInitial__arrow {
         width: 25px;
         fill: var(--clr-secondary);
         rotate: 0deg;
         transition: rotate .3s;
+    }
+
+    .idiomsContainerInitial__arrow.addColor {
+        fill: var(--dm-clr-secondary);
     }
 
     .idiomsContainerInitial__arrow.active {
@@ -1877,6 +1903,14 @@ strong {
     .contactInformationSocialMedia__img--submenu  {
         width: 20px;
         fill: var(--clr-secondary);
+    }
+
+    .contactInformationSocialMedia__img--submenu.addColor  {
+        fill: var(--dm-clr-secondary);
+    }
+
+    .contactInformationSocialMedia__img--submenu-mobile.addColor  {
+        fill: var(--dm-clr-secondary);
     }
 
     .idiomsContainerDisplay {
