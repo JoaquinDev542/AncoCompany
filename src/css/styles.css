@@ -21,6 +21,9 @@
     --dm-clr-thirdGradient:#20b46a;
     --dm-clr-fourthGradient:#00a866;
     --dm-clr-fifthGradient:#009f65;
+    --dm-clr-selection:#ec6e3369;
+    --lm-clr-selection:#20b46a6e;
+
 
     --lm-clr-firstGradient:#fb8f43;
     --lm-clr-secondGradient:#f57f3b;
@@ -152,6 +155,7 @@
         --clr-fourthGradient: var(--dm-clr-fourthGradient);
         --clr-fifthGradient: var(--dm-clr-fifthGradient);
         --bg-form: var(--dm-bg-form);
+        --clr-selection:var(--dm-clr-selection);
     }
 
 }
@@ -179,6 +183,8 @@
         --clr-fourthGradient: var(--lm-clr-fourthGradient);
         --clr-fifthGradient: var(--lm-clr-fifthGradient);
         --bg-form: var(--lm-bg-form);
+        --clr-selection:var(--lm-clr-selection);
+
     }
 
 }
@@ -204,6 +210,8 @@
     --clr-fourthGradient: var(--lm-clr-fourthGradient);
     --clr-fifthGradient: var(--lm-clr-fifthGradient);
     --bg-form: var(--lm-bg-form);
+    --clr-selection:var(--lm-clr-selection);
+
 }
 
 .dark-mode {
@@ -227,6 +235,7 @@
     --clr-fourthGradient: var(--dm-clr-fourthGradient);
     --clr-fifthGradient: var(--dm-clr-fifthGradient);
     --bg-form: var(--dm-bg-form);
+    --clr-selection:var(--dm-clr-selection);
 }
 
 * , ::before , ::after {
@@ -242,6 +251,10 @@ body {
     font-size: var(--fs-16px );
     font-family: var(--ff-paragraph );
     background-color: var(--bg-body);
+}
+
+::selection {
+    background-color: var(--clr-selection);
 }
 
 body::-webkit-scrollbar {
@@ -2311,6 +2324,7 @@ strong {
         position: var(--value-relative);
         display: inline-block;
         transition: .4s .1s transform , .1s color;
+        font-weight: bold
     }
 
     .navList__span::before {
