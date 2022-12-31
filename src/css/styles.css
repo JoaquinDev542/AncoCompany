@@ -781,6 +781,7 @@ strong {
     position: var(--value-relative);
     display:inline-block;
     transition: .4s .1s transform , .4s color;
+    font-weight: bold;
 }
 
 .menuCloseContainerRightList__span::before {
@@ -2303,6 +2304,7 @@ strong {
         color: var(--clr-secondary);
         text-transform: var(--value-uppercase);
         overflow: var(--value-hidden);
+        font-weight: bold
     }
 
     .navList__span {
