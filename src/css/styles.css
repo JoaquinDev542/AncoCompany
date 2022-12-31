@@ -1338,6 +1338,7 @@ strong {
 
 .informationContent__title {
     text-transform: var(--value-uppercase , uppercase);
+    text-align: var(--value-center);
 }
 
 .informationContent__span {
