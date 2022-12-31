@@ -1,9 +1,5 @@
 // Loader
 window.addEventListener('load',function () {
-
-    setTimeout(() => {
-        console.log("Ejecutar cada 1 seg")
-      }, 1000);
     
     // Loader
     window.addEventListener("blur", () => {
@@ -93,7 +89,6 @@ window.addEventListener('load',function () {
    }
    window.addEventListener('scroll' , scrollProgressBar);
 
-    
    // Idioms Active
    let idiomsContainerDisplay = document.querySelector(".idiomsContainerDisplay");
    let idioms = document.querySelector(".idioms");
@@ -246,10 +241,11 @@ window.addEventListener('load',function () {
             aboutInformationPadding__imgDarkSecond.classList.add("active");
             aboutInformationPadding__imgDarkFirst.classList.remove("active");
             aboutInformationPadding__imgLightSecond.classList.remove("active");
-            console.log(aboutInformationPadding__imgLightFirst);
+            let darkMode__fill__submenu = document.querySelector(".darkMode__fill--submenu");
             
             darkMode__input.addEventListener('click', function () {
-    
+                
+                darkMode__fill__submenu.classList.toggle("active");
                 document.documentElement.classList.toggle("white-mode");
                 aboutInformationPadding__imgLightFirst.classList.toggle("active");
                 aboutInformationPadding__imgDarkSecond.classList.toggle("active");
@@ -260,6 +256,7 @@ window.addEventListener('load',function () {
 
             darkMode__inputMenu.addEventListener('click', function () {
     
+                darkMode__fill__submenu.classList.toggle("active");
                 document.documentElement.classList.toggle("white-mode");
                 aboutInformationPadding__imgLightFirst.classList.toggle("active");
                 aboutInformationPadding__imgDarkSecond.classList.toggle("active");
@@ -279,9 +276,11 @@ window.addEventListener('load',function () {
             aboutInformationPadding__imgLightSecond.classList.add("active");
             aboutInformationPadding__imgLightFirst.classList.remove("active");
             aboutInformationPadding__imgDarkSecond.classList.remove("active");
+            let darkMode__fill__submenu = document.querySelector(".darkMode__fill--submenu");
 
             darkMode__input.addEventListener('click', function () {
-    
+                
+                darkMode__fill__submenu.classList.toggle("active");
                 document.documentElement.classList.toggle("dark-mode");
                 aboutInformationPadding__imgLightFirst.classList.toggle("active");
                 aboutInformationPadding__imgDarkSecond.classList.toggle("active");
@@ -291,7 +290,8 @@ window.addEventListener('load',function () {
             })
 
             darkMode__inputMenu.addEventListener('click', function () {
-    
+                
+                darkMode__fill__submenu.classList.toggle("active");
                 document.documentElement.classList.toggle("dark-mode");
                 aboutInformationPadding__imgLightFirst.classList.toggle("active");
                 aboutInformationPadding__imgDarkSecond.classList.toggle("active");
@@ -307,6 +307,7 @@ window.addEventListener('load',function () {
       colorSchemeQueryList.addEventListener('change', setColorScheme);
 
       let darkMode__input = document.querySelector(".darkMode__input");
+      let darkMode__inputMenu = document.querySelector(".darkMode__input--menu");
 
       darkMode__input.addEventListener('click', function () {
   
@@ -317,7 +318,19 @@ window.addEventListener('load',function () {
           } else {
             darkModeContainer__span.innerHTML = "Modo Oscuro";
           }
+ 
+      })
+
+      darkMode__inputMenu.addEventListener('click', function () {
   
+        let darkModeContainer__span = document.querySelector(".darkModeContainer__span");
+
+        if (darkModeContainer__span.innerHTML == "Modo Oscuro") {
+          darkModeContainer__span.innerHTML = "Modo Claro"
+        } else {
+          darkModeContainer__span.innerHTML = "Modo Oscuro";
+        }
+
       })
 
     // Menu Reponsive
