@@ -1433,7 +1433,7 @@ strong {
     display: var(--value-grid);
     place-items: var(--value-center);
     width: 100%;
-    height: 375px;
+    height: 325px;
     border-radius: 10px;
     background-image: url(../../assets/image/aboutHero.jpeg);
     background-repeat: no-repeat;
@@ -2183,7 +2183,7 @@ strong {
     }
 
     .workProjectImg {
-        height: 425px;
+        height: 375px;
     }
 
     /* FormContainer Section */
@@ -2557,7 +2557,7 @@ strong {
     }
 
     .workProjectImg {
-        height: 450px;
+        height: 425px;
     }
 
     /* FormContainer Section */
@@ -2626,7 +2626,7 @@ strong {
 
 }
 
-@media screen and (min-width:1400px) {
+@media screen and (min-width:87.5em) {
 
     .progressBar {
         top: 73px;
@@ -2662,6 +2662,10 @@ strong {
 
     .workProject__title {
         font-size: var(--fs-workTitle-portatilL);
+    }
+
+    .workProjects {
+        gap: 7.6875em 4.875em;
     }
 
     .form__title {
