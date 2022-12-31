@@ -77,7 +77,6 @@ window.addEventListener('load',function () {
     let progressBar__element = document.querySelector(".progressBar__element");
 
     function scrollProgressBar() {
-
         let scrollTop = document.documentElement.scrollTop; // valor de lo que scroleamos
         let scrollHeight = document.documentElement.scrollHeight; // height total de la pagina
         let clientHeight = document.documentElement.clientHeight; // valor que vemos en el momento
