@@ -12,7 +12,7 @@
     --dm-clr-heroButton:#13181e;
     --dm-boxShadow-buttons:#20b46a50;
     --dm-bg-footer:#00000081;
-    --dm-clr-titleDecoration:#f5f5f5;
+    --dm-clr-titleDecoration:#eeeeee;
     --dm-clr-lineForm: radial-gradient(circle at 50% 50%, #bfc162 0, #afc161 8.33%, #9cc060 16.67%, #87be61 25%, #6fbc63 33.33%, #51b866 41.67%, #20b46a 50%, #00af70 58.33%, #00ab78 66.67%, #00a783 75%, #00a38e 83.33%, #009f9b 91.67%, #009ca8 100%);
     --dm-clr-gradient:linear-gradient(90deg, #6fc973 0, #51c06f 25%, #20b46a 50%, #00a866 75%, #009f65 100%);
     --dm-icon-darkMode: url(../../assets/image/icons/moon.png);
@@ -41,7 +41,8 @@
     --lm-bg-footer:#00000081;
     --lm-clr-lineForm: radial-gradient(circle at 50% 50%, #ff9a49 0, #f8863f 25%, #ec6d32 50%, #e05228 75%, #d73825 100%);
     --lm-clr-gradient: linear-gradient(90deg, #fb8f43 0, #f57f3b 25%, #ec6d32 50%, #e35a2a 75%, #dc4726 100%);
-    --lm-clr-titleDecoration:#040506;
+    --lm-clr-titleDecoration:#181818;
+    --lm-bg-body:#eeeeee;
 
     --fs-zero:0;
     --fs-16px:16px;
@@ -125,7 +126,7 @@
 
     --value-lineHeight:1.5;
     --value-100Percent:100%;
-    --lm-bg-body:#eeeeee;
+    
 }
 
 @media screen and (prefers-color-scheme: dark) {
@@ -1582,14 +1583,12 @@ strong {
     display: var(--value-grid);
     place-content: var(--value-center);
     grid-template-columns: max-content max-content;
-    gap: 20px;
+    gap: 50px;
 }
 
 .socialMediaContainer {
     display: var(--value-flex);
     flex-direction: var(--value-column);
-    padding: 10px 30px;
-    max-width: 139px;
 }
 
 .socialMediaContainer__img {
@@ -2185,7 +2184,7 @@ strong {
 
     .socialMediaContainers {
         grid-template-columns: max-content max-content max-content;
-        gap: 50px;
+        gap: 75px;
     }
 
     .socialMediaContainer {
@@ -2194,8 +2193,8 @@ strong {
     }
 
     .socialMediaContainer__img {
-        width: 65px;
-        height: 65px;
+        width: 70px;
+        height: 70px;
     }
 
     /* Aside Section */
@@ -2582,8 +2581,8 @@ strong {
         gap: 20px;
     }
 
-    .socialMediaContainer {
-        padding: 10px 37px;
+    .socialMediaContainer__span {
+        font-size: 18px;
     }
 
     /* Aside Section */
