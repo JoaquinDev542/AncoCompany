@@ -943,7 +943,6 @@ strong {
 .herotitle {
     font-size: var(--fs-heroTitle-mobile);
     line-height: 1.25;
-<<<<<<< HEAD
     max-width: 90%;
 }
 
@@ -951,11 +950,8 @@ strong {
     transition: background-color 1s;
 }
 
-.hertitle__span.active {
-
-=======
+.herotitle__span.active {
     text-transform: capitalize;
->>>>>>> 0489d97adb666717e5db99daff7739b989037388
 }
 
 .heroContentContainer__btn {
