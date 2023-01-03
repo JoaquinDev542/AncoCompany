@@ -457,7 +457,7 @@ strong {
 /* ProgressBar Section */
 .progressBar {
     position: var(--value-fixed);
-    top: 65px;
+    top: 74px;
     left: 0;
     height: 3px;
     width: 100%;
@@ -1797,7 +1797,7 @@ strong {
 
     /* progressBar */
     .progressBar {
-        top: 65px;
+        top: 74px;
     }
 
     /* Submenu Section */
@@ -2453,7 +2453,7 @@ strong {
     }
 
     .progressBar {
-        top: 70px;
+        top: 75px;
     }
 
     /* About Section */
@@ -2642,7 +2642,7 @@ strong {
 @media screen and (min-width:87.5em) {
 
     .progressBar {
-        top: 73px;
+        top: 75px;
     } 
 
     .consoleContainer {
