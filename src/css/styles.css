@@ -327,6 +327,7 @@ strong {
 .color--gradient {
     background: var(--clr-gradient);
     -webkit-background-clip: text;
+    background-clip: text;
     color: var(--value-transparent);
 }
 
@@ -1447,15 +1448,13 @@ strong {
 }
 
 .workProjectImg {
-    display: var(--value-grid);
-    place-items: var(--value-center);
+    display: var(--value-flex);
+    flex-direction: var(--value-column);
+    align-items: var(--value-center);
+    justify-content: var(--value-center);
     width: 100%;
     height: 325px;
     border-radius: 10px;
-    background-image: url(../../assets/image/ancoCompany.png);
-    background-repeat: no-repeat;
-    background-position:  var(--value-center);
-    background-size: var(--value-cover);
     animation: infiniteMove infinite 2s linear ;
     transform: translateY(0);
     border: 2px solid var(--clr-secondary);
@@ -1472,11 +1471,23 @@ strong {
     }
 }
 
+.workProjectImg__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.workProjectImg__link {
+    position: absolute;
+}
+
 .workProjectImg__img {
     opacity: 0;
-    transition: .5s opacity;
-    width: 150px;
-    height: 150px;
+    transition: .5s opacity , .5s transform;
+    width: 250px;
+    height: 250px;
+    color: var(--clr-primary);
 }
 
 /* FormContainer Section */
@@ -2767,8 +2778,16 @@ strong {
         color: var(--clr-primary);
     }
 
+    .workProjectImg__image:hover {
+        filter: blur(3px);
+    }
+
     .workProjectImg:hover .workProjectImg__img {
         opacity: 1;
+    }
+
+    .workProjectImg__link:hover .workProjectImg__image {
+        filter: blur(3px);
     }
 
     .socialMediaContainer:hover {
