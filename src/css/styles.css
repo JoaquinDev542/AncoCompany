@@ -2779,15 +2779,11 @@ strong {
     }
 
     .workProjectImg__image:hover {
-        filter: blur(3px);
+        filter: blur(3px) grayscale(.8);
     }
 
     .workProjectImg:hover .workProjectImg__img {
         opacity: 1;
-    }
-
-    .workProjectImg__link:hover .workProjectImg__image {
-        filter: blur(3px);
     }
 
     .socialMediaContainer:hover {
