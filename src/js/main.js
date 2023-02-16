@@ -107,6 +107,7 @@ window.addEventListener('load',function () {
         if(document.documentElement.scrollTop >= 10) {
             submenu.classList.add("remove");
             header.classList.add("upTop");
+            progressBar__element.classList.add("active");
 
         } else {
             submenu.classList.remove("remove");
@@ -433,6 +434,7 @@ window.addEventListener('load',function () {
         menuCloseContainerRightFooter__darkMode.classList.remove("active");
         menuCloseContainerRightFooter.classList.remove("active");
         menuCloseContainerRightHeader.classList.remove("active");
+        progressBar__element.style.setProperty("display" , "block");
     })
 
     menuCloseContainerRightList__link_steps.addEventListener('click' , function () {
@@ -461,6 +463,7 @@ window.addEventListener('load',function () {
         menuCloseContainerRightFooter__darkMode.classList.remove("active");
         menuCloseContainerRightFooter.classList.remove("active");
         menuCloseContainerRightHeader.classList.remove("active");
+        progressBar__element.style.setProperty("display" , "block");
     })
 
     menuCloseContainerRightList__link_services.addEventListener('click' , function () {
@@ -489,6 +492,7 @@ window.addEventListener('load',function () {
         menuCloseContainerRightFooter__darkMode.classList.remove("active");
         menuCloseContainerRightFooter.classList.remove("active");
         menuCloseContainerRightHeader.classList.remove("active");
+        progressBar__element.style.setProperty("display" , "block");
     })
 
     menuCloseContainerRightList__link_work.addEventListener('click' , function () {
@@ -517,6 +521,7 @@ window.addEventListener('load',function () {
         menuCloseContainerRightFooter__darkMode.classList.remove("active");
         menuCloseContainerRightFooter.classList.remove("active");
         menuCloseContainerRightHeader.classList.remove("active");
+        progressBar__element.style.setProperty("display" , "block");
     })
 
     menuCloseContainerRightList__link_contact.addEventListener('click' , function () {
@@ -545,6 +550,7 @@ window.addEventListener('load',function () {
         menuCloseContainerRightFooter__darkMode.classList.remove("active");
         menuCloseContainerRightFooter.classList.remove("active");
         menuCloseContainerRightHeader.classList.remove("active");
+        progressBar__element.style.setProperty("display" , "block");
     })
 
     // Btn Section Animation Javascript
@@ -636,4 +642,3 @@ window.addEventListener('load',function () {
     });
 
 })
-

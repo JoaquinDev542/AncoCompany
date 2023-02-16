@@ -474,6 +474,11 @@ strong {
     height: 100%;
     width: 100%;
     border-radius: 10px;
+    display: none;
+}
+
+.progressBar__element.active {
+    display: block;
 }
 
 
@@ -1447,12 +1452,13 @@ strong {
     width: 100%;
     height: 325px;
     border-radius: 10px;
-    background-image: url(https://p4.wallpaperbetter.com/wallpaper/241/492/63/abstract-art-color-basic-wallpaper-preview.jpg);
+    background-image: url(../../assets/image/ancoCompany.png);
     background-repeat: no-repeat;
     background-position:  var(--value-center);
     background-size: var(--value-cover);
     animation: infiniteMove infinite 2s linear ;
     transform: translateY(0);
+    border: 2px solid var(--clr-secondary);
 }
 
 @keyframes infiniteMove {
@@ -2452,7 +2458,7 @@ strong {
     }
 
     .progressBar {
-        top: 75px;
+        top: 74px;
     }
 
     /* About Section */
@@ -2641,7 +2647,7 @@ strong {
 @media screen and (min-width:87.5em) {
 
     .progressBar {
-        top: 75px;
+        top: 74px;
     } 
 
     .consoleContainer {
