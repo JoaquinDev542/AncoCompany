@@ -249,8 +249,29 @@ html {
 body {
     font-size: var(--fs-16px );
     font-family: var(--ff-paragraph );
-    background-color: var(--bg-body);
 }
+
+body::before, body::after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: "";
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    mix-blend-mode: difference;
+}
+
+body::before {
+    /* background-color: var(--bg-body); */
+    filter: url(../../assets/image/icons/noise.svg);
+}
+
+body::after {
+    /* background-color: var(--bg-body); */
+    filter: url(../../assets/image/icons/noise.svg);
+}
+
 
 ::selection {
     background-color: var(--clr-selection);
@@ -1190,7 +1211,6 @@ strong {
 
 .aboutInformationPadding__img {
     width: 100%;
-    height: 175px;
     margin-top: 32px;
     border-radius: 10px;
     object-fit: var(--value-cover);
