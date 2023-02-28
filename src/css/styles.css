@@ -1482,25 +1482,12 @@ strong {
     width: 100%;
     height: 325px;
     border-radius: 10px;
-    animation: infiniteMove infinite 2s linear ;
-    transform: translateY(0);
-}
-
-@keyframes infiniteMove {
-    0% , 100% {
-        transform: translateX(0px);
-
-    }
-
-    50% {
-        transform: translatex(5px);
-    }
 }
 
 .workProjectImg__image {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    max-height: clamp(20.3125rem , 40vw , 38.1875rem);
     border-radius: 10px;
 }
 
