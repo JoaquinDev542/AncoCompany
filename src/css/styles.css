@@ -1937,7 +1937,7 @@ strong {
         border-radius: 10px;
         margin-top: 20px;
         z-index: 750;
-        transform: translateY(-150%);
+        transform: translateY(-300%);
         transition: transform .7s;
     }
 
