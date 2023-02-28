@@ -1440,11 +1440,38 @@ strong {
     flex-direction: var(--value-column , column);
 }
 
+.workProject:hover .workProject__span{
+    opacity: 1;
+}
+
+
 .workProject__title {
+    align-self: flex-start;
+    position: relative;
     font-size: var(--fs-workTitle-mobile);
-    margin-bottom: 0.625em;
-    margin-top: 0;
+    margin-bottom: 0.5em;
+    margin-top: 0.625em;
     text-transform: var(--value-uppercase , uppercase);
+}
+
+.workProject__title::after {
+    position: absolute;
+    content: "";
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--clr-primary);
+    transition: width .3s;
+}
+
+.workProject:hover .workProject__title::after {
+    width: 100%;
+}
+
+.workProject__span {
+    opacity: 0;
+    transition: .3s opacity;
 }
 
 .workProjectImg {
