@@ -1484,7 +1484,6 @@ strong {
     border-radius: 10px;
     animation: infiniteMove infinite 2s linear ;
     transform: translateY(0);
-    border: 2px solid var(--clr-secondary);
 }
 
 @keyframes infiniteMove {
