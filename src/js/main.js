@@ -58,12 +58,12 @@ window.addEventListener('load',function () {
     ScrollReveal().reveal('.aside');
 
     // Arrow Section
-    arrow = document.getElementById("arr")
+    // arrow = document.getElementById("arr") //
 
-    window.onscroll = function(){
-        add_btn_scrolltop()
+   // window.onscroll = function(){
+      //  add_btn_scrolltop()
         //add btn on scroll
-    }
+  //  }
     
     const add_btn_scrolltop = function(){
         if(document.documentElement.scrollTop >= 200){
@@ -157,13 +157,13 @@ window.addEventListener('load',function () {
     // Active Click on Links Nav Section
     let header__link = document.querySelector(".header__link");
 
-    arrow.addEventListener("click", function() {
-        navList__link_about.classList.remove("colorActive");
-        navList__link_steps.classList.remove("colorActive");
-        navList__link_services.classList.remove("colorActive");
-        navList__link_work.classList.remove("colorActive");
-        navList__link_contact.classList.remove("colorActive");
-    })
+   // arrow.addEventListener("click", function() {
+    //    navList__link_about.classList.remove("colorActive");
+    //    navList__link_steps.classList.remove("colorActive");
+    //    navList__link_services.classList.remove("colorActive");
+    //    navList__link_work.classList.remove("colorActive");
+    //    navList__link_contact.classList.remove("colorActive");
+   // })
 
     header__link.addEventListener("click" , function() {
         navList__link_about.classList.remove("colorActive");
