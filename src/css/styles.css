@@ -835,7 +835,7 @@ strong {
     position: var(--value-relative);
     display: var(--value-flex);
     align-items: var(--value-center);
-    justify-content: flex-end;
+    justify-content: flex-start;
     overflow: var(--value-hidden);
 }
 
@@ -856,7 +856,7 @@ strong {
 }
 
 .menuCloseContainerRightFooter__darkMode {
-    margin-right: 15px;
+    margin-left: 15px;
     opacity: 0;
     transform: translateY(-50%);
     transition: opacity .4s .8s , transform .4s .8s , scale .3s;
@@ -2057,7 +2057,7 @@ strong {
     }
 
     .menuCloseContainerRightFooter__darkMode {
-        margin-right: 50px;
+        margin-left: 50px;
     }
 
     .consoleContainer {
@@ -2461,7 +2461,7 @@ strong {
     }
 
     .menuCloseContainerRightFooter__darkMode {
-        margin-right: 75px;
+        margin-left: 75px;
     }
 
     .darkMode {

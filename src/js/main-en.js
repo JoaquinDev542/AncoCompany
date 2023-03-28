@@ -3,7 +3,7 @@ window.addEventListener('load',function () {
     
     // Loader
     window.addEventListener("blur", () => {
-        document.title = "AncoCompany® | Diseño y desarrollo Web";
+        document.title = "AncoCompany® |  Design and web development";
     });
 
     // Cuando el enfoque del usuario vuelve a tu pestaña (sitio web) nuevamente
@@ -65,13 +65,13 @@ window.addEventListener('load',function () {
         //add btn on scroll
     //}
     
-    const add_btn_scrolltop = function(){
-        if(document.documentElement.scrollTop >= 200){
-            arrow.classList.add('active');
-        } else {
-            arrow.classList.remove('active'); 
-        }    
-    }
+    // const add_btn_scrolltop = function(){
+    //     if(document.documentElement.scrollTop >= 200){
+    //         arrow.classList.add('active');
+    //     } else {
+    //         arrow.classList.remove('active'); 
+    //     }    
+    // }
 
     // ProgressBar Section
     let progressBar__element = document.querySelector(".progressBar__element");
