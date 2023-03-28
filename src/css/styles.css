@@ -970,6 +970,7 @@ strong {
     font-size: var(--fs-heroTitle-mobile);
     line-height: 1.25;
     max-width: 90%;
+    font-weight: 500;
 }
 
 .herotitle__span {
@@ -1112,6 +1113,7 @@ strong {
     position: var(--value-relative);
     font-size:65px;
     font-family: var(--ff-titles);
+    font-weight: 600;
 }
 
 .consoleContainer__span {
